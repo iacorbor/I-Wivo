@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">I-Wivo</string>
+
+    <string name="greeting">¡Hola, Isra! 👋</string>
+    <string name="subtitle">¿Listo para seguir aprendiendo?</string>
+
+    <string name="progress_title">Tu progreso</string>
+    <string name="level">Nivel %1$d</string>
+    <string name="xp">%1$d / %2$d XP</string>
+
+    <string name="next_mission">Siguiente misión</string>
+    <string name="daily_mission_title">JavaScript Básico</string>
+    <string name="daily_mission_subtitle">Variables y tipos de datos</string>
+
+    <string name="learning_paths">Rutas de aprendizaje</string>
+    <string name="topic_java">Java</string>
+    <string name="topic_java_subtitle">Fundamentos y POO</string>
+    <string name="topic_kotlin">Kotlin</string>
+    <string name="topic_kotlin_subtitle">Sintaxis moderna Android</string>
+    <string name="topic_sql">SQL</string>
+    <string name="topic_sql_subtitle">Consultas y bases de datos</string>
+
+    <string name="arrow">→</string>
+    <string name="start_training">Empezar entrenamiento</string>
+    <string name="choose_topic">Elige una ruta</string>
+    <string name="choose_topic_subtitle">Selecciona qué quieres practicar hoy</string>
+    <string name="choose_game_type">Elige tipo de reto</string>
+    <string name="selected_topic">Ruta seleccionada: %1$s</string>
+
+    <string name="game_type_test">Test</string>
+    <string name="game_type_test_subtitle">4 respuestas, solo una correcta</string>
+
+    <string name="game_type_true_false">Verdadero / Falso</string>
+    <string name="game_type_true_false_subtitle">Decide si la afirmación es correcta</string>
+
+    <string name="game_type_complete_code">Completar código</string>
+    <string name="game_type_complete_code_subtitle">Elige la pieza que falta</string>
+</resources>
