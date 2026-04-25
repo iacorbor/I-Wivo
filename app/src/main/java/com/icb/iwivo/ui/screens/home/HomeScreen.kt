@@ -15,6 +15,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -27,10 +28,14 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.runtime.remember
+import com.icb.iwivo.data.repository.UserRepository
 
 @Composable
 fun HomeScreen(
-    onStartClick: () -> Unit
+    onStartClick: () -> Unit,
+    onProfileClick: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -67,6 +72,14 @@ fun HomeScreen(
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(text = stringResource(R.string.start_training))
+        }
+        Spacer(modifier = Modifier.height(12.dp))
+
+        OutlinedButton(
+            onClick = onProfileClick,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(text = stringResource(R.string.view_profile))
         }
 
         Spacer(modifier = Modifier.height(24.dp))
@@ -105,6 +118,15 @@ fun HomeScreen(
 
 @Composable
 private fun ProgressCard() {
+
+    val context = LocalContext.current
+    val userRepository = remember { UserRepository(context) }
+
+    val xp = userRepository.getXp()
+    val level = userRepository.getLevel()
+
+    val progress = (xp % 500) / 500f
+
     Card(
         colors = CardDefaults.cardColors(containerColor = CardDark),
         shape = RoundedCornerShape(20.dp),
@@ -119,7 +141,7 @@ private fun ProgressCard() {
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = stringResource(R.string.level, 1),
+                text = stringResource(R.string.level, level),
                 style = MaterialTheme.typography.titleLarge,
                 color = MaterialTheme.colorScheme.onSurface
             )
@@ -127,7 +149,7 @@ private fun ProgressCard() {
             Spacer(modifier = Modifier.height(8.dp))
 
             LinearProgressIndicator(
-                progress = { 0.25f },
+                progress = { progress },
                 modifier = Modifier.fillMaxWidth(),
                 color = PurplePrimary,
                 trackColor = MaterialTheme.colorScheme.surface
@@ -136,7 +158,7 @@ private fun ProgressCard() {
             Spacer(modifier = Modifier.height(6.dp))
 
             Text(
-                text = stringResource(R.string.xp, 250, 1000),
+                text = stringResource(R.string.xp, xp % 500, 500),
                 color = TextSecondary
             )
         }

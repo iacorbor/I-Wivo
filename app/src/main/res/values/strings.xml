@@ -1,17 +1,13 @@
 <resources>
     <string name="app_name">I-Wivo</string>
-
     <string name="greeting">¡Hola, Isra! 👋</string>
     <string name="subtitle">¿Listo para seguir aprendiendo?</string>
-
     <string name="progress_title">Tu progreso</string>
     <string name="level">Nivel %1$d</string>
     <string name="xp">%1$d / %2$d XP</string>
-
     <string name="next_mission">Siguiente misión</string>
     <string name="daily_mission_title">JavaScript Básico</string>
     <string name="daily_mission_subtitle">Variables y tipos de datos</string>
-
     <string name="learning_paths">Rutas de aprendizaje</string>
     <string name="topic_java">Java</string>
     <string name="topic_java_subtitle">Fundamentos y POO</string>
@@ -19,20 +15,34 @@
     <string name="topic_kotlin_subtitle">Sintaxis moderna Android</string>
     <string name="topic_sql">SQL</string>
     <string name="topic_sql_subtitle">Consultas y bases de datos</string>
-
     <string name="arrow">→</string>
     <string name="start_training">Empezar entrenamiento</string>
     <string name="choose_topic">Elige una ruta</string>
     <string name="choose_topic_subtitle">Selecciona qué quieres practicar hoy</string>
     <string name="choose_game_type">Elige tipo de reto</string>
     <string name="selected_topic">Ruta seleccionada: %1$s</string>
-
     <string name="game_type_test">Test</string>
     <string name="game_type_test_subtitle">4 respuestas, solo una correcta</string>
-
     <string name="game_type_true_false">Verdadero / Falso</string>
     <string name="game_type_true_false_subtitle">Decide si la afirmación es correcta</string>
-
     <string name="game_type_complete_code">Completar código</string>
-    <string name="game_type_complete_code_subtitle">Elige la pieza que falta</string>
+    <string name="game_type_complete_code_subtitle">Elige la pieza que falta</string><string name="game_header">Ruta %1$s</string>
+    <string name="question_counter">Pregunta %1$d de %2$d</string>
+    <string name="check_answer">Comprobar respuesta</string>
+    <string name="next_question">Siguiente</string>
+    <string name="correct_answer">¡Correcto!</string>
+    <string name="wrong_answer">Incorrecto</string>
+    <string name="no_questions">No hay preguntas para %1$s / %2$s todavía.</string>
+    <string name="result_title">Resultado del reto</string>
+    <string name="result_score">%1$d de %2$d correctas</string>
+    <string name="result_xp">+%1$d XP obtenida</string>
+    <string name="back_home">Volver al inicio</string>
+    <string name="profile_title">Perfil</string>
+    <string name="profile_subtitle">Tu progreso en I-Wivo</string>
+    <string name="total_xp">XP total</string>
+    <string name="badges">Insignias</string>
+    <string name="streak">Racha</string>
+    <string name="view_profile">Ver perfil</string>
+    <string name="streak_days">%1$d días</string>
+    <string name="badges_section">Insignias</string>
 </resources>
