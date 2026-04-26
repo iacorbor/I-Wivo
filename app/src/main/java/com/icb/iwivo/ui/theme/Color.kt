@@ -12,3 +12,5 @@ val GreenAccent = Color(0xFF22C55E)
 
 val TextPrimary = Color(0xFFF5F7FA)
 val TextSecondary = Color(0xFFB0B7C3)
+
+val BorderColor = Color(0xFF252A36)

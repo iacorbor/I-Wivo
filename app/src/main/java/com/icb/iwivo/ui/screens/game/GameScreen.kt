@@ -1,6 +1,6 @@
 package com.icb.iwivo.ui.screens.game
 
-import androidx.compose.foundation.background
+import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -9,7 +9,6 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.Button
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -17,6 +16,9 @@ import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
 import com.icb.iwivo.data.model.Question
 import com.icb.iwivo.data.repository.QuestionRepository
+import com.icb.iwivo.ui.components.WivoButton
+import com.icb.iwivo.ui.components.WivoCard
+import com.icb.iwivo.ui.components.WivoScreen
 import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
@@ -46,103 +48,99 @@ fun GameScreen(
     val currentQuestion = questions[currentIndex]
     val progress = (currentIndex + 1).toFloat() / questions.size.toFloat()
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
-        Spacer(modifier = Modifier.height(32.dp))
-
-        Text(
-            text = stringResource(R.string.game_header, topic.uppercase()),
-            style = MaterialTheme.typography.headlineSmall,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        LinearProgressIndicator(
-            progress = { progress },
-            modifier = Modifier.fillMaxWidth(),
-            color = PurplePrimary,
-            trackColor = MaterialTheme.colorScheme.surface
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Text(
-            text = stringResource(
-                R.string.question_counter,
-                currentIndex + 1,
-                questions.size
-            ),
-            color = TextSecondary
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        Text(
-            text = currentQuestion.questionText,
-            style = MaterialTheme.typography.titleLarge,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        currentQuestion.options.forEachIndexed { index, option ->
-            AnswerOptionCard(
-                text = option,
-                index = index,
-                selectedIndex = selectedIndex,
-                correctIndex = currentQuestion.correctOptionIndex,
-                showFeedback = showFeedback,
-                onClick = {
-                    selectedIndex = index
-                }
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-        }
-
-        Spacer(modifier = Modifier.weight(1f))
-
-        if (showFeedback) {
-            FeedbackBlock(
-                question = currentQuestion,
-                selectedIndex = selectedIndex
-            )
-
-            Spacer(modifier = Modifier.height(16.dp))
-        }
-
-        Button(
-            onClick = {
-                if (!showFeedback) {
-                    if (selectedIndex != -1) {
-                        if (selectedIndex == currentQuestion.correctOptionIndex) {
-                            correctAnswers++
-                        }
-                        showFeedback = true
-                    }
-                } else {
-                    if (currentIndex < questions.lastIndex) {
-                        currentIndex++
-                        selectedIndex = -1
-                        showFeedback = false
-                    } else {
-                        onFinishGame(correctAnswers, questions.size)
-                    }
-                }
-            },
-            modifier = Modifier.fillMaxWidth(),
-            enabled = selectedIndex != -1 || showFeedback
+    WivoScreen {
+        Column(
+            modifier = Modifier.fillMaxSize()
         ) {
+            Spacer(modifier = Modifier.height(32.dp))
+
             Text(
+                text = stringResource(R.string.game_header, topic.uppercase()),
+                style = MaterialTheme.typography.headlineSmall,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(
+                text = stringResource(
+                    R.string.question_counter,
+                    currentIndex + 1,
+                    questions.size
+                ),
+                color = TextSecondary
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            LinearProgressIndicator(
+                progress = { progress },
+                modifier = Modifier.fillMaxWidth(),
+                color = PurplePrimary,
+                trackColor = MaterialTheme.colorScheme.surface
+            )
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            WivoCard {
+                Text(
+                    text = currentQuestion.questionText,
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            currentQuestion.options.forEachIndexed { index, option ->
+                AnswerOptionCard(
+                    text = option,
+                    index = index,
+                    selectedIndex = selectedIndex,
+                    correctIndex = currentQuestion.correctOptionIndex,
+                    showFeedback = showFeedback,
+                    onClick = {
+                        selectedIndex = index
+                    }
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            Spacer(modifier = Modifier.weight(1f))
+
+            if (showFeedback) {
+                FeedbackBlock(
+                    question = currentQuestion,
+                    selectedIndex = selectedIndex
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+
+            WivoButton(
                 text = if (showFeedback) {
                     stringResource(R.string.next_question)
                 } else {
                     stringResource(R.string.check_answer)
+                },
+                onClick = {
+                    if (!showFeedback) {
+                        if (selectedIndex != -1) {
+                            if (selectedIndex == currentQuestion.correctOptionIndex) {
+                                correctAnswers++
+                            }
+                            showFeedback = true
+                        }
+                    } else {
+                        if (currentIndex < questions.lastIndex) {
+                            currentIndex++
+                            selectedIndex = -1
+                            showFeedback = false
+                        } else {
+                            onFinishGame(correctAnswers, questions.size)
+                        }
+                    }
                 }
             )
         }
@@ -158,17 +156,19 @@ private fun AnswerOptionCard(
     showFeedback: Boolean,
     onClick: () -> Unit
 ) {
-    val backgroundColor = when {
+    val targetColor = when {
         showFeedback && index == correctIndex -> GreenAccent
         showFeedback && index == selectedIndex && selectedIndex != correctIndex -> MaterialTheme.colorScheme.error
         selectedIndex == index -> PurplePrimary
         else -> CardDark
     }
+    val backgroundColor by animateColorAsState(
+        targetValue = targetColor,
+        label = "answerColor"
+    )
 
     Card(
-        colors = CardDefaults.cardColors(
-            containerColor = backgroundColor
-        ),
+        colors = CardDefaults.cardColors(containerColor = backgroundColor),
         shape = RoundedCornerShape(18.dp),
         modifier = Modifier
             .fillMaxWidth()
@@ -190,31 +190,34 @@ private fun FeedbackBlock(
 ) {
     val isCorrect = selectedIndex == question.correctOptionIndex
 
-    Card(
-        colors = CardDefaults.cardColors(
-            containerColor = CardDark
-        ),
-        shape = RoundedCornerShape(18.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(modifier = Modifier.padding(18.dp)) {
-            Text(
-                text = if (isCorrect) {
-                    stringResource(R.string.correct_answer)
-                } else {
-                    stringResource(R.string.wrong_answer)
-                },
-                color = if (isCorrect) GreenAccent else MaterialTheme.colorScheme.error,
-                style = MaterialTheme.typography.titleMedium
-            )
+    WivoCard {
+        Text(
+            text = if (isCorrect) {
+                stringResource(R.string.feedback_correct)
+            } else {
+                stringResource(R.string.feedback_wrong)
+            },
+            style = MaterialTheme.typography.titleLarge,
+            color = if (isCorrect) GreenAccent else MaterialTheme.colorScheme.error
+        )
 
-            Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
-            Text(
-                text = question.explanation,
-                color = TextSecondary
-            )
-        }
+        Text(
+            text = question.explanation,
+            color = TextSecondary
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Text(
+            text = if (isCorrect) {
+                stringResource(R.string.feedback_correct_hint)
+            } else {
+                stringResource(R.string.feedback_wrong_hint)
+            },
+            color = TextSecondary
+        )
     }
 }
 
@@ -223,12 +226,7 @@ private fun EmptyQuestionsState(
     topic: String,
     gameType: String
 ) {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
+    WivoScreen {
         Text(
             text = stringResource(R.string.no_questions, topic, gameType),
             color = MaterialTheme.colorScheme.onBackground

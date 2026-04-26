@@ -40,7 +40,36 @@ class QuestionRepository {
             options = listOf("GET", "SELECT", "READ", "FIND"),
             correctOptionIndex = 1,
             explanation = "SELECT se utiliza para consultar datos en una base de datos."
+        ),Question(
+            id = "java_tf_001",
+            topic = "java",
+            gameType = "true_false",
+            questionText = "En Java, una clase puede heredar de varias clases al mismo tiempo.",
+            options = listOf("Verdadero", "Falso"),
+            correctOptionIndex = 1,
+            explanation = "Java no permite herencia múltiple de clases. Solo permite implementar varias interfaces."
+        ),
+        Question(
+            id = "kotlin_tf_001",
+            topic = "kotlin",
+            gameType = "true_false",
+            questionText = "En Kotlin, val se usa para declarar una variable de solo lectura.",
+            options = listOf("Verdadero", "Falso"),
+            correctOptionIndex = 0,
+            explanation = "Correcto. val declara una referencia de solo lectura."
+        ),
+        Question(
+            id = "sql_tf_001",
+            topic = "sql",
+            gameType = "true_false",
+            questionText = "La sentencia SELECT se utiliza para eliminar registros de una tabla.",
+            options = listOf("Verdadero", "Falso"),
+            correctOptionIndex = 1,
+            explanation = "SELECT consulta datos. Para eliminar registros se usa DELETE."
         )
+
+
+
     )
 
     fun getQuestions(topic: String, gameType: String): List<Question> {

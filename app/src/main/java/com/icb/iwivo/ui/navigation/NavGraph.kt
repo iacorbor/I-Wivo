@@ -15,6 +15,9 @@ import com.icb.iwivo.ui.screens.result.ResultScreen
 import com.icb.iwivo.data.repository.UserRepository
 import androidx.compose.ui.platform.LocalContext
 import com.icb.iwivo.ui.screens.profile.ProfileScreen
+import com.icb.iwivo.ui.screens.shop.ShopScreen
+import com.icb.iwivo.ui.screens.register.RegisterScreen
+import com.icb.iwivo.data.repository.FirestoreRepository
 
 @Composable
 fun NavGraph() {
@@ -28,6 +31,9 @@ fun NavGraph() {
             LoginScreen(
                 onLoginClick = {
                     navController.navigate(Screen.Home.route)
+                },
+                onGoToRegister = {
+                    navController.navigate(Screen.Register.route)
                 }
             )
         }
@@ -39,6 +45,9 @@ fun NavGraph() {
                 },
                 onProfileClick = {
                     navController.navigate(Screen.Profile.route)
+                },
+                onShopClick = {
+                    navController.navigate(Screen.Shop.route)
                 }
             )
         }
@@ -91,9 +100,17 @@ fun NavGraph() {
                 gameType = gameType,
                 onFinishGame = { correct, total ->
                     val xpEarned = correct * 50
+                    val coinsEarned = correct * 10
+                    val firestoreRepository = FirestoreRepository()
 
                     userRepository.addXp(xpEarned)
+                    userRepository.addCoins(coinsEarned)
                     userRepository.updateStreak()
+
+                    firestoreRepository.addXp(xpEarned)
+                    firestoreRepository.addCoins(coinsEarned)
+                    firestoreRepository.updateStreakSimple()
+
 
                     navController.navigate(
                         Screen.Result.createRoute(correct, total)
@@ -125,6 +142,19 @@ fun NavGraph() {
         }
         composable(Screen.Profile.route) {
             ProfileScreen()
+        }
+        composable(Screen.Shop.route) {
+            ShopScreen()
+        }
+        composable(Screen.Register.route) {
+            RegisterScreen(
+                onRegisterSuccess = {
+                    navController.navigate(Screen.Home.route)
+                },
+                onBackToLogin = {
+                    navController.popBackStack()
+                }
+            )
         }
     }
 

@@ -1,6 +1,5 @@
 package com.icb.iwivo.ui.screens.topic
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
@@ -19,56 +18,56 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun TopicSelectionScreen(
     onTopicClick: (String) -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
-        Spacer(modifier = Modifier.height(32.dp))
+    WivoScreen{
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.height(32.dp))
 
-        Text(
-            text = stringResource(R.string.choose_topic),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
+            Text(
+                text = stringResource(R.string.choose_topic),
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
 
-        Text(
-            text = stringResource(R.string.choose_topic_subtitle),
-            color = TextSecondary
-        )
+            Text(
+                text = stringResource(R.string.choose_topic_subtitle),
+                color = TextSecondary
+            )
 
-        Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
-        TopicCard(
-            title = stringResource(R.string.topic_java),
-            subtitle = stringResource(R.string.topic_java_subtitle),
-            color = PurplePrimary,
-            onClick = { onTopicClick("java") }
-        )
+            TopicCard(
+                title = stringResource(R.string.topic_java),
+                subtitle = stringResource(R.string.topic_java_subtitle),
+                color = PurplePrimary,
+                onClick = { onTopicClick("java") }
+            )
 
-        Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-        TopicCard(
-            title = stringResource(R.string.topic_kotlin),
-            subtitle = stringResource(R.string.topic_kotlin_subtitle),
-            color = BluePrimary,
-            onClick = { onTopicClick("kotlin")}
-        )
+            TopicCard(
+                title = stringResource(R.string.topic_kotlin),
+                subtitle = stringResource(R.string.topic_kotlin_subtitle),
+                color = BluePrimary,
+                onClick = { onTopicClick("kotlin")}
+            )
 
-        Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-        TopicCard(
-            title = stringResource(R.string.topic_sql),
-            subtitle = stringResource(R.string.topic_sql_subtitle),
-            color = GreenAccent,
-            onClick = { onTopicClick("sql") }
-        )
+            TopicCard(
+                title = stringResource(R.string.topic_sql),
+                subtitle = stringResource(R.string.topic_sql_subtitle),
+                color = GreenAccent,
+                onClick = { onTopicClick("sql") }
+            )
+        }
     }
 }
 

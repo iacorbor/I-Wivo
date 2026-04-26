@@ -16,6 +16,7 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun ProfileScreen() {
@@ -30,95 +31,94 @@ fun ProfileScreen() {
     val xpCurrentLevel = xp % 500
     val progress = xpCurrentLevel / 500f
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
-        Spacer(modifier = Modifier.height(32.dp))
-
-        Text(
-            text = stringResource(R.string.profile_title),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Text(
-            text = stringResource(R.string.profile_subtitle),
-            color = TextSecondary
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Card(
-            colors = CardDefaults.cardColors(containerColor = CardDark),
-            shape = RoundedCornerShape(24.dp),
-            modifier = Modifier.fillMaxWidth()
+    WivoScreen{
+        Column(
+            modifier = Modifier.fillMaxSize()
         ) {
-            Column(modifier = Modifier.padding(20.dp)) {
-                Text(
-                    text = stringResource(R.string.level, level),
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = PurplePrimary
-                )
+            Spacer(modifier = Modifier.height(32.dp))
 
-                Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = stringResource(R.string.profile_title),
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
 
-                LinearProgressIndicator(
-                    progress = { progress },
-                    modifier = Modifier.fillMaxWidth(),
-                    color = GreenAccent,
-                    trackColor = MaterialTheme.colorScheme.surface
-                )
+            Text(
+                text = stringResource(R.string.profile_subtitle),
+                color = TextSecondary
+            )
 
-                Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
-                Text(
-                    text = stringResource(R.string.xp, xpCurrentLevel, 500),
-                    color = TextSecondary
-                )
+            Card(
+                colors = CardDefaults.cardColors(containerColor = CardDark),
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Column(modifier = Modifier.padding(20.dp)) {
+                    Text(
+                        text = stringResource(R.string.level, level),
+                        style = MaterialTheme.typography.headlineSmall,
+                        color = PurplePrimary
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    LinearProgressIndicator(
+                        progress = { progress },
+                        modifier = Modifier.fillMaxWidth(),
+                        color = GreenAccent,
+                        trackColor = MaterialTheme.colorScheme.surface
+                    )
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    Text(
+                        text = stringResource(R.string.xp, xpCurrentLevel, 500),
+                        color = TextSecondary
+                    )
+                }
             }
-        }
 
-        Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
-        StatCard(
-            title = stringResource(R.string.total_xp),
-            value = xp.toString()
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        StatCard(
-            title = stringResource(R.string.badges),
-            value = unlockedBadges.toString()
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        StatCard(
-            title = stringResource(R.string.streak),
-            value = stringResource(R.string.streak_days, streak)
-        )
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Text(
-            text = stringResource(R.string.badges_section),
-            style = MaterialTheme.typography.titleMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        badges.forEach { badge ->
-            BadgeCard(
-                name = badge.name,
-                description = badge.description,
-                unlocked = badge.unlocked
+            StatCard(
+                title = stringResource(R.string.total_xp),
+                value = xp.toString()
             )
 
             Spacer(modifier = Modifier.height(12.dp))
+
+            StatCard(
+                title = stringResource(R.string.badges),
+                value = unlockedBadges.toString()
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            StatCard(
+                title = stringResource(R.string.streak),
+                value = stringResource(R.string.streak_days, streak)
+            )
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Text(
+                text = stringResource(R.string.badges_section),
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            badges.forEach { badge ->
+                BadgeCard(
+                    name = badge.name,
+                    description = badge.description,
+                    unlocked = badge.unlocked
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
+            }
         }
     }
 }

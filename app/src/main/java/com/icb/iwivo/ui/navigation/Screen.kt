@@ -16,4 +16,8 @@ sealed class Screen(val route: String) {
         fun createRoute(correct: Int, total: Int) = "result/$correct/$total"
     }
     data object Profile : Screen("profile")
+
+    data object Shop : Screen("shop")
+
+    data object Register : Screen("register")
 }

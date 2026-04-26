@@ -19,57 +19,57 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun GameTypeScreen(
     topic: String,
     onGameTypeClick: (String) -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
-        Spacer(modifier = Modifier.height(32.dp))
+    WivoScreen {
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.height(32.dp))
 
-        Text(
-            text = stringResource(R.string.choose_game_type),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
+            Text(
+                text = stringResource(R.string.choose_game_type),
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
 
-        Text(
-            text = stringResource(R.string.selected_topic, topic.uppercase()),
-            color = TextSecondary
-        )
+            Text(
+                text = stringResource(R.string.selected_topic, topic.uppercase()),
+                color = TextSecondary
+            )
 
-        Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
-        GameTypeCard(
-            title = stringResource(R.string.game_type_test),
-            subtitle = stringResource(R.string.game_type_test_subtitle),
-            color = PurplePrimary,
-            onClick = { onGameTypeClick("test") }
-        )
+            GameTypeCard(
+                title = stringResource(R.string.game_type_test),
+                subtitle = stringResource(R.string.game_type_test_subtitle),
+                color = PurplePrimary,
+                onClick = { onGameTypeClick("test") }
+            )
 
-        Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-        GameTypeCard(
-            title = stringResource(R.string.game_type_true_false),
-            subtitle = stringResource(R.string.game_type_true_false_subtitle),
-            color = BluePrimary,
-            onClick = { onGameTypeClick("true_false") }
-        )
+            GameTypeCard(
+                title = stringResource(R.string.game_type_true_false),
+                subtitle = stringResource(R.string.game_type_true_false_subtitle),
+                color = BluePrimary,
+                onClick = { onGameTypeClick("true_false") }
+            )
 
-        Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(12.dp))
 
-        GameTypeCard(
-            title = stringResource(R.string.game_type_complete_code),
-            subtitle = stringResource(R.string.game_type_complete_code_subtitle),
-            color = GreenAccent,
-            onClick = { onGameTypeClick("complete_code") }
-        )
+            GameTypeCard(
+                title = stringResource(R.string.game_type_complete_code),
+                subtitle = stringResource(R.string.game_type_complete_code_subtitle),
+                color = GreenAccent,
+                onClick = { onGameTypeClick("complete_code") }
+            )
+        }
     }
 }
 

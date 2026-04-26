@@ -14,10 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
+import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun ResultScreen(
@@ -28,61 +30,58 @@ fun ResultScreen(
     val percentage = if (total > 0) (correct * 100) / total else 0
     val xpEarned = correct * 50
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Spacer(modifier = Modifier.height(64.dp))
-
-        Text(
-            text = stringResource(R.string.result_title),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Card(
-            colors = CardDefaults.cardColors(containerColor = CardDark),
-            shape = RoundedCornerShape(24.dp),
-            modifier = Modifier.fillMaxWidth()
+    WivoScreen{
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Column(
-                modifier = Modifier.padding(24.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+            Spacer(modifier = Modifier.height(64.dp))
+
+            Text(
+                text = stringResource(R.string.result_title),
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Card(
+                colors = CardDefaults.cardColors(containerColor = CardDark),
+                shape = RoundedCornerShape(24.dp),
+                modifier = Modifier.fillMaxWidth()
             ) {
-                Text(
-                    text = "$percentage%",
-                    style = MaterialTheme.typography.displayMedium,
-                    color = if (percentage >= 60) GreenAccent else PurplePrimary
-                )
+                Column(
+                    modifier = Modifier.padding(24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Text(
+                        text = "$percentage%",
+                        style = MaterialTheme.typography.displayMedium,
+                        color = if (percentage >= 60) GreenAccent else PurplePrimary
+                    )
 
-                Spacer(modifier = Modifier.height(8.dp))
+                    Spacer(modifier = Modifier.height(8.dp))
 
-                Text(
-                    text = stringResource(R.string.result_score, correct, total),
-                    color = MaterialTheme.colorScheme.onSurface
-                )
+                    Text(
+                        text = stringResource(R.string.result_score, correct, total),
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
 
-                Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(16.dp))
 
-                Text(
-                    text = stringResource(R.string.result_xp, xpEarned),
-                    color = TextSecondary
-                )
+                    Text(
+                        text = stringResource(R.string.result_xp, xpEarned),
+                        color = TextSecondary
+                    )
+                }
             }
-        }
 
-        Spacer(modifier = Modifier.weight(1f))
+            Spacer(modifier = Modifier.weight(1f))
 
-        Button(
-            onClick = onBackHome,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text(text = stringResource(R.string.back_home))
+            WivoButton(
+                onClick = onBackHome,
+                text = stringResource(R.string.back_home)
+            )
         }
     }
 }

@@ -1,6 +1,5 @@
 package com.icb.iwivo.ui.screens.home
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,11 +7,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -24,173 +18,188 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
 import com.icb.iwivo.ui.theme.BluePrimary
-import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.runtime.remember
-import com.icb.iwivo.data.repository.UserRepository
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableIntStateOf
+import com.icb.iwivo.data.repository.FirestoreRepository
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import com.icb.iwivo.ui.components.WivoButton
+import com.icb.iwivo.ui.components.WivoCard
+import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun HomeScreen(
     onStartClick: () -> Unit,
-    onProfileClick: () -> Unit
+    onProfileClick: () -> Unit,
+    onShopClick: () -> Unit
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .padding(24.dp)
-    ) {
-        Spacer(modifier = Modifier.height(32.dp))
+    WivoScreen {
+        Column(modifier = Modifier.fillMaxSize()) {
+            Spacer(modifier = Modifier.height(32.dp))
 
-        Text(
-            text = stringResource(R.string.greeting),
-            style = MaterialTheme.typography.headlineMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
+            Text(
+                text = stringResource(R.string.greeting),
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
 
-        Text(
-            text = stringResource(R.string.subtitle),
-            style = MaterialTheme.typography.bodyMedium,
-            color = TextSecondary
-        )
+            Text(
+                text = stringResource(R.string.subtitle),
+                style = MaterialTheme.typography.bodyMedium,
+                color = TextSecondary
+            )
 
-        Spacer(modifier = Modifier.height(24.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
-        ProgressCard()
+            ProgressCard()
 
-        Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
-        DailyMissionCard()
+            DailyMissionCard()
 
-        Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
-        Button(
-            onClick = onStartClick,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text(text = stringResource(R.string.start_training))
+            WivoButton(
+                text = stringResource(R.string.start_training),
+                onClick = onStartClick
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+
+            OutlinedButton(
+                onClick = onProfileClick,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(text = stringResource(R.string.view_profile))
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+
+            OutlinedButton(
+                onClick = onShopClick,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(text = stringResource(R.string.open_shop))
+            }
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+            Text(
+                text = stringResource(R.string.learning_paths),
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onBackground
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            LearningPathCard(
+                title = stringResource(R.string.topic_java),
+                subtitle = stringResource(R.string.topic_java_subtitle),
+                color = PurplePrimary
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            LearningPathCard(
+                title = stringResource(R.string.topic_kotlin),
+                subtitle = stringResource(R.string.topic_kotlin_subtitle),
+                color = BluePrimary
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            LearningPathCard(
+                title = stringResource(R.string.topic_sql),
+                subtitle = stringResource(R.string.topic_sql_subtitle),
+                color = GreenAccent
+            )
         }
-        Spacer(modifier = Modifier.height(12.dp))
-
-        OutlinedButton(
-            onClick = onProfileClick,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            Text(text = stringResource(R.string.view_profile))
-        }
-
-        Spacer(modifier = Modifier.height(24.dp))
-
-        Text(
-            text = stringResource(R.string.learning_paths),
-            style = MaterialTheme.typography.titleMedium,
-            color = MaterialTheme.colorScheme.onBackground
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        LearningPathCard(
-            title = stringResource(R.string.topic_java),
-            subtitle = stringResource(R.string.topic_java_subtitle),
-            color = PurplePrimary
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        LearningPathCard(
-            title = stringResource(R.string.topic_kotlin),
-            subtitle = stringResource(R.string.topic_kotlin_subtitle),
-            color = BluePrimary
-        )
-
-        Spacer(modifier = Modifier.height(12.dp))
-
-        LearningPathCard(
-            title = stringResource(R.string.topic_sql),
-            subtitle = stringResource(R.string.topic_sql_subtitle),
-            color = GreenAccent
-        )
     }
 }
 
 @Composable
 private fun ProgressCard() {
+    val firestoreRepository = remember { FirestoreRepository() }
 
-    val context = LocalContext.current
-    val userRepository = remember { UserRepository(context) }
+    var xp by remember { mutableIntStateOf(0) }
+    var coins by remember { mutableIntStateOf(0) }
+    var streak by remember { mutableIntStateOf(0) }
 
-    val xp = userRepository.getXp()
-    val level = userRepository.getLevel()
+    LaunchedEffect(Unit) {
+        firestoreRepository.getCurrentUserData(
+            onResult = { remoteXp, remoteCoins, remoteStreak ->
+                xp = remoteXp
+                coins = remoteCoins
+                streak = remoteStreak
+            }
+        )
+    }
 
-    val progress = (xp % 500) / 500f
+    val level = (xp / 500) + 1
+    val xpCurrentLevel = xp % 500
+    val progress = xpCurrentLevel / 500f
 
-    Card(
-        colors = CardDefaults.cardColors(containerColor = CardDark),
-        shape = RoundedCornerShape(20.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(modifier = Modifier.padding(18.dp)) {
-            Text(
-                text = stringResource(R.string.progress_title),
-                color = TextSecondary
-            )
+    WivoCard {
+        Text(
+            text = stringResource(R.string.progress_title),
+            color = TextSecondary
+        )
 
-            Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
-            Text(
-                text = stringResource(R.string.level, level),
-                style = MaterialTheme.typography.titleLarge,
-                color = MaterialTheme.colorScheme.onSurface
-            )
+        Text(
+            text = stringResource(R.string.level, level),
+            style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.onSurface
+        )
 
-            Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
-            LinearProgressIndicator(
-                progress = { progress },
-                modifier = Modifier.fillMaxWidth(),
-                color = PurplePrimary,
-                trackColor = MaterialTheme.colorScheme.surface
-            )
+        LinearProgressIndicator(
+            progress = { progress },
+            modifier = Modifier.fillMaxWidth(),
+            color = PurplePrimary,
+            trackColor = MaterialTheme.colorScheme.surface
+        )
 
-            Spacer(modifier = Modifier.height(6.dp))
+        Spacer(modifier = Modifier.height(6.dp))
 
-            Text(
-                text = stringResource(R.string.xp, xp % 500, 500),
-                color = TextSecondary
-            )
-        }
+        Text(
+            text = stringResource(R.string.xp, xpCurrentLevel, 500),
+            color = TextSecondary
+        )
+
+        Spacer(modifier = Modifier.height(6.dp))
+
+        Text(
+            text = stringResource(R.string.home_coins_streak, coins, streak),
+            color = TextSecondary
+        )
     }
 }
 
 @Composable
 private fun DailyMissionCard() {
-    Card(
-        colors = CardDefaults.cardColors(containerColor = CardDark),
-        shape = RoundedCornerShape(20.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(modifier = Modifier.padding(18.dp)) {
-            Text(
-                text = stringResource(R.string.next_mission),
-                color = TextSecondary
-            )
+    WivoCard {
+        Text(
+            text = stringResource(R.string.next_mission),
+            color = TextSecondary
+        )
 
-            Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
-            Text(
-                text = stringResource(R.string.daily_mission_title),
-                style = MaterialTheme.typography.titleLarge,
-                color = MaterialTheme.colorScheme.onSurface
-            )
+        Text(
+            text = stringResource(R.string.daily_mission_title),
+            style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.onSurface
+        )
 
-            Text(
-                text = stringResource(R.string.daily_mission_subtitle),
-                color = TextSecondary
-            )
-        }
+        Text(
+            text = stringResource(R.string.daily_mission_subtitle),
+            color = TextSecondary
+        )
     }
 }
 
@@ -200,15 +209,9 @@ private fun LearningPathCard(
     subtitle: String,
     color: Color
 ) {
-    Card(
-        colors = CardDefaults.cardColors(containerColor = CardDark),
-        shape = RoundedCornerShape(18.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
+    WivoCard {
         Row(
-            modifier = Modifier
-                .padding(18.dp)
-                .fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Column {
