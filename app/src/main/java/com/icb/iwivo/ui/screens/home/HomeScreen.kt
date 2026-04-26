@@ -29,7 +29,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.components.WivoCard
+import com.icb.iwivo.ui.components.WivoHeader
 import com.icb.iwivo.ui.components.WivoScreen
+import com.icb.iwivo.ui.components.WivoStatPill
 
 @Composable
 fun HomeScreen(
@@ -37,21 +39,43 @@ fun HomeScreen(
     onProfileClick: () -> Unit,
     onShopClick: () -> Unit
 ) {
+    val firestoreRepository = remember { FirestoreRepository() }
+
+    var xp by remember { mutableIntStateOf(0) }
+    var coins by remember { mutableIntStateOf(0) }
+    var streak by remember { mutableIntStateOf(0) }
+
+    LaunchedEffect(Unit) {
+        firestoreRepository.getCurrentUserData(
+            onResult = { remoteXp, remoteCoins, remoteStreak ->
+                xp = remoteXp
+                coins = remoteCoins
+                streak = remoteStreak
+            }
+        )
+    }
+
+    val level = (xp / 500) + 1
+
     WivoScreen {
         Column(modifier = Modifier.fillMaxSize()) {
+
             Spacer(modifier = Modifier.height(32.dp))
 
-            Text(
-                text = stringResource(R.string.greeting),
-                style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.onBackground
+            WivoHeader(
+                level = level,
+                xp = xp
             )
 
-            Text(
-                text = stringResource(R.string.subtitle),
-                style = MaterialTheme.typography.bodyMedium,
-                color = TextSecondary
-            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                WivoStatPill("Lv", level.toString())
+                WivoStatPill("XP", xp.toString())
+                WivoStatPill("💰", coins.toString())
+                WivoStatPill("🔥", streak.toString())
+            }
 
             Spacer(modifier = Modifier.height(24.dp))
 
@@ -61,59 +85,25 @@ fun HomeScreen(
 
             DailyMissionCard()
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(24.dp))
 
             WivoButton(
                 text = stringResource(R.string.start_training),
                 onClick = onStartClick
             )
+
             Spacer(modifier = Modifier.height(12.dp))
 
-            OutlinedButton(
-                onClick = onProfileClick,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text(text = stringResource(R.string.view_profile))
-            }
-            Spacer(modifier = Modifier.height(12.dp))
-
-            OutlinedButton(
-                onClick = onShopClick,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text(text = stringResource(R.string.open_shop))
-            }
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            Text(
-                text = stringResource(R.string.learning_paths),
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onBackground
+            WivoButton(
+                text = stringResource(R.string.view_profile),
+                onClick = onProfileClick
             )
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            LearningPathCard(
-                title = stringResource(R.string.topic_java),
-                subtitle = stringResource(R.string.topic_java_subtitle),
-                color = PurplePrimary
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            LearningPathCard(
-                title = stringResource(R.string.topic_kotlin),
-                subtitle = stringResource(R.string.topic_kotlin_subtitle),
-                color = BluePrimary
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            LearningPathCard(
-                title = stringResource(R.string.topic_sql),
-                subtitle = stringResource(R.string.topic_sql_subtitle),
-                color = GreenAccent
+            WivoButton(
+                text = stringResource(R.string.open_shop),
+                onClick = onShopClick
             )
         }
     }

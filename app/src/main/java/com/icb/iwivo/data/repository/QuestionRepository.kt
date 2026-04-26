@@ -66,7 +66,61 @@ class QuestionRepository {
             options = listOf("Verdadero", "Falso"),
             correctOptionIndex = 1,
             explanation = "SELECT consulta datos. Para eliminar registros se usa DELETE."
+        ),Question(
+            id = "java_code_001",
+            topic = "java",
+            gameType = "complete_code",
+            questionText = "Completa el código:\n\n____ Persona {\n}",
+            options = listOf("class", "object", "fun", "interface"),
+            correctOptionIndex = 0,
+            explanation = "En Java se usa 'class' para declarar una clase."
+        ),
+        Question(
+            id = "java_code_002",
+            topic = "java",
+            gameType = "complete_code",
+            questionText = "Completa el código:\n\nSystem.out.____(\"Hola\");",
+            options = listOf("printLine", "println", "echo", "write"),
+            correctOptionIndex = 1,
+            explanation = "System.out.println() imprime texto y añade salto de línea."
+        ),
+        Question(
+            id = "kotlin_code_001",
+            topic = "kotlin",
+            gameType = "complete_code",
+            questionText = "Completa el código:\n\n____ nombre = \"Isra\"",
+            options = listOf("var", "val", "let", "const"),
+            correctOptionIndex = 1,
+            explanation = "'val' declara una variable de solo lectura en Kotlin."
+        ),
+        Question(
+            id = "kotlin_code_002",
+            topic = "kotlin",
+            gameType = "complete_code",
+            questionText = "Completa el código:\n\nfun saludar() {\n    ____(\"Hola\")\n}",
+            options = listOf("console", "echo", "print", "show"),
+            correctOptionIndex = 2,
+            explanation = "En Kotlin puedes usar print() para imprimir texto."
+        ),
+        Question(
+            id = "sql_code_001",
+            topic = "sql",
+            gameType = "complete_code",
+            questionText = "Completa la consulta:\n\n____ * FROM usuarios;",
+            options = listOf("GET", "SELECT", "FIND", "READ"),
+            correctOptionIndex = 1,
+            explanation = "SELECT se utiliza para consultar datos."
+        ),
+        Question(
+            id = "sql_code_002",
+            topic = "sql",
+            gameType = "complete_code",
+            questionText = "Completa la consulta:\n\nDELETE FROM usuarios ____ id = 1;",
+            options = listOf("WHEN", "WHERE", "IF", "FILTER"),
+            correctOptionIndex = 1,
+            explanation = "WHERE filtra qué registros se eliminan."
         )
+
 
 
 

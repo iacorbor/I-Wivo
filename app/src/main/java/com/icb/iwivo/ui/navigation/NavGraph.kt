@@ -14,6 +14,7 @@ import com.icb.iwivo.ui.screens.game.GameScreen
 import com.icb.iwivo.ui.screens.result.ResultScreen
 import com.icb.iwivo.data.repository.UserRepository
 import androidx.compose.ui.platform.LocalContext
+import com.icb.iwivo.data.repository.AuthRepository
 import com.icb.iwivo.ui.screens.profile.ProfileScreen
 import com.icb.iwivo.ui.screens.shop.ShopScreen
 import com.icb.iwivo.ui.screens.register.RegisterScreen
@@ -141,7 +142,15 @@ fun NavGraph() {
             )
         }
         composable(Screen.Profile.route) {
-            ProfileScreen()
+            ProfileScreen(
+                onLogoutClick = {
+                    AuthRepository().logout()
+
+                    navController.navigate(Screen.Login.route) {
+                        popUpTo(0)
+                    }
+                }
+            )
         }
         composable(Screen.Shop.route) {
             ShopScreen()

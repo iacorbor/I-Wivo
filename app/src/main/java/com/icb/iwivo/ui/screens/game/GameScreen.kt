@@ -1,15 +1,29 @@
 package com.icb.iwivo.ui.screens.game
 
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -23,6 +37,15 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
+import androidx.compose.runtime.LaunchedEffect
+import com.icb.iwivo.data.model.Badge
+import com.icb.iwivo.data.repository.BadgeRepository
+import com.icb.iwivo.ui.components.BadgeUnlockedOverlay
+import com.icb.iwivo.ui.components.CodeBlock
+import kotlinx.coroutines.delay
+import androidx.compose.ui.platform.LocalContext
+import com.icb.iwivo.ui.utils.HapticUtils
+import com.icb.iwivo.ui.utils.SoundUtils
 
 @Composable
 fun GameScreen(
@@ -39,6 +62,24 @@ fun GameScreen(
     var selectedIndex by remember { mutableIntStateOf(-1) }
     var correctAnswers by remember { mutableIntStateOf(0) }
     var showFeedback by remember { mutableStateOf(false) }
+    val badgeRepository = remember { BadgeRepository() }
+    var previousBadges by remember { mutableStateOf<List<Badge>>(emptyList()) }
+    var newBadge by remember { mutableStateOf<Badge?>(null) }
+    val context = LocalContext.current
+
+    LaunchedEffect(showFeedback) {
+        if (showFeedback) {
+            kotlinx.coroutines.delay(2300)
+
+            if (currentIndex < questions.lastIndex) {
+                currentIndex++
+                selectedIndex = -1
+                showFeedback = false
+            } else {
+                onFinishGame(correctAnswers, questions.size)
+            }
+        }
+    }
 
     if (questions.isEmpty()) {
         EmptyQuestionsState(topic, gameType)
@@ -52,6 +93,7 @@ fun GameScreen(
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
+            Spacer(modifier = Modifier.height(32.dp))
             Spacer(modifier = Modifier.height(32.dp))
 
             Text(
@@ -82,29 +124,46 @@ fun GameScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            WivoCard {
-                Text(
-                    text = currentQuestion.questionText,
-                    style = MaterialTheme.typography.titleLarge,
-                    color = MaterialTheme.colorScheme.onSurface
-                )
-            }
+            AnimatedContent(
+                targetState = currentIndex,
+                transitionSpec = {
+                    fadeIn() togetherWith fadeOut()
+                },
+                label = "questionTransition"
+            ) { animatedIndex ->
 
-            Spacer(modifier = Modifier.height(24.dp))
+                val animatedQuestion = questions[animatedIndex]
 
-            currentQuestion.options.forEachIndexed { index, option ->
-                AnswerOptionCard(
-                    text = option,
-                    index = index,
-                    selectedIndex = selectedIndex,
-                    correctIndex = currentQuestion.correctOptionIndex,
-                    showFeedback = showFeedback,
-                    onClick = {
-                        selectedIndex = index
+                Column {
+                    WivoCard {
+                        if (gameType == "complete_code") {
+                            CodeBlock(code = animatedQuestion.questionText)
+                        } else {
+                            Text(
+                                text = animatedQuestion.questionText,
+                                style = MaterialTheme.typography.titleLarge,
+                                color = MaterialTheme.colorScheme.onSurface
+                            )
+                        }
                     }
-                )
 
-                Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(24.dp))
+
+                    animatedQuestion.options.forEachIndexed { index, option ->
+                        AnswerOptionCard(
+                            text = option,
+                            index = index,
+                            selectedIndex = selectedIndex,
+                            correctIndex = animatedQuestion.correctOptionIndex,
+                            showFeedback = showFeedback,
+                            onClick = {
+                                selectedIndex = index
+                            }
+                        )
+
+                        Spacer(modifier = Modifier.height(16.dp))
+                    }
+                }
             }
 
             Spacer(modifier = Modifier.weight(1f))
@@ -119,32 +178,45 @@ fun GameScreen(
             }
 
             WivoButton(
-                text = if (showFeedback) {
-                    stringResource(R.string.next_question)
-                } else {
-                    stringResource(R.string.check_answer)
-                },
+                text = stringResource(R.string.check_answer),
                 onClick = {
-                    if (!showFeedback) {
-                        if (selectedIndex != -1) {
-                            if (selectedIndex == currentQuestion.correctOptionIndex) {
-                                correctAnswers++
+                    if (selectedIndex != -1 && !showFeedback) {
+                        if (selectedIndex == currentQuestion.correctOptionIndex) {
+                            correctAnswers++
+                            HapticUtils.success(context)
+                            SoundUtils.playCorrect(context)
+                            val currentXp = (correctAnswers * 50)
+                            val badges = badgeRepository.getBadges(currentXp, 0)
+
+                            val unlockedNow = badges.filter { it.unlocked }
+                            val newlyUnlocked = unlockedNow.firstOrNull { new ->
+                                previousBadges.none { it.id == new.id }
                             }
-                            showFeedback = true
+
+                            if (newlyUnlocked != null) {
+                                newBadge = newlyUnlocked
+                            }
+
+                            previousBadges = unlockedNow
+                        }else{
+                            HapticUtils.error(context)
+                            SoundUtils.playWrong(context)
                         }
-                    } else {
-                        if (currentIndex < questions.lastIndex) {
-                            currentIndex++
-                            selectedIndex = -1
-                            showFeedback = false
-                        } else {
-                            onFinishGame(correctAnswers, questions.size)
-                        }
+                        showFeedback = true
                     }
                 }
             )
+            newBadge?.let { badge ->
+                BadgeUnlockedOverlay(
+                    badge = badge,
+                    onDismiss = {
+                        newBadge = null
+                    }
+                )
+            }
         }
     }
+
 }
 
 @Composable
@@ -162,6 +234,7 @@ private fun AnswerOptionCard(
         selectedIndex == index -> PurplePrimary
         else -> CardDark
     }
+
     val backgroundColor by animateColorAsState(
         targetValue = targetColor,
         label = "answerColor"

@@ -1,37 +1,54 @@
 package com.icb.iwivo.ui.screens.profile
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.R
-import com.icb.iwivo.data.repository.UserRepository
-import com.icb.iwivo.ui.theme.CardDark
+import com.icb.iwivo.data.repository.BadgeRepository
+import com.icb.iwivo.data.repository.FirestoreRepository
+import com.icb.iwivo.ui.components.BadgeCard
+import com.icb.iwivo.ui.components.WivoButton
+import com.icb.iwivo.ui.components.WivoCard
+import com.icb.iwivo.ui.components.WivoScreen
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
-import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
-fun ProfileScreen() {
-    val context = LocalContext.current
-    val userRepository = remember { UserRepository(context) }
+fun ProfileScreen(
+    onLogoutClick: () -> Unit
+) {
+    val firestoreRepository = remember { FirestoreRepository() }
+    val auth = remember { FirebaseAuth.getInstance() }
 
-    val xp = userRepository.getXp()
-    val level = userRepository.getLevel()
-    val streak = userRepository.getStreak()
-    val unlockedBadges = userRepository.getUnlockedBadgesCount()
-    val badges = userRepository.getBadges()
+    var xp by remember { mutableIntStateOf(0) }
+    var coins by remember { mutableIntStateOf(0) }
+    var streak by remember { mutableIntStateOf(0) }
+
+    val email = auth.currentUser?.email ?: stringResource(R.string.no_email)
+    val badgeRepository = remember { BadgeRepository() }
+    val badges = badgeRepository.getBadges(xp, streak)
+
+    LaunchedEffect(Unit) {
+        firestoreRepository.getCurrentUserData(
+            onResult = { remoteXp, remoteCoins, remoteStreak ->
+                xp = remoteXp
+                coins = remoteCoins
+                streak = remoteStreak
+            }
+        )
+    }
+
+    val level = (xp / 500) + 1
     val xpCurrentLevel = xp % 500
     val progress = xpCurrentLevel / 500f
 
-    WivoScreen{
+    WivoScreen {
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
@@ -50,34 +67,35 @@ fun ProfileScreen() {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            Card(
-                colors = CardDefaults.cardColors(containerColor = CardDark),
-                shape = RoundedCornerShape(24.dp),
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Column(modifier = Modifier.padding(20.dp)) {
-                    Text(
-                        text = stringResource(R.string.level, level),
-                        style = MaterialTheme.typography.headlineSmall,
-                        color = PurplePrimary
-                    )
+            WivoCard {
+                Text(
+                    text = email,
+                    color = TextSecondary
+                )
 
-                    Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(12.dp))
 
-                    LinearProgressIndicator(
-                        progress = { progress },
-                        modifier = Modifier.fillMaxWidth(),
-                        color = GreenAccent,
-                        trackColor = MaterialTheme.colorScheme.surface
-                    )
+                Text(
+                    text = stringResource(R.string.level, level),
+                    style = MaterialTheme.typography.headlineSmall,
+                    color = PurplePrimary
+                )
 
-                    Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(8.dp))
 
-                    Text(
-                        text = stringResource(R.string.xp, xpCurrentLevel, 500),
-                        color = TextSecondary
-                    )
-                }
+                LinearProgressIndicator(
+                    progress = { progress },
+                    modifier = Modifier.fillMaxWidth(),
+                    color = GreenAccent,
+                    trackColor = MaterialTheme.colorScheme.surface
+                )
+
+                Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = stringResource(R.string.xp, xpCurrentLevel, 500),
+                    color = TextSecondary
+                )
             }
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -90,8 +108,8 @@ fun ProfileScreen() {
             Spacer(modifier = Modifier.height(12.dp))
 
             StatCard(
-                title = stringResource(R.string.badges),
-                value = unlockedBadges.toString()
+                title = stringResource(R.string.wivo_coins),
+                value = coins.toString()
             )
 
             Spacer(modifier = Modifier.height(12.dp))
@@ -119,24 +137,24 @@ fun ProfileScreen() {
 
                 Spacer(modifier = Modifier.height(12.dp))
             }
+            WivoButton(
+                text = stringResource(R.string.logout),
+                onClick = onLogoutClick
+            )
         }
     }
 }
+
+
 
 @Composable
 private fun StatCard(
     title: String,
     value: String
 ) {
-    Card(
-        colors = CardDefaults.cardColors(containerColor = CardDark),
-        shape = RoundedCornerShape(18.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
+    WivoCard {
         Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(18.dp),
+            modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
@@ -148,37 +166,6 @@ private fun StatCard(
                 text = value,
                 color = MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.titleMedium
-            )
-        }
-    }
-}
-@Composable
-private fun BadgeCard(
-    name: String,
-    description: String,
-    unlocked: Boolean
-) {
-    Card(
-        colors = CardDefaults.cardColors(
-            containerColor = CardDark
-        ),
-        shape = RoundedCornerShape(18.dp),
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(
-            modifier = Modifier.padding(18.dp)
-        ) {
-            Text(
-                text = if (unlocked) "🏆 $name" else "🔒 $name",
-                color = if (unlocked) GreenAccent else TextSecondary,
-                style = MaterialTheme.typography.titleMedium
-            )
-
-            Spacer(modifier = Modifier.height(4.dp))
-
-            Text(
-                text = description,
-                color = TextSecondary
             )
         }
     }
