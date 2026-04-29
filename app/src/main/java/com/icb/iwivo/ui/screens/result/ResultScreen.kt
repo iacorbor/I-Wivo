@@ -1,11 +1,6 @@
 package com.icb.iwivo.ui.screens.result
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.Button
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,27 +10,34 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
 import com.icb.iwivo.ui.components.WivoButton
-import com.icb.iwivo.ui.theme.CardDark
+import com.icb.iwivo.ui.components.WivoCard
+import com.icb.iwivo.ui.components.WivoScreen
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
-import com.icb.iwivo.ui.components.WivoScreen
 
 @Composable
 fun ResultScreen(
     correct: Int,
     total: Int,
+    xpEarned: Int,
+    coinsEarned: Int,
     onBackHome: () -> Unit
 ) {
     val percentage = if (total > 0) (correct * 100) / total else 0
-    val xpEarned = correct * 50
 
-    WivoScreen{
+    val resultMessage = when {
+        percentage >= 90 -> stringResource(R.string.result_excellent)
+        percentage >= 60 -> stringResource(R.string.result_good)
+        else -> stringResource(R.string.result_keep_practicing)
+    }
+
+    WivoScreen {
         Column(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Spacer(modifier = Modifier.height(64.dp))
+            Spacer(modifier = Modifier.height(56.dp))
 
             Text(
                 text = stringResource(R.string.result_title),
@@ -45,14 +47,10 @@ fun ResultScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            Card(
-                colors = CardDefaults.cardColors(containerColor = CardDark),
-                shape = RoundedCornerShape(24.dp),
-                modifier = Modifier.fillMaxWidth()
-            ) {
+            WivoCard {
                 Column(
-                    modifier = Modifier.padding(24.dp),
-                    horizontalAlignment = Alignment.CenterHorizontally
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
                         text = "$percentage%",
@@ -63,24 +61,49 @@ fun ResultScreen(
                     Spacer(modifier = Modifier.height(8.dp))
 
                     Text(
-                        text = stringResource(R.string.result_score, correct, total),
+                        text = resultMessage,
+                        style = MaterialTheme.typography.titleMedium,
                         color = MaterialTheme.colorScheme.onSurface
                     )
 
                     Spacer(modifier = Modifier.height(16.dp))
 
                     Text(
-                        text = stringResource(R.string.result_xp, xpEarned),
+                        text = stringResource(R.string.result_score, correct, total),
                         color = TextSecondary
                     )
                 }
             }
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            WivoCard {
+                Text(
+                    text = stringResource(R.string.rewards_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+
+                Spacer(modifier = Modifier.height(12.dp))
+
+                Text(
+                    text = stringResource(R.string.result_xp, xpEarned),
+                    color = GreenAccent
+                )
+
+                Spacer(modifier = Modifier.height(8.dp))
+
+                Text(
+                    text = stringResource(R.string.result_coins, coinsEarned),
+                    color = PurplePrimary
+                )
+            }
+
             Spacer(modifier = Modifier.weight(1f))
 
             WivoButton(
-                onClick = onBackHome,
-                text = stringResource(R.string.back_home)
+                text = stringResource(R.string.back_home),
+                onClick = onBackHome
             )
         }
     }

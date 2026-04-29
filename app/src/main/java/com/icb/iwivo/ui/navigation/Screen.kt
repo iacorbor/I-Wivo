@@ -12,9 +12,11 @@ sealed class Screen(val route: String) {
     data object Game : Screen("game/{topic}/{gameType}") {
         fun createRoute(topic: String, gameType: String) = "game/$topic/$gameType"
     }
-    data object Result : Screen("result/{correct}/{total}") {
-        fun createRoute(correct: Int, total: Int) = "result/$correct/$total"
+    data object Result : Screen("result/{correct}/{total}/{xp}/{coins}") {
+        fun createRoute(correct: Int, total: Int, xp: Int, coins: Int) =
+            "result/$correct/$total/$xp/$coins"
     }
+    data object Achievements : Screen("achievements")
     data object Profile : Screen("profile")
 
     data object Shop : Screen("shop")

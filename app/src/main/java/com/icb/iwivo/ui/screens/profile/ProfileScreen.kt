@@ -1,172 +1,282 @@
 package com.icb.iwivo.ui.screens.profile
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.*
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.R
-import com.icb.iwivo.data.repository.BadgeRepository
+import com.icb.iwivo.data.model.UserProfile
+import com.icb.iwivo.data.repository.AuthRepository
 import com.icb.iwivo.data.repository.FirestoreRepository
-import com.icb.iwivo.ui.components.BadgeCard
 import com.icb.iwivo.ui.components.WivoButton
-import com.icb.iwivo.ui.components.WivoCard
 import com.icb.iwivo.ui.components.WivoScreen
-import com.icb.iwivo.ui.theme.GreenAccent
-import com.icb.iwivo.ui.theme.PurplePrimary
-import com.icb.iwivo.ui.theme.TextSecondary
 
 @Composable
 fun ProfileScreen(
-    onLogoutClick: () -> Unit
+    authRepository: AuthRepository,
+    firestoreRepository: FirestoreRepository,
+    onEditProfileClick: () -> Unit,
+    onAchievementsClick: () -> Unit,
+    onLogout: () -> Unit
 ) {
-    val firestoreRepository = remember { FirestoreRepository() }
-    val auth = remember { FirebaseAuth.getInstance() }
+    val currentUser = FirebaseAuth.getInstance().currentUser
 
-    var xp by remember { mutableIntStateOf(0) }
-    var coins by remember { mutableIntStateOf(0) }
-    var streak by remember { mutableIntStateOf(0) }
+    val noUsernameText = stringResource(R.string.profile_no_username)
+    val noEmailText = stringResource(R.string.profile_no_email)
+    val notAuthenticatedText = stringResource(R.string.profile_not_authenticated)
 
-    val email = auth.currentUser?.email ?: stringResource(R.string.no_email)
-    val badgeRepository = remember { BadgeRepository() }
-    val badges = badgeRepository.getBadges(xp, streak)
+    var profile by remember { mutableStateOf<UserProfile?>(null) }
+    var isLoading by remember { mutableStateOf(true) }
+    var error by remember { mutableStateOf<String?>(null) }
 
-    LaunchedEffect(Unit) {
-        firestoreRepository.getCurrentUserData(
-            onResult = { remoteXp, remoteCoins, remoteStreak ->
-                xp = remoteXp
-                coins = remoteCoins
-                streak = remoteStreak
+    LaunchedEffect(currentUser?.uid) {
+        val uid = currentUser?.uid
+
+        if (uid == null) {
+            error = notAuthenticatedText
+            isLoading = false
+            return@LaunchedEffect
+        }
+
+        firestoreRepository.getUserProfile(
+            uid = uid,
+            onSuccess = { userProfile ->
+                profile = userProfile
+                isLoading = false
+            },
+            onError = { errorMessage ->
+                error = errorMessage
+                isLoading = false
             }
         )
     }
 
-    val level = (xp / 500) + 1
-    val xpCurrentLevel = xp % 500
-    val progress = xpCurrentLevel / 500f
-
     WivoScreen {
-        Column(
-            modifier = Modifier.fillMaxSize()
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 28.dp, vertical = 24.dp)
         ) {
-            Spacer(modifier = Modifier.height(32.dp))
+            when {
+                isLoading -> {
+                    CircularProgressIndicator(
+                        modifier = Modifier.align(Alignment.Center)
+                    )
+                }
 
-            Text(
-                text = stringResource(R.string.profile_title),
-                style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.onBackground
-            )
+                error != null -> {
+                    Text(
+                        text = error ?: stringResource(R.string.profile_unknown_error),
+                        color = MaterialTheme.colorScheme.error,
+                        modifier = Modifier.align(Alignment.Center)
+                    )
+                }
 
-            Text(
-                text = stringResource(R.string.profile_subtitle),
-                color = TextSecondary
-            )
+                profile != null -> {
+                    val userProfile = profile!!
 
-            Spacer(modifier = Modifier.height(24.dp))
+                    val username = userProfile.username.ifBlank { noUsernameText }
+                    val email = userProfile.email.ifBlank {
+                        currentUser?.email ?: noEmailText
+                    }
 
-            WivoCard {
-                Text(
-                    text = email,
-                    color = TextSecondary
-                )
+                    Column(
+                        modifier = Modifier.fillMaxSize(),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        Spacer(modifier = Modifier.height(24.dp))
 
-                Spacer(modifier = Modifier.height(12.dp))
+                        Text(
+                            text = stringResource(R.string.profile_title),
+                            style = MaterialTheme.typography.headlineMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onBackground
+                        )
 
-                Text(
-                    text = stringResource(R.string.level, level),
-                    style = MaterialTheme.typography.headlineSmall,
-                    color = PurplePrimary
-                )
+                        Spacer(modifier = Modifier.height(26.dp))
 
-                Spacer(modifier = Modifier.height(8.dp))
+                        Box(
+                            modifier = Modifier
+                                .size(112.dp)
+                                .clip(CircleShape)
+                                .background(
+                                    Brush.verticalGradient(
+                                        colors = listOf(
+                                            MaterialTheme.colorScheme.primary,
+                                            MaterialTheme.colorScheme.secondary
+                                        )
+                                    )
+                                ),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = username.first().uppercase(),
+                                style = MaterialTheme.typography.headlineLarge,
+                                fontWeight = FontWeight.Black,
+                                color = MaterialTheme.colorScheme.onPrimary
+                            )
+                        }
 
-                LinearProgressIndicator(
-                    progress = { progress },
-                    modifier = Modifier.fillMaxWidth(),
-                    color = GreenAccent,
-                    trackColor = MaterialTheme.colorScheme.surface
-                )
+                        Spacer(modifier = Modifier.height(18.dp))
 
-                Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = username,
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onBackground
+                        )
 
-                Text(
-                    text = stringResource(R.string.xp, xpCurrentLevel, 500),
-                    color = TextSecondary
-                )
+                        Spacer(modifier = Modifier.height(6.dp))
+
+                        Text(
+                            text = email,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.72f)
+                        )
+
+                        Spacer(modifier = Modifier.height(28.dp))
+
+                        WivoButton(
+                            text = stringResource(R.string.profile_edit_button),
+                            onClick = onEditProfileClick
+                        )
+
+                        Spacer(modifier = Modifier.height(18.dp))
+
+                        AchievementsPreviewCard(
+                            onClick = onAchievementsClick
+                        )
+
+                        Spacer(modifier = Modifier.weight(1f))
+
+                        OutlinedButton(
+                            onClick = {
+                                authRepository.logout()
+                                onLogout()
+                            },
+                            modifier = Modifier
+                                .fillMaxWidth(0.78f)
+                                .height(52.dp),
+                            shape = RoundedCornerShape(18.dp)
+                        ) {
+                            Text(
+                                text = stringResource(R.string.profile_logout_button),
+                                color = MaterialTheme.colorScheme.onBackground
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.height(16.dp))
+                    }
+                }
             }
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            StatCard(
-                title = stringResource(R.string.total_xp),
-                value = xp.toString()
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            StatCard(
-                title = stringResource(R.string.wivo_coins),
-                value = coins.toString()
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            StatCard(
-                title = stringResource(R.string.streak),
-                value = stringResource(R.string.streak_days, streak)
-            )
-            Spacer(modifier = Modifier.height(24.dp))
-
-            Text(
-                text = stringResource(R.string.badges_section),
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onBackground
-            )
-
-            Spacer(modifier = Modifier.height(12.dp))
-
-            badges.forEach { badge ->
-                BadgeCard(
-                    name = badge.name,
-                    description = badge.description,
-                    unlocked = badge.unlocked
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-            }
-            WivoButton(
-                text = stringResource(R.string.logout),
-                onClick = onLogoutClick
-            )
         }
     }
 }
 
-
-
 @Composable
-private fun StatCard(
-    title: String,
-    value: String
+private fun AchievementsPreviewCard(
+    onClick: () -> Unit
 ) {
-    WivoCard {
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() },
+        shape = RoundedCornerShape(24.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.55f)
+        )
+    ) {
+        Column(
+            modifier = Modifier.padding(20.dp)
         ) {
             Text(
-                text = title,
-                color = TextSecondary
+                text = stringResource(R.string.profile_achievements_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurface
             )
 
+            Spacer(modifier = Modifier.height(6.dp))
+
             Text(
-                text = value,
-                color = MaterialTheme.colorScheme.onSurface,
-                style = MaterialTheme.typography.titleMedium
+                text = stringResource(R.string.profile_achievements_description),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.78f)
+            )
+
+            Spacer(modifier = Modifier.height(18.dp))
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                AchievementIconPreview(
+                    emoji = "🔥",
+                    label = stringResource(R.string.profile_achievement_streak)
+                )
+
+                AchievementIconPreview(
+                    emoji = "⚡",
+                    label = stringResource(R.string.profile_achievement_xp)
+                )
+
+                AchievementIconPreview(
+                    emoji = "🏆",
+                    label = stringResource(R.string.profile_achievement_quiz)
+                )
+
+                AchievementIconPreview(
+                    emoji = "🔒",
+                    label = stringResource(R.string.profile_achievement_locked)
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun AchievementIconPreview(
+    emoji: String,
+    label: String
+) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Box(
+            modifier = Modifier
+                .size(52.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.22f)),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = emoji,
+                style = MaterialTheme.typography.titleLarge
             )
         }
+
+        Spacer(modifier = Modifier.height(6.dp))
+
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.88f)
+        )
     }
 }

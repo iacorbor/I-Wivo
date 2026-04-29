@@ -2,6 +2,7 @@ package com.icb.iwivo.data.repository
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.icb.iwivo.data.model.UserProfile
 
 class FirestoreRepository {
 
@@ -9,6 +10,7 @@ class FirestoreRepository {
     private val auth = FirebaseAuth.getInstance()
 
     fun createUserIfNotExists(
+        username:String ="",
         onSuccess: () -> Unit = {},
         onError: (Exception?) -> Unit = {}
     ) {
@@ -25,9 +27,11 @@ class FirestoreRepository {
             .addOnSuccessListener { document ->
                 if (!document.exists()) {
                     val data = mapOf(
+                        "username" to username,
                         "xp" to 0,
                         "coins" to 0,
-                        "streak" to 0
+                        "streak" to 0,
+                        "lastActivityDate" to null
                     )
 
                     userRef.set(data)
@@ -107,14 +111,57 @@ class FirestoreRepository {
             transaction.update(userRef, "coins", currentCoins + amount)
         }
     }
-    fun updateStreakSimple() {
+    fun updateStreak() {
         val uid = auth.currentUser?.uid ?: return
         val userRef = db.collection("users").document(uid)
 
+        val today = java.time.LocalDate.now().toString()
+
         db.runTransaction { transaction ->
             val snapshot = transaction.get(userRef)
+
             val currentStreak = snapshot.getLong("streak") ?: 0
-            transaction.update(userRef, "streak", currentStreak + 1)
+            val lastActivityDate = snapshot.getString("lastActivityDate")
+
+            val newStreak = when {
+                lastActivityDate == null -> 1
+                lastActivityDate == today -> currentStreak
+                java.time.LocalDate.parse(lastActivityDate).plusDays(1).toString() == today -> currentStreak + 1
+                else -> 1
+            }
+
+            transaction.update(
+                userRef,
+                mapOf(
+                    "streak" to newStreak,
+                    "lastActivityDate" to today
+                )
+            )
         }
     }
+    fun getUserProfile(
+        uid: String,
+        onSuccess: (UserProfile) -> Unit,
+        onError: (String) -> Unit
+    ) {
+        db.collection("users")
+            .document(uid)
+            .get()
+            .addOnSuccessListener { document ->
+                if (document.exists()) {
+                    val profile = document.toObject(UserProfile::class.java)
+                    if (profile != null) {
+                        onSuccess(profile)
+                    } else {
+                        onError("No se pudo leer el perfil")
+                    }
+                } else {
+                    onError("El perfil no existe")
+                }
+            }
+            .addOnFailureListener {
+                onError(it.message ?: "Error al cargar perfil")
+            }
+    }
+
 }

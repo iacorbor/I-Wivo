@@ -9,10 +9,16 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.graphics.Brush
 import com.icb.iwivo.data.repository.AuthRepository
 import com.icb.iwivo.ui.components.WivoButton
+import com.icb.iwivo.ui.components.WivoLogo
 import com.icb.iwivo.ui.components.WivoScreen
 import com.icb.iwivo.ui.components.WivoTextField
+import com.icb.iwivo.ui.theme.GreenAccent
+import com.icb.iwivo.ui.theme.PurplePrimary
+
 
 @Composable
 fun LoginScreen(
@@ -28,12 +34,25 @@ fun LoginScreen(
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
-            Spacer(modifier = Modifier.height(64.dp))
+            Spacer(modifier = Modifier.height(150.dp))
+            Box(
+                modifier = Modifier.fillMaxWidth(),
+                contentAlignment = Alignment.Center
+            ){
+                WivoLogo()
+            }
+            Spacer(modifier = Modifier.height(2.dp))
 
-            Text(
-                text = stringResource(R.string.app_name),
-                style = MaterialTheme.typography.headlineLarge
-            )
+            Box(
+                modifier = Modifier.fillMaxWidth(),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = stringResource(R.string.app_name),
+                    style = MaterialTheme.typography.titleLarge, // 👈 más pequeño
+                    color = MaterialTheme.colorScheme.onBackground // 👈 blanco automático en dark mode
+                )
+            }
 
             Spacer(modifier = Modifier.height(32.dp))
 
@@ -63,27 +82,35 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            WivoButton(
-                onClick = {
-                    if (email.isBlank() || password.isBlank()) {
-                        errorResId = R.string.error_fill_all_fields
-                    } else {
-                        errorResId = null
+            Box(
+                modifier = Modifier.fillMaxWidth(),
+                contentAlignment = Alignment.Center
+            ) {
+                WivoButton(
+                    onClick = {
+                        if (email.isBlank() || password.isBlank()) {
+                            errorResId = R.string.error_fill_all_fields
+                        } else {
+                            errorResId = null
 
-                        authRepository.login(
-                            email = email,
-                            password = password
-                        ) { success, _ ->
-                            if (success) {
-                                onLoginClick()
-                            } else {
-                                errorResId = R.string.error_login_failed
+                            authRepository.login(
+                                email = email,
+                                password = password
+                            ) { success, _ ->
+                                if (success) {
+                                    onLoginClick()
+                                } else {
+                                    errorResId = R.string.error_login_failed
+                                }
                             }
                         }
-                    }
-                },
-                text = stringResource(R.string.login)
-            )
+                    },
+                    text = stringResource(R.string.login),
+                    modifier = Modifier
+                        .width(260.dp)
+                        .height(56.dp)
+                )
+            }
 
             Spacer(modifier = Modifier.height(12.dp))
 

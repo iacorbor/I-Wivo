@@ -20,14 +20,15 @@ import com.icb.iwivo.ui.theme.PurplePrimary
 @Composable
 fun WivoButton(
     text: String,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     val gradient = Brush.horizontalGradient(
         colors = listOf(PurplePrimary, BluePrimary)
     )
 
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .clip(RoundedCornerShape(20.dp))
             .background(gradient)
