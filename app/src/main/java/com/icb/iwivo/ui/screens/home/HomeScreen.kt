@@ -9,43 +9,46 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.R
-import com.icb.iwivo.ui.theme.BluePrimary
-import com.icb.iwivo.ui.theme.GreenAccent
-import com.icb.iwivo.ui.theme.PurplePrimary
-import com.icb.iwivo.ui.theme.TextSecondary
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.mutableIntStateOf
 import com.icb.iwivo.data.repository.FirestoreRepository
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.setValue
 import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.components.WivoCard
 import com.icb.iwivo.ui.components.WivoHeader
 import com.icb.iwivo.ui.components.WivoScreen
 import com.icb.iwivo.ui.components.WivoStatPill
+import com.icb.iwivo.ui.theme.PurplePrimary
+import com.icb.iwivo.ui.theme.TextSecondary
 
 @Composable
 fun HomeScreen(
+    firestoreRepository: FirestoreRepository,
     onStartClick: () -> Unit,
     onProfileClick: () -> Unit,
     onShopClick: () -> Unit
 ) {
-    val firestoreRepository = remember { FirestoreRepository() }
+    val currentUser = FirebaseAuth.getInstance().currentUser
 
     var xp by remember { mutableIntStateOf(0) }
     var coins by remember { mutableIntStateOf(0) }
     var streak by remember { mutableIntStateOf(0) }
 
-    LaunchedEffect(Unit) {
+    var avatarBase64 by remember { mutableStateOf("") }
+    var username by remember { mutableStateOf("") }
+
+    LaunchedEffect(currentUser?.uid) {
         firestoreRepository.getCurrentUserData(
             onResult = { remoteXp, remoteCoins, remoteStreak ->
                 xp = remoteXp
@@ -53,6 +56,21 @@ fun HomeScreen(
                 streak = remoteStreak
             }
         )
+
+        val uid = currentUser?.uid
+
+        if (uid != null) {
+            firestoreRepository.getUserProfile(
+                uid = uid,
+                onSuccess = { profile ->
+                    username = profile.username
+                    avatarBase64 = profile.avatarBase64
+                },
+                onError = {
+                    // No bloqueamos el Home si falla la foto.
+                }
+            )
+        }
     }
 
     val level = (xp / 500) + 1
@@ -64,9 +82,11 @@ fun HomeScreen(
 
             WivoHeader(
                 level = level,
-                xp = xp
+                xp = xp,
+                username = username,
+                avatarBase64 = avatarBase64,
+                onAvatarClick = onProfileClick
             )
-
 
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -79,7 +99,11 @@ fun HomeScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            ProgressCard()
+            ProgressCard(
+                xp = xp,
+                coins = coins,
+                streak = streak
+            )
 
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -110,23 +134,11 @@ fun HomeScreen(
 }
 
 @Composable
-private fun ProgressCard() {
-    val firestoreRepository = remember { FirestoreRepository() }
-
-    var xp by remember { mutableIntStateOf(0) }
-    var coins by remember { mutableIntStateOf(0) }
-    var streak by remember { mutableIntStateOf(0) }
-
-    LaunchedEffect(Unit) {
-        firestoreRepository.getCurrentUserData(
-            onResult = { remoteXp, remoteCoins, remoteStreak ->
-                xp = remoteXp
-                coins = remoteCoins
-                streak = remoteStreak
-            }
-        )
-    }
-
+private fun ProgressCard(
+    xp: Int,
+    coins: Int,
+    streak: Int
+) {
     val level = (xp / 500) + 1
     val xpCurrentLevel = xp % 500
     val progress = xpCurrentLevel / 500f

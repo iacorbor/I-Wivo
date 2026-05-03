@@ -139,6 +139,28 @@ class FirestoreRepository {
             )
         }
     }
+    fun updateUserProfile(
+        uid: String,
+        username: String,
+        avatarBase64: String,
+        onSuccess: () -> Unit,
+        onError: (String) -> Unit
+    ) {
+        val updates = mapOf(
+            "username" to username,
+            "avatarBase64" to avatarBase64
+        )
+
+        db.collection("users")
+            .document(uid)
+            .update(updates)
+            .addOnSuccessListener {
+                onSuccess()
+            }
+            .addOnFailureListener { exception ->
+                onError(exception.message ?: "Error al actualizar perfil")
+            }
+    }
     fun getUserProfile(
         uid: String,
         onSuccess: (UserProfile) -> Unit,

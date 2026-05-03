@@ -90,4 +90,24 @@
     <string name="profile_achievement_xp">XP</string>
     <string name="profile_achievement_quiz">Quiz</string>
     <string name="profile_achievement_locked">Bloq.</string>
+    <string name="badges_title">Logros</string>
+    <string name="badges_subtitle">Desbloquea insignias ganando XP, subiendo de nivel y manteniendo tu racha.</string>
+    <string name="badges_summary_title">Tu progreso</string>
+    <string name="badges_stat_xp">XP</string>
+    <string name="badges_stat_streak">Racha</string>
+    <string name="badges_stat_unlocked">Abiertos</string>
+    <string name="badges_stat_locked">Bloq.</string>
+    <string name="badges_status_unlocked">DESBLOQUEADO</string>
+    <string name="badges_status_locked">BLOQUEADO</string>
+    <string name="edit_profile_title">Editar perfil</string>
+    <string name="edit_profile_choose_avatar">Elige tu avatar</string>
+    <string name="edit_profile_username_label">Username</string>
+    <string name="edit_profile_save_button">Guardar cambios</string>
+    <string name="edit_profile_saving">Guardando...</string>
+    <string name="edit_profile_cancel_button">Cancelar</string>
+    <string name="edit_profile_change_photo">Cambiar foto de perfil</string>
+    <string name="edit_profile_username_empty_error">El username no puede estar vacío</string>
+    <string name="edit_profile_username_short_error">El username debe tener al menos 3 caracteres</string>
+    <string name="profile_achievements_real_description">Has desbloqueado %1$d logros. Te quedan %2$d por conseguir.</string>
+    <string name="result_badge_unlocked_title">🏆 Logro desbloqueado</string>
 </resources>

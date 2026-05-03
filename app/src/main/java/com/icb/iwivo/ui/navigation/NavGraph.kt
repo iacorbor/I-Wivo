@@ -1,7 +1,11 @@
 package com.icb.iwivo.ui.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -10,12 +14,15 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.data.repository.AuthRepository
+import com.icb.iwivo.data.repository.BadgeRepository
 import com.icb.iwivo.data.repository.FirestoreRepository
 import com.icb.iwivo.data.repository.UserRepository
+import com.icb.iwivo.ui.screens.badges.BadgesScreen
 import com.icb.iwivo.ui.screens.game.GameScreen
 import com.icb.iwivo.ui.screens.game.GameTypeScreen
 import com.icb.iwivo.ui.screens.home.HomeScreen
 import com.icb.iwivo.ui.screens.login.LoginScreen
+import com.icb.iwivo.ui.screens.profile.EditProfileScreen
 import com.icb.iwivo.ui.screens.profile.ProfileScreen
 import com.icb.iwivo.ui.screens.register.RegisterScreen
 import com.icb.iwivo.ui.screens.result.ResultScreen
@@ -58,6 +65,7 @@ fun NavGraph() {
 
         composable(Screen.Home.route) {
             HomeScreen(
+                firestoreRepository = firestoreRepository,
                 onStartClick = {
                     navController.navigate(Screen.TopicSelection.route)
                 },
@@ -118,12 +126,51 @@ fun NavGraph() {
                 topic = topic,
                 gameType = gameType,
                 onFinishGame = { correct, total ->
+                    val badgeRepository = BadgeRepository()
+
+                    val xpBefore = userRepository.getXp()
+                    val streakBefore = userRepository.getStreak()
+
+                    val badgesBefore = badgeRepository.getBadges(
+                        xp = xpBefore,
+                        streak = streakBefore
+                    )
+
+                    val unlockedBeforeIds = badgesBefore
+                        .filter { it.unlocked }
+                        .map { it.id }
+
                     val xpEarned = correct * 50
                     val coinsEarned = correct * 10
 
                     userRepository.addXp(xpEarned)
                     userRepository.addCoins(coinsEarned)
                     userRepository.updateStreak()
+
+                    val xpAfter = userRepository.getXp()
+                    val streakAfter = userRepository.getStreak()
+
+                    val badgesAfter = badgeRepository.getBadges(
+                        xp = xpAfter,
+                        streak = streakAfter
+                    )
+
+                    val newlyUnlockedBadges = badgesAfter.filter { badgeAfter ->
+                        badgeAfter.unlocked && badgeAfter.id !in unlockedBeforeIds
+                    }
+
+                    val unlockedBadgeIds = newlyUnlockedBadges
+                        .joinToString("|") { it.id }
+                        .ifBlank { "none" }
+
+                    println("DEBUG_BADGES_XP_BEFORE = $xpBefore")
+                    println("DEBUG_BADGES_STREAK_BEFORE = $streakBefore")
+                    println("DEBUG_BADGES_XP_AFTER = $xpAfter")
+                    println("DEBUG_BADGES_STREAK_AFTER = $streakAfter")
+                    println("DEBUG_BADGES_BEFORE = $unlockedBeforeIds")
+                    println("DEBUG_BADGES_AFTER = ${badgesAfter.filter { it.unlocked }.map { it.id }}")
+                    println("DEBUG_NEW_BADGES = ${newlyUnlockedBadges.map { it.id }}")
+                    println("DEBUG_UNLOCKED_IDS_ROUTE = $unlockedBadgeIds")
 
                     firestoreRepository.addXp(xpEarned)
                     firestoreRepository.addCoins(coinsEarned)
@@ -134,7 +181,8 @@ fun NavGraph() {
                             correct = correct,
                             total = total,
                             xp = xpEarned,
-                            coins = coinsEarned
+                            coins = coinsEarned,
+                            unlockedBadgeIds = unlockedBadgeIds
                         )
                     )
                 }
@@ -147,7 +195,8 @@ fun NavGraph() {
                 navArgument("correct") { type = NavType.IntType },
                 navArgument("total") { type = NavType.IntType },
                 navArgument("xp") { type = NavType.IntType },
-                navArgument("coins") { type = NavType.IntType }
+                navArgument("coins") { type = NavType.IntType },
+                navArgument("unlockedBadgeIds") { type = NavType.StringType }
             )
         ) { backStackEntry ->
             val correct = backStackEntry.arguments?.getInt("correct") ?: 0
@@ -155,11 +204,26 @@ fun NavGraph() {
             val xp = backStackEntry.arguments?.getInt("xp") ?: 0
             val coins = backStackEntry.arguments?.getInt("coins") ?: 0
 
+            val unlockedBadgeIdsRaw =
+                backStackEntry.arguments?.getString("unlockedBadgeIds") ?: "none"
+
+            val unlockedBadgeIds = if (unlockedBadgeIdsRaw == "none") {
+                emptyList()
+            } else {
+                unlockedBadgeIdsRaw
+                    .split("|")
+                    .filter { it.isNotBlank() }
+            }
+
+            println("DEBUG_RESULT_RAW_IDS = $unlockedBadgeIdsRaw")
+            println("DEBUG_RESULT_LIST_IDS = $unlockedBadgeIds")
+
             ResultScreen(
                 correct = correct,
                 total = total,
                 xpEarned = xp,
                 coinsEarned = coins,
+                unlockedBadgeIds = unlockedBadgeIds,
                 onBackHome = {
                     navController.navigate(Screen.Home.route) {
                         popUpTo(Screen.Home.route) {
@@ -170,12 +234,31 @@ fun NavGraph() {
             )
         }
 
+        composable(Screen.Achievements.route) {
+            var xp by remember { mutableIntStateOf(0) }
+            var streak by remember { mutableIntStateOf(0) }
+
+            LaunchedEffect(Unit) {
+                firestoreRepository.getCurrentUserData(
+                    onResult = { remoteXp, _, remoteStreak ->
+                        xp = remoteXp
+                        streak = remoteStreak
+                    }
+                )
+            }
+
+            BadgesScreen(
+                xp = xp,
+                streak = streak
+            )
+        }
+
         composable(Screen.Profile.route) {
             ProfileScreen(
                 authRepository = authRepository,
                 firestoreRepository = firestoreRepository,
                 onEditProfileClick = {
-                    navController.navigate("edit_profile")
+                    navController.navigate(Screen.EditProfile.route)
                 },
                 onAchievementsClick = {
                     navController.navigate(Screen.Achievements.route)
@@ -185,6 +268,22 @@ fun NavGraph() {
 
                     navController.navigate(Screen.Login.route) {
                         popUpTo(0) {
+                            inclusive = true
+                        }
+                    }
+                }
+            )
+        }
+
+        composable(Screen.EditProfile.route) {
+            EditProfileScreen(
+                firestoreRepository = firestoreRepository,
+                onBackClick = {
+                    navController.popBackStack()
+                },
+                onProfileUpdated = {
+                    navController.navigate(Screen.Profile.route) {
+                        popUpTo(Screen.Profile.route) {
                             inclusive = true
                         }
                     }

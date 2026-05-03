@@ -1,5 +1,6 @@
 package com.icb.iwivo.ui.screens.profile
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -12,10 +13,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -23,9 +27,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.R
 import com.icb.iwivo.data.model.UserProfile
 import com.icb.iwivo.data.repository.AuthRepository
+import com.icb.iwivo.data.repository.BadgeRepository
 import com.icb.iwivo.data.repository.FirestoreRepository
 import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.components.WivoScreen
+import com.icb.iwivo.utils.base64ToBitmap
 
 @Composable
 fun ProfileScreen(
@@ -45,6 +51,9 @@ fun ProfileScreen(
     var isLoading by remember { mutableStateOf(true) }
     var error by remember { mutableStateOf<String?>(null) }
 
+    var xp by remember { mutableIntStateOf(0) }
+    var streak by remember { mutableIntStateOf(0) }
+
     LaunchedEffect(currentUser?.uid) {
         val uid = currentUser?.uid
 
@@ -53,6 +62,13 @@ fun ProfileScreen(
             isLoading = false
             return@LaunchedEffect
         }
+
+        firestoreRepository.getCurrentUserData(
+            onResult = { remoteXp, _, remoteStreak ->
+                xp = remoteXp
+                streak = remoteStreak
+            }
+        )
 
         firestoreRepository.getUserProfile(
             uid = uid,
@@ -111,27 +127,10 @@ fun ProfileScreen(
 
                         Spacer(modifier = Modifier.height(26.dp))
 
-                        Box(
-                            modifier = Modifier
-                                .size(112.dp)
-                                .clip(CircleShape)
-                                .background(
-                                    Brush.verticalGradient(
-                                        colors = listOf(
-                                            MaterialTheme.colorScheme.primary,
-                                            MaterialTheme.colorScheme.secondary
-                                        )
-                                    )
-                                ),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Text(
-                                text = username.first().uppercase(),
-                                style = MaterialTheme.typography.headlineLarge,
-                                fontWeight = FontWeight.Black,
-                                color = MaterialTheme.colorScheme.onPrimary
-                            )
-                        }
+                        ProfileAvatar(
+                            username = username,
+                            avatarBase64 = userProfile.avatarBase64
+                        )
 
                         Spacer(modifier = Modifier.height(18.dp))
 
@@ -160,6 +159,8 @@ fun ProfileScreen(
                         Spacer(modifier = Modifier.height(18.dp))
 
                         AchievementsPreviewCard(
+                            xp = xp,
+                            streak = streak,
                             onClick = onAchievementsClick
                         )
 
@@ -190,9 +191,75 @@ fun ProfileScreen(
 }
 
 @Composable
+private fun ProfileAvatar(
+    username: String,
+    avatarBase64: String
+) {
+    val avatarBitmap = base64ToBitmap(avatarBase64)
+    val fallbackInitial = username.ifBlank { "U" }.first().uppercase()
+
+    Box(
+        modifier = Modifier
+            .size(112.dp)
+            .clip(CircleShape)
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(
+                        MaterialTheme.colorScheme.primary,
+                        MaterialTheme.colorScheme.secondary
+                    )
+                )
+            ),
+        contentAlignment = Alignment.Center
+    ) {
+        if (avatarBitmap != null) {
+            Image(
+                bitmap = avatarBitmap.asImageBitmap(),
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop
+            )
+        } else {
+            Text(
+                text = fallbackInitial,
+                style = MaterialTheme.typography.headlineLarge,
+                fontWeight = FontWeight.Black,
+                color = MaterialTheme.colorScheme.onPrimary
+            )
+        }
+    }
+}
+
+@Composable
 private fun AchievementsPreviewCard(
+    xp: Int,
+    streak: Int,
     onClick: () -> Unit
 ) {
+    val badgeRepository = remember { BadgeRepository() }
+
+    val badges = remember(xp, streak) {
+        badgeRepository.getBadges(
+            xp = xp,
+            streak = streak
+        )
+    }
+
+    val unlockedBadges = badges.filter { it.unlocked }
+    val lockedBadgesCount = badges.count { !it.unlocked }
+
+    val previewBadges = buildList {
+        addAll(unlockedBadges.takeLast(3))
+
+        if (size < 4) {
+            addAll(
+                badges
+                    .filter { !it.unlocked }
+                    .take(4 - size)
+            )
+        }
+    }
+
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -205,17 +272,34 @@ private fun AchievementsPreviewCard(
         Column(
             modifier = Modifier.padding(20.dp)
         ) {
-            Text(
-                text = stringResource(R.string.profile_achievements_title),
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurface
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = stringResource(R.string.profile_achievements_title),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+
+                Text(
+                    text = "${unlockedBadges.size}/${badges.size}",
+                    style = MaterialTheme.typography.labelLarge,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            }
 
             Spacer(modifier = Modifier.height(6.dp))
 
             Text(
-                text = stringResource(R.string.profile_achievements_description),
+                text = stringResource(
+                    R.string.profile_achievements_real_description,
+                    unlockedBadges.size,
+                    lockedBadgesCount
+                ),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.78f)
             )
@@ -226,25 +310,13 @@ private fun AchievementsPreviewCard(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                AchievementIconPreview(
-                    emoji = "🔥",
-                    label = stringResource(R.string.profile_achievement_streak)
-                )
-
-                AchievementIconPreview(
-                    emoji = "⚡",
-                    label = stringResource(R.string.profile_achievement_xp)
-                )
-
-                AchievementIconPreview(
-                    emoji = "🏆",
-                    label = stringResource(R.string.profile_achievement_quiz)
-                )
-
-                AchievementIconPreview(
-                    emoji = "🔒",
-                    label = stringResource(R.string.profile_achievement_locked)
-                )
+                previewBadges.forEach { badge ->
+                    AchievementIconPreview(
+                        emoji = if (badge.unlocked) getProfileBadgeIcon(badge.id) else "🔒",
+                        label = badge.name.take(8),
+                        unlocked = badge.unlocked
+                    )
+                }
             }
         }
     }
@@ -253,8 +325,11 @@ private fun AchievementsPreviewCard(
 @Composable
 private fun AchievementIconPreview(
     emoji: String,
-    label: String
+    label: String,
+    unlocked: Boolean
 ) {
+    val alpha = if (unlocked) 1f else 0.55f
+
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
@@ -262,7 +337,13 @@ private fun AchievementIconPreview(
             modifier = Modifier
                 .size(52.dp)
                 .clip(CircleShape)
-                .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.22f)),
+                .background(
+                    if (unlocked) {
+                        MaterialTheme.colorScheme.primary.copy(alpha = 0.22f)
+                    } else {
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.10f)
+                    }
+                ),
             contentAlignment = Alignment.Center
         ) {
             Text(
@@ -276,7 +357,28 @@ private fun AchievementIconPreview(
         Text(
             text = label,
             style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.88f)
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.88f * alpha)
         )
+    }
+}
+
+private fun getProfileBadgeIcon(badgeId: String): String {
+    return when {
+        badgeId.startsWith("xp_") -> "⚡"
+        badgeId.startsWith("level_") -> "🎓"
+        badgeId.startsWith("streak_") -> "🔥"
+        badgeId.startsWith("coins_") -> "🪙"
+        badgeId == "first_steps" -> "🚀"
+        badgeId == "warm_up" -> "🔥"
+        badgeId == "rookie_dev" -> "💻"
+        badgeId == "junior_dev" -> "🧠"
+        badgeId == "daily_player" -> "📅"
+        badgeId == "week_warrior" -> "🛡️"
+        badgeId == "month_grinder" -> "🏋️"
+        badgeId == "xp_machine" -> "⚙️"
+        badgeId == "serious_student" -> "📚"
+        badgeId == "discipline_mode" -> "🎯"
+        badgeId == "legend" -> "👑"
+        else -> "🏅"
     }
 }

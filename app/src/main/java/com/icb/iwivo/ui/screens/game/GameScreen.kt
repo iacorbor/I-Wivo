@@ -19,17 +19,20 @@ import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.R
 import com.icb.iwivo.data.model.Question
 import com.icb.iwivo.data.repository.QuestionRepository
+import com.icb.iwivo.ui.components.CodeBlock
 import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.components.WivoCard
 import com.icb.iwivo.ui.components.WivoScreen
@@ -37,15 +40,9 @@ import com.icb.iwivo.ui.theme.CardDark
 import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.ui.theme.TextSecondary
-import androidx.compose.runtime.LaunchedEffect
-import com.icb.iwivo.data.model.Badge
-import com.icb.iwivo.data.repository.BadgeRepository
-import com.icb.iwivo.ui.components.BadgeUnlockedOverlay
-import com.icb.iwivo.ui.components.CodeBlock
-import kotlinx.coroutines.delay
-import androidx.compose.ui.platform.LocalContext
 import com.icb.iwivo.ui.utils.HapticUtils
 import com.icb.iwivo.ui.utils.SoundUtils
+import kotlinx.coroutines.delay
 
 @Composable
 fun GameScreen(
@@ -53,6 +50,8 @@ fun GameScreen(
     gameType: String,
     onFinishGame: (correct: Int, total: Int) -> Unit
 ) {
+    val context = LocalContext.current
+
     val repository = remember { QuestionRepository() }
     val questions = remember(topic, gameType) {
         repository.getQuestions(topic, gameType)
@@ -62,14 +61,10 @@ fun GameScreen(
     var selectedIndex by remember { mutableIntStateOf(-1) }
     var correctAnswers by remember { mutableIntStateOf(0) }
     var showFeedback by remember { mutableStateOf(false) }
-    val badgeRepository = remember { BadgeRepository() }
-    var previousBadges by remember { mutableStateOf<List<Badge>>(emptyList()) }
-    var newBadge by remember { mutableStateOf<Badge?>(null) }
-    val context = LocalContext.current
 
     LaunchedEffect(showFeedback) {
         if (showFeedback) {
-            kotlinx.coroutines.delay(2300)
+            delay(2300)
 
             if (currentIndex < questions.lastIndex) {
                 currentIndex++
@@ -185,38 +180,17 @@ fun GameScreen(
                             correctAnswers++
                             HapticUtils.success(context)
                             SoundUtils.playCorrect(context)
-                            val currentXp = (correctAnswers * 50)
-                            val badges = badgeRepository.getBadges(currentXp, 0)
-
-                            val unlockedNow = badges.filter { it.unlocked }
-                            val newlyUnlocked = unlockedNow.firstOrNull { new ->
-                                previousBadges.none { it.id == new.id }
-                            }
-
-                            if (newlyUnlocked != null) {
-                                newBadge = newlyUnlocked
-                            }
-
-                            previousBadges = unlockedNow
-                        }else{
+                        } else {
                             HapticUtils.error(context)
                             SoundUtils.playWrong(context)
                         }
+
                         showFeedback = true
                     }
                 }
             )
-            newBadge?.let { badge ->
-                BadgeUnlockedOverlay(
-                    badge = badge,
-                    onDismiss = {
-                        newBadge = null
-                    }
-                )
-            }
         }
     }
-
 }
 
 @Composable

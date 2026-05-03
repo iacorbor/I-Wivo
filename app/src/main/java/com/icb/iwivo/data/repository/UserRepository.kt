@@ -3,6 +3,7 @@ package com.icb.iwivo.data.repository
 import android.content.Context
 import java.time.LocalDate
 
+
 class UserRepository(context: Context) {
 
     private val prefs = context.getSharedPreferences("iwivo_user", Context.MODE_PRIVATE)
@@ -46,35 +47,14 @@ class UserRepository(context: Context) {
             .apply()
     }
     fun getUnlockedBadgesCount(): Int {
-        return getBadges().count { it.unlocked }
+        val badgeRepository = BadgeRepository()
+
+        return badgeRepository.getBadges(
+            xp = getXp(),
+            streak = getStreak()
+        ).count { it.unlocked }
     }
 
-    fun getBadges(): List<com.icb.iwivo.data.model.Badge> {
-        val xp = getXp()
-        val level = getLevel()
-        val streak = getStreak()
-
-        return listOf(
-            com.icb.iwivo.data.model.Badge(
-                id = "first_steps",
-                name = "Primeros pasos",
-                description = "Consigue tus primeros 50 XP",
-                unlocked = xp >= 50
-            ),
-            com.icb.iwivo.data.model.Badge(
-                id = "level_2",
-                name = "Subida de nivel",
-                description = "Alcanza el nivel 2",
-                unlocked = level >= 2
-            ),
-            com.icb.iwivo.data.model.Badge(
-                id = "streak_3",
-                name = "Constancia",
-                description = "Consigue una racha de 3 días",
-                unlocked = streak >= 3
-            )
-        )
-    }
     fun getCoins(): Int {
         return prefs.getInt("coins", 0)
     }
