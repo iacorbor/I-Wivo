@@ -17,6 +17,10 @@ local.properties
 .gradle/
 build/
 */build/
+# Local Gradle / Android / Kotlin caches
+.gradle-user-home/
+.android-user-home/
+.kotlin/
 
 # Local configuration
 local.properties

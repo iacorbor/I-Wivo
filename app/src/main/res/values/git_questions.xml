@@ -1,0 +1,1282 @@
+<resources>
+
+    <string name="git_test_001_question">¿Qué comando muestra el estado del repositorio?</string>
+    <string name="git_test_001_option_1">git show</string>
+    <string name="git_test_001_option_2">git status</string>
+    <string name="git_test_001_option_3">git log</string>
+    <string name="git_test_001_option_4">git branch</string>
+    <string name="git_test_001_explanation">git status muestra archivos modificados, staged y estado general.</string>
+
+    <string name="git_test_002_question">¿Qué comando añade cambios al área de staging?</string>
+    <string name="git_test_002_option_1">git add</string>
+    <string name="git_test_002_option_2">git push</string>
+    <string name="git_test_002_option_3">git pull</string>
+    <string name="git_test_002_option_4">git init</string>
+    <string name="git_test_002_explanation">git add prepara cambios para el siguiente commit.</string>
+
+    <string name="git_test_003_question">¿Qué comando crea un commit?</string>
+    <string name="git_test_003_option_1">git save</string>
+    <string name="git_test_003_option_2">git commit</string>
+    <string name="git_test_003_option_3">git upload</string>
+    <string name="git_test_003_option_4">git snapshot</string>
+    <string name="git_test_003_explanation">git commit guarda una instantánea de los cambios staged.</string>
+
+    <string name="git_test_004_question">¿Qué comando inicializa un repositorio Git?</string>
+    <string name="git_test_004_option_1">git start</string>
+    <string name="git_test_004_option_2">git init</string>
+    <string name="git_test_004_option_3">git new</string>
+    <string name="git_test_004_option_4">git create</string>
+    <string name="git_test_004_explanation">git init crea un repositorio Git en la carpeta actual.</string>
+
+    <string name="git_test_005_question">¿Qué comando muestra el historial de commits?</string>
+    <string name="git_test_005_option_1">git history</string>
+    <string name="git_test_005_option_2">git log</string>
+    <string name="git_test_005_option_3">git status</string>
+    <string name="git_test_005_option_4">git commits</string>
+    <string name="git_test_005_explanation">git log muestra el historial de commits.</string>
+
+    <string name="git_test_006_question">¿Qué comando sube commits al remoto?</string>
+    <string name="git_test_006_option_1">git push</string>
+    <string name="git_test_006_option_2">git pull</string>
+    <string name="git_test_006_option_3">git fetch</string>
+    <string name="git_test_006_option_4">git upload</string>
+    <string name="git_test_006_explanation">git push envía commits locales al repositorio remoto.</string>
+
+    <string name="git_test_007_question">¿Qué comando descarga e integra cambios del remoto?</string>
+    <string name="git_test_007_option_1">git pull</string>
+    <string name="git_test_007_option_2">git push</string>
+    <string name="git_test_007_option_3">git add</string>
+    <string name="git_test_007_option_4">git branch</string>
+    <string name="git_test_007_explanation">git pull trae cambios del remoto y los integra.</string>
+
+    <string name="git_test_008_question">¿Qué comando descarga cambios sin integrarlos automáticamente?</string>
+    <string name="git_test_008_option_1">git fetch</string>
+    <string name="git_test_008_option_2">git pull</string>
+    <string name="git_test_008_option_3">git clone</string>
+    <string name="git_test_008_option_4">git merge</string>
+    <string name="git_test_008_explanation">git fetch descarga información del remoto sin mezclarla con tu rama.</string>
+
+    <string name="git_test_009_question">¿Qué comando clona un repositorio remoto?</string>
+    <string name="git_test_009_option_1">git copy</string>
+    <string name="git_test_009_option_2">git clone</string>
+    <string name="git_test_009_option_3">git pull</string>
+    <string name="git_test_009_option_4">git init</string>
+    <string name="git_test_009_explanation">git clone crea una copia local de un repositorio remoto.</string>
+
+    <string name="git_test_010_question">¿Qué comando lista ramas locales?</string>
+    <string name="git_test_010_option_1">git branch</string>
+    <string name="git_test_010_option_2">git list</string>
+    <string name="git_test_010_option_3">git status --branches</string>
+    <string name="git_test_010_option_4">git show branches</string>
+    <string name="git_test_010_explanation">git branch muestra las ramas locales.</string>
+
+    <string name="git_test_011_question">¿Qué comando crea una rama llamada feature-login?</string>
+    <string name="git_test_011_option_1">git branch feature-login</string>
+    <string name="git_test_011_option_2">git create feature-login</string>
+    <string name="git_test_011_option_3">git new feature-login</string>
+    <string name="git_test_011_option_4">git add branch feature-login</string>
+    <string name="git_test_011_explanation">git branch nombre crea una nueva rama.</string>
+
+    <string name="git_test_012_question">¿Qué comando cambia a una rama existente?</string>
+    <string name="git_test_012_option_1">git checkout rama</string>
+    <string name="git_test_012_option_2">git move rama</string>
+    <string name="git_test_012_option_3">git jump rama</string>
+    <string name="git_test_012_option_4">git enter rama</string>
+    <string name="git_test_012_explanation">git checkout rama cambia a una rama existente.</string>
+
+    <string name="git_test_013_question">¿Qué comando moderno también permite cambiar de rama?</string>
+    <string name="git_test_013_option_1">git switch rama</string>
+    <string name="git_test_013_option_2">git go rama</string>
+    <string name="git_test_013_option_3">git move rama</string>
+    <string name="git_test_013_option_4">git select rama</string>
+    <string name="git_test_013_explanation">git switch se usa para cambiar de rama.</string>
+
+    <string name="git_test_014_question">¿Qué comando crea y cambia a una rama nueva?</string>
+    <string name="git_test_014_option_1">git checkout -b rama</string>
+    <string name="git_test_014_option_2">git branch -d rama</string>
+    <string name="git_test_014_option_3">git commit -b rama</string>
+    <string name="git_test_014_option_4">git push -b rama</string>
+    <string name="git_test_014_explanation">git checkout -b crea una rama y cambia a ella.</string>
+
+    <string name="git_test_015_question">¿Qué comando moderno crea y cambia a una rama nueva?</string>
+    <string name="git_test_015_option_1">git switch -c rama</string>
+    <string name="git_test_015_option_2">git switch -d rama</string>
+    <string name="git_test_015_option_3">git branch -m rama</string>
+    <string name="git_test_015_option_4">git add -c rama</string>
+    <string name="git_test_015_explanation">git switch -c crea una rama y cambia a ella.</string>
+
+    <string name="git_test_016_question">¿Qué comando integra otra rama en la rama actual?</string>
+    <string name="git_test_016_option_1">git merge</string>
+    <string name="git_test_016_option_2">git join</string>
+    <string name="git_test_016_option_3">git combine</string>
+    <string name="git_test_016_option_4">git apply-branch</string>
+    <string name="git_test_016_explanation">git merge integra cambios de otra rama.</string>
+
+    <string name="git_test_017_question">¿Qué comando reescribe commits encima de otra base?</string>
+    <string name="git_test_017_option_1">git rebase</string>
+    <string name="git_test_017_option_2">git merge</string>
+    <string name="git_test_017_option_3">git reset</string>
+    <string name="git_test_017_option_4">git fetch</string>
+    <string name="git_test_017_explanation">git rebase reaplica commits sobre otra base.</string>
+
+    <string name="git_test_018_question">¿Qué comando muestra diferencias no staged?</string>
+    <string name="git_test_018_option_1">git diff</string>
+    <string name="git_test_018_option_2">git status</string>
+    <string name="git_test_018_option_3">git log</string>
+    <string name="git_test_018_option_4">git show</string>
+    <string name="git_test_018_explanation">git diff muestra diferencias en archivos modificados.</string>
+
+    <string name="git_test_019_question">¿Qué comando muestra diferencias staged?</string>
+    <string name="git_test_019_option_1">git diff --staged</string>
+    <string name="git_test_019_option_2">git diff --remote</string>
+    <string name="git_test_019_option_3">git status --staged</string>
+    <string name="git_test_019_option_4">git show --staged</string>
+    <string name="git_test_019_explanation">git diff --staged muestra cambios ya añadidos al staging.</string>
+
+    <string name="git_test_020_question">¿Qué comando elimina una rama local ya fusionada?</string>
+    <string name="git_test_020_option_1">git branch -d rama</string>
+    <string name="git_test_020_option_2">git branch -x rama</string>
+    <string name="git_test_020_option_3">git delete rama</string>
+    <string name="git_test_020_option_4">git remove branch rama</string>
+    <string name="git_test_020_explanation">git branch -d elimina una rama local fusionada.</string>
+
+    <string name="git_test_021_question">¿Qué comando fuerza la eliminación de una rama local?</string>
+    <string name="git_test_021_option_1">git branch -D rama</string>
+    <string name="git_test_021_option_2">git branch -f rama</string>
+    <string name="git_test_021_option_3">git delete -force rama</string>
+    <string name="git_test_021_option_4">git remove -hard rama</string>
+    <string name="git_test_021_explanation">git branch -D fuerza la eliminación de una rama.</string>
+
+    <string name="git_test_022_question">¿Qué archivo se usa para ignorar archivos en Git?</string>
+    <string name="git_test_022_option_1">.gitignore</string>
+    <string name="git_test_022_option_2">.gitconfig</string>
+    <string name="git_test_022_option_3">.ignoregit</string>
+    <string name="git_test_022_option_4">git.ignore</string>
+    <string name="git_test_022_explanation">.gitignore indica patrones de archivos que Git debe ignorar.</string>
+
+    <string name="git_test_023_question">¿Qué comando guarda cambios temporalmente sin commit?</string>
+    <string name="git_test_023_option_1">git stash</string>
+    <string name="git_test_023_option_2">git save</string>
+    <string name="git_test_023_option_3">git pause</string>
+    <string name="git_test_023_option_4">git temp</string>
+    <string name="git_test_023_explanation">git stash guarda cambios temporalmente.</string>
+
+    <string name="git_test_024_question">¿Qué comando recupera el último stash y lo elimina de la lista?</string>
+    <string name="git_test_024_option_1">git stash pop</string>
+    <string name="git_test_024_option_2">git stash get</string>
+    <string name="git_test_024_option_3">git stash restore</string>
+    <string name="git_test_024_option_4">git stash last</string>
+    <string name="git_test_024_explanation">git stash pop aplica y elimina el último stash.</string>
+
+    <string name="git_test_025_question">¿Qué comando aplica un stash sin eliminarlo?</string>
+    <string name="git_test_025_option_1">git stash apply</string>
+    <string name="git_test_025_option_2">git stash pop</string>
+    <string name="git_test_025_option_3">git stash keep</string>
+    <string name="git_test_025_option_4">git apply stash</string>
+    <string name="git_test_025_explanation">git stash apply aplica el stash pero lo mantiene.</string>
+
+    <string name="git_test_026_question">¿Qué comando muestra remotos configurados?</string>
+    <string name="git_test_026_option_1">git remote -v</string>
+    <string name="git_test_026_option_2">git remotes</string>
+    <string name="git_test_026_option_3">git origin</string>
+    <string name="git_test_026_option_4">git list remote</string>
+    <string name="git_test_026_explanation">git remote -v muestra los remotos y sus URLs.</string>
+
+    <string name="git_test_027_question">¿Qué nombre suele tener el remoto principal por defecto?</string>
+    <string name="git_test_027_option_1">origin</string>
+    <string name="git_test_027_option_2">main</string>
+    <string name="git_test_027_option_3">master</string>
+    <string name="git_test_027_option_4">remote</string>
+    <string name="git_test_027_explanation">origin suele ser el nombre del remoto principal.</string>
+
+    <string name="git_test_028_question">¿Qué comando añade un remoto?</string>
+    <string name="git_test_028_option_1">git remote add origin URL</string>
+    <string name="git_test_028_option_2">git add remote origin URL</string>
+    <string name="git_test_028_option_3">git origin add URL</string>
+    <string name="git_test_028_option_4">git connect origin URL</string>
+    <string name="git_test_028_explanation">git remote add añade un repositorio remoto.</string>
+
+    <string name="git_test_029_question">¿Qué comando cambia el mensaje del último commit?</string>
+    <string name="git_test_029_option_1">git commit --amend</string>
+    <string name="git_test_029_option_2">git commit --change</string>
+    <string name="git_test_029_option_3">git log --edit</string>
+    <string name="git_test_029_option_4">git message --last</string>
+    <string name="git_test_029_explanation">git commit --amend permite modificar el último commit.</string>
+
+    <string name="git_test_030_question">¿Qué comando revierte un commit creando otro commit inverso?</string>
+    <string name="git_test_030_option_1">git revert</string>
+    <string name="git_test_030_option_2">git reset</string>
+    <string name="git_test_030_option_3">git remove</string>
+    <string name="git_test_030_option_4">git undo-hard</string>
+    <string name="git_test_030_explanation">git revert crea un commit que deshace cambios anteriores.</string>
+
+    <string name="git_test_031_question">¿Qué comando mueve HEAD y puede cambiar staging/working tree?</string>
+    <string name="git_test_031_option_1">git reset</string>
+    <string name="git_test_031_option_2">git revert</string>
+    <string name="git_test_031_option_3">git fetch</string>
+    <string name="git_test_031_option_4">git clone</string>
+    <string name="git_test_031_explanation">git reset mueve HEAD y puede modificar staging o archivos.</string>
+
+    <string name="git_test_032_question">¿Qué reset conserva cambios en working tree?</string>
+    <string name="git_test_032_option_1">git reset --soft</string>
+    <string name="git_test_032_option_2">git reset --hard</string>
+    <string name="git_test_032_option_3">git reset --delete</string>
+    <string name="git_test_032_option_4">git reset --clean</string>
+    <string name="git_test_032_explanation">reset --soft mueve HEAD pero conserva cambios staged.</string>
+
+    <string name="git_test_033_question">¿Qué reset puede borrar cambios locales no guardados?</string>
+    <string name="git_test_033_option_1">git reset --hard</string>
+    <string name="git_test_033_option_2">git reset --soft</string>
+    <string name="git_test_033_option_3">git status --hard</string>
+    <string name="git_test_033_option_4">git add --hard</string>
+    <string name="git_test_033_explanation">reset --hard puede descartar cambios locales.</string>
+
+    <string name="git_test_034_question">¿Qué comando restaura archivos modificados desde HEAD?</string>
+    <string name="git_test_034_option_1">git restore archivo</string>
+    <string name="git_test_034_option_2">git reset-archivo</string>
+    <string name="git_test_034_option_3">git back archivo</string>
+    <string name="git_test_034_option_4">git undo-file archivo</string>
+    <string name="git_test_034_explanation">git restore puede restaurar archivos modificados.</string>
+
+    <string name="git_test_035_question">¿Qué comando quita un archivo del staging manteniendo cambios?</string>
+    <string name="git_test_035_option_1">git restore --staged archivo</string>
+    <string name="git_test_035_option_2">git delete --staged archivo</string>
+    <string name="git_test_035_option_3">git uncommit archivo</string>
+    <string name="git_test_035_option_4">git clean staged archivo</string>
+    <string name="git_test_035_explanation">git restore --staged saca cambios del área staged.</string>
+
+    <string name="git_test_036_question">¿Qué comando muestra quién modificó cada línea?</string>
+    <string name="git_test_036_option_1">git blame</string>
+    <string name="git_test_036_option_2">git author</string>
+    <string name="git_test_036_option_3">git who</string>
+    <string name="git_test_036_option_4">git line-log</string>
+    <string name="git_test_036_explanation">git blame muestra el commit y autor de cada línea.</string>
+
+    <string name="git_test_037_question">¿Qué comando muestra detalles de un commit concreto?</string>
+    <string name="git_test_037_option_1">git show</string>
+    <string name="git_test_037_option_2">git status</string>
+    <string name="git_test_037_option_3">git branch</string>
+    <string name="git_test_037_option_4">git remote</string>
+    <string name="git_test_037_explanation">git show muestra información de un commit u objeto.</string>
+
+    <string name="git_test_038_question">¿Qué comando etiqueta una versión?</string>
+    <string name="git_test_038_option_1">git tag</string>
+    <string name="git_test_038_option_2">git version</string>
+    <string name="git_test_038_option_3">git mark</string>
+    <string name="git_test_038_option_4">git label</string>
+    <string name="git_test_038_explanation">git tag crea etiquetas para versiones.</string>
+
+    <string name="git_test_039_question">¿Qué comando sube etiquetas al remoto?</string>
+    <string name="git_test_039_option_1">git push --tags</string>
+    <string name="git_test_039_option_2">git push --labels</string>
+    <string name="git_test_039_option_3">git tag --push</string>
+    <string name="git_test_039_option_4">git upload tags</string>
+    <string name="git_test_039_explanation">git push --tags sube etiquetas.</string>
+
+    <string name="git_test_040_question">¿Qué comando elimina archivos no trackeados?</string>
+    <string name="git_test_040_option_1">git clean</string>
+    <string name="git_test_040_option_2">git reset</string>
+    <string name="git_test_040_option_3">git restore</string>
+    <string name="git_test_040_option_4">git prune</string>
+    <string name="git_test_040_explanation">git clean elimina archivos no trackeados.</string>
+
+    <string name="git_test_041_question">¿Qué opción de git clean suele hacer una simulación?</string>
+    <string name="git_test_041_option_1">-n</string>
+    <string name="git_test_041_option_2">-f</string>
+    <string name="git_test_041_option_3">-d</string>
+    <string name="git_test_041_option_4">-x</string>
+    <string name="git_test_041_explanation">git clean -n muestra qué se eliminaría sin borrarlo.</string>
+
+    <string name="git_test_042_question">¿Qué comando permite buscar el commit que introdujo un bug mediante búsqueda binaria?</string>
+    <string name="git_test_042_option_1">git bisect</string>
+    <string name="git_test_042_option_2">git blame</string>
+    <string name="git_test_042_option_3">git search</string>
+    <string name="git_test_042_option_4">git debug</string>
+    <string name="git_test_042_explanation">git bisect ayuda a localizar commits problemáticos.</string>
+
+    <string name="git_test_043_question">¿Qué comando copia un commit concreto a la rama actual?</string>
+    <string name="git_test_043_option_1">git cherry-pick</string>
+    <string name="git_test_043_option_2">git merge-one</string>
+    <string name="git_test_043_option_3">git copy-commit</string>
+    <string name="git_test_043_option_4">git apply-commit</string>
+    <string name="git_test_043_explanation">git cherry-pick aplica un commit concreto.</string>
+
+    <string name="git_test_044_question">¿Qué comando muestra ramas remotas?</string>
+    <string name="git_test_044_option_1">git branch -r</string>
+    <string name="git_test_044_option_2">git branch -l</string>
+    <string name="git_test_044_option_3">git remote branch</string>
+    <string name="git_test_044_option_4">git list -remote</string>
+    <string name="git_test_044_explanation">git branch -r muestra ramas remotas.</string>
+
+    <string name="git_test_045_question">¿Qué comando muestra todas las ramas locales y remotas?</string>
+    <string name="git_test_045_option_1">git branch -a</string>
+    <string name="git_test_045_option_2">git branch --all-local</string>
+    <string name="git_test_045_option_3">git all branches</string>
+    <string name="git_test_045_option_4">git remote -a</string>
+    <string name="git_test_045_explanation">git branch -a muestra ramas locales y remotas.</string>
+
+    <string name="git_test_046_question">¿Qué rama suele ser la principal en repositorios nuevos?</string>
+    <string name="git_test_046_option_1">main</string>
+    <string name="git_test_046_option_2">develop</string>
+    <string name="git_test_046_option_3">feature</string>
+    <string name="git_test_046_option_4">release</string>
+    <string name="git_test_046_explanation">main suele ser la rama principal en repositorios modernos.</string>
+
+    <string name="git_test_047_question">¿Qué comando configura el nombre de usuario global?</string>
+    <string name="git_test_047_option_1">git config --global user.name &quot;Nombre&quot;</string>
+    <string name="git_test_047_option_2">git user set name</string>
+    <string name="git_test_047_option_3">git name global</string>
+    <string name="git_test_047_option_4">git profile user.name</string>
+    <string name="git_test_047_explanation">git config --global user.name configura el nombre global.</string>
+
+    <string name="git_test_048_question">¿Qué comando configura el email global?</string>
+    <string name="git_test_048_option_1">git config --global user.email &quot;email&quot;</string>
+    <string name="git_test_048_option_2">git email set</string>
+    <string name="git_test_048_option_3">git profile email</string>
+    <string name="git_test_048_option_4">git config email global</string>
+    <string name="git_test_048_explanation">git config --global user.email configura el email.</string>
+
+    <string name="git_test_049_question">¿Qué comando muestra configuración de Git?</string>
+    <string name="git_test_049_option_1">git config --list</string>
+    <string name="git_test_049_option_2">git config show</string>
+    <string name="git_test_049_option_3">git settings</string>
+    <string name="git_test_049_option_4">git profile</string>
+    <string name="git_test_049_explanation">git config --list muestra configuración.</string>
+
+    <string name="git_test_050_question">¿Qué estado indica que Git aún no sigue un archivo?</string>
+    <string name="git_test_050_option_1">untracked</string>
+    <string name="git_test_050_option_2">staged</string>
+    <string name="git_test_050_option_3">committed</string>
+    <string name="git_test_050_option_4">merged</string>
+    <string name="git_test_050_explanation">untracked significa que Git todavía no está siguiendo ese archivo.</string>
+
+    <!-- Git - True / False -->
+    <string name="git_tf_001_question">git push sube commits al repositorio remoto.</string>
+    <string name="git_tf_001_explanation">git push envía commits locales al remoto.</string>
+
+    <string name="git_tf_002_question">git pull trae cambios del remoto.</string>
+    <string name="git_tf_002_explanation">git pull descarga e integra cambios del remoto.</string>
+
+    <string name="git_tf_003_question">Una rama permite trabajar en cambios separados.</string>
+    <string name="git_tf_003_explanation">Las ramas aíslan líneas de trabajo.</string>
+
+    <string name="git_tf_004_question">git status muestra el estado del repositorio.</string>
+    <string name="git_tf_004_explanation">git status muestra cambios staged, unstaged y untracked.</string>
+
+    <string name="git_tf_005_question">git add crea un commit automáticamente.</string>
+    <string name="git_tf_005_explanation">git add solo prepara cambios para commit.</string>
+
+    <string name="git_tf_006_question">git commit guarda cambios staged.</string>
+    <string name="git_tf_006_explanation">git commit crea una instantánea de cambios staged.</string>
+
+    <string name="git_tf_007_question">git init inicializa un repositorio.</string>
+    <string name="git_tf_007_explanation">git init crea la carpeta interna .git.</string>
+
+    <string name="git_tf_008_question">git clone copia un repositorio remoto en local.</string>
+    <string name="git_tf_008_explanation">git clone crea una copia local.</string>
+
+    <string name="git_tf_009_question">git log muestra el historial de commits.</string>
+    <string name="git_tf_009_explanation">git log muestra commits.</string>
+
+    <string name="git_tf_010_question">git branch sin argumentos lista ramas locales.</string>
+    <string name="git_tf_010_explanation">git branch lista ramas locales.</string>
+
+    <string name="git_tf_011_question">git branch nueva-rama cambia automáticamente a esa rama.</string>
+    <string name="git_tf_011_explanation">git branch crea la rama, pero no cambia a ella.</string>
+
+    <string name="git_tf_012_question">git checkout -b nueva-rama crea y cambia a la rama.</string>
+    <string name="git_tf_012_explanation">checkout -b crea y cambia.</string>
+
+    <string name="git_tf_013_question">git switch puede cambiar de rama.</string>
+    <string name="git_tf_013_explanation">git switch se usa para cambiar ramas.</string>
+
+    <string name="git_tf_014_question">git merge integra cambios de una rama en otra.</string>
+    <string name="git_tf_014_explanation">merge fusiona líneas de trabajo.</string>
+
+    <string name="git_tf_015_question">git rebase nunca reescribe historial.</string>
+    <string name="git_tf_015_explanation">rebase puede reescribir el historial de commits.</string>
+
+    <string name="git_tf_016_question">git fetch descarga cambios sin integrarlos automáticamente.</string>
+    <string name="git_tf_016_explanation">fetch descarga referencias del remoto.</string>
+
+    <string name="git_tf_017_question">git pull equivale habitualmente a fetch más integración.</string>
+    <string name="git_tf_017_explanation">pull descarga e integra.</string>
+
+    <string name="git_tf_018_question">origin suele ser el nombre del remoto principal.</string>
+    <string name="git_tf_018_explanation">origin es el nombre habitual del remoto.</string>
+
+    <string name="git_tf_019_question">.gitignore sirve para ignorar archivos.</string>
+    <string name="git_tf_019_explanation">.gitignore define patrones ignorados.</string>
+
+    <string name="git_tf_020_question">Un archivo ya trackeado deja de trackearse solo por ponerlo en .gitignore.</string>
+    <string name="git_tf_020_explanation">.gitignore no deja de trackear archivos ya añadidos.</string>
+
+    <string name="git_tf_021_question">git stash guarda cambios temporalmente.</string>
+    <string name="git_tf_021_explanation">stash guarda cambios sin commit.</string>
+
+    <string name="git_tf_022_question">git stash pop aplica y elimina el stash aplicado.</string>
+    <string name="git_tf_022_explanation">pop aplica y quita el stash.</string>
+
+    <string name="git_tf_023_question">git stash apply aplica el stash y lo conserva.</string>
+    <string name="git_tf_023_explanation">apply no borra el stash.</string>
+
+    <string name="git_tf_024_question">git diff muestra diferencias.</string>
+    <string name="git_tf_024_explanation">git diff compara cambios.</string>
+
+    <string name="git_tf_025_question">git diff --staged muestra cambios staged.</string>
+    <string name="git_tf_025_explanation">diff --staged compara lo preparado para commit.</string>
+
+    <string name="git_tf_026_question">git remote -v muestra remotos configurados.</string>
+    <string name="git_tf_026_explanation">remote -v muestra URLs de remotos.</string>
+
+    <string name="git_tf_027_question">git commit --amend permite modificar el último commit.</string>
+    <string name="git_tf_027_explanation">amend modifica el último commit.</string>
+
+    <string name="git_tf_028_question">git revert borra el historial anterior.</string>
+    <string name="git_tf_028_explanation">revert crea un nuevo commit inverso.</string>
+
+    <string name="git_tf_029_question">git reset --hard puede descartar cambios locales.</string>
+    <string name="git_tf_029_explanation">reset --hard es peligroso porque puede borrar cambios.</string>
+
+    <string name="git_tf_030_question">git reset --soft conserva cambios staged.</string>
+    <string name="git_tf_030_explanation">reset --soft mueve HEAD y conserva staging.</string>
+
+    <string name="git_tf_031_question">git restore puede restaurar archivos.</string>
+    <string name="git_tf_031_explanation">restore recupera archivos desde otra fuente.</string>
+
+    <string name="git_tf_032_question">git restore --staged puede sacar cambios del staging.</string>
+    <string name="git_tf_032_explanation">restore --staged quita del staging.</string>
+
+    <string name="git_tf_033_question">git blame muestra quién modificó líneas.</string>
+    <string name="git_tf_033_explanation">blame muestra autor y commit por línea.</string>
+
+    <string name="git_tf_034_question">git show puede mostrar detalles de un commit.</string>
+    <string name="git_tf_034_explanation">show enseña objetos Git.</string>
+
+    <string name="git_tf_035_question">git tag sirve para marcar versiones.</string>
+    <string name="git_tf_035_explanation">tag crea etiquetas.</string>
+
+    <string name="git_tf_036_question">Las etiquetas se suben siempre automáticamente con git push normal.</string>
+    <string name="git_tf_036_explanation">Normalmente hay que usar git push --tags o empujar una tag concreta.</string>
+
+    <string name="git_tf_037_question">git clean puede borrar archivos no trackeados.</string>
+    <string name="git_tf_037_explanation">git clean elimina archivos no seguidos.</string>
+
+    <string name="git_tf_038_question">git clean -n simula lo que se borraría.</string>
+    <string name="git_tf_038_explanation">clean -n no borra, solo muestra.</string>
+
+    <string name="git_tf_039_question">git cherry-pick aplica un commit concreto en la rama actual.</string>
+    <string name="git_tf_039_explanation">cherry-pick copia cambios de un commit.</string>
+
+    <string name="git_tf_040_question">git bisect ayuda a encontrar el commit que introdujo un bug.</string>
+    <string name="git_tf_040_explanation">bisect usa búsqueda binaria.</string>
+
+    <string name="git_tf_041_question">Un conflicto aparece cuando Git no puede fusionar cambios automáticamente.</string>
+    <string name="git_tf_041_explanation">Un conflicto requiere intervención manual.</string>
+
+    <string name="git_tf_042_question">Después de resolver un conflicto normalmente hay que hacer git add.</string>
+    <string name="git_tf_042_explanation">Hay que marcar el conflicto como resuelto añadiendo archivos.</string>
+
+    <string name="git_tf_043_question">HEAD apunta normalmente al commit actual.</string>
+    <string name="git_tf_043_explanation">HEAD representa la posición actual.</string>
+
+    <string name="git_tf_044_question">main y master son siempre ramas obligatorias.</string>
+    <string name="git_tf_044_explanation">Son nombres habituales, pero no obligatorios.</string>
+
+    <string name="git_tf_045_question">Un commit debería tener un mensaje claro.</string>
+    <string name="git_tf_045_explanation">Los mensajes claros facilitan entender el historial.</string>
+
+    <string name="git_tf_046_question">Hacer commits enormes y mezclados suele facilitar la revisión.</string>
+    <string name="git_tf_046_explanation">Commits pequeños y coherentes suelen revisarse mejor.</string>
+
+    <string name="git_tf_047_question">git branch -r muestra ramas remotas.</string>
+    <string name="git_tf_047_explanation">branch -r lista ramas remotas.</string>
+
+    <string name="git_tf_048_question">git branch -a muestra ramas locales y remotas.</string>
+    <string name="git_tf_048_explanation">branch -a muestra todas.</string>
+
+    <string name="git_tf_049_question">Un archivo untracked todavía no está siendo seguido por Git.</string>
+    <string name="git_tf_049_explanation">untracked significa no seguido.</string>
+
+    <string name="git_tf_050_question">Un archivo staged ya está preparado para el próximo commit.</string>
+    <string name="git_tf_050_explanation">staged significa añadido al área de preparación.</string>
+
+    <!-- Git - Complete Code -->
+    <string name="git_code_001_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_001_option_1">status</string>
+    <string name="git_code_001_option_2">estado</string>
+    <string name="git_code_001_option_3">state</string>
+    <string name="git_code_001_option_4">show-status</string>
+    <string name="git_code_001_explanation">git status muestra el estado del repositorio.</string>
+
+    <string name="git_code_002_question">Completa el comando:\n\ngit ____ .</string>
+    <string name="git_code_002_option_1">add</string>
+    <string name="git_code_002_option_2">stage</string>
+    <string name="git_code_002_option_3">put</string>
+    <string name="git_code_002_option_4">save</string>
+    <string name="git_code_002_explanation">git add . añade cambios al staging.</string>
+
+    <string name="git_code_003_question">Completa el comando:\n\ngit commit ____ &quot;mensaje&quot;</string>
+    <string name="git_code_003_option_1">-m</string>
+    <string name="git_code_003_option_2">-msg</string>
+    <string name="git_code_003_option_3">--text</string>
+    <string name="git_code_003_option_4">-t</string>
+    <string name="git_code_003_explanation">git commit -m permite indicar el mensaje del commit.</string>
+
+    <string name="git_code_004_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_004_option_1">init</string>
+    <string name="git_code_004_option_2">start</string>
+    <string name="git_code_004_option_3">new</string>
+    <string name="git_code_004_option_4">repo</string>
+    <string name="git_code_004_explanation">git init inicializa un repositorio.</string>
+
+    <string name="git_code_005_question">Completa el comando:\n\ngit ____ https://github.com/user/repo.git</string>
+    <string name="git_code_005_option_1">clone</string>
+    <string name="git_code_005_option_2">copy</string>
+    <string name="git_code_005_option_3">download</string>
+    <string name="git_code_005_option_4">pull</string>
+    <string name="git_code_005_explanation">git clone copia un repositorio remoto.</string>
+
+    <string name="git_code_006_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_006_option_1">log</string>
+    <string name="git_code_006_option_2">history</string>
+    <string name="git_code_006_option_3">commits</string>
+    <string name="git_code_006_option_4">timeline</string>
+    <string name="git_code_006_explanation">git log muestra historial.</string>
+
+    <string name="git_code_007_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_007_option_1">branch</string>
+    <string name="git_code_007_option_2">branches</string>
+    <string name="git_code_007_option_3">list-branch</string>
+    <string name="git_code_007_option_4">show-branches</string>
+    <string name="git_code_007_explanation">git branch lista ramas locales.</string>
+
+    <string name="git_code_008_question">Completa el comando:\n\ngit branch ____</string>
+    <string name="git_code_008_option_1">feature-login</string>
+    <string name="git_code_008_option_2">-m</string>
+    <string name="git_code_008_option_3">-status</string>
+    <string name="git_code_008_option_4">--go</string>
+    <string name="git_code_008_explanation">git branch nombre crea una rama.</string>
+
+    <string name="git_code_009_question">Completa el comando:\n\ngit checkout ____</string>
+    <string name="git_code_009_option_1">feature-login</string>
+    <string name="git_code_009_option_2">-status</string>
+    <string name="git_code_009_option_3">-log</string>
+    <string name="git_code_009_option_4">--remote</string>
+    <string name="git_code_009_explanation">git checkout rama cambia a esa rama.</string>
+
+    <string name="git_code_010_question">Completa el comando:\n\ngit checkout ____ feature-login</string>
+    <string name="git_code_010_option_1">-b</string>
+    <string name="git_code_010_option_2">-c</string>
+    <string name="git_code_010_option_3">-new</string>
+    <string name="git_code_010_option_4">--create-only</string>
+    <string name="git_code_010_explanation">git checkout -b crea y cambia a una rama.</string>
+
+    <string name="git_code_011_question">Completa el comando:\n\ngit switch ____</string>
+    <string name="git_code_011_option_1">feature-login</string>
+    <string name="git_code_011_option_2">-log</string>
+    <string name="git_code_011_option_3">--status</string>
+    <string name="git_code_011_option_4">-push</string>
+    <string name="git_code_011_explanation">git switch cambia a una rama.</string>
+
+    <string name="git_code_012_question">Completa el comando:\n\ngit switch ____ feature-login</string>
+    <string name="git_code_012_option_1">-c</string>
+    <string name="git_code_012_option_2">-b</string>
+    <string name="git_code_012_option_3">-new-only</string>
+    <string name="git_code_012_option_4">--branch-delete</string>
+    <string name="git_code_012_explanation">git switch -c crea y cambia a una rama.</string>
+
+    <string name="git_code_013_question">Completa el comando:\n\ngit ____ main</string>
+    <string name="git_code_013_option_1">merge</string>
+    <string name="git_code_013_option_2">join</string>
+    <string name="git_code_013_option_3">combine</string>
+    <string name="git_code_013_option_4">apply-branch</string>
+    <string name="git_code_013_explanation">git merge main integra main en la rama actual.</string>
+
+    <string name="git_code_014_question">Completa el comando:\n\ngit ____ main</string>
+    <string name="git_code_014_option_1">rebase</string>
+    <string name="git_code_014_option_2">reset</string>
+    <string name="git_code_014_option_3">restore</string>
+    <string name="git_code_014_option_4">fetch</string>
+    <string name="git_code_014_explanation">git rebase main reaplica commits sobre main.</string>
+
+    <string name="git_code_015_question">Completa el comando:\n\ngit ____ origin main</string>
+    <string name="git_code_015_option_1">pull</string>
+    <string name="git_code_015_option_2">push</string>
+    <string name="git_code_015_option_3">add</string>
+    <string name="git_code_015_option_4">commit</string>
+    <string name="git_code_015_explanation">git pull origin main trae e integra cambios de origin/main.</string>
+
+    <string name="git_code_016_question">Completa el comando:\n\ngit ____ origin main</string>
+    <string name="git_code_016_option_1">push</string>
+    <string name="git_code_016_option_2">pull</string>
+    <string name="git_code_016_option_3">add</string>
+    <string name="git_code_016_option_4">status</string>
+    <string name="git_code_016_explanation">git push origin main sube commits a origin/main.</string>
+
+    <string name="git_code_017_question">Completa el comando:\n\ngit ____ origin</string>
+    <string name="git_code_017_option_1">fetch</string>
+    <string name="git_code_017_option_2">pull-only</string>
+    <string name="git_code_017_option_3">download-merge</string>
+    <string name="git_code_017_option_4">status</string>
+    <string name="git_code_017_explanation">git fetch origin descarga referencias del remoto.</string>
+
+    <string name="git_code_018_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_018_option_1">diff</string>
+    <string name="git_code_018_option_2">changes</string>
+    <string name="git_code_018_option_3">compare</string>
+    <string name="git_code_018_option_4">delta</string>
+    <string name="git_code_018_explanation">git diff muestra diferencias no staged.</string>
+
+    <string name="git_code_019_question">Completa el comando:\n\ngit diff ____</string>
+    <string name="git_code_019_option_1">--staged</string>
+    <string name="git_code_019_option_2">--saved</string>
+    <string name="git_code_019_option_3">--added</string>
+    <string name="git_code_019_option_4">--commit-ready</string>
+    <string name="git_code_019_explanation">git diff --staged muestra cambios staged.</string>
+
+    <string name="git_code_020_question">Completa el comando:\n\ngit branch ____ feature-login</string>
+    <string name="git_code_020_option_1">-d</string>
+    <string name="git_code_020_option_2">-remove</string>
+    <string name="git_code_020_option_3">-x</string>
+    <string name="git_code_020_option_4">--clean</string>
+    <string name="git_code_020_explanation">git branch -d elimina una rama fusionada.</string>
+
+    <string name="git_code_021_question">Completa el comando:\n\ngit branch ____ feature-login</string>
+    <string name="git_code_021_option_1">-D</string>
+    <string name="git_code_021_option_2">-force-delete</string>
+    <string name="git_code_021_option_3">-hard</string>
+    <string name="git_code_021_option_4">--kill</string>
+    <string name="git_code_021_explanation">git branch -D fuerza la eliminación.</string>
+
+    <string name="git_code_022_question">Completa el archivo ignorado:\n\n____</string>
+    <string name="git_code_022_option_1">.gitignore</string>
+    <string name="git_code_022_option_2">.gitconfig</string>
+    <string name="git_code_022_option_3">.ignore</string>
+    <string name="git_code_022_option_4">gitignore.txt</string>
+    <string name="git_code_022_explanation">.gitignore contiene patrones ignorados.</string>
+
+    <string name="git_code_023_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_023_option_1">stash</string>
+    <string name="git_code_023_option_2">pause</string>
+    <string name="git_code_023_option_3">temp</string>
+    <string name="git_code_023_option_4">hold</string>
+    <string name="git_code_023_explanation">git stash guarda cambios temporalmente.</string>
+
+    <string name="git_code_024_question">Completa el comando:\n\ngit stash ____</string>
+    <string name="git_code_024_option_1">pop</string>
+    <string name="git_code_024_option_2">last</string>
+    <string name="git_code_024_option_3">get</string>
+    <string name="git_code_024_option_4">restore-delete</string>
+    <string name="git_code_024_explanation">git stash pop aplica y elimina el stash.</string>
+
+    <string name="git_code_025_question">Completa el comando:\n\ngit stash ____</string>
+    <string name="git_code_025_option_1">apply</string>
+    <string name="git_code_025_option_2">copy</string>
+    <string name="git_code_025_option_3">use-keep</string>
+    <string name="git_code_025_option_4">restore-only</string>
+    <string name="git_code_025_explanation">git stash apply aplica sin eliminar.</string>
+
+    <string name="git_code_026_question">Completa el comando:\n\ngit remote ____</string>
+    <string name="git_code_026_option_1">-v</string>
+    <string name="git_code_026_option_2">-list</string>
+    <string name="git_code_026_option_3">--urls-only</string>
+    <string name="git_code_026_option_4">--branches</string>
+    <string name="git_code_026_explanation">git remote -v muestra remotos.</string>
+
+    <string name="git_code_027_question">Completa el comando:\n\ngit remote add ____ URL</string>
+    <string name="git_code_027_option_1">origin</string>
+    <string name="git_code_027_option_2">main</string>
+    <string name="git_code_027_option_3">master</string>
+    <string name="git_code_027_option_4">repo</string>
+    <string name="git_code_027_explanation">origin suele ser el nombre del remoto principal.</string>
+
+    <string name="git_code_028_question">Completa el comando:\n\ngit commit ____</string>
+    <string name="git_code_028_option_1">--amend</string>
+    <string name="git_code_028_option_2">--edit-last</string>
+    <string name="git_code_028_option_3">--last-message</string>
+    <string name="git_code_028_option_4">--change-head</string>
+    <string name="git_code_028_explanation">git commit --amend modifica el último commit.</string>
+
+    <string name="git_code_029_question">Completa el comando:\n\ngit ____ abc123</string>
+    <string name="git_code_029_option_1">revert</string>
+    <string name="git_code_029_option_2">undo-save</string>
+    <string name="git_code_029_option_3">delete-commit</string>
+    <string name="git_code_029_option_4">reverse-hard</string>
+    <string name="git_code_029_explanation">git revert crea un commit inverso.</string>
+
+    <string name="git_code_030_question">Completa el comando:\n\ngit reset ____ HEAD~1</string>
+    <string name="git_code_030_option_1">--soft</string>
+    <string name="git_code_030_option_2">--keep-staged</string>
+    <string name="git_code_030_option_3">--safe</string>
+    <string name="git_code_030_option_4">--undo-only</string>
+    <string name="git_code_030_explanation">reset --soft mueve HEAD conservando cambios.</string>
+
+    <string name="git_code_031_question">Completa el comando:\n\ngit reset ____ HEAD~1</string>
+    <string name="git_code_031_option_1">--hard</string>
+    <string name="git_code_031_option_2">--danger</string>
+    <string name="git_code_031_option_3">--delete</string>
+    <string name="git_code_031_option_4">--force-tree</string>
+    <string name="git_code_031_explanation">reset --hard puede borrar cambios.</string>
+
+    <string name="git_code_032_question">Completa el comando:\n\ngit ____ archivo.txt</string>
+    <string name="git_code_032_option_1">restore</string>
+    <string name="git_code_032_option_2">recover</string>
+    <string name="git_code_032_option_3">back</string>
+    <string name="git_code_032_option_4">undo-file</string>
+    <string name="git_code_032_explanation">git restore restaura archivos.</string>
+
+    <string name="git_code_033_question">Completa el comando:\n\ngit restore ____ archivo.txt</string>
+    <string name="git_code_033_option_1">--staged</string>
+    <string name="git_code_033_option_2">--unstaged</string>
+    <string name="git_code_033_option_3">--remove-add</string>
+    <string name="git_code_033_option_4">--from-add</string>
+    <string name="git_code_033_explanation">restore --staged saca del staging.</string>
+
+    <string name="git_code_034_question">Completa el comando:\n\ngit ____ archivo.txt</string>
+    <string name="git_code_034_option_1">blame</string>
+    <string name="git_code_034_option_2">author</string>
+    <string name="git_code_034_option_3">who</string>
+    <string name="git_code_034_option_4">line-author</string>
+    <string name="git_code_034_explanation">git blame muestra autoría por línea.</string>
+
+    <string name="git_code_035_question">Completa el comando:\n\ngit ____ abc123</string>
+    <string name="git_code_035_option_1">show</string>
+    <string name="git_code_035_option_2">display</string>
+    <string name="git_code_035_option_3">open</string>
+    <string name="git_code_035_option_4">commit-info</string>
+    <string name="git_code_035_explanation">git show muestra detalles de un commit.</string>
+
+    <string name="git_code_036_question">Completa el comando:\n\ngit ____ v1.0.0</string>
+    <string name="git_code_036_option_1">tag</string>
+    <string name="git_code_036_option_2">label</string>
+    <string name="git_code_036_option_3">version</string>
+    <string name="git_code_036_option_4">mark</string>
+    <string name="git_code_036_explanation">git tag crea una etiqueta.</string>
+
+    <string name="git_code_037_question">Completa el comando:\n\ngit push ____</string>
+    <string name="git_code_037_option_1">--tags</string>
+    <string name="git_code_037_option_2">--labels</string>
+    <string name="git_code_037_option_3">--versions</string>
+    <string name="git_code_037_option_4">--marks</string>
+    <string name="git_code_037_explanation">git push --tags sube etiquetas.</string>
+
+    <string name="git_code_038_question">Completa el comando:\n\ngit clean ____</string>
+    <string name="git_code_038_option_1">-n</string>
+    <string name="git_code_038_option_2">-preview</string>
+    <string name="git_code_038_option_3">--show-only</string>
+    <string name="git_code_038_option_4">--dry</string>
+    <string name="git_code_038_explanation">git clean -n simula qué borraría.</string>
+
+    <string name="git_code_039_question">Completa el comando:\n\ngit clean ____</string>
+    <string name="git_code_039_option_1">-f</string>
+    <string name="git_code_039_option_2">-safe</string>
+    <string name="git_code_039_option_3">--confirm</string>
+    <string name="git_code_039_option_4">--apply</string>
+    <string name="git_code_039_explanation">git clean -f fuerza el borrado.</string>
+
+    <string name="git_code_040_question">Completa el comando:\n\ngit ____</string>
+    <string name="git_code_040_option_1">bisect</string>
+    <string name="git_code_040_option_2">debug</string>
+    <string name="git_code_040_option_3">find-bug</string>
+    <string name="git_code_040_option_4">binary-search</string>
+    <string name="git_code_040_explanation">git bisect ayuda a encontrar commits con bugs.</string>
+
+    <string name="git_code_041_question">Completa el comando:\n\ngit ____ abc123</string>
+    <string name="git_code_041_option_1">cherry-pick</string>
+    <string name="git_code_041_option_2">copy-commit</string>
+    <string name="git_code_041_option_3">pick-one</string>
+    <string name="git_code_041_option_4">merge-commit</string>
+    <string name="git_code_041_explanation">cherry-pick aplica un commit concreto.</string>
+
+    <string name="git_code_042_question">Completa el comando:\n\ngit branch ____</string>
+    <string name="git_code_042_option_1">-r</string>
+    <string name="git_code_042_option_2">--remote-list</string>
+    <string name="git_code_042_option_3">--only-origin</string>
+    <string name="git_code_042_option_4">-remote</string>
+    <string name="git_code_042_explanation">git branch -r lista ramas remotas.</string>
+
+    <string name="git_code_043_question">Completa el comando:\n\ngit branch ____</string>
+    <string name="git_code_043_option_1">-a</string>
+    <string name="git_code_043_option_2">--all</string>
+    <string name="git_code_043_option_3">--local-remote</string>
+    <string name="git_code_043_option_4">-all-branches</string>
+    <string name="git_code_043_explanation">git branch -a lista ramas locales y remotas.</string>
+
+    <string name="git_code_044_question">Completa el comando:\n\ngit config --global user.name ____</string>
+    <string name="git_code_044_option_1">&quot;Isra&quot;</string>
+    <string name="git_code_044_option_2">name=Isra</string>
+    <string name="git_code_044_option_3">--Isra</string>
+    <string name="git_code_044_option_4">Isra;</string>
+    <string name="git_code_044_explanation">El nombre suele ir como valor entre comillas.</string>
+
+    <string name="git_code_045_question">Completa el comando:\n\ngit config --global user.email ____</string>
+    <string name="git_code_045_option_1">&quot;email@example.com&quot;</string>
+    <string name="git_code_045_option_2">email@example.com:</string>
+    <string name="git_code_045_option_3">--email</string>
+    <string name="git_code_045_option_4">mail()</string>
+    <string name="git_code_045_explanation">El email se configura como valor.</string>
+
+    <string name="git_code_046_question">Completa el comando:\n\ngit config ____</string>
+    <string name="git_code_046_option_1">--list</string>
+    <string name="git_code_046_option_2">--show-all-configs</string>
+    <string name="git_code_046_option_3">--status</string>
+    <string name="git_code_046_option_4">--profile</string>
+    <string name="git_code_046_explanation">git config --list muestra configuración.</string>
+
+    <string name="git_code_047_question">Completa el comando:\n\ngit add ____</string>
+    <string name="git_code_047_option_1">archivo.txt</string>
+    <string name="git_code_047_option_2">-m</string>
+    <string name="git_code_047_option_3">commit</string>
+    <string name="git_code_047_option_4">push</string>
+    <string name="git_code_047_explanation">git add archivo.txt añade un archivo concreto.</string>
+
+    <string name="git_code_048_question">Completa el comando:\n\ngit commit -m ____</string>
+    <string name="git_code_048_option_1">&quot;Añade login&quot;</string>
+    <string name="git_code_048_option_2">Añade login</string>
+    <string name="git_code_048_option_3">--Añade login</string>
+    <string name="git_code_048_option_4">message(Añade login)</string>
+    <string name="git_code_048_explanation">El mensaje se pasa como texto.</string>
+
+    <string name="git_code_049_question">Completa el comando:\n\ngit push -u origin ____</string>
+    <string name="git_code_049_option_1">feature-login</string>
+    <string name="git_code_049_option_2">-m</string>
+    <string name="git_code_049_option_3">--tags</string>
+    <string name="git_code_049_option_4">status</string>
+    <string name="git_code_049_explanation">push -u enlaza la rama local con la remota.</string>
+
+    <string name="git_code_050_question">Completa el comando:\n\ngit log ____</string>
+    <string name="git_code_050_option_1">--oneline</string>
+    <string name="git_code_050_option_2">--short-only</string>
+    <string name="git_code_050_option_3">--one</string>
+    <string name="git_code_050_option_4">--compact-log</string>
+    <string name="git_code_050_explanation">git log --oneline muestra commits resumidos.</string>
+
+    <!-- Git - Match Concept -->
+    <string name="git_match_001_question">Relaciona el concepto: commit</string>
+    <string name="git_match_001_option_1">Instantánea de cambios guardada</string>
+    <string name="git_match_001_option_2">Servidor remoto</string>
+    <string name="git_match_001_option_3">Archivo ignorado</string>
+    <string name="git_match_001_option_4">Conflicto automático</string>
+    <string name="git_match_001_explanation">Un commit guarda una versión del proyecto.</string>
+
+    <string name="git_match_002_question">Relaciona el concepto: branch</string>
+    <string name="git_match_002_option_1">Línea de trabajo separada</string>
+    <string name="git_match_002_option_2">Archivo eliminado</string>
+    <string name="git_match_002_option_3">Contraseña del remoto</string>
+    <string name="git_match_002_option_4">Comando de despliegue</string>
+    <string name="git_match_002_explanation">Una rama separa líneas de desarrollo.</string>
+
+    <string name="git_match_003_question">Relaciona el concepto: merge</string>
+    <string name="git_match_003_option_1">Integrar cambios de una rama en otra</string>
+    <string name="git_match_003_option_2">Borrar el repositorio</string>
+    <string name="git_match_003_option_3">Subir cambios</string>
+    <string name="git_match_003_option_4">Crear usuario</string>
+    <string name="git_match_003_explanation">merge integra cambios entre ramas.</string>
+
+    <string name="git_match_004_question">Relaciona el concepto: remote</string>
+    <string name="git_match_004_option_1">Repositorio alojado fuera del local</string>
+    <string name="git_match_004_option_2">Archivo temporal</string>
+    <string name="git_match_004_option_3">Rama actual</string>
+    <string name="git_match_004_option_4">Commit vacío</string>
+    <string name="git_match_004_explanation">Un remoto suele ser GitHub, GitLab o Bitbucket.</string>
+
+    <string name="git_match_005_question">Relaciona el concepto: staging area</string>
+    <string name="git_match_005_option_1">Zona de preparación para el próximo commit</string>
+    <string name="git_match_005_option_2">Servidor principal</string>
+    <string name="git_match_005_option_3">Historial borrado</string>
+    <string name="git_match_005_option_4">Rama remota</string>
+    <string name="git_match_005_explanation">El staging area contiene cambios preparados.</string>
+
+    <string name="git_match_006_question">Relaciona el concepto: working tree</string>
+    <string name="git_match_006_option_1">Archivos reales de trabajo en tu carpeta</string>
+    <string name="git_match_006_option_2">Repositorio remoto</string>
+    <string name="git_match_006_option_3">Etiqueta de versión</string>
+    <string name="git_match_006_option_4">Mensaje de commit</string>
+    <string name="git_match_006_explanation">El working tree son los archivos sobre los que trabajas.</string>
+
+    <string name="git_match_007_question">Relaciona el concepto: HEAD</string>
+    <string name="git_match_007_option_1">Referencia a la posición actual</string>
+    <string name="git_match_007_option_2">Archivo ignorado</string>
+    <string name="git_match_007_option_3">Nombre del remoto</string>
+    <string name="git_match_007_option_4">Tipo de conflicto</string>
+    <string name="git_match_007_explanation">HEAD apunta normalmente al commit actual.</string>
+
+    <string name="git_match_008_question">Relaciona el concepto: rebase</string>
+    <string name="git_match_008_option_1">Reaplicar commits sobre otra base</string>
+    <string name="git_match_008_option_2">Crear un remoto</string>
+    <string name="git_match_008_option_3">Listar archivos</string>
+    <string name="git_match_008_option_4">Borrar tags</string>
+    <string name="git_match_008_explanation">rebase cambia la base de una serie de commits.</string>
+
+    <string name="git_match_009_question">Relaciona el concepto: tag</string>
+    <string name="git_match_009_option_1">Marca para una versión concreta</string>
+    <string name="git_match_009_option_2">Archivo de configuración</string>
+    <string name="git_match_009_option_3">Rama temporal</string>
+    <string name="git_match_009_option_4">Conflicto resuelto</string>
+    <string name="git_match_009_explanation">Las tags suelen marcar versiones.</string>
+
+    <string name="git_match_010_question">Relaciona el concepto: conflicto</string>
+    <string name="git_match_010_option_1">Cambios incompatibles que Git no puede fusionar solo</string>
+    <string name="git_match_010_option_2">Commit remoto</string>
+    <string name="git_match_010_option_3">Archivo ignorado</string>
+    <string name="git_match_010_option_4">Rama principal</string>
+    <string name="git_match_010_explanation">Un conflicto requiere resolución manual.</string>
+
+    <!-- Git - Detect Error -->
+    <string name="git_error_001_question">Detecta el problema:\n\nHe modificado archivos, pero git commit dice que no hay nada para commitear.</string>
+    <string name="git_error_001_option_1">Falta hacer git add</string>
+    <string name="git_error_001_option_2">Falta instalar Git</string>
+    <string name="git_error_001_option_3">El remoto no existe</string>
+    <string name="git_error_001_option_4">Hay que usar git push primero</string>
+    <string name="git_error_001_explanation">Antes de commit, los cambios deben estar en staging.</string>
+
+    <string name="git_error_002_question">Detecta el problema:\n\nHago cambios en main directamente para una feature grande.</string>
+    <string name="git_error_002_option_1">Mejor crear una rama</string>
+    <string name="git_error_002_option_2">Hay que borrar main</string>
+    <string name="git_error_002_option_3">No se puede editar main nunca</string>
+    <string name="git_error_002_option_4">Git no permite cambios</string>
+    <string name="git_error_002_explanation">Para features grandes es mejor trabajar en una rama.</string>
+
+    <string name="git_error_003_question">Detecta el problema:\n\nResuelvo un conflicto pero no hago commit después.</string>
+    <string name="git_error_003_option_1">El merge queda incompleto</string>
+    <string name="git_error_003_option_2">El conflicto se resuelve solo</string>
+    <string name="git_error_003_option_3">Hay que hacer push antes</string>
+    <string name="git_error_003_option_4">No afecta</string>
+    <string name="git_error_003_explanation">Después de resolver conflictos normalmente hay que añadir y commitear.</string>
+
+    <string name="git_error_004_question">Detecta el problema:\n\ngit push\n\nResultado: rejected, non-fast-forward.</string>
+    <string name="git_error_004_option_1">El remoto tiene cambios que no tienes localmente</string>
+    <string name="git_error_004_option_2">Falta git add</string>
+    <string name="git_error_004_option_3">No existe git push</string>
+    <string name="git_error_004_option_4">El commit no tiene mensaje</string>
+    <string name="git_error_004_explanation">Debes integrar cambios remotos antes de subir.</string>
+
+    <string name="git_error_005_question">Detecta el problema:\n\nHe puesto secrets.env en el repo por error.</string>
+    <string name="git_error_005_option_1">Hay que eliminarlo del repo y revisar credenciales</string>
+    <string name="git_error_005_option_2">Basta con añadirlo a .gitignore</string>
+    <string name="git_error_005_option_3">No pasa nada si está commiteado</string>
+    <string name="git_error_005_option_4">Hay que hacer git pull</string>
+    <string name="git_error_005_explanation">Si un secreto se subió, hay que retirarlo y rotar credenciales.</string>
+
+    <string name="git_error_006_question">Detecta el problema:\n\nAñado archivo.log a .gitignore, pero Git lo sigue mostrando modificado.</string>
+    <string name="git_error_006_option_1">El archivo ya estaba trackeado</string>
+    <string name="git_error_006_option_2">.gitignore no funciona nunca</string>
+    <string name="git_error_006_option_3">Hay que borrar Git</string>
+    <string name="git_error_006_option_4">Falta git push</string>
+    <string name="git_error_006_explanation">.gitignore no deja de seguir archivos ya trackeados.</string>
+
+    <string name="git_error_007_question">Detecta el problema:\n\ngit reset --hard\n\nLo ejecuto sin revisar cambios locales.</string>
+    <string name="git_error_007_option_1">Puede borrar cambios no guardados</string>
+    <string name="git_error_007_option_2">Solo muestra estado</string>
+    <string name="git_error_007_option_3">Crea una rama</string>
+    <string name="git_error_007_option_4">Sube cambios</string>
+    <string name="git_error_007_explanation">reset --hard puede descartar cambios locales.</string>
+
+    <string name="git_error_008_question">Detecta el problema:\n\nHago rebase de una rama compartida sin avisar.</string>
+    <string name="git_error_008_option_1">Puede reescribir historial usado por otros</string>
+    <string name="git_error_008_option_2">No afecta a nadie</string>
+    <string name="git_error_008_option_3">Git lo impide siempre</string>
+    <string name="git_error_008_option_4">Borra el remoto</string>
+    <string name="git_error_008_explanation">Rebase en ramas compartidas puede complicar el trabajo del equipo.</string>
+
+    <string name="git_error_009_question">Detecta el problema:\n\nConflicto resuelto, pero olvidé quitar los marcadores &lt;&lt;&lt;&lt;&lt;&lt;&lt; ======= &gt;&gt;&gt;&gt;&gt;&gt;&gt;.</string>
+    <string name="git_error_009_option_1">El archivo queda con texto inválido del conflicto</string>
+    <string name="git_error_009_option_2">Git lo arregla al hacer push</string>
+    <string name="git_error_009_option_3">No importa</string>
+    <string name="git_error_009_option_4">Eso es obligatorio</string>
+    <string name="git_error_009_explanation">Los marcadores de conflicto deben eliminarse al resolver.</string>
+
+    <string name="git_error_010_question">Detecta el problema:\n\ngit clean -fd\n\nLo ejecuto sin simular primero.</string>
+    <string name="git_error_010_option_1">Puede borrar archivos no trackeados</string>
+    <string name="git_error_010_option_2">Hace commit automático</string>
+    <string name="git_error_010_option_3">Cambia de rama</string>
+    <string name="git_error_010_option_4">Crea tags</string>
+    <string name="git_error_010_explanation">git clean -fd elimina archivos no trackeados; conviene probar con -n.</string>
+
+    <!-- Git - Console Output -->
+    <string name="git_output_001_question">¿Qué comando verías para listar ramas?</string>
+    <string name="git_output_001_option_1">git branch</string>
+    <string name="git_output_001_option_2">git list</string>
+    <string name="git_output_001_option_3">git status --all</string>
+    <string name="git_output_001_option_4">git tree</string>
+    <string name="git_output_001_explanation">git branch lista ramas locales.</string>
+
+    <string name="git_output_002_question">¿Qué comando crea una rama llamada feature-login?</string>
+    <string name="git_output_002_option_1">git branch feature-login</string>
+    <string name="git_output_002_option_2">git new feature-login</string>
+    <string name="git_output_002_option_3">git create feature-login</string>
+    <string name="git_output_002_option_4">git make branch feature-login</string>
+    <string name="git_output_002_explanation">git branch nombre crea una rama.</string>
+
+    <string name="git_output_003_question">¿Qué comando cambia a una rama existente?</string>
+    <string name="git_output_003_option_1">git checkout rama</string>
+    <string name="git_output_003_option_2">git jump rama</string>
+    <string name="git_output_003_option_3">git go rama</string>
+    <string name="git_output_003_option_4">git enter rama</string>
+    <string name="git_output_003_explanation">git checkout rama cambia de rama.</string>
+
+    <string name="git_output_004_question">¿Qué comando muestra commits en una línea?</string>
+    <string name="git_output_004_option_1">git log --oneline</string>
+    <string name="git_output_004_option_2">git log --short</string>
+    <string name="git_output_004_option_3">git commits one</string>
+    <string name="git_output_004_option_4">git status --log</string>
+    <string name="git_output_004_explanation">git log --oneline resume commits.</string>
+
+    <string name="git_output_005_question">¿Qué indica un archivo untracked en git status?</string>
+    <string name="git_output_005_option_1">Git todavía no lo sigue</string>
+    <string name="git_output_005_option_2">Ya está commiteado</string>
+    <string name="git_output_005_option_3">Está en remoto</string>
+    <string name="git_output_005_option_4">Está fusionado</string>
+    <string name="git_output_005_explanation">untracked significa no seguido.</string>
+
+    <string name="git_output_006_question">¿Qué indica Changes to be committed?</string>
+    <string name="git_output_006_option_1">Cambios staged</string>
+    <string name="git_output_006_option_2">Cambios ignorados</string>
+    <string name="git_output_006_option_3">Cambios remotos</string>
+    <string name="git_output_006_option_4">Conflictos ocultos</string>
+    <string name="git_output_006_explanation">Son cambios preparados para commit.</string>
+
+    <string name="git_output_007_question">¿Qué indica Changes not staged for commit?</string>
+    <string name="git_output_007_option_1">Cambios modificados pero no preparados</string>
+    <string name="git_output_007_option_2">Cambios ya subidos</string>
+    <string name="git_output_007_option_3">Commits remotos</string>
+    <string name="git_output_007_option_4">Tags nuevas</string>
+    <string name="git_output_007_explanation">Son cambios sin añadir al staging.</string>
+
+    <string name="git_output_008_question">¿Qué comando verías para ver remotos?</string>
+    <string name="git_output_008_option_1">git remote -v</string>
+    <string name="git_output_008_option_2">git branch -v</string>
+    <string name="git_output_008_option_3">git status remote</string>
+    <string name="git_output_008_option_4">git log remote</string>
+    <string name="git_output_008_explanation">remote -v lista remotos.</string>
+
+    <string name="git_output_009_question">¿Qué comando verías para aplicar un stash sin borrarlo?</string>
+    <string name="git_output_009_option_1">git stash apply</string>
+    <string name="git_output_009_option_2">git stash pop</string>
+    <string name="git_output_009_option_3">git stash remove</string>
+    <string name="git_output_009_option_4">git stash use-delete</string>
+    <string name="git_output_009_explanation">apply mantiene el stash.</string>
+
+    <string name="git_output_010_question">¿Qué comando verías para aplicar y borrar el último stash?</string>
+    <string name="git_output_010_option_1">git stash pop</string>
+    <string name="git_output_010_option_2">git stash apply</string>
+    <string name="git_output_010_option_3">git stash keep</string>
+    <string name="git_output_010_option_4">git stash show</string>
+    <string name="git_output_010_explanation">pop aplica y elimina.</string>
+
+    <!-- Git - Order Code -->
+    <string name="git_order_001_question">Ordena el flujo básico de guardar cambios:</string>
+    <string name="git_order_001_option_1">git status</string>
+    <string name="git_order_001_option_2">git add .</string>
+    <string name="git_order_001_option_3">git commit -m &quot;mensaje&quot;</string>
+    <string name="git_order_001_option_4">git push</string>
+    <string name="git_order_001_explanation">Primero revisas, luego añades, commiteas y subes.</string>
+
+    <string name="git_order_002_question">Ordena el flujo para crear una rama y trabajar:</string>
+    <string name="git_order_002_option_1">git checkout -b feature-login</string>
+    <string name="git_order_002_option_2">git add .</string>
+    <string name="git_order_002_option_3">git commit -m &quot;Añade login&quot;</string>
+    <string name="git_order_002_option_4">git push -u origin feature-login</string>
+    <string name="git_order_002_explanation">Creas rama, guardas cambios y la subes.</string>
+
+    <string name="git_order_003_question">Ordena el flujo para actualizar tu rama con main:</string>
+    <string name="git_order_003_option_1">git checkout main</string>
+    <string name="git_order_003_option_2">git pull origin main</string>
+    <string name="git_order_003_option_3">git checkout feature-login</string>
+    <string name="git_order_003_option_4">git merge main</string>
+    <string name="git_order_003_explanation">Primero actualizas main y luego lo integras en tu rama.</string>
+
+    <string name="git_order_004_question">Ordena el flujo de resolver conflicto:</string>
+    <string name="git_order_004_option_1">Editar archivos en conflicto</string>
+    <string name="git_order_004_option_2">Eliminar marcadores de conflicto</string>
+    <string name="git_order_004_option_3">git add .</string>
+    <string name="git_order_004_option_4">git commit</string>
+    <string name="git_order_004_explanation">Se resuelve en archivos, se marca como resuelto y se commitea.</string>
+
+    <string name="git_order_005_question">Ordena el flujo para ignorar un archivo nuevo:</string>
+    <string name="git_order_005_option_1">Editar .gitignore</string>
+    <string name="git_order_005_option_2">Añadir patrón del archivo</string>
+    <string name="git_order_005_option_3">git add .gitignore</string>
+    <string name="git_order_005_option_4">git commit -m &quot;Actualiza gitignore&quot;</string>
+    <string name="git_order_005_explanation">El patrón se guarda dentro de .gitignore.</string>
+
+    <string name="git_order_006_question">Ordena el flujo de revisar diferencias antes de commit:</string>
+    <string name="git_order_006_option_1">git status</string>
+    <string name="git_order_006_option_2">git diff</string>
+    <string name="git_order_006_option_3">git add .</string>
+    <string name="git_order_006_option_4">git diff --staged</string>
+    <string name="git_order_006_option_5">git commit -m &quot;mensaje&quot;</string>
+    <string name="git_order_006_explanation">Revisas cambios antes y después del staging.</string>
+
+    <string name="git_order_007_question">Ordena el flujo para usar stash:</string>
+    <string name="git_order_007_option_1">git stash</string>
+    <string name="git_order_007_option_2">git pull</string>
+    <string name="git_order_007_option_3">git stash pop</string>
+    <string name="git_order_007_option_4">Resolver conflictos si aparecen</string>
+    <string name="git_order_007_explanation">Guardas cambios, actualizas y reaplicas.</string>
+
+    <string name="git_order_008_question">Ordena el flujo para etiquetar una versión:</string>
+    <string name="git_order_008_option_1">git checkout main</string>
+    <string name="git_order_008_option_2">git pull origin main</string>
+    <string name="git_order_008_option_3">git tag v1.0.0</string>
+    <string name="git_order_008_option_4">git push --tags</string>
+    <string name="git_order_008_explanation">Etiquetas una versión actualizada y subes tags.</string>
+
+    <string name="git_order_009_question">Ordena el flujo seguro antes de git clean:</string>
+    <string name="git_order_009_option_1">git clean -n</string>
+    <string name="git_order_009_option_2">Revisar archivos a borrar</string>
+    <string name="git_order_009_option_3">git clean -f</string>
+    <string name="git_order_009_option_4">git status</string>
+    <string name="git_order_009_explanation">Primero simulas, luego borras si procede.</string>
+
+    <string name="git_order_010_question">Ordena el flujo de cherry-pick:</string>
+    <string name="git_order_010_option_1">git checkout rama-destino</string>
+    <string name="git_order_010_option_2">git log --oneline</string>
+    <string name="git_order_010_option_3">git cherry-pick abc123</string>
+    <string name="git_order_010_option_4">Resolver conflictos si aparecen</string>
+    <string name="git_order_010_explanation">Vas a la rama destino y aplicas el commit concreto.</string>
+
+    <!-- Git - Technical Wordle -->
+    <string name="git_wordle_001_question">Comando de 3 letras que prepara cambios.</string>
+    <string name="git_wordle_001_option_1">ADD</string>
+    <string name="git_wordle_001_option_2">LOG</string>
+    <string name="git_wordle_001_option_3">TAG</string>
+    <string name="git_wordle_001_option_4">PUSH</string>
+    <string name="git_wordle_001_explanation">git add prepara cambios.</string>
+
+    <string name="git_wordle_002_question">Comando que muestra historial.</string>
+    <string name="git_wordle_002_option_1">LOG</string>
+    <string name="git_wordle_002_option_2">ADD</string>
+    <string name="git_wordle_002_option_3">GET</string>
+    <string name="git_wordle_002_option_4">NEW</string>
+    <string name="git_wordle_002_explanation">git log muestra commits.</string>
+
+    <string name="git_wordle_003_question">Comando que sube cambios.</string>
+    <string name="git_wordle_003_option_1">PUSH</string>
+    <string name="git_wordle_003_option_2">PULL</string>
+    <string name="git_wordle_003_option_3">FETCH</string>
+    <string name="git_wordle_003_option_4">INIT</string>
+    <string name="git_wordle_003_explanation">git push sube commits.</string>
+
+    <string name="git_wordle_004_question">Comando que trae e integra cambios.</string>
+    <string name="git_wordle_004_option_1">PULL</string>
+    <string name="git_wordle_004_option_2">PUSH</string>
+    <string name="git_wordle_004_option_3">ADD</string>
+    <string name="git_wordle_004_option_4">TAG</string>
+    <string name="git_wordle_004_explanation">git pull trae e integra.</string>
+
+    <string name="git_wordle_005_question">Nombre típico del remoto principal.</string>
+    <string name="git_wordle_005_option_1">ORIGIN</string>
+    <string name="git_wordle_005_option_2">REMOTE</string>
+    <string name="git_wordle_005_option_3">SERVER</string>
+    <string name="git_wordle_005_option_4">MAIN</string>
+    <string name="git_wordle_005_explanation">origin suele ser el remoto principal.</string>
+
+    <string name="git_wordle_006_question">Referencia a la posición actual.</string>
+    <string name="git_wordle_006_option_1">HEAD</string>
+    <string name="git_wordle_006_option_2">MAIN</string>
+    <string name="git_wordle_006_option_3">ROOT</string>
+    <string name="git_wordle_006_option_4">BASE</string>
+    <string name="git_wordle_006_explanation">HEAD apunta a la posición actual.</string>
+
+    <string name="git_wordle_007_question">Comando para guardar cambios temporalmente.</string>
+    <string name="git_wordle_007_option_1">STASH</string>
+    <string name="git_wordle_007_option_2">STORE</string>
+    <string name="git_wordle_007_option_3">PAUSE</string>
+    <string name="git_wordle_007_option_4">CACHE</string>
+    <string name="git_wordle_007_explanation">git stash guarda cambios temporalmente.</string>
+
+    <string name="git_wordle_008_question">Comando para fusionar ramas.</string>
+    <string name="git_wordle_008_option_1">MERGE</string>
+    <string name="git_wordle_008_option_2">JOIN</string>
+    <string name="git_wordle_008_option_3">UNION</string>
+    <string name="git_wordle_008_option_4">MIX</string>
+    <string name="git_wordle_008_explanation">git merge fusiona ramas.</string>
+
+    <string name="git_wordle_009_question">Comando que reescribe base de commits.</string>
+    <string name="git_wordle_009_option_1">REBASE</string>
+    <string name="git_wordle_009_option_2">RESET</string>
+    <string name="git_wordle_009_option_3">RESTORE</string>
+    <string name="git_wordle_009_option_4">REMOTE</string>
+    <string name="git_wordle_009_explanation">rebase reaplica commits.</string>
+
+    <string name="git_wordle_010_question">Comando que aplica un commit concreto.</string>
+    <string name="git_wordle_010_option_1">CHERRY-PICK</string>
+    <string name="git_wordle_010_option_2">COPY</string>
+    <string name="git_wordle_010_option_3">PICKONE</string>
+    <string name="git_wordle_010_option_4">COMMIT-GET</string>
+    <string name="git_wordle_010_explanation">cherry-pick aplica un commit concreto.</string>
+
+    <!-- Git - Crossword -->
+    <string name="git_crossword_001_question">Pista: comando para ver estado.</string>
+    <string name="git_crossword_001_option_1">status</string>
+    <string name="git_crossword_001_option_2">branch</string>
+    <string name="git_crossword_001_option_3">commit</string>
+    <string name="git_crossword_001_option_4">remote</string>
+    <string name="git_crossword_001_explanation">git status muestra el estado.</string>
+
+    <string name="git_crossword_002_question">Pista: comando para preparar cambios.</string>
+    <string name="git_crossword_002_option_1">add</string>
+    <string name="git_crossword_002_option_2">push</string>
+    <string name="git_crossword_002_option_3">pull</string>
+    <string name="git_crossword_002_option_4">log</string>
+    <string name="git_crossword_002_explanation">git add prepara cambios.</string>
+
+    <string name="git_crossword_003_question">Pista: instantánea de cambios.</string>
+    <string name="git_crossword_003_option_1">commit</string>
+    <string name="git_crossword_003_option_2">remote</string>
+    <string name="git_crossword_003_option_3">branch</string>
+    <string name="git_crossword_003_option_4">stash</string>
+    <string name="git_crossword_003_explanation">Un commit guarda cambios.</string>
+
+    <string name="git_crossword_004_question">Pista: línea de trabajo separada.</string>
+    <string name="git_crossword_004_option_1">branch</string>
+    <string name="git_crossword_004_option_2">tag</string>
+    <string name="git_crossword_004_option_3">remote</string>
+    <string name="git_crossword_004_option_4">diff</string>
+    <string name="git_crossword_004_explanation">Una branch es una rama.</string>
+
+    <string name="git_crossword_005_question">Pista: repositorio externo.</string>
+    <string name="git_crossword_005_option_1">remote</string>
+    <string name="git_crossword_005_option_2">local</string>
+    <string name="git_crossword_005_option_3">stage</string>
+    <string name="git_crossword_005_option_4">head</string>
+    <string name="git_crossword_005_explanation">remote es un repositorio remoto.</string>
+
+    <string name="git_crossword_006_question">Pista: área de preparación.</string>
+    <string name="git_crossword_006_option_1">staging</string>
+    <string name="git_crossword_006_option_2">remote</string>
+    <string name="git_crossword_006_option_3">merge</string>
+    <string name="git_crossword_006_option_4">tag</string>
+    <string name="git_crossword_006_explanation">staging prepara cambios.</string>
+
+    <string name="git_crossword_007_question">Pista: guardar cambios temporalmente.</string>
+    <string name="git_crossword_007_option_1">stash</string>
+    <string name="git_crossword_007_option_2">commit</string>
+    <string name="git_crossword_007_option_3">push</string>
+    <string name="git_crossword_007_option_4">pull</string>
+    <string name="git_crossword_007_explanation">stash guarda cambios temporalmente.</string>
+
+    <string name="git_crossword_008_question">Pista: integrar ramas.</string>
+    <string name="git_crossword_008_option_1">merge</string>
+    <string name="git_crossword_008_option_2">clone</string>
+    <string name="git_crossword_008_option_3">init</string>
+    <string name="git_crossword_008_option_4">clean</string>
+    <string name="git_crossword_008_explanation">merge integra ramas.</string>
+
+    <string name="git_crossword_009_question">Pista: referencia a posición actual.</string>
+    <string name="git_crossword_009_option_1">HEAD</string>
+    <string name="git_crossword_009_option_2">ROOT</string>
+    <string name="git_crossword_009_option_3">MAIN</string>
+    <string name="git_crossword_009_option_4">BASE</string>
+    <string name="git_crossword_009_explanation">HEAD apunta a la posición actual.</string>
+
+    <string name="git_crossword_010_question">Pista: etiqueta de versión.</string>
+    <string name="git_crossword_010_option_1">tag</string>
+    <string name="git_crossword_010_option_2">log</string>
+    <string name="git_crossword_010_option_3">diff</string>
+    <string name="git_crossword_010_option_4">add</string>
+    <string name="git_crossword_010_explanation">tag marca versiones.</string>
+
+</resources>

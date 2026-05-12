@@ -1,12 +1,12 @@
 package com.icb.iwivo.ui.navigation
 
+import android.net.Uri
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -16,7 +16,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.data.repository.AuthRepository
 import com.icb.iwivo.data.repository.BadgeRepository
 import com.icb.iwivo.data.repository.FirestoreRepository
-import com.icb.iwivo.data.repository.UserRepository
 import com.icb.iwivo.ui.screens.badges.BadgesScreen
 import com.icb.iwivo.ui.screens.game.GameScreen
 import com.icb.iwivo.ui.screens.game.GameTypeScreen
@@ -26,6 +25,7 @@ import com.icb.iwivo.ui.screens.profile.EditProfileScreen
 import com.icb.iwivo.ui.screens.profile.ProfileScreen
 import com.icb.iwivo.ui.screens.register.RegisterScreen
 import com.icb.iwivo.ui.screens.result.ResultScreen
+import com.icb.iwivo.ui.screens.settings.SettingsScreen
 import com.icb.iwivo.ui.screens.shop.ShopScreen
 import com.icb.iwivo.ui.screens.topic.TopicSelectionScreen
 
@@ -69,6 +69,15 @@ fun NavGraph() {
                 onStartClick = {
                     navController.navigate(Screen.TopicSelection.route)
                 },
+                onContinueLastModeClick = { topic, gameType ->
+                    navController.navigate(
+                        Screen.Game.createRoute(
+                            topic = topic,
+                            gameType = gameType,
+                            difficulty = "easy"
+                        )
+                    )
+                },
                 onProfileClick = {
                     navController.navigate(Screen.Profile.route)
                 },
@@ -80,6 +89,7 @@ fun NavGraph() {
 
         composable(Screen.TopicSelection.route) {
             TopicSelectionScreen(
+                firestoreRepository = firestoreRepository,
                 onTopicClick = { topic ->
                     navController.navigate(Screen.GameType.createRoute(topic))
                 }
@@ -98,8 +108,15 @@ fun NavGraph() {
 
             GameTypeScreen(
                 topic = topic,
-                onGameTypeClick = { gameType ->
-                    navController.navigate(Screen.Game.createRoute(topic, gameType))
+                firestoreRepository = firestoreRepository,
+                onGameTypeClick = { gameType, difficulty ->
+                    navController.navigate(
+                        Screen.Game.createRoute(
+                            topic = topic,
+                            gameType = gameType,
+                            difficulty = difficulty
+                        )
+                    )
                 }
             )
         }
@@ -112,78 +129,86 @@ fun NavGraph() {
                 },
                 navArgument("gameType") {
                     type = NavType.StringType
+                },
+                navArgument("difficulty") {
+                    type = NavType.StringType
                 }
             )
         ) { backStackEntry ->
-
-            val context = LocalContext.current
-            val userRepository = remember { UserRepository(context) }
-
             val topic = backStackEntry.arguments?.getString("topic").orEmpty()
             val gameType = backStackEntry.arguments?.getString("gameType").orEmpty()
+            val difficulty = backStackEntry.arguments?.getString("difficulty").orEmpty()
+                .ifBlank { "easy" }
 
             GameScreen(
                 topic = topic,
                 gameType = gameType,
-                onFinishGame = { correct, total ->
+                difficulty = difficulty,
+                firestoreRepository = firestoreRepository,
+                onFinishGame = { correct, total, bestStreak ->
                     val badgeRepository = BadgeRepository()
-
-                    val xpBefore = userRepository.getXp()
-                    val streakBefore = userRepository.getStreak()
-
-                    val badgesBefore = badgeRepository.getBadges(
-                        xp = xpBefore,
-                        streak = streakBefore
-                    )
-
-                    val unlockedBeforeIds = badgesBefore
-                        .filter { it.unlocked }
-                        .map { it.id }
 
                     val xpEarned = correct * 50
                     val coinsEarned = correct * 10
 
-                    userRepository.addXp(xpEarned)
-                    userRepository.addCoins(coinsEarned)
-                    userRepository.updateStreak()
-
-                    val xpAfter = userRepository.getXp()
-                    val streakAfter = userRepository.getStreak()
-
-                    val badgesAfter = badgeRepository.getBadges(
-                        xp = xpAfter,
-                        streak = streakAfter
+                    firestoreRepository.saveLastPlayedMode(
+                        topic = topic,
+                        gameType = gameType
                     )
 
-                    val newlyUnlockedBadges = badgesAfter.filter { badgeAfter ->
-                        badgeAfter.unlocked && badgeAfter.id !in unlockedBeforeIds
-                    }
+                    firestoreRepository.getCurrentUserProgress(
+                        onResult = { currentXp, currentCoins, currentStreak, lastActivityDate ->
 
-                    val unlockedBadgeIds = newlyUnlockedBadges
-                        .joinToString("|") { it.id }
-                        .ifBlank { "none" }
+                            val badgesBefore = badgeRepository.getBadges(
+                                xp = currentXp,
+                                coins = currentCoins,
+                                streak = currentStreak
+                            )
 
-                    println("DEBUG_BADGES_XP_BEFORE = $xpBefore")
-                    println("DEBUG_BADGES_STREAK_BEFORE = $streakBefore")
-                    println("DEBUG_BADGES_XP_AFTER = $xpAfter")
-                    println("DEBUG_BADGES_STREAK_AFTER = $streakAfter")
-                    println("DEBUG_BADGES_BEFORE = $unlockedBeforeIds")
-                    println("DEBUG_BADGES_AFTER = ${badgesAfter.filter { it.unlocked }.map { it.id }}")
-                    println("DEBUG_NEW_BADGES = ${newlyUnlockedBadges.map { it.id }}")
-                    println("DEBUG_UNLOCKED_IDS_ROUTE = $unlockedBadgeIds")
+                            val xpAfter = currentXp + xpEarned
+                            val coinsAfter = currentCoins + coinsEarned
 
-                    firestoreRepository.addXp(xpEarned)
-                    firestoreRepository.addCoins(coinsEarned)
-                    firestoreRepository.updateStreak()
+                            val streakAfter = firestoreRepository.calculateStreakAfterActivity(
+                                currentStreak = currentStreak,
+                                lastActivityDate = lastActivityDate
+                            )
 
-                    navController.navigate(
-                        Screen.Result.createRoute(
-                            correct = correct,
-                            total = total,
-                            xp = xpEarned,
-                            coins = coinsEarned,
-                            unlockedBadgeIds = unlockedBadgeIds
-                        )
+                            val badgesAfter = badgeRepository.getBadges(
+                                xp = xpAfter,
+                                coins = coinsAfter,
+                                streak = streakAfter
+                            )
+
+                            val unlockedBeforeIds = badgesBefore
+                                .filter { it.unlocked }
+                                .map { it.id }
+
+                            val newlyUnlockedBadges = badgesAfter.filter { badgeAfter ->
+                                badgeAfter.unlocked && badgeAfter.id !in unlockedBeforeIds
+                            }
+
+                            val unlockedBadgeIds = newlyUnlockedBadges
+                                .joinToString("|") { it.id }
+                                .ifBlank { "none" }
+
+                            navController.navigate(
+                                Screen.Result.createRoute(
+                                    correct = correct,
+                                    total = total,
+                                    xp = xpEarned,
+                                    coins = coinsEarned,
+                                    bestStreak = bestStreak,
+                                    unlockedBadgeIds = unlockedBadgeIds
+                                )
+                            )
+
+                            firestoreRepository.addXp(xpEarned)
+                            firestoreRepository.addCoins(coinsEarned)
+                            firestoreRepository.updateStreak()
+                            firestoreRepository.updateDailyMissionAfterGame(
+                                questionsAnswered = total
+                            )
+                        }
                     )
                 }
             )
@@ -196,6 +221,7 @@ fun NavGraph() {
                 navArgument("total") { type = NavType.IntType },
                 navArgument("xp") { type = NavType.IntType },
                 navArgument("coins") { type = NavType.IntType },
+                navArgument("bestStreak") { type = NavType.IntType },
                 navArgument("unlockedBadgeIds") { type = NavType.StringType }
             )
         ) { backStackEntry ->
@@ -203,27 +229,29 @@ fun NavGraph() {
             val total = backStackEntry.arguments?.getInt("total") ?: 0
             val xp = backStackEntry.arguments?.getInt("xp") ?: 0
             val coins = backStackEntry.arguments?.getInt("coins") ?: 0
+            val bestStreak = backStackEntry.arguments?.getInt("bestStreak") ?: 0
 
             val unlockedBadgeIdsRaw =
                 backStackEntry.arguments?.getString("unlockedBadgeIds") ?: "none"
 
-            val unlockedBadgeIds = if (unlockedBadgeIdsRaw == "none") {
+            val decodedUnlockedBadgeIds = Uri.decode(unlockedBadgeIdsRaw)
+
+            val unlockedBadgeIds = if (decodedUnlockedBadgeIds == "none") {
                 emptyList()
             } else {
-                unlockedBadgeIdsRaw
+                decodedUnlockedBadgeIds
                     .split("|")
                     .filter { it.isNotBlank() }
             }
-
-            println("DEBUG_RESULT_RAW_IDS = $unlockedBadgeIdsRaw")
-            println("DEBUG_RESULT_LIST_IDS = $unlockedBadgeIds")
 
             ResultScreen(
                 correct = correct,
                 total = total,
                 xpEarned = xp,
                 coinsEarned = coins,
+                bestStreak = bestStreak,
                 unlockedBadgeIds = unlockedBadgeIds,
+                firestoreRepository = firestoreRepository,
                 onBackHome = {
                     navController.navigate(Screen.Home.route) {
                         popUpTo(Screen.Home.route) {
@@ -236,12 +264,14 @@ fun NavGraph() {
 
         composable(Screen.Achievements.route) {
             var xp by remember { mutableIntStateOf(0) }
+            var coins by remember { mutableIntStateOf(0) }
             var streak by remember { mutableIntStateOf(0) }
 
             LaunchedEffect(Unit) {
                 firestoreRepository.getCurrentUserData(
-                    onResult = { remoteXp, _, remoteStreak ->
+                    onResult = { remoteXp, remoteCoins, remoteStreak ->
                         xp = remoteXp
+                        coins = remoteCoins
                         streak = remoteStreak
                     }
                 )
@@ -249,7 +279,9 @@ fun NavGraph() {
 
             BadgesScreen(
                 xp = xp,
-                streak = streak
+                coins = coins,
+                streak = streak,
+                firestoreRepository = firestoreRepository
             )
         }
 
@@ -259,6 +291,9 @@ fun NavGraph() {
                 firestoreRepository = firestoreRepository,
                 onEditProfileClick = {
                     navController.navigate(Screen.EditProfile.route)
+                },
+                onSettingsClick = {
+                    navController.navigate(Screen.Settings.route)
                 },
                 onAchievementsClick = {
                     navController.navigate(Screen.Achievements.route)
@@ -271,6 +306,15 @@ fun NavGraph() {
                             inclusive = true
                         }
                     }
+                }
+            )
+        }
+
+        composable(Screen.Settings.route) {
+            SettingsScreen(
+                firestoreRepository = firestoreRepository,
+                onBackClick = {
+                    navController.popBackStack()
                 }
             )
         }
@@ -292,7 +336,9 @@ fun NavGraph() {
         }
 
         composable(Screen.Shop.route) {
-            ShopScreen()
+            ShopScreen(
+                firestoreRepository = firestoreRepository
+            )
         }
 
         composable(Screen.Register.route) {

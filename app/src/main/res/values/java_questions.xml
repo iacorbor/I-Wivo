@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Extra game strings needed by the updated GameScreen -->
+    <string name="game_try_letter">Probar letra</string>
+    <string name="game_technical_hangman_label">Ahorcado técnico</string>
+    <string name="game_technical_concept_label">Concepto técnico</string>
+    <string name="game_match_concept_hint">Elige la definición correcta del concepto.</string>
+    <string name="game_hangman_encrypted_word">Palabra cifrada</string>
+    <string name="game_hangman_tried_letters">Letras probadas: %1$s</string>
+    <string name="game_hangman_none">ninguna</string>
+    <string name="game_hangman_enter_letter">Introduce una letra</string>
+    <string name="game_hangman_try_letter_hint">Pulsa “Probar letra” para intentar descifrar el término.</string>
+    <string name="game_hangman_access_terminal">Terminal de acceso</string>
+    <string name="game_hangman_errors_detected">Errores detectados: %1$d / %2$d</string>
+    <string name="game_code_label_debugger">Depurador Wivo</string>
+    <string name="game_code_label_console">Consola Wivo</string>
+    <string name="game_code_label_order">Ordenador de código</string>
+    <string name="game_code_order_hint_short">Toca las líneas en el orden correcto.</string>
+    <string name="game_complete_code_hint">Elige el fragmento que completa el código.</string>
+
+    <!-- Java test questions -->
+    <string name="java_test_001_question">¿Qué palabra clave se usa en Java para declarar una clase?</string>
+    <string name="java_test_001_option_1">class</string>
+    <string name="java_test_001_option_2">object</string>
+    <string name="java_test_001_option_3">fun</string>
+    <string name="java_test_001_option_4">struct</string>
+    <string name="java_test_001_explanation">En Java, una clase se declara usando la palabra clave class.</string>
+
+    <string name="java_test_002_question">¿Cuál es el método principal de entrada en una aplicación Java?</string>
+    <string name="java_test_002_option_1">start()</string>
+    <string name="java_test_002_option_2">run()</string>
+    <string name="java_test_002_option_3">main()</string>
+    <string name="java_test_002_option_4">init()</string>
+    <string name="java_test_002_explanation">El método main() es el punto de entrada habitual de una aplicación Java.</string>
+
+    <string name="java_test_003_question">¿Qué tipo de dato se usa para almacenar valores verdadero/falso?</string>
+    <string name="java_test_003_option_1">int</string>
+    <string name="java_test_003_option_2">String</string>
+    <string name="java_test_003_option_3">boolean</string>
+    <string name="java_test_003_option_4">char</string>
+    <string name="java_test_003_explanation">El tipo boolean almacena valores true o false.</string>
+
+    <string name="java_test_004_question">¿Qué palabra clave se usa para crear un objeto?</string>
+    <string name="java_test_004_option_1">new</string>
+    <string name="java_test_004_option_2">make</string>
+    <string name="java_test_004_option_3">create</string>
+    <string name="java_test_004_option_4">object</string>
+    <string name="java_test_004_explanation">En Java se usa new para crear una instancia de una clase.</string>
+
+    <string name="java_test_005_question">¿Qué modificador permite acceder a un miembro desde cualquier clase?</string>
+    <string name="java_test_005_option_1">private</string>
+    <string name="java_test_005_option_2">protected</string>
+    <string name="java_test_005_option_3">public</string>
+    <string name="java_test_005_option_4">static</string>
+    <string name="java_test_005_explanation">public permite acceder a un miembro desde cualquier clase.</string>
+
+    <string name="java_test_006_question">¿Qué modificador limita el acceso solo a la propia clase?</string>
+    <string name="java_test_006_option_1">public</string>
+    <string name="java_test_006_option_2">private</string>
+    <string name="java_test_006_option_3">static</string>
+    <string name="java_test_006_option_4">final</string>
+    <string name="java_test_006_explanation">private restringe el acceso al interior de la propia clase.</string>
+
+    <string name="java_test_007_question">¿Qué palabra clave se usa para heredar de una clase?</string>
+    <string name="java_test_007_option_1">extends</string>
+    <string name="java_test_007_option_2">implements</string>
+    <string name="java_test_007_option_3">inherits</string>
+    <string name="java_test_007_option_4">super</string>
+    <string name="java_test_007_explanation">extends se usa para indicar que una clase hereda de otra.</string>
+
+    <string name="java_test_008_question">¿Qué palabra clave se usa para implementar una interfaz?</string>
+    <string name="java_test_008_option_1">extends</string>
+    <string name="java_test_008_option_2">implements</string>
+    <string name="java_test_008_option_3">interface</string>
+    <string name="java_test_008_option_4">override</string>
+    <string name="java_test_008_explanation">implements se usa cuando una clase implementa una interfaz.</string>
+
+    <string name="java_test_009_question">¿Qué tipo de dato almacena números enteros?</string>
+    <string name="java_test_009_option_1">double</string>
+    <string name="java_test_009_option_2">boolean</string>
+    <string name="java_test_009_option_3">int</string>
+    <string name="java_test_009_option_4">char</string>
+    <string name="java_test_009_explanation">int almacena números enteros.</string>
+
+    <string name="java_test_010_question">¿Qué tipo de dato almacena números decimales de doble precisión?</string>
+    <string name="java_test_010_option_1">int</string>
+    <string name="java_test_010_option_2">float</string>
+    <string name="java_test_010_option_3">double</string>
+    <string name="java_test_010_option_4">boolean</string>
+    <string name="java_test_010_explanation">double se usa para números decimales con mayor precisión que float.</string>
+
+    <string name="java_test_011_question">¿Qué clase se usa habitualmente para cadenas de texto?</string>
+    <string name="java_test_011_option_1">Text</string>
+    <string name="java_test_011_option_2">String</string>
+    <string name="java_test_011_option_3">CharArray</string>
+    <string name="java_test_011_option_4">Word</string>
+    <string name="java_test_011_explanation">String representa cadenas de texto en Java.</string>
+
+    <string name="java_test_012_question">¿Qué operador se usa para comparar igualdad entre valores primitivos?</string>
+    <string name="java_test_012_option_1">=</string>
+    <string name="java_test_012_option_2">==</string>
+    <string name="java_test_012_option_3">===</string>
+    <string name="java_test_012_option_4">equals</string>
+    <string name="java_test_012_explanation">== compara igualdad en tipos primitivos.</string>
+
+    <string name="java_test_013_question">¿Qué método se recomienda para comparar el contenido de dos String?</string>
+    <string name="java_test_013_option_1">==</string>
+    <string name="java_test_013_option_2">equals()</string>
+    <string name="java_test_013_option_3">compare()</string>
+    <string name="java_test_013_option_4">same()</string>
+    <string name="java_test_013_explanation">equals() compara el contenido de dos objetos, como String.</string>
+
+    <string name="java_test_014_question">¿Qué estructura se usa para repetir código mientras una condición sea verdadera?</string>
+    <string name="java_test_014_option_1">if</string>
+    <string name="java_test_014_option_2">switch</string>
+    <string name="java_test_014_option_3">while</string>
+    <string name="java_test_014_option_4">try</string>
+    <string name="java_test_014_explanation">while repite un bloque mientras la condición sea verdadera.</string>
+
+    <string name="java_test_015_question">¿Qué estructura se usa para elegir entre múltiples casos?</string>
+    <string name="java_test_015_option_1">for</string>
+    <string name="java_test_015_option_2">switch</string>
+    <string name="java_test_015_option_3">class</string>
+    <string name="java_test_015_option_4">return</string>
+    <string name="java_test_015_explanation">switch permite ejecutar diferentes bloques según el valor evaluado.</string>
+
+    <string name="java_test_016_question">¿Qué palabra clave termina la ejecución de un método devolviendo un valor?</string>
+    <string name="java_test_016_option_1">stop</string>
+    <string name="java_test_016_option_2">break</string>
+    <string name="java_test_016_option_3">return</string>
+    <string name="java_test_016_option_4">exit</string>
+    <string name="java_test_016_explanation">return finaliza el método y puede devolver un valor.</string>
+
+    <string name="java_test_017_question">¿Qué palabra clave sale de un bucle o switch?</string>
+    <string name="java_test_017_option_1">continue</string>
+    <string name="java_test_017_option_2">break</string>
+    <string name="java_test_017_option_3">return</string>
+    <string name="java_test_017_option_4">exit</string>
+    <string name="java_test_017_explanation">break interrumpe un bucle o una rama de switch.</string>
+
+    <string name="java_test_018_question">¿Qué palabra clave salta a la siguiente iteración de un bucle?</string>
+    <string name="java_test_018_option_1">continue</string>
+    <string name="java_test_018_option_2">break</string>
+    <string name="java_test_018_option_3">skip</string>
+    <string name="java_test_018_option_4">next</string>
+    <string name="java_test_018_explanation">continue salta el resto de la iteración actual y continúa con la siguiente.</string>
+
+    <string name="java_test_019_question">¿Qué palabra clave impide que una variable se reasigne?</string>
+    <string name="java_test_019_option_1">static</string>
+    <string name="java_test_019_option_2">final</string>
+    <string name="java_test_019_option_3">private</string>
+    <string name="java_test_019_option_4">locked</string>
+    <string name="java_test_019_explanation">final impide reasignar una variable una vez inicializada.</string>
+
+    <string name="java_test_020_question">¿Qué modificador indica que un miembro pertenece a la clase y no a una instancia concreta?</string>
+    <string name="java_test_020_option_1">final</string>
+    <string name="java_test_020_option_2">private</string>
+    <string name="java_test_020_option_3">static</string>
+    <string name="java_test_020_option_4">abstract</string>
+    <string name="java_test_020_explanation">static indica que el miembro pertenece a la clase.</string>
+
+    <string name="java_test_021_question">¿Qué palabra clave se usa para definir una interfaz?</string>
+    <string name="java_test_021_option_1">interface</string>
+    <string name="java_test_021_option_2">abstract</string>
+    <string name="java_test_021_option_3">implements</string>
+    <string name="java_test_021_option_4">contract</string>
+    <string name="java_test_021_explanation">interface se usa para declarar una interfaz.</string>
+
+    <string name="java_test_022_question">¿Qué palabra clave permite llamar al constructor de la clase padre?</string>
+    <string name="java_test_022_option_1">this</string>
+    <string name="java_test_022_option_2">parent</string>
+    <string name="java_test_022_option_3">super</string>
+    <string name="java_test_022_option_4">base</string>
+    <string name="java_test_022_explanation">super permite acceder a miembros o constructores de la clase padre.</string>
+
+    <string name="java_test_023_question">¿Qué palabra clave hace referencia al objeto actual?</string>
+    <string name="java_test_023_option_1">self</string>
+    <string name="java_test_023_option_2">this</string>
+    <string name="java_test_023_option_3">current</string>
+    <string name="java_test_023_option_4">object</string>
+    <string name="java_test_023_explanation">this hace referencia al objeto actual.</string>
+
+    <string name="java_test_024_question">¿Qué bloque se usa para capturar excepciones?</string>
+    <string name="java_test_024_option_1">if</string>
+    <string name="java_test_024_option_2">catch</string>
+    <string name="java_test_024_option_3">case</string>
+    <string name="java_test_024_option_4">throw</string>
+    <string name="java_test_024_explanation">catch captura una excepción lanzada dentro de un bloque try.</string>
+
+    <string name="java_test_025_question">¿Qué palabra clave se usa para lanzar una excepción manualmente?</string>
+    <string name="java_test_025_option_1">throws</string>
+    <string name="java_test_025_option_2">throw</string>
+    <string name="java_test_025_option_3">catch</string>
+    <string name="java_test_025_option_4">error</string>
+    <string name="java_test_025_explanation">throw lanza una excepción manualmente.</string>
+
+    <string name="java_test_026_question">¿Qué palabra clave indica que un método puede lanzar una excepción?</string>
+    <string name="java_test_026_option_1">throw</string>
+    <string name="java_test_026_option_2">throws</string>
+    <string name="java_test_026_option_3">catch</string>
+    <string name="java_test_026_option_4">exception</string>
+    <string name="java_test_026_explanation">throws se coloca en la firma del método para declarar excepciones posibles.</string>
+
+    <string name="java_test_027_question">¿Qué colección permite guardar elementos en una lista ordenada?</string>
+    <string name="java_test_027_option_1">ArrayList</string>
+    <string name="java_test_027_option_2">HashMap</string>
+    <string name="java_test_027_option_3">HashSet</string>
+    <string name="java_test_027_option_4">Queue</string>
+    <string name="java_test_027_explanation">ArrayList almacena elementos en orden y permite acceso por índice.</string>
+
+    <string name="java_test_028_question">¿Qué colección guarda pares clave-valor?</string>
+    <string name="java_test_028_option_1">ArrayList</string>
+    <string name="java_test_028_option_2">HashMap</string>
+    <string name="java_test_028_option_3">HashSet</string>
+    <string name="java_test_028_option_4">String</string>
+    <string name="java_test_028_explanation">HashMap almacena datos asociados a claves.</string>
+
+    <string name="java_test_029_question">¿Qué colección evita elementos duplicados?</string>
+    <string name="java_test_029_option_1">List</string>
+    <string name="java_test_029_option_2">ArrayList</string>
+    <string name="java_test_029_option_3">HashSet</string>
+    <string name="java_test_029_option_4">Map</string>
+    <string name="java_test_029_explanation">HashSet no permite elementos duplicados.</string>
+
+    <string name="java_test_030_question">¿Qué método se usa para añadir un elemento a un ArrayList?</string>
+    <string name="java_test_030_option_1">put()</string>
+    <string name="java_test_030_option_2">add()</string>
+    <string name="java_test_030_option_3">insert()</string>
+    <string name="java_test_030_option_4">push()</string>
+    <string name="java_test_030_explanation">add() añade un elemento a una lista como ArrayList.</string>
+
+    <string name="java_test_031_question">¿Qué método devuelve el tamaño de una lista?</string>
+    <string name="java_test_031_option_1">length</string>
+    <string name="java_test_031_option_2">size()</string>
+    <string name="java_test_031_option_3">count()</string>
+    <string name="java_test_031_option_4">total()</string>
+    <string name="java_test_031_explanation">size() devuelve el número de elementos de una colección.</string>
+
+    <string name="java_test_032_question">¿Qué propiedad se usa para obtener la longitud de un array?</string>
+    <string name="java_test_032_option_1">size</string>
+    <string name="java_test_032_option_2">length</string>
+    <string name="java_test_032_option_3">count</string>
+    <string name="java_test_032_option_4">total</string>
+    <string name="java_test_032_explanation">Los arrays en Java usan la propiedad length.</string>
+
+    <string name="java_test_033_question">¿Qué método se usa para obtener la longitud de un String?</string>
+    <string name="java_test_033_option_1">length</string>
+    <string name="java_test_033_option_2">length()</string>
+    <string name="java_test_033_option_3">size()</string>
+    <string name="java_test_033_option_4">count()</string>
+    <string name="java_test_033_explanation">String usa el método length().</string>
+
+    <string name="java_test_034_question">¿Qué significa JVM?</string>
+    <string name="java_test_034_option_1">Java Visual Machine</string>
+    <string name="java_test_034_option_2">Java Virtual Machine</string>
+    <string name="java_test_034_option_3">Java Version Manager</string>
+    <string name="java_test_034_option_4">Joint Virtual Method</string>
+    <string name="java_test_034_explanation">JVM significa Java Virtual Machine.</string>
+
+    <string name="java_test_035_question">¿Qué archivo genera el compilador Java?</string>
+    <string name="java_test_035_option_1">.java</string>
+    <string name="java_test_035_option_2">.kt</string>
+    <string name="java_test_035_option_3">.class</string>
+    <string name="java_test_035_option_4">.xml</string>
+    <string name="java_test_035_explanation">El compilador genera archivos .class con bytecode.</string>
+
+    <string name="java_test_036_question">¿Qué comando compila un archivo Java desde terminal?</string>
+    <string name="java_test_036_option_1">java</string>
+    <string name="java_test_036_option_2">javac</string>
+    <string name="java_test_036_option_3">jvm</string>
+    <string name="java_test_036_option_4">compile</string>
+    <string name="java_test_036_explanation">javac compila archivos .java.</string>
+
+    <string name="java_test_037_question">¿Qué comando ejecuta una clase Java compilada?</string>
+    <string name="java_test_037_option_1">javac</string>
+    <string name="java_test_037_option_2">java</string>
+    <string name="java_test_037_option_3">runjava</string>
+    <string name="java_test_037_option_4">execute</string>
+    <string name="java_test_037_explanation">java ejecuta una clase compilada.</string>
+
+    <string name="java_test_038_question">¿Qué palabra clave se usa para declarar una clase que no puede instanciarse directamente?</string>
+    <string name="java_test_038_option_1">static</string>
+    <string name="java_test_038_option_2">final</string>
+    <string name="java_test_038_option_3">abstract</string>
+    <string name="java_test_038_option_4">private</string>
+    <string name="java_test_038_explanation">abstract indica que una clase puede no estar completamente implementada y no puede instanciarse directamente.</string>
+
+    <string name="java_test_039_question">¿Qué palabra clave impide que una clase sea heredada?</string>
+    <string name="java_test_039_option_1">static</string>
+    <string name="java_test_039_option_2">final</string>
+    <string name="java_test_039_option_3">sealed</string>
+    <string name="java_test_039_option_4">private</string>
+    <string name="java_test_039_explanation">Una clase final no puede ser extendida.</string>
+
+    <string name="java_test_040_question">¿Qué anotación se usa al sobrescribir un método?</string>
+    <string name="java_test_040_option_1">@Override</string>
+    <string name="java_test_040_option_2">@Overload</string>
+    <string name="java_test_040_option_3">@Extends</string>
+    <string name="java_test_040_option_4">@Implement</string>
+    <string name="java_test_040_explanation">@Override indica que un método sobrescribe otro de una clase padre o interfaz.</string>
+
+    <string name="java_test_041_question">¿Qué significa encapsulación?</string>
+    <string name="java_test_041_option_1">Ocultar datos internos y controlar el acceso</string>
+    <string name="java_test_041_option_2">Crear muchos objetos</string>
+    <string name="java_test_041_option_3">Ejecutar código en paralelo</string>
+    <string name="java_test_041_option_4">Convertir int a String</string>
+    <string name="java_test_041_explanation">La encapsulación consiste en proteger el estado interno y acceder mediante métodos controlados.</string>
+
+    <string name="java_test_042_question">¿Qué significa sobrecarga de métodos?</string>
+    <string name="java_test_042_option_1">Dos métodos con mismo nombre y parámetros diferentes</string>
+    <string name="java_test_042_option_2">Cambiar una variable final</string>
+    <string name="java_test_042_option_3">Eliminar métodos repetidos</string>
+    <string name="java_test_042_option_4">Heredar una clase</string>
+    <string name="java_test_042_explanation">La sobrecarga permite métodos con el mismo nombre pero diferentes parámetros.</string>
+
+    <string name="java_test_043_question">¿Qué significa sobrescritura de métodos?</string>
+    <string name="java_test_043_option_1">Crear una variable</string>
+    <string name="java_test_043_option_2">Redefinir un método heredado</string>
+    <string name="java_test_043_option_3">Borrar un método</string>
+    <string name="java_test_043_option_4">Llamar a un constructor</string>
+    <string name="java_test_043_explanation">La sobrescritura redefine el comportamiento de un método heredado.</string>
+
+    <string name="java_test_044_question">¿Qué tipo de clase puede contener métodos abstractos?</string>
+    <string name="java_test_044_option_1">final</string>
+    <string name="java_test_044_option_2">abstract</string>
+    <string name="java_test_044_option_3">static</string>
+    <string name="java_test_044_option_4">public</string>
+    <string name="java_test_044_explanation">Una clase abstract puede contener métodos abstractos.</string>
+
+    <string name="java_test_045_question">¿Qué método se ejecuta automáticamente al crear un objeto?</string>
+    <string name="java_test_045_option_1">main</string>
+    <string name="java_test_045_option_2">constructor</string>
+    <string name="java_test_045_option_3">run</string>
+    <string name="java_test_045_option_4">initObject</string>
+    <string name="java_test_045_explanation">El constructor se ejecuta al crear una instancia.</string>
+
+    <string name="java_test_046_question">¿Qué debe coincidir entre un constructor y su clase?</string>
+    <string name="java_test_046_option_1">El tipo de retorno</string>
+    <string name="java_test_046_option_2">El nombre</string>
+    <string name="java_test_046_option_3">El paquete</string>
+    <string name="java_test_046_option_4">La visibilidad</string>
+    <string name="java_test_046_explanation">El constructor tiene el mismo nombre que la clase.</string>
+
+    <string name="java_test_047_question">¿Qué paquete contiene muchas colecciones como ArrayList y HashMap?</string>
+    <string name="java_test_047_option_1">java.io</string>
+    <string name="java_test_047_option_2">java.util</string>
+    <string name="java_test_047_option_3">java.net</string>
+    <string name="java_test_047_option_4">java.sql</string>
+    <string name="java_test_047_explanation">java.util contiene muchas utilidades y colecciones.</string>
+
+    <string name="java_test_048_question">¿Qué clase se usa habitualmente para leer texto desde consola?</string>
+    <string name="java_test_048_option_1">Scanner</string>
+    <string name="java_test_048_option_2">ReaderConsole</string>
+    <string name="java_test_048_option_3">InputText</string>
+    <string name="java_test_048_option_4">ConsoleReader</string>
+    <string name="java_test_048_explanation">Scanner puede leer entrada desde System.in.</string>
+
+    <string name="java_test_049_question">¿Qué operador lógico representa AND?</string>
+    <string name="java_test_049_option_1">||</string>
+    <string name="java_test_049_option_2">&amp;&amp;</string>
+    <string name="java_test_049_option_3">!</string>
+    <string name="java_test_049_option_4">&amp;|</string>
+    <string name="java_test_049_explanation">&amp;&amp; representa AND lógico.</string>
+
+    <string name="java_test_050_question">¿Qué operador lógico representa OR?</string>
+    <string name="java_test_050_option_1">&amp;&amp;</string>
+    <string name="java_test_050_option_2">||</string>
+    <string name="java_test_050_option_3">!</string>
+    <string name="java_test_050_option_4">==</string>
+    <string name="java_test_050_explanation">|| representa OR lógico.</string>
+
+    <!-- Java true / false questions -->
+    <string name="java_tf_001_question">En Java, una clase puede heredar de varias clases al mismo tiempo.</string>
+    <string name="java_tf_001_explanation">Java no permite herencia múltiple de clases. Solo permite implementar varias interfaces.</string>
+    <string name="java_tf_002_question">El método main() puede ser el punto de entrada de una aplicación Java.</string>
+    <string name="java_tf_002_explanation">Correcto. main() suele ser el punto de entrada de una aplicación Java.</string>
+    <string name="java_tf_003_question">Una variable declarada como final puede reasignarse libremente.</string>
+    <string name="java_tf_003_explanation">final impide reasignar una variable después de inicializarla.</string>
+    <string name="java_tf_004_question">String es una clase en Java.</string>
+    <string name="java_tf_004_explanation">String es una clase de la biblioteca estándar.</string>
+    <string name="java_tf_005_question">private permite acceder a un atributo desde cualquier clase.</string>
+    <string name="java_tf_005_explanation">private restringe el acceso a la propia clase.</string>
+    <string name="java_tf_006_question">public permite acceder desde otras clases.</string>
+    <string name="java_tf_006_explanation">public permite acceso desde fuera de la clase.</string>
+    <string name="java_tf_007_question">int puede almacenar números decimales.</string>
+    <string name="java_tf_007_explanation">int almacena números enteros, no decimales.</string>
+    <string name="java_tf_008_question">double puede almacenar números decimales.</string>
+    <string name="java_tf_008_explanation">double se usa para valores decimales.</string>
+    <string name="java_tf_009_question">boolean solo puede tener true o false.</string>
+    <string name="java_tf_009_explanation">boolean representa valores lógicos true o false.</string>
+    <string name="java_tf_010_question">char representa un único carácter.</string>
+    <string name="java_tf_010_explanation">char almacena un solo carácter.</string>
+    <string name="java_tf_011_question">== siempre es la mejor forma de comparar String.</string>
+    <string name="java_tf_011_explanation">Para comparar contenido de String se usa equals().</string>
+    <string name="java_tf_012_question">equals() compara el contenido de objetos como String.</string>
+    <string name="java_tf_012_explanation">equals() compara contenido si la clase lo implementa correctamente.</string>
+    <string name="java_tf_013_question">ArrayList permite guardar elementos en orden.</string>
+    <string name="java_tf_013_explanation">ArrayList mantiene el orden de inserción.</string>
+    <string name="java_tf_014_question">HashSet permite elementos duplicados.</string>
+    <string name="java_tf_014_explanation">HashSet no permite duplicados.</string>
+    <string name="java_tf_015_question">HashMap almacena pares clave-valor.</string>
+    <string name="java_tf_015_explanation">HashMap asocia claves con valores.</string>
+    <string name="java_tf_016_question">break puede salir de un bucle.</string>
+    <string name="java_tf_016_explanation">break interrumpe un bucle o switch.</string>
+    <string name="java_tf_017_question">continue termina completamente un programa.</string>
+    <string name="java_tf_017_explanation">continue salta a la siguiente iteración de un bucle.</string>
+    <string name="java_tf_018_question">switch permite evaluar varios casos.</string>
+    <string name="java_tf_018_explanation">switch sirve para elegir entre varios case.</string>
+    <string name="java_tf_019_question">try se usa junto a catch para gestionar excepciones.</string>
+    <string name="java_tf_019_explanation">try/catch permite manejar excepciones.</string>
+    <string name="java_tf_020_question">throw declara que un método puede lanzar una excepción.</string>
+    <string name="java_tf_020_explanation">throw lanza una excepción. throws la declara en la firma.</string>
+    <string name="java_tf_021_question">throws se usa en la firma de un método.</string>
+    <string name="java_tf_021_explanation">throws declara excepciones que puede lanzar el método.</string>
+    <string name="java_tf_022_question">static indica que un miembro pertenece a la clase.</string>
+    <string name="java_tf_022_explanation">static pertenece a la clase y no a una instancia concreta.</string>
+    <string name="java_tf_023_question">this hace referencia al objeto actual.</string>
+    <string name="java_tf_023_explanation">this representa la instancia actual.</string>
+    <string name="java_tf_024_question">super permite acceder a la clase padre.</string>
+    <string name="java_tf_024_explanation">super permite llamar a miembros o constructores de la superclase.</string>
+    <string name="java_tf_025_question">Una interfaz se declara con la palabra class.</string>
+    <string name="java_tf_025_explanation">Las interfaces se declaran con interface.</string>
+    <string name="java_tf_026_question">Una clase abstracta puede contener métodos abstractos.</string>
+    <string name="java_tf_026_explanation">Las clases abstractas pueden tener métodos abstractos.</string>
+    <string name="java_tf_027_question">Una clase final puede heredarse.</string>
+    <string name="java_tf_027_explanation">Una clase final no puede ser extendida.</string>
+    <string name="java_tf_028_question">@Override se usa al sobrescribir métodos.</string>
+    <string name="java_tf_028_explanation">@Override indica sobrescritura de método.</string>
+    <string name="java_tf_029_question">Un constructor tiene el mismo nombre que la clase.</string>
+    <string name="java_tf_029_explanation">El constructor se llama igual que la clase.</string>
+    <string name="java_tf_030_question">Un constructor siempre tiene tipo de retorno void.</string>
+    <string name="java_tf_030_explanation">Los constructores no tienen tipo de retorno.</string>
+    <string name="java_tf_031_question">Los arrays usan length para obtener su tamaño.</string>
+    <string name="java_tf_031_explanation">Los arrays tienen la propiedad length.</string>
+    <string name="java_tf_032_question">Los String usan size() para obtener su longitud.</string>
+    <string name="java_tf_032_explanation">String usa length().</string>
+    <string name="java_tf_033_question">javac compila archivos Java.</string>
+    <string name="java_tf_033_explanation">javac compila .java a .class.</string>
+    <string name="java_tf_034_question">java ejecuta clases compiladas.</string>
+    <string name="java_tf_034_explanation">El comando java ejecuta bytecode compilado.</string>
+    <string name="java_tf_035_question">La JVM ejecuta bytecode Java.</string>
+    <string name="java_tf_035_explanation">La JVM interpreta o compila el bytecode.</string>
+    <string name="java_tf_036_question">El bytecode suele estar en archivos .class.</string>
+    <string name="java_tf_036_explanation">El compilador genera archivos .class.</string>
+    <string name="java_tf_037_question">La encapsulación ayuda a proteger el estado interno.</string>
+    <string name="java_tf_037_explanation">La encapsulación controla el acceso a los datos.</string>
+    <string name="java_tf_038_question">La sobrecarga permite métodos con el mismo nombre y distintos parámetros.</string>
+    <string name="java_tf_038_explanation">Eso es sobrecarga de métodos.</string>
+    <string name="java_tf_039_question">La sobrescritura redefine un método heredado.</string>
+    <string name="java_tf_039_explanation">Eso es overriding o sobrescritura.</string>
+    <string name="java_tf_040_question">Una interfaz puede ser implementada por una clase.</string>
+    <string name="java_tf_040_explanation">Una clase implementa interfaces con implements.</string>
+    <string name="java_tf_041_question">System.out.println() imprime texto en consola.</string>
+    <string name="java_tf_041_explanation">println imprime texto y añade salto de línea.</string>
+    <string name="java_tf_042_question">System.out.println() elimina archivos.</string>
+    <string name="java_tf_042_explanation">println imprime en consola, no elimina archivos.</string>
+    <string name="java_tf_043_question">Scanner puede leer datos introducidos por el usuario.</string>
+    <string name="java_tf_043_explanation">Scanner puede leer entrada desde System.in.</string>
+    <string name="java_tf_044_question">java.util contiene clases como ArrayList.</string>
+    <string name="java_tf_044_explanation">ArrayList pertenece a java.util.</string>
+    <string name="java_tf_045_question">&amp;&amp; representa AND lógico.</string>
+    <string name="java_tf_045_explanation">&amp;&amp; es AND lógico.</string>
+    <string name="java_tf_046_question">|| representa OR lógico.</string>
+    <string name="java_tf_046_explanation">|| es OR lógico.</string>
+    <string name="java_tf_047_question">! representa negación lógica.</string>
+    <string name="java_tf_047_explanation">! niega un boolean.</string>
+    <string name="java_tf_048_question">protected permite acceso desde subclases.</string>
+    <string name="java_tf_048_explanation">protected permite acceso desde el mismo paquete y subclases.</string>
+    <string name="java_tf_049_question">void indica que un método no devuelve valor.</string>
+    <string name="java_tf_049_explanation">void se usa cuando un método no devuelve nada.</string>
+    <string name="java_tf_050_question">return solo puede usarse en métodos que devuelven int.</string>
+    <string name="java_tf_050_explanation">return puede usarse en métodos con distintos tipos de retorno.</string>
+
+    <!-- Java complete code questions -->
+    <string name="java_code_001_question">Completa el código:\n\n____ Persona {\n}</string>
+    <string name="java_code_001_option_1">class</string>
+    <string name="java_code_001_option_2">object</string>
+    <string name="java_code_001_option_3">fun</string>
+    <string name="java_code_001_option_4">interface</string>
+    <string name="java_code_001_explanation">En Java se usa class para declarar una clase.</string>
+
+    <string name="java_code_002_question">Completa el código:\n\nSystem.out.____("Hola");</string>
+    <string name="java_code_002_option_1">printLine</string>
+    <string name="java_code_002_option_2">println</string>
+    <string name="java_code_002_option_3">echo</string>
+    <string name="java_code_002_option_4">write</string>
+    <string name="java_code_002_explanation">System.out.println() imprime texto y añade salto de línea.</string>
+
+    <string name="java_code_003_question">Completa el código:\n\nint edad = ____;</string>
+    <string name="java_code_003_option_1">"25"</string>
+    <string name="java_code_003_option_2">25</string>
+    <string name="java_code_003_option_3">true</string>
+    <string name="java_code_003_option_4">veinticinco</string>
+    <string name="java_code_003_explanation">int almacena números enteros sin comillas.</string>
+
+    <string name="java_code_004_question">Completa el código:\n\nboolean activo = ____;</string>
+    <string name="java_code_004_option_1">yes</string>
+    <string name="java_code_004_option_2">1</string>
+    <string name="java_code_004_option_3">true</string>
+    <string name="java_code_004_option_4">"true"</string>
+    <string name="java_code_004_explanation">Un boolean usa true o false.</string>
+
+    <string name="java_code_005_question">Completa el código:\n\nString nombre = ____;</string>
+    <string name="java_code_005_option_1">"Isra"</string>
+    <string name="java_code_005_option_2">Isra</string>
+    <string name="java_code_005_option_3">Israa</string>
+    <string name="java_code_005_option_4">new int()</string>
+    <string name="java_code_005_explanation">Los String se escriben entre comillas dobles.</string>
+
+    <string name="java_code_006_question">Completa el código:\n\nchar letra = ____;</string>
+    <string name="java_code_006_option_1">"A"</string>
+    <string name="java_code_006_option_2">A letra</string>
+    <string name="java_code_006_option_3">A</string>
+    <string name="java_code_006_option_4">char A</string>
+    <string name="java_code_006_explanation">char usa comillas simples.</string>
+
+    <string name="java_code_007_question">Completa el código:\n\nif (edad &gt;= 18) ____</string>
+    <string name="java_code_007_option_1">{ }</string>
+    <string name="java_code_007_option_2">( )</string>
+    <string name="java_code_007_option_3">[ ]</string>
+    <string name="java_code_007_option_4">&lt; &gt;</string>
+    <string name="java_code_007_explanation">El bloque de un if se escribe entre llaves.</string>
+
+    <string name="java_code_008_question">Completa el código:\n\nfor (int i = 0; i &lt; 10; i____) { }</string>
+    <string name="java_code_008_option_1">--</string>
+    <string name="java_code_008_option_2">++</string>
+    <string name="java_code_008_option_3">+=</string>
+    <string name="java_code_008_option_4">==</string>
+    <string name="java_code_008_explanation">i++ incrementa i en uno.</string>
+
+    <string name="java_code_009_question">Completa el código:\n\nwhile (activo) ____</string>
+    <string name="java_code_009_option_1">{ }</string>
+    <string name="java_code_009_option_2">then</string>
+    <string name="java_code_009_option_3">do</string>
+    <string name="java_code_009_option_4">end</string>
+    <string name="java_code_009_explanation">while ejecuta un bloque entre llaves.</string>
+
+    <string name="java_code_010_question">Completa el código:\n\nreturn ____;</string>
+    <string name="java_code_010_option_1">valor</string>
+    <string name="java_code_010_option_2">class</string>
+    <string name="java_code_010_option_3">void</string>
+    <string name="java_code_010_option_4">private</string>
+    <string name="java_code_010_explanation">return devuelve una expresión o valor.</string>
+
+    <string name="java_code_011_question">Completa el código:\n\n____ int sumar(int a, int b) { return a + b; }</string>
+    <string name="java_code_011_option_1">public</string>
+    <string name="java_code_011_option_2">class</string>
+    <string name="java_code_011_option_3">new</string>
+    <string name="java_code_011_option_4">if</string>
+    <string name="java_code_011_explanation">public es un modificador de acceso válido para métodos.</string>
+
+    <string name="java_code_012_question">Completa el código:\n\nprivate String ____;</string>
+    <string name="java_code_012_option_1">nombre</string>
+    <string name="java_code_012_option_2">"nombre"</string>
+    <string name="java_code_012_option_3">String</string>
+    <string name="java_code_012_option_4">new</string>
+    <string name="java_code_012_explanation">Un atributo necesita un identificador, como nombre.</string>
+
+    <string name="java_code_013_question">Completa el código:\n\nPersona p = ____ Persona();</string>
+    <string name="java_code_013_option_1">make</string>
+    <string name="java_code_013_option_2">new</string>
+    <string name="java_code_013_option_3">create</string>
+    <string name="java_code_013_option_4">object</string>
+    <string name="java_code_013_explanation">new crea una instancia de una clase.</string>
+
+    <string name="java_code_014_question">Completa el código:\n\npublic class Alumno ____ Persona { }</string>
+    <string name="java_code_014_option_1">implements</string>
+    <string name="java_code_014_option_2">extends</string>
+    <string name="java_code_014_option_3">super</string>
+    <string name="java_code_014_option_4">inherits</string>
+    <string name="java_code_014_explanation">extends indica herencia de una clase.</string>
+
+    <string name="java_code_015_question">Completa el código:\n\npublic class Coche ____ Vehiculo { }</string>
+    <string name="java_code_015_option_1">extends</string>
+    <string name="java_code_015_option_2">interface</string>
+    <string name="java_code_015_option_3">throw</string>
+    <string name="java_code_015_option_4">return</string>
+    <string name="java_code_015_explanation">extends se usa para heredar de una clase.</string>
+
+    <string name="java_code_016_question">Completa el código:\n\npublic class Perro ____ Animal, Mascota { }</string>
+    <string name="java_code_016_option_1">extends</string>
+    <string name="java_code_016_option_2">implements</string>
+    <string name="java_code_016_option_3">new</string>
+    <string name="java_code_016_option_4">this</string>
+    <string name="java_code_016_explanation">implements se usa para implementar interfaces.</string>
+
+    <string name="java_code_017_question">Completa el código:\n\n____ interface Volador { }</string>
+    <string name="java_code_017_option_1">public</string>
+    <string name="java_code_017_option_2">new</string>
+    <string name="java_code_017_option_3">class</string>
+    <string name="java_code_017_option_4">void</string>
+    <string name="java_code_017_explanation">Una interfaz puede declararse como public interface.</string>
+
+    <string name="java_code_018_question">Completa el código:\n\n____ void saludar() { }</string>
+    <string name="java_code_018_option_1">public</string>
+    <string name="java_code_018_option_2">class</string>
+    <string name="java_code_018_option_3">new</string>
+    <string name="java_code_018_option_4">return</string>
+    <string name="java_code_018_explanation">public puede modificar un método.</string>
+
+    <string name="java_code_019_question">Completa el código:\n\npublic ____ getEdad() { return edad; }</string>
+    <string name="java_code_019_option_1">String</string>
+    <string name="java_code_019_option_2">int</string>
+    <string name="java_code_019_option_3">boolean</string>
+    <string name="java_code_019_option_4">class</string>
+    <string name="java_code_019_explanation">Si devuelve edad numérica, puede ser int.</string>
+
+    <string name="java_code_020_question">Completa el código:\n\npublic void setEdad(int edad) { this.edad = ____; }</string>
+    <string name="java_code_020_option_1">this</string>
+    <string name="java_code_020_option_2">edad</string>
+    <string name="java_code_020_option_3">new</string>
+    <string name="java_code_020_option_4">int</string>
+    <string name="java_code_020_explanation">El parámetro edad se asigna al atributo this.edad.</string>
+
+    <string name="java_code_021_question">Completa el código:\n\n____.nombre = nombre;</string>
+    <string name="java_code_021_option_1">this</string>
+    <string name="java_code_021_option_2">super</string>
+    <string name="java_code_021_option_3">new</string>
+    <string name="java_code_021_option_4">class</string>
+    <string name="java_code_021_explanation">this permite acceder al atributo del objeto actual.</string>
+
+    <string name="java_code_022_question">Completa el código:\n\n____();</string>
+    <string name="java_code_022_option_1">super</string>
+    <string name="java_code_022_option_2">extends</string>
+    <string name="java_code_022_option_3">implements</string>
+    <string name="java_code_022_option_4">interface</string>
+    <string name="java_code_022_explanation">super() llama al constructor de la clase padre.</string>
+
+    <string name="java_code_023_question">Completa el código:\n\ntry { } ____ (Exception e) { }</string>
+    <string name="java_code_023_option_1">catch</string>
+    <string name="java_code_023_option_2">case</string>
+    <string name="java_code_023_option_3">error</string>
+    <string name="java_code_023_option_4">throw</string>
+    <string name="java_code_023_explanation">catch captura excepciones lanzadas dentro de try.</string>
+
+    <string name="java_code_024_question">Completa el código:\n\nthrow new ____("Error");</string>
+    <string name="java_code_024_option_1">Exception</string>
+    <string name="java_code_024_option_2">String</string>
+    <string name="java_code_024_option_3">int</string>
+    <string name="java_code_024_option_4">Scanner</string>
+    <string name="java_code_024_explanation">Exception es una clase de excepción.</string>
+
+    <string name="java_code_025_question">Completa el código:\n\npublic void leer() ____ IOException { }</string>
+    <string name="java_code_025_option_1">throw</string>
+    <string name="java_code_025_option_2">throws</string>
+    <string name="java_code_025_option_3">catch</string>
+    <string name="java_code_025_option_4">error</string>
+    <string name="java_code_025_explanation">throws declara excepciones en la firma del método.</string>
+
+    <string name="java_code_026_question">Completa el código:\n\nArrayList&lt;String&gt; nombres = new ____&lt;&gt;();</string>
+    <string name="java_code_026_option_1">ArrayList</string>
+    <string name="java_code_026_option_2">HashMap</string>
+    <string name="java_code_026_option_3">HashSet</string>
+    <string name="java_code_026_option_4">String</string>
+    <string name="java_code_026_explanation">ArrayList crea una lista dinámica.</string>
+
+    <string name="java_code_027_question">Completa el código:\n\nnombres.____("Ana");</string>
+    <string name="java_code_027_option_1">put</string>
+    <string name="java_code_027_option_2">add</string>
+    <string name="java_code_027_option_3">insert</string>
+    <string name="java_code_027_option_4">setKey</string>
+    <string name="java_code_027_explanation">add() añade elementos a una lista.</string>
+
+    <string name="java_code_028_question">Completa el código:\n\nint total = nombres.____();</string>
+    <string name="java_code_028_option_1">length</string>
+    <string name="java_code_028_option_2">size</string>
+    <string name="java_code_028_option_3">count</string>
+    <string name="java_code_028_option_4">total</string>
+    <string name="java_code_028_explanation">size() devuelve el tamaño de una colección.</string>
+
+    <string name="java_code_029_question">Completa el código:\n\nint total = numeros.____;</string>
+    <string name="java_code_029_option_1">length</string>
+    <string name="java_code_029_option_2">size()</string>
+    <string name="java_code_029_option_3">count()</string>
+    <string name="java_code_029_option_4">total()</string>
+    <string name="java_code_029_explanation">Los arrays usan la propiedad length.</string>
+
+    <string name="java_code_030_question">Completa el código:\n\nint total = texto.____();</string>
+    <string name="java_code_030_option_1">length</string>
+    <string name="java_code_030_option_2">size</string>
+    <string name="java_code_030_option_3">count</string>
+    <string name="java_code_030_option_4">total</string>
+    <string name="java_code_030_explanation">String usa length() para obtener longitud.</string>
+
+    <string name="java_code_031_question">Completa el código:\n\nHashMap&lt;String, Integer&gt; edades = new ____&lt;&gt;();</string>
+    <string name="java_code_031_option_1">HashMap</string>
+    <string name="java_code_031_option_2">ArrayList</string>
+    <string name="java_code_031_option_3">HashSet</string>
+    <string name="java_code_031_option_4">String</string>
+    <string name="java_code_031_explanation">HashMap almacena pares clave-valor.</string>
+
+    <string name="java_code_032_question">Completa el código:\n\nedades.____("Ana", 20);</string>
+    <string name="java_code_032_option_1">add</string>
+    <string name="java_code_032_option_2">put</string>
+    <string name="java_code_032_option_3">insert</string>
+    <string name="java_code_032_option_4">push</string>
+    <string name="java_code_032_explanation">put() añade o actualiza pares clave-valor en un Map.</string>
+
+    <string name="java_code_033_question">Completa el código:\n\nHashSet&lt;String&gt; tags = new ____&lt;&gt;();</string>
+    <string name="java_code_033_option_1">HashSet</string>
+    <string name="java_code_033_option_2">ArrayList</string>
+    <string name="java_code_033_option_3">HashMap</string>
+    <string name="java_code_033_option_4">Integer</string>
+    <string name="java_code_033_explanation">HashSet almacena elementos únicos.</string>
+
+    <string name="java_code_034_question">Completa el código:\n\nif (a ____ b) { }</string>
+    <string name="java_code_034_option_1">=</string>
+    <string name="java_code_034_option_2">==</string>
+    <string name="java_code_034_option_3">===</string>
+    <string name="java_code_034_option_4">equals</string>
+    <string name="java_code_034_explanation">== compara valores primitivos.</string>
+
+    <string name="java_code_035_question">Completa el código:\n\nif (nombre.____("Ana")) { }</string>
+    <string name="java_code_035_option_1">equals</string>
+    <string name="java_code_035_option_2">==</string>
+    <string name="java_code_035_option_3">same</string>
+    <string name="java_code_035_option_4">compare</string>
+    <string name="java_code_035_explanation">equals() compara el contenido de String.</string>
+
+    <string name="java_code_036_question">Completa el código:\n\nif (activo ____ mayorEdad) { }</string>
+    <string name="java_code_036_option_1">&amp;&amp;</string>
+    <string name="java_code_036_option_2">||</string>
+    <string name="java_code_036_option_3">!</string>
+    <string name="java_code_036_option_4">==&gt;</string>
+    <string name="java_code_036_explanation">&amp;&amp; representa AND lógico.</string>
+
+    <string name="java_code_037_question">Completa el código:\n\nif (activo ____ admin) { }</string>
+    <string name="java_code_037_option_1">&amp;&amp;</string>
+    <string name="java_code_037_option_2">||</string>
+    <string name="java_code_037_option_3">!</string>
+    <string name="java_code_037_option_4">!=</string>
+    <string name="java_code_037_explanation">|| representa OR lógico.</string>
+
+    <string name="java_code_038_question">Completa el código:\n\nif (____ activo) { }</string>
+    <string name="java_code_038_option_1">!</string>
+    <string name="java_code_038_option_2">not</string>
+    <string name="java_code_038_option_3">false</string>
+    <string name="java_code_038_option_4">no</string>
+    <string name="java_code_038_explanation">! niega una expresión booleana.</string>
+
+    <string name="java_code_039_question">Completa el código:\n\nswitch (opcion) { ____ 1: break; }</string>
+    <string name="java_code_039_option_1">case</string>
+    <string name="java_code_039_option_2">if</string>
+    <string name="java_code_039_option_3">when</string>
+    <string name="java_code_039_option_4">option</string>
+    <string name="java_code_039_explanation">case define una rama dentro de switch.</string>
+
+    <string name="java_code_040_question">Completa el código:\n\nswitch (opcion) { default: ____; }</string>
+    <string name="java_code_040_option_1">continue</string>
+    <string name="java_code_040_option_2">break</string>
+    <string name="java_code_040_option_3">return false</string>
+    <string name="java_code_040_option_4">case</string>
+    <string name="java_code_040_explanation">break evita continuar con otros casos.</string>
+
+    <string name="java_code_041_question">Completa el código:\n\n____ class Figura { }</string>
+    <string name="java_code_041_option_1">abstract</string>
+    <string name="java_code_041_option_2">finale</string>
+    <string name="java_code_041_option_3">static</string>
+    <string name="java_code_041_option_4">override</string>
+    <string name="java_code_041_explanation">abstract declara una clase abstracta.</string>
+
+    <string name="java_code_042_question">Completa el código:\n\n____ class Utilidad { }</string>
+    <string name="java_code_042_option_1">final</string>
+    <string name="java_code_042_option_2">override</string>
+    <string name="java_code_042_option_3">throws</string>
+    <string name="java_code_042_option_4">catch</string>
+    <string name="java_code_042_explanation">final impide que la clase sea heredada.</string>
+
+    <string name="java_code_043_question">Completa el código:\n\n____\npublic String toString() { return "x"; }</string>
+    <string name="java_code_043_option_1">@Override</string>
+    <string name="java_code_043_option_2">@Overload</string>
+    <string name="java_code_043_option_3">@Extends</string>
+    <string name="java_code_043_option_4">@Class</string>
+    <string name="java_code_043_explanation">@Override marca la sobrescritura de un método.</string>
+
+    <string name="java_code_044_question">Completa el código:\n\npublic ____ Persona(String nombre) { }</string>
+    <string name="java_code_044_option_1">class</string>
+    <string name="java_code_044_option_2"> </string>
+    <string name="java_code_044_option_3">void</string>
+    <string name="java_code_044_option_4">new</string>
+    <string name="java_code_044_explanation">Un constructor no tiene tipo de retorno.</string>
+
+    <string name="java_code_045_question">Completa el código:\n\nScanner sc = new Scanner(____);</string>
+    <string name="java_code_045_option_1">System.in</string>
+    <string name="java_code_045_option_2">System.out</string>
+    <string name="java_code_045_option_3">input</string>
+    <string name="java_code_045_option_4">console</string>
+    <string name="java_code_045_explanation">System.in representa la entrada estándar.</string>
+
+    <string name="java_code_046_question">Completa el código:\n\nString linea = sc.____();</string>
+    <string name="java_code_046_option_1">nextLine</string>
+    <string name="java_code_046_option_2">readLine</string>
+    <string name="java_code_046_option_3">getLine</string>
+    <string name="java_code_046_option_4">input</string>
+    <string name="java_code_046_explanation">nextLine() lee una línea con Scanner.</string>
+
+    <string name="java_code_047_question">Completa el código:\n\nint numero = sc.____();</string>
+    <string name="java_code_047_option_1">nextInt</string>
+    <string name="java_code_047_option_2">readInt</string>
+    <string name="java_code_047_option_3">getInt</string>
+    <string name="java_code_047_option_4">int</string>
+    <string name="java_code_047_explanation">nextInt() lee un entero con Scanner.</string>
+
+    <string name="java_code_048_question">Completa el código:\n\npublic static ____ main(String[] args) { }</string>
+    <string name="java_code_048_option_1">void</string>
+    <string name="java_code_048_option_2">int</string>
+    <string name="java_code_048_option_3">String</string>
+    <string name="java_code_048_option_4">main</string>
+    <string name="java_code_048_explanation">main suele declararse con retorno void.</string>
+
+    <string name="java_code_049_question">Completa el código:\n\npublic static void main(____ args) { }</string>
+    <string name="java_code_049_option_1">String[]</string>
+    <string name="java_code_049_option_2">String</string>
+    <string name="java_code_049_option_3">Array</string>
+    <string name="java_code_049_option_4">args[]</string>
+    <string name="java_code_049_explanation">main recibe normalmente String[] args.</string>
+
+    <string name="java_code_050_question">Completa el código:\n\nSystem.out.print____("Hola");</string>
+    <string name="java_code_050_option_1">ln</string>
+    <string name="java_code_050_option_2">line</string>
+    <string name="java_code_050_option_3">text</string>
+    <string name="java_code_050_option_4">out</string>
+    <string name="java_code_050_explanation">println se forma con print + ln.</string>
+
+    <!-- Java match concept questions -->
+    <string name="java_match_001_question">Relaciona el concepto: Encapsulación</string>
+    <string name="java_match_001_option_1">Ocultar datos internos y controlar el acceso</string>
+    <string name="java_match_001_option_2">Crear varios constructores</string>
+    <string name="java_match_001_option_3">Ejecutar código en varios hilos</string>
+    <string name="java_match_001_option_4">Convertir objetos a texto</string>
+    <string name="java_match_001_explanation">La encapsulación protege el estado interno de una clase y expone acceso controlado mediante métodos.</string>
+
+    <string name="java_match_002_question">Relaciona el concepto: Herencia</string>
+    <string name="java_match_002_option_1">Una clase obtiene miembros y comportamiento de otra</string>
+    <string name="java_match_002_option_2">Un método tiene varios parámetros</string>
+    <string name="java_match_002_option_3">Un objeto se convierte en String</string>
+    <string name="java_match_002_option_4">Una variable no puede cambiar</string>
+    <string name="java_match_002_explanation">La herencia permite que una clase hija reutilice y especialice comportamiento de una clase padre.</string>
+
+    <string name="java_match_003_question">Relaciona el concepto: Polimorfismo</string>
+    <string name="java_match_003_option_1">Un mismo tipo puede comportarse de distintas formas</string>
+    <string name="java_match_003_option_2">Una clase no puede instanciarse</string>
+    <string name="java_match_003_option_3">Una variable pertenece a la clase</string>
+    <string name="java_match_003_option_4">Un bloque captura excepciones</string>
+    <string name="java_match_003_explanation">El polimorfismo permite tratar objetos de distintas clases mediante una referencia común.</string>
+
+    <string name="java_match_004_question">Relaciona el concepto: Sobrecarga</string>
+    <string name="java_match_004_option_1">Métodos con el mismo nombre pero distintos parámetros</string>
+    <string name="java_match_004_option_2">Redefinir un método heredado</string>
+    <string name="java_match_004_option_3">Impedir que una clase sea heredada</string>
+    <string name="java_match_004_option_4">Crear un objeto con new</string>
+    <string name="java_match_004_explanation">La sobrecarga permite declarar varios métodos con el mismo nombre si cambia su firma.</string>
+
+    <string name="java_match_005_question">Relaciona el concepto: Clase abstracta</string>
+    <string name="java_match_005_option_1">Clase que no puede instanciarse directamente</string>
+    <string name="java_match_005_option_2">Clase que siempre es estática</string>
+    <string name="java_match_005_option_3">Clase que solo contiene atributos</string>
+    <string name="java_match_005_option_4">Clase que no permite métodos</string>
+    <string name="java_match_005_explanation">Una clase abstracta sirve como base y puede contener métodos abstractos o implementados.</string>
+
+    <!-- Java detect error questions -->
+    <string name="java_error_001_question">Detecta el error:\n\nString nombre = Ana;</string>
+    <string name="java_error_001_option_1">Faltan comillas dobles</string>
+    <string name="java_error_001_option_2">Falta la palabra class</string>
+    <string name="java_error_001_option_3">String no existe en Java</string>
+    <string name="java_error_001_option_4">nombre debería ser int</string>
+    <string name="java_error_001_explanation">En Java, los String usan comillas dobles.</string>
+
+    <string name="java_error_002_question">Detecta el error:\n\nint edad = "25";</string>
+    <string name="java_error_002_option_1">Se intenta asignar texto a una variable int</string>
+    <string name="java_error_002_option_2">Falta el operador ==</string>
+    <string name="java_error_002_option_3">int debe escribirse con mayúscula</string>
+    <string name="java_error_002_option_4">La variable no puede llamarse edad</string>
+    <string name="java_error_002_explanation">Un int almacena números enteros, no cadenas de texto.</string>
+
+    <string name="java_error_003_question">Detecta el error:\n\nif (activo = true) {\n    System.out.println("OK");\n}</string>
+    <string name="java_error_003_option_1">Se usa asignación en vez de comparación</string>
+    <string name="java_error_003_option_2">if no puede usar boolean</string>
+    <string name="java_error_003_option_3">println está mal escrito</string>
+    <string name="java_error_003_option_4">Faltan paréntesis en println</string>
+    <string name="java_error_003_explanation">Para comparar se usa ==. Aunque con boolean también sería mejor escribir if (activo).</string>
+
+    <string name="java_error_004_question">Detecta el error:\n\npublic class Persona {\n    public void Persona() { }\n}</string>
+    <string name="java_error_004_option_1">El constructor no debe tener tipo de retorno</string>
+    <string name="java_error_004_option_2">La clase no puede ser public</string>
+    <string name="java_error_004_option_3">Persona debería ser private</string>
+    <string name="java_error_004_option_4">void solo se usa en interfaces</string>
+    <string name="java_error_004_explanation">Un constructor no tiene tipo de retorno. Si tiene void, es un método normal.</string>
+
+    <string name="java_error_005_question">Detecta el error:\n\nList&lt;String&gt; nombres = new List&lt;&gt;();</string>
+    <string name="java_error_005_option_1">List es una interfaz y no se instancia directamente</string>
+    <string name="java_error_005_option_2">String no puede usarse con listas</string>
+    <string name="java_error_005_option_3">Falta static</string>
+    <string name="java_error_005_option_4">new no se usa con colecciones</string>
+    <string name="java_error_005_explanation">List es una interfaz. Se suele instanciar con ArrayList, por ejemplo new ArrayList&lt;&gt;().</string>
+
+    <!-- Java console output questions -->
+    <string name="java_output_001_question">¿Qué imprime este código?\n\nSystem.out.println("Hola");</string>
+    <string name="java_output_001_option_1">Hola</string>
+    <string name="java_output_001_option_2">"Hola"</string>
+    <string name="java_output_001_option_3">System.out.println</string>
+    <string name="java_output_001_option_4">No imprime nada</string>
+    <string name="java_output_001_explanation">println imprime el texto contenido entre comillas, sin mostrar las comillas.</string>
+
+    <string name="java_output_002_question">¿Qué imprime este código?\n\nint x = 5;\nSystem.out.println(x + 2);</string>
+    <string name="java_output_002_option_1">7</string>
+    <string name="java_output_002_option_2">52</string>
+    <string name="java_output_002_option_3">x + 2</string>
+    <string name="java_output_002_option_4">Error</string>
+    <string name="java_output_002_explanation">Como x es int, se realiza una suma numérica: 5 + 2 = 7.</string>
+
+    <string name="java_output_003_question">¿Qué imprime este código?\n\nSystem.out.println("5" + 2);</string>
+    <string name="java_output_003_option_1">52</string>
+    <string name="java_output_003_option_2">7</string>
+    <string name="java_output_003_option_3">Error</string>
+    <string name="java_output_003_option_4">5 + 2</string>
+    <string name="java_output_003_explanation">Cuando hay un String, el operador + concatena texto.</string>
+
+    <string name="java_output_004_question">¿Qué imprime este código?\n\nint x = 3;\nx++;\nSystem.out.println(x);</string>
+    <string name="java_output_004_option_1">4</string>
+    <string name="java_output_004_option_2">3</string>
+    <string name="java_output_004_option_3">2</string>
+    <string name="java_output_004_option_4">Error</string>
+    <string name="java_output_004_explanation">x++ incrementa el valor de x en uno.</string>
+
+    <string name="java_output_005_question">¿Qué imprime este código?\n\nint x = 10;\nSystem.out.println(x &gt; 5 &amp;&amp; x &lt; 20);</string>
+    <string name="java_output_005_option_1">true</string>
+    <string name="java_output_005_option_2">false</string>
+    <string name="java_output_005_option_3">10</string>
+    <string name="java_output_005_option_4">Error</string>
+    <string name="java_output_005_explanation">Ambas condiciones son verdaderas, así que el resultado del AND lógico es true.</string>
+
+    <!-- Java order code questions -->
+    <string name="java_order_001_question">Ordena las líneas para crear una clase Java simple:</string>
+    <string name="java_order_001_option_1">public class Persona {</string>
+    <string name="java_order_001_option_2">    private String nombre;</string>
+    <string name="java_order_001_option_3">}</string>
+    <string name="java_order_001_explanation">La clase abre con public class, dentro van sus miembros y finalmente se cierra la llave.</string>
+
+    <string name="java_order_002_question">Ordena las líneas para imprimir un mensaje desde main:</string>
+    <string name="java_order_002_option_1">public static void main(String[] args) {</string>
+    <string name="java_order_002_option_2">    System.out.println("Hola");</string>
+    <string name="java_order_002_option_3">}</string>
+    <string name="java_order_002_explanation">Primero se declara main, después se ejecuta println y finalmente se cierra el bloque.</string>
+
+    <string name="java_order_003_question">Ordena las líneas de un if básico:</string>
+    <string name="java_order_003_option_1">if (edad &gt;= 18) {</string>
+    <string name="java_order_003_option_2">    System.out.println("Mayor de edad");</string>
+    <string name="java_order_003_option_3">}</string>
+    <string name="java_order_003_explanation">La condición abre el bloque, dentro va la instrucción y al final se cierra.</string>
+
+    <string name="java_order_004_question">Ordena las líneas de un try/catch:</string>
+    <string name="java_order_004_option_1">try {</string>
+    <string name="java_order_004_option_2">    leerArchivo();</string>
+    <string name="java_order_004_option_3">} catch (Exception e) {</string>
+    <string name="java_order_004_option_4">    System.out.println("Error");</string>
+    <string name="java_order_004_option_5">}</string>
+    <string name="java_order_004_explanation">Primero va try, dentro el código peligroso, después catch y dentro el manejo del error.</string>
+
+    <string name="java_order_005_question">Ordena las líneas para recorrer una lista:</string>
+    <string name="java_order_005_option_1">for (String nombre : nombres) {</string>
+    <string name="java_order_005_option_2">    System.out.println(nombre);</string>
+    <string name="java_order_005_option_3">}</string>
+    <string name="java_order_005_explanation">El for-each abre el bloque, dentro se usa cada elemento y finalmente se cierra.</string>
+
+    <!-- Java technical wordle questions -->
+    <string name="java_wordle_001_question">Palabra técnica: crea objetos en Java.</string>
+    <string name="java_wordle_001_option_1">new</string>
+    <string name="java_wordle_001_option_2">var</string>
+    <string name="java_wordle_001_option_3">fun</string>
+    <string name="java_wordle_001_option_4">def</string>
+    <string name="java_wordle_001_explanation">new se usa para crear instancias de clases.</string>
+
+    <string name="java_wordle_002_question">Palabra técnica: define una clase.</string>
+    <string name="java_wordle_002_option_1">class</string>
+    <string name="java_wordle_002_option_2">object</string>
+    <string name="java_wordle_002_option_3">struct</string>
+    <string name="java_wordle_002_option_4">type</string>
+    <string name="java_wordle_002_explanation">class es la palabra clave para declarar clases en Java.</string>
+
+    <string name="java_wordle_003_question">Palabra técnica: indica herencia.</string>
+    <string name="java_wordle_003_option_1">extends</string>
+    <string name="java_wordle_003_option_2">super</string>
+    <string name="java_wordle_003_option_3">this</string>
+    <string name="java_wordle_003_option_4">static</string>
+    <string name="java_wordle_003_explanation">extends indica que una clase hereda de otra.</string>
+
+    <string name="java_wordle_004_question">Palabra técnica: captura excepciones.</string>
+    <string name="java_wordle_004_option_1">catch</string>
+    <string name="java_wordle_004_option_2">throw</string>
+    <string name="java_wordle_004_option_3">case</string>
+    <string name="java_wordle_004_option_4">final</string>
+    <string name="java_wordle_004_explanation">catch captura excepciones producidas dentro de un bloque try.</string>
+
+    <string name="java_wordle_005_question">Palabra técnica: impide heredar una clase.</string>
+    <string name="java_wordle_005_option_1">final</string>
+    <string name="java_wordle_005_option_2">static</string>
+    <string name="java_wordle_005_option_3">private</string>
+    <string name="java_wordle_005_option_4">void</string>
+    <string name="java_wordle_005_explanation">Una clase final no puede ser extendida.</string>
+
+    <!-- Java crossword questions -->
+    <string name="java_crossword_001_question">Pista: tipo que almacena verdadero o falso.</string>
+    <string name="java_crossword_001_option_1">boolean</string>
+    <string name="java_crossword_001_option_2">String</string>
+    <string name="java_crossword_001_option_3">double</string>
+    <string name="java_crossword_001_option_4">char</string>
+    <string name="java_crossword_001_explanation">boolean almacena valores true o false.</string>
+
+    <string name="java_crossword_002_question">Pista: método habitual de entrada de una aplicación Java.</string>
+    <string name="java_crossword_002_option_1">main</string>
+    <string name="java_crossword_002_option_2">start</string>
+    <string name="java_crossword_002_option_3">run</string>
+    <string name="java_crossword_002_option_4">init</string>
+    <string name="java_crossword_002_explanation">main es el método de entrada típico en una aplicación Java.</string>
+
+    <string name="java_crossword_003_question">Pista: colección que guarda pares clave-valor.</string>
+    <string name="java_crossword_003_option_1">HashMap</string>
+    <string name="java_crossword_003_option_2">ArrayList</string>
+    <string name="java_crossword_003_option_3">HashSet</string>
+    <string name="java_crossword_003_option_4">Scanner</string>
+    <string name="java_crossword_003_explanation">HashMap guarda pares clave-valor.</string>
+
+    <string name="java_crossword_004_question">Pista: palabra clave para declarar una interfaz.</string>
+    <string name="java_crossword_004_option_1">interface</string>
+    <string name="java_crossword_004_option_2">implements</string>
+    <string name="java_crossword_004_option_3">extends</string>
+    <string name="java_crossword_004_option_4">abstract</string>
+    <string name="java_crossword_004_explanation">interface declara una interfaz.</string>
+
+    <string name="java_crossword_005_question">Pista: anotación usada al sobrescribir métodos.</string>
+    <string name="java_crossword_005_option_1">@Override</string>
+    <string name="java_crossword_005_option_2">@Overload</string>
+    <string name="java_crossword_005_option_3">@Static</string>
+    <string name="java_crossword_005_option_4">@Final</string>
+    <string name="java_crossword_005_explanation">@Override indica que un método sobrescribe otro.</string>
+
+</resources>

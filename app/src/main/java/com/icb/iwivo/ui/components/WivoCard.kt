@@ -17,14 +17,27 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.icb.iwivo.ui.theme.BorderColor
 import com.icb.iwivo.ui.theme.CardDark
+import com.icb.iwivo.ui.theme.GreenAccent
 import com.icb.iwivo.ui.theme.PurplePrimary
 
 @Composable
 fun WivoCard(
     modifier: Modifier = Modifier,
+    themeItemId: String? = null,
+    effectItemId: String? = null,
     content: @Composable ColumnScope.() -> Unit
 ) {
     val shape = RoundedCornerShape(22.dp)
+
+    val glowColor = getWivoCardGlowColor(
+        themeItemId = themeItemId,
+        effectItemId = effectItemId
+    )
+
+    val borderColor = getWivoCardBorderColor(
+        themeItemId = themeItemId,
+        effectItemId = effectItemId
+    )
 
     Box(
         modifier = modifier
@@ -32,7 +45,7 @@ fun WivoCard(
             .background(
                 Brush.radialGradient(
                     colors = listOf(
-                        PurplePrimary.copy(alpha = 0.15f),
+                        glowColor.copy(alpha = 0.18f),
                         Color.Transparent
                     )
                 ),
@@ -40,14 +53,16 @@ fun WivoCard(
             )
     ) {
         Card(
-            colors = CardDefaults.cardColors(containerColor = CardDark),
+            colors = CardDefaults.cardColors(
+                containerColor = getWivoCardContainerColor(themeItemId)
+            ),
             shape = shape,
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .border(
                     width = 1.dp,
-                    color = BorderColor.copy(alpha = 0.4f),
+                    color = borderColor.copy(alpha = 0.45f),
                     shape = shape
                 )
         ) {
@@ -56,5 +71,55 @@ fun WivoCard(
                 content = content
             )
         }
+    }
+}
+
+private fun getWivoCardGlowColor(
+    themeItemId: String?,
+    effectItemId: String?
+): Color {
+    return when {
+        effectItemId == "effect_soft_glow" -> PurplePrimary
+        effectItemId == "effect_xp_spark" -> GreenAccent
+        effectItemId == "effect_coin_flash" -> Color(0xFFFFD54F)
+        effectItemId == "effect_streak_fire" -> Color(0xFFFF7043)
+        effectItemId == "effect_code_scan" -> Color(0xFF00E5FF)
+
+        themeItemId == "theme_matrix_wivo" -> GreenAccent
+        themeItemId == "theme_blue_terminal" -> Color(0xFF40C4FF)
+        themeItemId == "theme_purple_neon" -> PurplePrimary
+
+        else -> PurplePrimary
+    }
+}
+
+private fun getWivoCardBorderColor(
+    themeItemId: String?,
+    effectItemId: String?
+): Color {
+    return when {
+        effectItemId == "effect_coin_flash" -> Color(0xFFFFD54F)
+        effectItemId == "effect_streak_fire" -> Color(0xFFFF7043)
+        effectItemId == "effect_code_scan" -> Color(0xFF00E5FF)
+
+        themeItemId == "theme_matrix_wivo" -> GreenAccent
+        themeItemId == "theme_blue_terminal" -> Color(0xFF40C4FF)
+        themeItemId == "theme_purple_neon" -> PurplePrimary
+
+        else -> BorderColor
+    }
+}
+
+private fun getWivoCardContainerColor(
+    themeItemId: String?
+): Color {
+    return when (themeItemId) {
+        "theme_dark_minimal" -> Color(0xFF101114)
+        "theme_matrix_wivo" -> Color(0xFF07130C)
+        "theme_blue_terminal" -> Color(0xFF09111D)
+        "theme_purple_neon" -> Color(0xFF12091F)
+        "theme_cyber_academy" -> Color(0xFF10111F)
+        "theme_full_stack" -> Color(0xFF0D1018)
+        else -> CardDark
     }
 }

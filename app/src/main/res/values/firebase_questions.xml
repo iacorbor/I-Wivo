@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Firebase test questions -->
+    <string name="firebase_test_001_question">¿Qué servicio de Firebase permite autenticar usuarios?</string>
+    <string name="firebase_test_001_option_1">Firestore</string>
+    <string name="firebase_test_001_option_2">Firebase Auth</string>
+    <string name="firebase_test_001_option_3">Storage</string>
+    <string name="firebase_test_001_option_4">Crashlytics</string>
+    <string name="firebase_test_001_explanation">Firebase Auth gestiona login, registro y sesión.</string>
+
+    <string name="firebase_test_002_question">¿Qué base de datos NoSQL estás usando en I-Wivo?</string>
+    <string name="firebase_test_002_option_1">SQLite</string>
+    <string name="firebase_test_002_option_2">Room</string>
+    <string name="firebase_test_002_option_3">Firestore</string>
+    <string name="firebase_test_002_option_4">MySQL</string>
+    <string name="firebase_test_002_explanation">Cloud Firestore es una base de datos NoSQL en la nube.</string>
+
+    <string name="firebase_test_003_question">¿Qué método suele usarse para actualizar campos concretos en un documento?</string>
+    <string name="firebase_test_003_option_1">update</string>
+    <string name="firebase_test_003_option_2">replaceAll</string>
+    <string name="firebase_test_003_option_3">commitOnly</string>
+    <string name="firebase_test_003_option_4">pushField</string>
+    <string name="firebase_test_003_explanation">update modifica campos concretos de un documento.</string>
+
+    <string name="firebase_test_004_question">¿Qué estructura usa Firestore para organizar datos?</string>
+    <string name="firebase_test_004_option_1">Tablas y filas</string>
+    <string name="firebase_test_004_option_2">Colecciones y documentos</string>
+    <string name="firebase_test_004_option_3">XML y nodos</string>
+    <string name="firebase_test_004_option_4">Clases y objetos</string>
+    <string name="firebase_test_004_explanation">Firestore organiza datos en colecciones y documentos.</string>
+
+    <string name="firebase_test_005_question">¿Qué representa una colección en Firestore?</string>
+    <string name="firebase_test_005_option_1">Un grupo de documentos</string>
+    <string name="firebase_test_005_option_2">Un campo booleano</string>
+    <string name="firebase_test_005_option_3">Una pantalla Compose</string>
+    <string name="firebase_test_005_option_4">Un usuario autenticado</string>
+    <string name="firebase_test_005_explanation">Una colección agrupa documentos.</string>
+
+    <string name="firebase_test_006_question">¿Qué representa un documento en Firestore?</string>
+    <string name="firebase_test_006_option_1">Una unidad de datos con campos</string>
+    <string name="firebase_test_006_option_2">Una tabla SQL</string>
+    <string name="firebase_test_006_option_3">Un archivo drawable</string>
+    <string name="firebase_test_006_option_4">Un permiso Android</string>
+    <string name="firebase_test_006_explanation">Un documento contiene campos y valores.</string>
+
+    <string name="firebase_test_007_question">¿Qué propiedad permite obtener el usuario autenticado actual?</string>
+    <string name="firebase_test_007_option_1">currentUser</string>
+    <string name="firebase_test_007_option_2">loggedUserOnly</string>
+    <string name="firebase_test_007_option_3">activeAccount</string>
+    <string name="firebase_test_007_option_4">sessionUser</string>
+    <string name="firebase_test_007_explanation">FirebaseAuth.currentUser devuelve el usuario actual si existe.</string>
+
+    <string name="firebase_test_008_question">¿Qué campo suele usarse como identificador único del usuario autenticado?</string>
+    <string name="firebase_test_008_option_1">uid</string>
+    <string name="firebase_test_008_option_2">username</string>
+    <string name="firebase_test_008_option_3">password</string>
+    <string name="firebase_test_008_option_4">providerName</string>
+    <string name="firebase_test_008_explanation">uid identifica de forma única al usuario en Firebase Auth.</string>
+
+    <string name="firebase_test_009_question">¿Qué método crea o reemplaza un documento completo?</string>
+    <string name="firebase_test_009_option_1">set</string>
+    <string name="firebase_test_009_option_2">updateOnly</string>
+    <string name="firebase_test_009_option_3">patch</string>
+    <string name="firebase_test_009_option_4">insertRow</string>
+    <string name="firebase_test_009_explanation">set guarda datos en un documento y puede crear o reemplazar contenido.</string>
+
+    <string name="firebase_test_010_question">¿Qué método obtiene un documento una sola vez?</string>
+    <string name="firebase_test_010_option_1">get</string>
+    <string name="firebase_test_010_option_2">listenForever</string>
+    <string name="firebase_test_010_option_3">fetchLiveOnly</string>
+    <string name="firebase_test_010_option_4">readTable</string>
+    <string name="firebase_test_010_explanation">get lee un documento o consulta una vez.</string>
+
+    <string name="firebase_test_011_question">¿Qué listener se usa para manejar éxito en una operación Firebase?</string>
+    <string name="firebase_test_011_option_1">addOnSuccessListener</string>
+    <string name="firebase_test_011_option_2">onOk</string>
+    <string name="firebase_test_011_option_3">thenSuccessOnly</string>
+    <string name="firebase_test_011_option_4">successBlock</string>
+    <string name="firebase_test_011_explanation">addOnSuccessListener se ejecuta cuando la operación termina correctamente.</string>
+
+    <string name="firebase_test_012_question">¿Qué listener se usa para manejar errores en una operación Firebase?</string>
+    <string name="firebase_test_012_option_1">addOnFailureListener</string>
+    <string name="firebase_test_012_option_2">onCrash</string>
+    <string name="firebase_test_012_option_3">errorOnly</string>
+    <string name="firebase_test_012_option_4">catchFirebase</string>
+    <string name="firebase_test_012_explanation">addOnFailureListener captura errores de Firebase.</string>
+
+    <string name="firebase_test_013_question">¿Qué método permite ejecutar una transacción en Firestore?</string>
+    <string name="firebase_test_013_option_1">runTransaction</string>
+    <string name="firebase_test_013_option_2">startSqlTransaction</string>
+    <string name="firebase_test_013_option_3">safeUpdateOnly</string>
+    <string name="firebase_test_013_option_4">commitBlock</string>
+    <string name="firebase_test_013_explanation">runTransaction permite lecturas y escrituras atómicas.</string>
+
+    <string name="firebase_test_014_question">¿Para qué sirve una transacción en Firestore?</string>
+    <string name="firebase_test_014_option_1">Actualizar datos de forma segura con lectura previa</string>
+    <string name="firebase_test_014_option_2">Dibujar una pantalla</string>
+    <string name="firebase_test_014_option_3">Cambiar el tema</string>
+    <string name="firebase_test_014_option_4">Crear un XML</string>
+    <string name="firebase_test_014_explanation">Una transacción ayuda cuando el nuevo valor depende del valor actual.</string>
+
+    <string name="firebase_test_015_question">¿Qué operación es adecuada para sumar monedas evitando condiciones de carrera?</string>
+    <string name="firebase_test_015_option_1">Transacción</string>
+    <string name="firebase_test_015_option_2">Variable local sin guardar</string>
+    <string name="firebase_test_015_option_3">Update sin leer nunca</string>
+    <string name="firebase_test_015_option_4">Toast</string>
+    <string name="firebase_test_015_explanation">Si el valor depende del estado actual, una transacción es más segura.</string>
+
+    <string name="firebase_test_016_question">¿Qué hace FieldValue.arrayUnion?</string>
+    <string name="firebase_test_016_option_1">Añade elementos a un array evitando duplicados</string>
+    <string name="firebase_test_016_option_2">Elimina la colección</string>
+    <string name="firebase_test_016_option_3">Crea usuarios</string>
+    <string name="firebase_test_016_option_4">Borra el documento</string>
+    <string name="firebase_test_016_explanation">arrayUnion añade elementos a un array sin duplicarlos.</string>
+
+    <string name="firebase_test_017_question">¿Qué hace FieldValue.arrayRemove?</string>
+    <string name="firebase_test_017_option_1">Elimina elementos de un array</string>
+    <string name="firebase_test_017_option_2">Borra toda la app</string>
+    <string name="firebase_test_017_option_3">Crea un array duplicado</string>
+    <string name="firebase_test_017_option_4">Cierra sesión</string>
+    <string name="firebase_test_017_explanation">arrayRemove elimina elementos concretos de un array.</string>
+
+    <string name="firebase_test_018_question">¿Qué servicio de Firebase almacena archivos como imágenes?</string>
+    <string name="firebase_test_018_option_1">Firebase Storage</string>
+    <string name="firebase_test_018_option_2">Firebase Auth</string>
+    <string name="firebase_test_018_option_3">Firestore Rules</string>
+    <string name="firebase_test_018_option_4">Crashlytics</string>
+    <string name="firebase_test_018_explanation">Firebase Storage se usa para archivos.</string>
+
+    <string name="firebase_test_019_question">¿Qué servicio ayuda a registrar errores/crashes de la app?</string>
+    <string name="firebase_test_019_option_1">Crashlytics</string>
+    <string name="firebase_test_019_option_2">Firestore</string>
+    <string name="firebase_test_019_option_3">Auth</string>
+    <string name="firebase_test_019_option_4">Remote Config</string>
+    <string name="firebase_test_019_explanation">Crashlytics ayuda a analizar fallos de la app.</string>
+
+    <string name="firebase_test_020_question">¿Qué servicio permite cambiar configuración remota sin publicar nueva versión?</string>
+    <string name="firebase_test_020_option_1">Remote Config</string>
+    <string name="firebase_test_020_option_2">Storage</string>
+    <string name="firebase_test_020_option_3">Auth</string>
+    <string name="firebase_test_020_option_4">Firestore Index</string>
+    <string name="firebase_test_020_explanation">Remote Config permite activar/configurar valores remotamente.</string>
+
+    <string name="firebase_test_021_question">¿Dónde se suelen proteger accesos a Firestore?</string>
+    <string name="firebase_test_021_option_1">Reglas de seguridad</string>
+    <string name="firebase_test_021_option_2">strings.xml</string>
+    <string name="firebase_test_021_option_3">MainActivity</string>
+    <string name="firebase_test_021_option_4">drawable</string>
+    <string name="firebase_test_021_explanation">Las reglas de seguridad controlan lectura y escritura.</string>
+
+    <string name="firebase_test_022_question">¿Qué regla conceptual debería cumplirse para leer datos privados de usuario?</string>
+    <string name="firebase_test_022_option_1">request.auth.uid coincide con el documento del usuario</string>
+    <string name="firebase_test_022_option_2">Cualquier usuario puede leer todo</string>
+    <string name="firebase_test_022_option_3">Solo hace falta el nombre</string>
+    <string name="firebase_test_022_option_4">No hay reglas</string>
+    <string name="firebase_test_022_explanation">Lo normal es limitar datos privados al usuario dueño.</string>
+
+    <string name="firebase_test_023_question">¿Qué ocurre si auth.currentUser es null?</string>
+    <string name="firebase_test_023_option_1">No hay usuario autenticado</string>
+    <string name="firebase_test_023_option_2">Firestore se borra</string>
+    <string name="firebase_test_023_option_3">La app se compila</string>
+    <string name="firebase_test_023_option_4">El usuario existe igualmente</string>
+    <string name="firebase_test_023_explanation">currentUser null indica que no hay sesión activa.</string>
+
+    <string name="firebase_test_024_question">¿Qué método de FirebaseAuth se usa para cerrar sesión?</string>
+    <string name="firebase_test_024_option_1">signOut</string>
+    <string name="firebase_test_024_option_2">logoutUserOnly</string>
+    <string name="firebase_test_024_option_3">closeSessionHard</string>
+    <string name="firebase_test_024_option_4">deleteAuth</string>
+    <string name="firebase_test_024_explanation">signOut cierra la sesión actual.</string>
+
+    <string name="firebase_test_025_question">¿Qué método suele usarse para iniciar sesión con email y contraseña?</string>
+    <string name="firebase_test_025_option_1">signInWithEmailAndPassword</string>
+    <string name="firebase_test_025_option_2">loginEmail</string>
+    <string name="firebase_test_025_option_3">authPassword</string>
+    <string name="firebase_test_025_option_4">connectUser</string>
+    <string name="firebase_test_025_explanation">signInWithEmailAndPassword inicia sesión con email/password.</string>
+
+    <string name="firebase_test_026_question">¿Qué método suele usarse para registrar email y contraseña?</string>
+    <string name="firebase_test_026_option_1">createUserWithEmailAndPassword</string>
+    <string name="firebase_test_026_option_2">registerEmailOnly</string>
+    <string name="firebase_test_026_option_3">newPasswordUser</string>
+    <string name="firebase_test_026_option_4">insertAuthUser</string>
+    <string name="firebase_test_026_explanation">createUserWithEmailAndPassword crea un usuario con email/password.</string>
+
+    <string name="firebase_test_027_question">¿Qué método envía correo de recuperación de contraseña?</string>
+    <string name="firebase_test_027_option_1">sendPasswordResetEmail</string>
+    <string name="firebase_test_027_option_2">resetPasswordNow</string>
+    <string name="firebase_test_027_option_3">recoverUserPass</string>
+    <string name="firebase_test_027_option_4">emailPasswordBack</string>
+    <string name="firebase_test_027_explanation">sendPasswordResetEmail envía recuperación de contraseña.</string>
+
+    <string name="firebase_test_028_question">¿Qué campo de I-Wivo guarda XP del usuario?</string>
+    <string name="firebase_test_028_option_1">xp</string>
+    <string name="firebase_test_028_option_2">experience_points_total</string>
+    <string name="firebase_test_028_option_3">scoreOnly</string>
+    <string name="firebase_test_028_option_4">levelData</string>
+    <string name="firebase_test_028_explanation">En tu estructura usas el campo xp.</string>
+
+    <string name="firebase_test_029_question">¿Qué campo de I-Wivo guarda monedas?</string>
+    <string name="firebase_test_029_option_1">coins</string>
+    <string name="firebase_test_029_option_2">money</string>
+    <string name="firebase_test_029_option_3">wivoCash</string>
+    <string name="firebase_test_029_option_4">walletOnly</string>
+    <string name="firebase_test_029_explanation">En tu estructura usas coins.</string>
+
+    <string name="firebase_test_030_question">¿Qué campo de I-Wivo guarda la racha?</string>
+    <string name="firebase_test_030_option_1">streak</string>
+    <string name="firebase_test_030_option_2">combo</string>
+    <string name="firebase_test_030_option_3">daysPlayed</string>
+    <string name="firebase_test_030_option_4">fire</string>
+    <string name="firebase_test_030_explanation">En tu estructura usas streak.</string>
+
+    <string name="firebase_test_031_question">¿Qué campo de I-Wivo guarda la última fecha de actividad?</string>
+    <string name="firebase_test_031_option_1">lastActivityDate</string>
+    <string name="firebase_test_031_option_2">lastLoginOnly</string>
+    <string name="firebase_test_031_option_3">activityDay</string>
+    <string name="firebase_test_031_option_4">lastGame</string>
+    <string name="firebase_test_031_explanation">lastActivityDate guarda la fecha de actividad.</string>
+
+    <string name="firebase_test_032_question">¿Qué campo puede guardar el nombre visible del usuario?</string>
+    <string name="firebase_test_032_option_1">username</string>
+    <string name="firebase_test_032_option_2">uid</string>
+    <string name="firebase_test_032_option_3">password</string>
+    <string name="firebase_test_032_option_4">providerId</string>
+    <string name="firebase_test_032_explanation">username guarda el nombre de perfil.</string>
+
+    <string name="firebase_test_033_question">¿Qué campo puede guardar imagen de perfil en base64 en tu app?</string>
+    <string name="firebase_test_033_option_1">avatarBase64</string>
+    <string name="firebase_test_033_option_2">avatarDrawable</string>
+    <string name="firebase_test_033_option_3">imageXml</string>
+    <string name="firebase_test_033_option_4">photoManifest</string>
+    <string name="firebase_test_033_explanation">avatarBase64 puede guardar la imagen codificada.</string>
+
+    <string name="firebase_test_034_question">¿Qué campo guarda objetos de tienda desbloqueados?</string>
+    <string name="firebase_test_034_option_1">unlockedShopItems</string>
+    <string name="firebase_test_034_option_2">itemsFree</string>
+    <string name="firebase_test_034_option_3">shopOpen</string>
+    <string name="firebase_test_034_option_4">cart</string>
+    <string name="firebase_test_034_explanation">unlockedShopItems guarda ids desbloqueados.</string>
+
+    <string name="firebase_test_035_question">¿Qué campo podría guardar el fondo equipado?</string>
+    <string name="firebase_test_035_option_1">equippedBackgroundId</string>
+    <string name="firebase_test_035_option_2">backgroundNow</string>
+    <string name="firebase_test_035_option_3">selectedWallpaperOnly</string>
+    <string name="firebase_test_035_option_4">themeBg</string>
+    <string name="firebase_test_035_explanation">equippedBackgroundId guarda el fondo equipado.</string>
+
+    <string name="firebase_test_036_question">¿Qué campo podría guardar el tema equipado?</string>
+    <string name="firebase_test_036_option_1">equippedThemeId</string>
+    <string name="firebase_test_036_option_2">themeCurrentOnly</string>
+    <string name="firebase_test_036_option_3">selectedStyle</string>
+    <string name="firebase_test_036_option_4">uiSkin</string>
+    <string name="firebase_test_036_explanation">equippedThemeId guarda el tema equipado.</string>
+
+    <string name="firebase_test_037_question">¿Qué campo podría guardar el efecto equipado?</string>
+    <string name="firebase_test_037_option_1">equippedEffectId</string>
+    <string name="firebase_test_037_option_2">effectNowOnly</string>
+    <string name="firebase_test_037_option_3">animationFile</string>
+    <string name="firebase_test_037_option_4">selectedFxXml</string>
+    <string name="firebase_test_037_explanation">equippedEffectId guarda el efecto equipado.</string>
+
+    <string name="firebase_test_038_question">¿Qué campo podría guardar el último tema jugado?</string>
+    <string name="firebase_test_038_option_1">lastPlayedTopic</string>
+    <string name="firebase_test_038_option_2">lastTopicOnly</string>
+    <string name="firebase_test_038_option_3">topicHistory</string>
+    <string name="firebase_test_038_option_4">recentRoute</string>
+    <string name="firebase_test_038_explanation">lastPlayedTopic guarda el último topic.</string>
+
+    <string name="firebase_test_039_question">¿Qué campo podría guardar el último modo jugado?</string>
+    <string name="firebase_test_039_option_1">lastPlayedGameType</string>
+    <string name="firebase_test_039_option_2">lastModeOnly</string>
+    <string name="firebase_test_039_option_3">recentGame</string>
+    <string name="firebase_test_039_option_4">gameRoute</string>
+    <string name="firebase_test_039_explanation">lastPlayedGameType guarda el último modo.</string>
+
+    <string name="firebase_test_040_question">¿Qué campo puede guardar preguntas respondidas en misión diaria?</string>
+    <string name="firebase_test_040_option_1">dailyQuestionsAnswered</string>
+    <string name="firebase_test_040_option_2">answeredTodayOnly</string>
+    <string name="firebase_test_040_option_3">dailyTotal</string>
+    <string name="firebase_test_040_option_4">missionScore</string>
+    <string name="firebase_test_040_explanation">dailyQuestionsAnswered controla progreso diario.</string>
+
+    <string name="firebase_test_041_question">¿Qué campo puede indicar si la misión diaria fue reclamada?</string>
+    <string name="firebase_test_041_option_1">dailyMissionClaimed</string>
+    <string name="firebase_test_041_option_2">missionPaid</string>
+    <string name="firebase_test_041_option_3">rewardDoneOnly</string>
+    <string name="firebase_test_041_option_4">claimedCoins</string>
+    <string name="firebase_test_041_explanation">dailyMissionClaimed evita reclamar dos veces.</string>
+
+    <string name="firebase_test_042_question">¿Qué problema evita comprobar uid antes de guardar datos?</string>
+    <string name="firebase_test_042_option_1">Guardar datos sin usuario autenticado</string>
+    <string name="firebase_test_042_option_2">Que el XML falle</string>
+    <string name="firebase_test_042_option_3">Que Compose recomponga</string>
+    <string name="firebase_test_042_option_4">Que Gradle compile</string>
+    <string name="firebase_test_042_explanation">Sin uid no sabes en qué documento de usuario escribir.</string>
+
+    <string name="firebase_test_043_question">¿Qué problema puede aparecer al hacer varias escrituras dependientes sin transacción?</string>
+    <string name="firebase_test_043_option_1">Condiciones de carrera</string>
+    <string name="firebase_test_043_option_2">Error de color</string>
+    <string name="firebase_test_043_option_3">Fallo de stringResource</string>
+    <string name="firebase_test_043_option_4">Ruta no registrada</string>
+    <string name="firebase_test_043_explanation">Dos operaciones simultáneas pueden pisarse.</string>
+
+    <string name="firebase_test_044_question">¿Qué tipo de base de datos es Firestore?</string>
+    <string name="firebase_test_044_option_1">NoSQL documental</string>
+    <string name="firebase_test_044_option_2">Relacional pura</string>
+    <string name="firebase_test_044_option_3">Archivo XML</string>
+    <string name="firebase_test_044_option_4">Hoja CSS</string>
+    <string name="firebase_test_044_explanation">Firestore es documental NoSQL.</string>
+
+    <string name="firebase_test_045_question">¿Qué significa que Firebase sea BaaS?</string>
+    <string name="firebase_test_045_option_1">Backend as a Service</string>
+    <string name="firebase_test_045_option_2">Build as a Screen</string>
+    <string name="firebase_test_045_option_3">Binary app Storage</string>
+    <string name="firebase_test_045_option_4">Basic Android System</string>
+    <string name="firebase_test_045_explanation">Firebase ofrece servicios backend listos.</string>
+
+    <string name="firebase_test_046_question">¿Qué deberías evitar guardar en Firestore directamente?</string>
+    <string name="firebase_test_046_option_1">Contraseñas en texto plano</string>
+    <string name="firebase_test_046_option_2">XP</string>
+    <string name="firebase_test_046_option_3">Username</string>
+    <string name="firebase_test_046_option_4">Preferencias visuales</string>
+    <string name="firebase_test_046_explanation">Las contraseñas no deben guardarse en texto plano.</string>
+
+    <string name="firebase_test_047_question">¿Qué se usa para consultas filtradas en Firestore?</string>
+    <string name="firebase_test_047_option_1">whereEqualTo</string>
+    <string name="firebase_test_047_option_2">WHERE SQL siempre</string>
+    <string name="firebase_test_047_option_3">filterXml</string>
+    <string name="firebase_test_047_option_4">selectOnly</string>
+    <string name="firebase_test_047_explanation">whereEqualTo filtra documentos por campo.</string>
+
+    <string name="firebase_test_048_question">¿Qué se usa para ordenar consultas en Firestore?</string>
+    <string name="firebase_test_048_option_1">orderBy</string>
+    <string name="firebase_test_048_option_2">sortSql</string>
+    <string name="firebase_test_048_option_3">ORDER BY textual siempre</string>
+    <string name="firebase_test_048_option_4">arrange</string>
+    <string name="firebase_test_048_explanation">orderBy ordena resultados.</string>
+
+    <string name="firebase_test_049_question">¿Qué ocurre si las reglas de Firestore son demasiado abiertas?</string>
+    <string name="firebase_test_049_option_1">Riesgo de exposición o escritura indebida</string>
+    <string name="firebase_test_049_option_2">La app pesa menos</string>
+    <string name="firebase_test_049_option_3">Compose mejora</string>
+    <string name="firebase_test_049_option_4">No pasa nada</string>
+    <string name="firebase_test_049_explanation">Reglas abiertas pueden exponer datos.</string>
+
+    <string name="firebase_test_050_question">¿Qué conviene hacer con errores de Firebase en UI?</string>
+    <string name="firebase_test_050_option_1">Mostrarlos/controlarlos con onError</string>
+    <string name="firebase_test_050_option_2">Ignorarlos siempre</string>
+    <string name="firebase_test_050_option_3">Cerrar la app</string>
+    <string name="firebase_test_050_option_4">Borrar usuario</string>
+    <string name="firebase_test_050_explanation">Manejar errores mejora experiencia y depuración.</string>
+
+    <!-- Firebase true false questions -->
+    <string name="firebase_tf_001_question">FirebaseAuth permite obtener el usuario actual.</string>
+    <string name="firebase_tf_001_explanation">FirebaseAuth.currentUser devuelve el usuario autenticado si existe.</string>
+    <string name="firebase_tf_002_question">Firestore guarda datos en documentos y colecciones.</string>
+    <string name="firebase_tf_002_explanation">Firestore organiza datos en colecciones y documentos.</string>
+    <string name="firebase_tf_003_question">Una transaction ayuda a actualizar datos de forma segura.</string>
+    <string name="firebase_tf_003_explanation">Las transacciones ayudan cuando hay lecturas y escrituras relacionadas.</string>
+    <string name="firebase_tf_004_question">currentUser puede ser null.</string>
+    <string name="firebase_tf_004_explanation">Si no hay sesión, currentUser es null.</string>
+    <string name="firebase_tf_005_question">Usar !! sobre currentUser puede provocar NullPointerException.</string>
+    <string name="firebase_tf_005_explanation">Si currentUser es null, !! revienta.</string>
+    <string name="firebase_tf_006_question">Firestore es una base de datos relacional basada en tablas SQL.</string>
+    <string name="firebase_tf_006_explanation">Firestore es NoSQL documental.</string>
+    <string name="firebase_tf_007_question">Una colección contiene documentos.</string>
+    <string name="firebase_tf_007_explanation">Las colecciones agrupan documentos.</string>
+    <string name="firebase_tf_008_question">Un documento puede tener campos.</string>
+    <string name="firebase_tf_008_explanation">Los documentos contienen campos y valores.</string>
+    <string name="firebase_tf_009_question">set puede crear un documento si no existe.</string>
+    <string name="firebase_tf_009_explanation">set puede crear o reemplazar datos.</string>
+    <string name="firebase_tf_010_question">update falla si el documento no existe.</string>
+    <string name="firebase_tf_010_explanation">update requiere que el documento exista.</string>
+    <string name="firebase_tf_011_question">get lee datos una vez.</string>
+    <string name="firebase_tf_011_explanation">get hace una lectura puntual.</string>
+    <string name="firebase_tf_012_question">addOnSuccessListener se ejecuta al fallar la operación.</string>
+    <string name="firebase_tf_012_explanation">Para errores se usa addOnFailureListener.</string>
+    <string name="firebase_tf_013_question">addOnFailureListener permite manejar errores.</string>
+    <string name="firebase_tf_013_explanation">Captura excepciones de Firebase.</string>
+    <string name="firebase_tf_014_question">runTransaction puede leer y escribir de forma atómica.</string>
+    <string name="firebase_tf_014_explanation">Las transacciones agrupan lectura/escritura.</string>
+    <string name="firebase_tf_015_question">FieldValue.arrayUnion añade elementos evitando duplicados.</string>
+    <string name="firebase_tf_015_explanation">arrayUnion evita duplicados.</string>
+    <string name="firebase_tf_016_question">FieldValue.arrayRemove sirve para eliminar elementos de arrays.</string>
+    <string name="firebase_tf_016_explanation">arrayRemove elimina elementos concretos.</string>
+    <string name="firebase_tf_017_question">Firebase Storage sirve para guardar archivos.</string>
+    <string name="firebase_tf_017_explanation">Storage almacena imágenes, vídeos, etc.</string>
+    <string name="firebase_tf_018_question">Crashlytics ayuda a analizar fallos.</string>
+    <string name="firebase_tf_018_explanation">Crashlytics registra crashes.</string>
+    <string name="firebase_tf_019_question">Remote Config permite cambiar valores remotamente.</string>
+    <string name="firebase_tf_019_explanation">Remote Config modifica configuración sin nueva versión.</string>
+    <string name="firebase_tf_020_question">Las reglas de seguridad de Firestore no importan.</string>
+    <string name="firebase_tf_020_explanation">Las reglas son fundamentales para proteger datos.</string>
+    <string name="firebase_tf_021_question">Un usuario debería poder leer datos privados de cualquier usuario.</string>
+    <string name="firebase_tf_021_explanation">Los datos privados deben restringirse.</string>
+    <string name="firebase_tf_022_question">signOut cierra la sesión.</string>
+    <string name="firebase_tf_022_explanation">signOut desconecta al usuario.</string>
+    <string name="firebase_tf_023_question">signInWithEmailAndPassword inicia sesión con email y contraseña.</string>
+    <string name="firebase_tf_023_explanation">Ese método inicia sesión.</string>
+    <string name="firebase_tf_024_question">createUserWithEmailAndPassword registra un usuario.</string>
+    <string name="firebase_tf_024_explanation">Crea una cuenta email/password.</string>
+    <string name="firebase_tf_025_question">sendPasswordResetEmail puede enviar recuperación de contraseña.</string>
+    <string name="firebase_tf_025_explanation">Envía correo de recuperación.</string>
+    <string name="firebase_tf_026_question">uid identifica al usuario autenticado.</string>
+    <string name="firebase_tf_026_explanation">uid es identificador único.</string>
+    <string name="firebase_tf_027_question">email y uid siempre son lo mismo.</string>
+    <string name="firebase_tf_027_explanation">uid es identificador interno; email es credencial/dato.</string>
+    <string name="firebase_tf_028_question">En I-Wivo, xp puede guardarse en el documento del usuario.</string>
+    <string name="firebase_tf_028_explanation">xp es un campo de progreso.</string>
+    <string name="firebase_tf_029_question">En I-Wivo, coins puede guardar monedas.</string>
+    <string name="firebase_tf_029_explanation">coins representa monedas.</string>
+    <string name="firebase_tf_030_question">En I-Wivo, streak puede guardar racha.</string>
+    <string name="firebase_tf_030_explanation">streak representa racha.</string>
+    <string name="firebase_tf_031_question">lastActivityDate puede servir para calcular racha diaria.</string>
+    <string name="firebase_tf_031_explanation">Permite comparar la última actividad con hoy.</string>
+    <string name="firebase_tf_032_question">dailyMissionClaimed evita reclamar recompensa varias veces.</string>
+    <string name="firebase_tf_032_explanation">Controla si ya se reclamó.</string>
+    <string name="firebase_tf_033_question">dailyQuestionsAnswered puede contar preguntas respondidas hoy.</string>
+    <string name="firebase_tf_033_explanation">Sirve para progreso diario.</string>
+    <string name="firebase_tf_034_question">unlockedShopItems puede guardar objetos comprados.</string>
+    <string name="firebase_tf_034_explanation">Guarda ids desbloqueados.</string>
+    <string name="firebase_tf_035_question">equippedThemeId puede guardar el tema equipado.</string>
+    <string name="firebase_tf_035_explanation">Guarda el id del tema activo.</string>
+    <string name="firebase_tf_036_question">Guardar contraseñas en texto plano en Firestore es buena práctica.</string>
+    <string name="firebase_tf_036_explanation">Nunca guardes contraseñas en texto plano.</string>
+    <string name="firebase_tf_037_question">Las operaciones de Firebase suelen ser asíncronas.</string>
+    <string name="firebase_tf_037_explanation">Se resuelven con listeners/callbacks/tasks.</string>
+    <string name="firebase_tf_038_question">Puedes asumir que una lectura de Firestore devuelve inmediatamente el dato.</string>
+    <string name="firebase_tf_038_explanation">Debes manejar callbacks o corrutinas.</string>
+    <string name="firebase_tf_039_question">Una condición de carrera puede ocurrir si dos clientes actualizan el mismo contador sin control.</string>
+    <string name="firebase_tf_039_explanation">Pueden pisarse actualizaciones.</string>
+    <string name="firebase_tf_040_question">Las transacciones son útiles para sumar XP o monedas basándose en el valor actual.</string>
+    <string name="firebase_tf_040_explanation">Protegen cambios dependientes del valor anterior.</string>
+    <string name="firebase_tf_041_question">whereEqualTo permite filtrar consultas.</string>
+    <string name="firebase_tf_041_explanation">Filtra por igualdad de campo.</string>
+    <string name="firebase_tf_042_question">orderBy permite ordenar resultados.</string>
+    <string name="firebase_tf_042_explanation">Ordena por un campo.</string>
+    <string name="firebase_tf_043_question">DocumentReference apunta a un documento concreto.</string>
+    <string name="firebase_tf_043_explanation">Referencia un documento.</string>
+    <string name="firebase_tf_044_question">CollectionReference apunta a una colección.</string>
+    <string name="firebase_tf_044_explanation">Referencia una colección.</string>
+    <string name="firebase_tf_045_question">add crea un documento con id automático en una colección.</string>
+    <string name="firebase_tf_045_explanation">add genera id automático.</string>
+    <string name="firebase_tf_046_question">document(uid) permite usar uid como id de documento.</string>
+    <string name="firebase_tf_046_explanation">Es típico para perfiles de usuario.</string>
+    <string name="firebase_tf_047_question">Si falla una operación Firebase, conviene informar o gestionar el error.</string>
+    <string name="firebase_tf_047_explanation">Mejora UX y depuración.</string>
+    <string name="firebase_tf_048_question">Firestore obliga a que todos los documentos tengan los mismos campos.</string>
+    <string name="firebase_tf_048_explanation">Firestore es flexible; documentos pueden variar.</string>
+    <string name="firebase_tf_049_question">NoSQL significa que necesariamente no puedes consultar nada.</string>
+    <string name="firebase_tf_049_explanation">NoSQL no significa ausencia de consultas.</string>
+    <string name="firebase_tf_050_question">Firebase puede ahorrar backend propio en una app pequeña o media.</string>
+    <string name="firebase_tf_050_explanation">Firebase ofrece servicios backend listos.</string>
+
+    <!-- Firebase complete code questions -->
+    <string name="firebase_code_001_question">Completa el código:\n\nval auth = FirebaseAuth.____()</string>
+    <string name="firebase_code_001_option_1">getInstance</string>
+    <string name="firebase_code_001_option_2">create</string>
+    <string name="firebase_code_001_option_3">auth</string>
+    <string name="firebase_code_001_option_4">new</string>
+    <string name="firebase_code_001_explanation">getInstance() obtiene la instancia de FirebaseAuth.</string>
+
+    <string name="firebase_code_002_question">Completa el código:\n\nval db = FirebaseFirestore.____()</string>
+    <string name="firebase_code_002_option_1">getInstance</string>
+    <string name="firebase_code_002_option_2">open</string>
+    <string name="firebase_code_002_option_3">database</string>
+    <string name="firebase_code_002_option_4">connect</string>
+    <string name="firebase_code_002_explanation">getInstance() obtiene la instancia de Firestore.</string>
+
+    <string name="firebase_code_003_question">Completa el código:\n\ndb.collection("users").document(uid).____("coins", 100)</string>
+    <string name="firebase_code_003_option_1">update</string>
+    <string name="firebase_code_003_option_2">setOnly</string>
+    <string name="firebase_code_003_option_3">putField</string>
+    <string name="firebase_code_003_option_4">change</string>
+    <string name="firebase_code_003_explanation">update modifica un campo del documento.</string>
+
+    <string name="firebase_code_004_question">Completa el código:\n\nval uid = auth.currentUser?.____</string>
+    <string name="firebase_code_004_option_1">uid</string>
+    <string name="firebase_code_004_option_2">idUser</string>
+    <string name="firebase_code_004_option_3">document</string>
+    <string name="firebase_code_004_option_4">collection</string>
+    <string name="firebase_code_004_explanation">uid identifica al usuario.</string>
+
+    <string name="firebase_code_005_question">Completa el código:\n\ndb.____("users")</string>
+    <string name="firebase_code_005_option_1">collection</string>
+    <string name="firebase_code_005_option_2">table</string>
+    <string name="firebase_code_005_option_3">folder</string>
+    <string name="firebase_code_005_option_4">bucket</string>
+    <string name="firebase_code_005_explanation">collection accede a una colección.</string>
+
+    <string name="firebase_code_006_question">Completa el código:\n\ndb.collection("users").____(uid)</string>
+    <string name="firebase_code_006_option_1">document</string>
+    <string name="firebase_code_006_option_2">row</string>
+    <string name="firebase_code_006_option_3">file</string>
+    <string name="firebase_code_006_option_4">node</string>
+    <string name="firebase_code_006_explanation">document accede a un documento.</string>
+
+    <string name="firebase_code_007_question">Completa el código:\n\nuserRef.____(data)</string>
+    <string name="firebase_code_007_option_1">set</string>
+    <string name="firebase_code_007_option_2">insertSql</string>
+    <string name="firebase_code_007_option_3">saveOnlyField</string>
+    <string name="firebase_code_007_option_4">pushField</string>
+    <string name="firebase_code_007_explanation">set guarda datos.</string>
+
+    <string name="firebase_code_008_question">Completa el código:\n\nuserRef.____()</string>
+    <string name="firebase_code_008_option_1">get</string>
+    <string name="firebase_code_008_option_2">readNowOnly</string>
+    <string name="firebase_code_008_option_3">fetchSql</string>
+    <string name="firebase_code_008_option_4">select</string>
+    <string name="firebase_code_008_explanation">get lee el documento.</string>
+
+    <string name="firebase_code_009_question">Completa el código:\n\n.addOn____Listener { }</string>
+    <string name="firebase_code_009_option_1">Success</string>
+    <string name="firebase_code_009_option_2">OkOnly</string>
+    <string name="firebase_code_009_option_3">DoneOnly</string>
+    <string name="firebase_code_009_option_4">Correct</string>
+    <string name="firebase_code_009_explanation">addOnSuccessListener maneja éxito.</string>
+
+    <string name="firebase_code_010_question">Completa el código:\n\n.addOn____Listener { exception -&gt; }</string>
+    <string name="firebase_code_010_option_1">Failure</string>
+    <string name="firebase_code_010_option_2">Wrong</string>
+    <string name="firebase_code_010_option_3">CrashOnly</string>
+    <string name="firebase_code_010_option_4">Bad</string>
+    <string name="firebase_code_010_explanation">addOnFailureListener maneja errores.</string>
+
+    <string name="firebase_code_011_question">Completa el código:\n\ndb.____ { transaction -&gt; }</string>
+    <string name="firebase_code_011_option_1">runTransaction</string>
+    <string name="firebase_code_011_option_2">startSql</string>
+    <string name="firebase_code_011_option_3">safeBlockOnly</string>
+    <string name="firebase_code_011_option_4">transactionNow</string>
+    <string name="firebase_code_011_explanation">runTransaction ejecuta una transacción.</string>
+
+    <string name="firebase_code_012_question">Completa el código:\n\nval snapshot = transaction.____(userRef)</string>
+    <string name="firebase_code_012_option_1">get</string>
+    <string name="firebase_code_012_option_2">readSql</string>
+    <string name="firebase_code_012_option_3">snapshotOnly</string>
+    <string name="firebase_code_012_option_4">fetchRow</string>
+    <string name="firebase_code_012_explanation">transaction.get lee dentro de transacción.</string>
+
+    <string name="firebase_code_013_question">Completa el código:\n\ntransaction.____(userRef, "xp", newXp)</string>
+    <string name="firebase_code_013_option_1">update</string>
+    <string name="firebase_code_013_option_2">replaceSql</string>
+    <string name="firebase_code_013_option_3">changeOnly</string>
+    <string name="firebase_code_013_option_4">putRow</string>
+    <string name="firebase_code_013_explanation">transaction.update modifica dentro de transacción.</string>
+
+    <string name="firebase_code_014_question">Completa el código:\n\nval xp = snapshot.getLong("xp")?.____() ?: 0</string>
+    <string name="firebase_code_014_option_1">toInt</string>
+    <string name="firebase_code_014_option_2">asString</string>
+    <string name="firebase_code_014_option_3">toBoolean</string>
+    <string name="firebase_code_014_option_4">toList</string>
+    <string name="firebase_code_014_explanation">toInt convierte Long a Int.</string>
+
+    <string name="firebase_code_015_question">Completa el código:\n\nval username = doc.____("username")</string>
+    <string name="firebase_code_015_option_1">getString</string>
+    <string name="firebase_code_015_option_2">getTextOnly</string>
+    <string name="firebase_code_015_option_3">string</string>
+    <string name="firebase_code_015_option_4">readStringField</string>
+    <string name="firebase_code_015_explanation">getString lee un String.</string>
+
+    <string name="firebase_code_016_question">Completa el código:\n\nval claimed = doc.____("dailyMissionClaimed") ?: false</string>
+    <string name="firebase_code_016_option_1">getBoolean</string>
+    <string name="firebase_code_016_option_2">getBoolOnly</string>
+    <string name="firebase_code_016_option_3">boolean</string>
+    <string name="firebase_code_016_option_4">readFlag</string>
+    <string name="firebase_code_016_explanation">getBoolean lee Boolean.</string>
+
+    <string name="firebase_code_017_question">Completa el código:\n\nFieldValue.____(item.id)</string>
+    <string name="firebase_code_017_option_1">arrayUnion</string>
+    <string name="firebase_code_017_option_2">arrayAddOnly</string>
+    <string name="firebase_code_017_option_3">listPush</string>
+    <string name="firebase_code_017_option_4">appendArray</string>
+    <string name="firebase_code_017_explanation">arrayUnion añade a array evitando duplicados.</string>
+
+    <string name="firebase_code_018_question">Completa el código:\n\nFieldValue.____(item.id)</string>
+    <string name="firebase_code_018_option_1">arrayRemove</string>
+    <string name="firebase_code_018_option_2">arrayDeleteOnly</string>
+    <string name="firebase_code_018_option_3">listPop</string>
+    <string name="firebase_code_018_option_4">removeCollection</string>
+    <string name="firebase_code_018_explanation">arrayRemove elimina de array.</string>
+
+    <string name="firebase_code_019_question">Completa el código:\n\nauth.____()</string>
+    <string name="firebase_code_019_option_1">signOut</string>
+    <string name="firebase_code_019_option_2">logoutOnly</string>
+    <string name="firebase_code_019_option_3">closeAuth</string>
+    <string name="firebase_code_019_option_4">deleteSession</string>
+    <string name="firebase_code_019_explanation">signOut cierra sesión.</string>
+
+    <string name="firebase_code_020_question">Completa el código:\n\nauth.____(email, password)</string>
+    <string name="firebase_code_020_option_1">signInWithEmailAndPassword</string>
+    <string name="firebase_code_020_option_2">login</string>
+    <string name="firebase_code_020_option_3">connectEmail</string>
+    <string name="firebase_code_020_option_4">authMail</string>
+    <string name="firebase_code_020_explanation">signInWithEmailAndPassword inicia sesión.</string>
+
+    <string name="firebase_code_021_question">Completa el código:\n\nauth.____(email, password)</string>
+    <string name="firebase_code_021_option_1">createUserWithEmailAndPassword</string>
+    <string name="firebase_code_021_option_2">register</string>
+    <string name="firebase_code_021_option_3">newEmailUser</string>
+    <string name="firebase_code_021_option_4">insertUser</string>
+    <string name="firebase_code_021_explanation">createUserWithEmailAndPassword registra usuario.</string>
+
+    <string name="firebase_code_022_question">Completa el código:\n\nauth.____(email)</string>
+    <string name="firebase_code_022_option_1">sendPasswordResetEmail</string>
+    <string name="firebase_code_022_option_2">recover</string>
+    <string name="firebase_code_022_option_3">resetNow</string>
+    <string name="firebase_code_022_option_4">emailPassword</string>
+    <string name="firebase_code_022_explanation">sendPasswordResetEmail envía recuperación.</string>
+
+    <string name="firebase_code_023_question">Completa el código:\n\nif (uid == null) { ____(); return }</string>
+    <string name="firebase_code_023_option_1">onError</string>
+    <string name="firebase_code_023_option_2">onSuccess</string>
+    <string name="firebase_code_023_option_3">deleteUser</string>
+    <string name="firebase_code_023_option_4">update</string>
+    <string name="firebase_code_023_explanation">Si no hay uid, conviene cortar con error.</string>
+
+    <string name="firebase_code_024_question">Completa el código:\n\nval data = ____("xp" to 0, "coins" to 0)</string>
+    <string name="firebase_code_024_option_1">mapOf</string>
+    <string name="firebase_code_024_option_2">listOf</string>
+    <string name="firebase_code_024_option_3">arrayOf</string>
+    <string name="firebase_code_024_option_4">setOf</string>
+    <string name="firebase_code_024_explanation">mapOf crea un mapa clave-valor.</string>
+
+    <string name="firebase_code_025_question">Completa el código:\n\ntransaction.update(userRef, ____("coins" to newCoins))</string>
+    <string name="firebase_code_025_option_1">mapOf</string>
+    <string name="firebase_code_025_option_2">listOf</string>
+    <string name="firebase_code_025_option_3">arrayOf</string>
+    <string name="firebase_code_025_option_4">setOf</string>
+    <string name="firebase_code_025_explanation">update puede recibir un mapa.</string>
+
+    <string name="firebase_code_026_question">Completa el código:\n\nval exists = document.____()</string>
+    <string name="firebase_code_026_option_1">exists</string>
+    <string name="firebase_code_026_option_2">isCreated</string>
+    <string name="firebase_code_026_option_3">hasRow</string>
+    <string name="firebase_code_026_option_4">present</string>
+    <string name="firebase_code_026_explanation">exists indica si el documento existe.</string>
+
+    <string name="firebase_code_027_question">Completa el código:\n\nval profile = document.____(UserProfile::class.java)</string>
+    <string name="firebase_code_027_option_1">toObject</string>
+    <string name="firebase_code_027_option_2">toModelOnly</string>
+    <string name="firebase_code_027_option_3">asProfile</string>
+    <string name="firebase_code_027_option_4">parseClass</string>
+    <string name="firebase_code_027_explanation">toObject convierte documento a modelo.</string>
+
+    <string name="firebase_code_028_question">Completa el código:\n\nval email = auth.currentUser?.____</string>
+    <string name="firebase_code_028_option_1">email</string>
+    <string name="firebase_code_028_option_2">mailTextOnly</string>
+    <string name="firebase_code_028_option_3">username</string>
+    <string name="firebase_code_028_option_4">password</string>
+    <string name="firebase_code_028_explanation">email obtiene el correo del usuario.</string>
+
+    <string name="firebase_code_029_question">Completa el código:\n\nval userRef = db.collection("users").document(____)</string>
+    <string name="firebase_code_029_option_1">uid</string>
+    <string name="firebase_code_029_option_2">email</string>
+    <string name="firebase_code_029_option_3">password</string>
+    <string name="firebase_code_029_option_4">coins</string>
+    <string name="firebase_code_029_explanation">Usar uid como documento de usuario es habitual.</string>
+
+    <string name="firebase_code_030_question">Completa el código:\n\nuserRef.update("equippedThemeId", ____)</string>
+    <string name="firebase_code_030_option_1">themeId</string>
+    <string name="firebase_code_030_option_2">true</string>
+    <string name="firebase_code_030_option_3">R.string.app_name</string>
+    <string name="firebase_code_030_option_4">password</string>
+    <string name="firebase_code_030_explanation">Se guarda el id del tema.</string>
+
+    <string name="firebase_code_031_question">Completa el código:\n\nuserRef.update("equippedThemeId", ____)</string>
+    <string name="firebase_code_031_option_1">null</string>
+    <string name="firebase_code_031_option_2">"null" only</string>
+    <string name="firebase_code_031_option_3">0 always</string>
+    <string name="firebase_code_031_option_4">false always</string>
+    <string name="firebase_code_031_explanation">Pasar null puede limpiar el campo.</string>
+
+    <string name="firebase_code_032_question">Completa el código:\n\nval unlocked = doc.get("unlockedShopItems") as? ____</string>
+    <string name="firebase_code_032_option_1">List&lt;*&gt;</string>
+    <string name="firebase_code_032_option_2">String</string>
+    <string name="firebase_code_032_option_3">Int</string>
+    <string name="firebase_code_032_option_4">Boolean</string>
+    <string name="firebase_code_032_explanation">Firestore devuelve listas como List&lt;*&gt;.</string>
+
+    <string name="firebase_code_033_question">Completa el código:\n\nval ids = unlocked?.____&lt;String&gt;() ?: emptyList()</string>
+    <string name="firebase_code_033_option_1">filterIsInstance</string>
+    <string name="firebase_code_033_option_2">mapStringOnly</string>
+    <string name="firebase_code_033_option_3">toStringListHard</string>
+    <string name="firebase_code_033_option_4">castAll</string>
+    <string name="firebase_code_033_explanation">filterIsInstance filtra Strings.</string>
+
+    <string name="firebase_code_034_question">Completa el código:\n\nval currentCoins = snapshot.getLong("coins") ?: ____</string>
+    <string name="firebase_code_034_option_1">0</string>
+    <string name="firebase_code_034_option_2">"0"</string>
+    <string name="firebase_code_034_option_3">false</string>
+    <string name="firebase_code_034_option_4">null.toString()</string>
+    <string name="firebase_code_034_explanation">Si no hay valor, se usa 0.</string>
+
+    <string name="firebase_code_035_question">Completa el código:\n\nif (currentCoins &lt; item.price) ____ Exception("No tienes monedas")</string>
+    <string name="firebase_code_035_option_1">throw</string>
+    <string name="firebase_code_035_option_2">return</string>
+    <string name="firebase_code_035_option_3">catch</string>
+    <string name="firebase_code_035_option_4">new</string>
+    <string name="firebase_code_035_explanation">throw lanza una excepción.</string>
+
+    <string name="firebase_code_036_question">Completa el código:\n\n.addOnFailureListener { exception -&gt; onError(exception.____ ?: "Error") }</string>
+    <string name="firebase_code_036_option_1">message</string>
+    <string name="firebase_code_036_option_2">text</string>
+    <string name="firebase_code_036_option_3">reasonOnly</string>
+    <string name="firebase_code_036_option_4">errorText</string>
+    <string name="firebase_code_036_explanation">message contiene el mensaje del error.</string>
+
+    <string name="firebase_code_037_question">Completa el código:\n\nval today = LocalDate.now().____()</string>
+    <string name="firebase_code_037_option_1">toString</string>
+    <string name="firebase_code_037_option_2">asDateOnly</string>
+    <string name="firebase_code_037_option_3">formatSql</string>
+    <string name="firebase_code_037_option_4">stringDate</string>
+    <string name="firebase_code_037_explanation">toString puede guardar fecha ISO.</string>
+
+    <string name="firebase_code_038_question">Completa el código:\n\nval lastActivityDate = doc.____("lastActivityDate")</string>
+    <string name="firebase_code_038_option_1">getString</string>
+    <string name="firebase_code_038_option_2">getDateTextOnly</string>
+    <string name="firebase_code_038_option_3">string</string>
+    <string name="firebase_code_038_option_4">getLong</string>
+    <string name="firebase_code_038_explanation">lastActivityDate se guarda como String.</string>
+
+    <string name="firebase_code_039_question">Completa el código:\n\nval dailyMissionDate = snapshot.____("dailyMissionDate")</string>
+    <string name="firebase_code_039_option_1">getString</string>
+    <string name="firebase_code_039_option_2">getLong</string>
+    <string name="firebase_code_039_option_3">getBoolean</string>
+    <string name="firebase_code_039_option_4">getArray</string>
+    <string name="firebase_code_039_explanation">dailyMissionDate es String.</string>
+
+    <string name="firebase_code_040_question">Completa el código:\n\nval answered = snapshot.getLong("dailyQuestionsAnswered")?.toInt() ?: ____</string>
+    <string name="firebase_code_040_option_1">0</string>
+    <string name="firebase_code_040_option_2">false</string>
+    <string name="firebase_code_040_option_3">""</string>
+    <string name="firebase_code_040_option_4">null!!</string>
+    <string name="firebase_code_040_explanation">Si no existe, empieza en 0.</string>
+
+    <string name="firebase_code_041_question">Completa el código:\n\nval claimed = snapshot.getBoolean("dailyMissionClaimed") ?: ____</string>
+    <string name="firebase_code_041_option_1">false</string>
+    <string name="firebase_code_041_option_2">0</string>
+    <string name="firebase_code_041_option_3">"false"</string>
+    <string name="firebase_code_041_option_4">null!!</string>
+    <string name="firebase_code_041_explanation">Si no existe, no está reclamada.</string>
+
+    <string name="firebase_code_042_question">Completa el código:\n\nuserRef.update("lastPlayedTopic", ____)</string>
+    <string name="firebase_code_042_option_1">topic</string>
+    <string name="firebase_code_042_option_2">gameType</string>
+    <string name="firebase_code_042_option_3">uid.password</string>
+    <string name="firebase_code_042_option_4">R.drawable.logo</string>
+    <string name="firebase_code_042_explanation">lastPlayedTopic guarda el topic.</string>
+
+    <string name="firebase_code_043_question">Completa el código:\n\nuserRef.update("lastPlayedGameType", ____)</string>
+    <string name="firebase_code_043_option_1">gameType</string>
+    <string name="firebase_code_043_option_2">topic</string>
+    <string name="firebase_code_043_option_3">coins</string>
+    <string name="firebase_code_043_option_4">email.password</string>
+    <string name="firebase_code_043_explanation">lastPlayedGameType guarda el modo.</string>
+
+    <string name="firebase_code_044_question">Completa el código:\n\nval query = db.collection("users").____("username", "Isra")</string>
+    <string name="firebase_code_044_option_1">whereEqualTo</string>
+    <string name="firebase_code_044_option_2">filter</string>
+    <string name="firebase_code_044_option_3">whereSql</string>
+    <string name="firebase_code_044_option_4">selectBy</string>
+    <string name="firebase_code_044_explanation">whereEqualTo filtra por igualdad.</string>
+
+    <string name="firebase_code_045_question">Completa el código:\n\nquery.____("xp")</string>
+    <string name="firebase_code_045_option_1">orderBy</string>
+    <string name="firebase_code_045_option_2">sort</string>
+    <string name="firebase_code_045_option_3">orderSql</string>
+    <string name="firebase_code_045_option_4">arrange</string>
+    <string name="firebase_code_045_explanation">orderBy ordena por campo.</string>
+
+    <string name="firebase_code_046_question">Completa el código:\n\nuserRef.____("coins", FieldValue.increment(10))</string>
+    <string name="firebase_code_046_option_1">update</string>
+    <string name="firebase_code_046_option_2">setOnly</string>
+    <string name="firebase_code_046_option_3">insert</string>
+    <string name="firebase_code_046_option_4">replaceAll</string>
+    <string name="firebase_code_046_explanation">update puede usar FieldValue.increment.</string>
+
+    <string name="firebase_code_047_question">Completa el código:\n\nFieldValue.____(10)</string>
+    <string name="firebase_code_047_option_1">increment</string>
+    <string name="firebase_code_047_option_2">sumOnly</string>
+    <string name="firebase_code_047_option_3">plusField</string>
+    <string name="firebase_code_047_option_4">addNumber</string>
+    <string name="firebase_code_047_explanation">increment suma de forma atómica.</string>
+
+    <string name="firebase_code_048_question">Completa el código:\n\nFirebaseFirestore.getInstance().collection("users").____()</string>
+    <string name="firebase_code_048_option_1">get</string>
+    <string name="firebase_code_048_option_2">selectSql</string>
+    <string name="firebase_code_048_option_3">readXml</string>
+    <string name="firebase_code_048_option_4">fetchRowsOnly</string>
+    <string name="firebase_code_048_explanation">get puede leer una colección.</string>
+
+    <string name="firebase_code_049_question">Completa el código:\n\nval storage = FirebaseStorage.____()</string>
+    <string name="firebase_code_049_option_1">getInstance</string>
+    <string name="firebase_code_049_option_2">connect</string>
+    <string name="firebase_code_049_option_3">openStorage</string>
+    <string name="firebase_code_049_option_4">new</string>
+    <string name="firebase_code_049_explanation">FirebaseStorage.getInstance obtiene Storage.</string>
+
+    <string name="firebase_code_050_question">Completa el código:\n\nval ref = storage.reference.child(____)</string>
+    <string name="firebase_code_050_option_1">"avatars/$uid.jpg"</string>
+    <string name="firebase_code_050_option_2">uid.password</string>
+    <string name="firebase_code_050_option_3">R.string.app_name</string>
+    <string name="firebase_code_050_option_4">false</string>
+    <string name="firebase_code_050_explanation">Storage usa rutas de archivo.</string>
+
+    <!-- Firebase match concept questions -->
+    <string name="firebase_match_001_question">Relaciona el concepto: colección</string>
+    <string name="firebase_match_001_option_1">Grupo de documentos</string>
+    <string name="firebase_match_001_option_2">Campo numérico</string>
+    <string name="firebase_match_001_option_3">Pantalla Compose</string>
+    <string name="firebase_match_001_option_4">Archivo XML</string>
+    <string name="firebase_match_001_explanation">Una colección contiene documentos.</string>
+
+    <string name="firebase_match_002_question">Relaciona el concepto: documento</string>
+    <string name="firebase_match_002_option_1">Unidad de datos con campos</string>
+    <string name="firebase_match_002_option_2">Paquete Kotlin</string>
+    <string name="firebase_match_002_option_3">Tema visual</string>
+    <string name="firebase_match_002_option_4">Botón</string>
+    <string name="firebase_match_002_explanation">Un documento guarda campos y valores.</string>
+
+    <string name="firebase_match_003_question">Relaciona el concepto: FieldValue.arrayUnion</string>
+    <string name="firebase_match_003_option_1">Añade elementos a un array evitando duplicados</string>
+    <string name="firebase_match_003_option_2">Borra toda la colección</string>
+    <string name="firebase_match_003_option_3">Crea una pantalla</string>
+    <string name="firebase_match_003_option_4">Inicia sesión</string>
+    <string name="firebase_match_003_explanation">arrayUnion añade elementos a un array en Firestore.</string>
+
+    <string name="firebase_match_004_question">Relaciona el concepto: Firebase Auth</string>
+    <string name="firebase_match_004_option_1">Servicio de autenticación</string>
+    <string name="firebase_match_004_option_2">Base de datos SQL</string>
+    <string name="firebase_match_004_option_3">Sistema de estilos</string>
+    <string name="firebase_match_004_option_4">Librería de iconos</string>
+    <string name="firebase_match_004_explanation">Firebase Auth gestiona usuarios.</string>
+
+    <string name="firebase_match_005_question">Relaciona el concepto: Firestore</string>
+    <string name="firebase_match_005_option_1">Base de datos NoSQL documental</string>
+    <string name="firebase_match_005_option_2">Campo de contraseña</string>
+    <string name="firebase_match_005_option_3">Pantalla Compose</string>
+    <string name="firebase_match_005_option_4">Sistema de navegación</string>
+    <string name="firebase_match_005_explanation">Firestore guarda documentos en la nube.</string>
+
+    <string name="firebase_match_006_question">Relaciona el concepto: UID</string>
+    <string name="firebase_match_006_option_1">Identificador único del usuario</string>
+    <string name="firebase_match_006_option_2">Color primario</string>
+    <string name="firebase_match_006_option_3">Archivo XML</string>
+    <string name="firebase_match_006_option_4">Nombre de ruta</string>
+    <string name="firebase_match_006_explanation">uid identifica al usuario.</string>
+
+    <string name="firebase_match_007_question">Relaciona el concepto: transaction</string>
+    <string name="firebase_match_007_option_1">Operación atómica con lectura y escritura</string>
+    <string name="firebase_match_007_option_2">Botón de UI</string>
+    <string name="firebase_match_007_option_3">Imagen de avatar</string>
+    <string name="firebase_match_007_option_4">String traducible</string>
+    <string name="firebase_match_007_explanation">Una transacción protege actualizaciones dependientes.</string>
+
+    <string name="firebase_match_008_question">Relaciona el concepto: reglas de seguridad</string>
+    <string name="firebase_match_008_option_1">Controlan quién puede leer y escribir</string>
+    <string name="firebase_match_008_option_2">Ordenan cards</string>
+    <string name="firebase_match_008_option_3">Cambian idioma</string>
+    <string name="firebase_match_008_option_4">Compilan Gradle</string>
+    <string name="firebase_match_008_explanation">Las reglas protegen datos.</string>
+
+    <string name="firebase_match_009_question">Relaciona el concepto: Storage</string>
+    <string name="firebase_match_009_option_1">Servicio para guardar archivos</string>
+    <string name="firebase_match_009_option_2">Colección de usuarios</string>
+    <string name="firebase_match_009_option_3">Campo de racha</string>
+    <string name="firebase_match_009_option_4">Pantalla de login</string>
+    <string name="firebase_match_009_explanation">Storage almacena archivos.</string>
+
+    <string name="firebase_match_010_question">Relaciona el concepto: Crashlytics</string>
+    <string name="firebase_match_010_option_1">Servicio para analizar fallos</string>
+    <string name="firebase_match_010_option_2">Login con email</string>
+    <string name="firebase_match_010_option_3">Campo de monedas</string>
+    <string name="firebase_match_010_option_4">Tema visual</string>
+    <string name="firebase_match_010_explanation">Crashlytics registra crashes.</string>
+
+    <!-- Firebase detect error questions -->
+    <string name="firebase_error_001_question">Detecta el problema:\n\nval uid = auth.currentUser!!.uid</string>
+    <string name="firebase_error_001_option_1">Puede petar si currentUser es null</string>
+    <string name="firebase_error_001_option_2">uid no existe</string>
+    <string name="firebase_error_001_option_3">auth debe ser String</string>
+    <string name="firebase_error_001_option_4">No hay problema nunca</string>
+    <string name="firebase_error_001_explanation">Usar !! puede lanzar NullPointerException si no hay usuario.</string>
+
+    <string name="firebase_error_002_question">Detecta el problema:\n\nActualizo coins leyendo primero y escribiendo después sin transacción.</string>
+    <string name="firebase_error_002_option_1">Puede haber condiciones de carrera</string>
+    <string name="firebase_error_002_option_2">Firestore no permite monedas</string>
+    <string name="firebase_error_002_option_3">coins debe ser String</string>
+    <string name="firebase_error_002_option_4">No se puede leer Firestore</string>
+    <string name="firebase_error_002_explanation">Si varios cambios ocurren a la vez, una transacción es más segura.</string>
+
+    <string name="firebase_error_003_question">Detecta el problema:\n\nGuardo datos del usuario sin comprobar uid.</string>
+    <string name="firebase_error_003_option_1">Puede no haber usuario autenticado</string>
+    <string name="firebase_error_003_option_2">Firestore necesita SQL</string>
+    <string name="firebase_error_003_option_3">uid siempre existe</string>
+    <string name="firebase_error_003_option_4">No afecta</string>
+    <string name="firebase_error_003_explanation">Antes de guardar datos privados, conviene comprobar que hay usuario.</string>
+
+    <string name="firebase_error_004_question">Detecta el problema:\n\ndb.collection("users").document(uid).update("xp", 100)\n\nsin listener de error.</string>
+    <string name="firebase_error_004_option_1">No se controla el fallo de la operación</string>
+    <string name="firebase_error_004_option_2">update no existe</string>
+    <string name="firebase_error_004_option_3">xp debe ser Boolean</string>
+    <string name="firebase_error_004_option_4">No hay problema</string>
+    <string name="firebase_error_004_explanation">Conviene usar addOnFailureListener o equivalente.</string>
+
+    <string name="firebase_error_005_question">Detecta el problema:\n\nGuardo contraseñas en Firestore como texto.</string>
+    <string name="firebase_error_005_option_1">Es inseguro</string>
+    <string name="firebase_error_005_option_2">Es obligatorio</string>
+    <string name="firebase_error_005_option_3">Mejora Auth</string>
+    <string name="firebase_error_005_option_4">No afecta</string>
+    <string name="firebase_error_005_explanation">Las contraseñas no deben guardarse en texto plano.</string>
+
+    <string name="firebase_error_006_question">Detecta el problema:\n\nPermito read/write a cualquier usuario en reglas para datos privados.</string>
+    <string name="firebase_error_006_option_1">Reglas demasiado abiertas</string>
+    <string name="firebase_error_006_option_2">Reglas demasiado estrictas</string>
+    <string name="firebase_error_006_option_3">No compila Kotlin</string>
+    <string name="firebase_error_006_option_4">Firestore se convierte en SQL</string>
+    <string name="firebase_error_006_explanation">Reglas abiertas exponen datos.</string>
+
+    <string name="firebase_error_007_question">Detecta el problema:\n\nUso update para crear un documento que no existe.</string>
+    <string name="firebase_error_007_option_1">update puede fallar si el documento no existe</string>
+    <string name="firebase_error_007_option_2">update crea siempre todo</string>
+    <string name="firebase_error_007_option_3">No se puede usar set</string>
+    <string name="firebase_error_007_option_4">uid desaparece</string>
+    <string name="firebase_error_007_explanation">Para crear documento suele usarse set.</string>
+
+    <string name="firebase_error_008_question">Detecta el problema:\n\nLeo coins fuera del callback y lo uso inmediatamente.</string>
+    <string name="firebase_error_008_option_1">La lectura es asíncrona</string>
+    <string name="firebase_error_008_option_2">coins no puede ser Int</string>
+    <string name="firebase_error_008_option_3">Firestore no lee números</string>
+    <string name="firebase_error_008_option_4">No hay error</string>
+    <string name="firebase_error_008_explanation">Firebase devuelve datos en callbacks/tasks.</string>
+
+    <string name="firebase_error_009_question">Detecta el problema:\n\nUso email como id de documento público para datos sensibles.</string>
+    <string name="firebase_error_009_option_1">Puede exponer información personal</string>
+    <string name="firebase_error_009_option_2">No se puede guardar email nunca</string>
+    <string name="firebase_error_009_option_3">Firestore obliga a email</string>
+    <string name="firebase_error_009_option_4">No hay riesgo</string>
+    <string name="firebase_error_009_explanation">El email puede ser dato sensible; uid suele ser mejor.</string>
+
+    <string name="firebase_error_010_question">Detecta el problema:\n\nReclamo misión diaria sin comprobar dailyMissionClaimed.</string>
+    <string name="firebase_error_010_option_1">Se podría reclamar más de una vez</string>
+    <string name="firebase_error_010_option_2">Firestore borra usuarios</string>
+    <string name="firebase_error_010_option_3">No se puede guardar Boolean</string>
+    <string name="firebase_error_010_option_4">No afecta</string>
+    <string name="firebase_error_010_explanation">Hay que evitar recompensas duplicadas.</string>
+
+    <!-- Firebase console output questions -->
+    <string name="firebase_output_001_question">¿Qué colección estás usando para perfiles en I-Wivo?</string>
+    <string name="firebase_output_001_option_1">users</string>
+    <string name="firebase_output_001_option_2">profiles_only</string>
+    <string name="firebase_output_001_option_3">accounts_db</string>
+    <string name="firebase_output_001_option_4">players_table</string>
+    <string name="firebase_output_001_explanation">En tu estructura actual usas la colección users.</string>
+
+    <string name="firebase_output_002_question">¿Qué campo guarda las monedas del usuario?</string>
+    <string name="firebase_output_002_option_1">coins</string>
+    <string name="firebase_output_002_option_2">money</string>
+    <string name="firebase_output_002_option_3">wivoCash</string>
+    <string name="firebase_output_002_option_4">score</string>
+    <string name="firebase_output_002_explanation">El campo usado es coins.</string>
+
+    <string name="firebase_output_003_question">¿Qué campo guarda la racha del usuario?</string>
+    <string name="firebase_output_003_option_1">streak</string>
+    <string name="firebase_output_003_option_2">combo</string>
+    <string name="firebase_output_003_option_3">daysPlayed</string>
+    <string name="firebase_output_003_option_4">fire</string>
+    <string name="firebase_output_003_explanation">El campo usado es streak.</string>
+
+    <string name="firebase_output_004_question">¿Qué devuelve auth.currentUser si no hay sesión?</string>
+    <string name="firebase_output_004_option_1">null</string>
+    <string name="firebase_output_004_option_2">0</string>
+    <string name="firebase_output_004_option_3">false</string>
+    <string name="firebase_output_004_option_4">Un uid vacío siempre</string>
+    <string name="firebase_output_004_explanation">Si no hay usuario autenticado, currentUser es null.</string>
+
+    <string name="firebase_output_005_question">¿Qué campo guarda XP en I-Wivo?</string>
+    <string name="firebase_output_005_option_1">xp</string>
+    <string name="firebase_output_005_option_2">levelOnly</string>
+    <string name="firebase_output_005_option_3">pointsText</string>
+    <string name="firebase_output_005_option_4">experienceXml</string>
+    <string name="firebase_output_005_explanation">El campo es xp.</string>
+
+    <string name="firebase_output_006_question">¿Qué campo guarda la última fecha de actividad?</string>
+    <string name="firebase_output_006_option_1">lastActivityDate</string>
+    <string name="firebase_output_006_option_2">lastLogin</string>
+    <string name="firebase_output_006_option_3">lastOpenOnly</string>
+    <string name="firebase_output_006_option_4">dateXml</string>
+    <string name="firebase_output_006_explanation">lastActivityDate se usa para racha.</string>
+
+    <string name="firebase_output_007_question">¿Qué campo guarda objetos desbloqueados de tienda?</string>
+    <string name="firebase_output_007_option_1">unlockedShopItems</string>
+    <string name="firebase_output_007_option_2">shopItemsAll</string>
+    <string name="firebase_output_007_option_3">itemsCart</string>
+    <string name="firebase_output_007_option_4">boughtXml</string>
+    <string name="firebase_output_007_explanation">unlockedShopItems guarda ids.</string>
+
+    <string name="firebase_output_008_question">¿Qué método suma de forma atómica un número en Firestore?</string>
+    <string name="firebase_output_008_option_1">FieldValue.increment</string>
+    <string name="firebase_output_008_option_2">Number.plusSql</string>
+    <string name="firebase_output_008_option_3">Atomic.sumXml</string>
+    <string name="firebase_output_008_option_4">Firestore.addNumberOnly</string>
+    <string name="firebase_output_008_explanation">FieldValue.increment suma de forma atómica.</string>
+
+    <string name="firebase_output_009_question">¿Qué operación usarías para leer un documento una vez?</string>
+    <string name="firebase_output_009_option_1">get()</string>
+    <string name="firebase_output_009_option_2">listenOnly()</string>
+    <string name="firebase_output_009_option_3">readSql()</string>
+    <string name="firebase_output_009_option_4">fetchXml()</string>
+    <string name="firebase_output_009_explanation">get() realiza lectura puntual.</string>
+
+    <string name="firebase_output_010_question">¿Qué listener se ejecuta si falla una operación?</string>
+    <string name="firebase_output_010_option_1">addOnFailureListener</string>
+    <string name="firebase_output_010_option_2">addOnSuccessListener</string>
+    <string name="firebase_output_010_option_3">addOnPerfectListener</string>
+    <string name="firebase_output_010_option_4">onOk</string>
+    <string name="firebase_output_010_explanation">addOnFailureListener maneja fallos.</string>
+
+    <!-- Firebase order code questions -->
+    <string name="firebase_order_001_question">Ordena el flujo para crear perfil si no existe:</string>
+    <string name="firebase_order_001_option_1">Obtener uid del usuario actual</string>
+    <string name="firebase_order_001_option_2">Crear referencia users/uid</string>
+    <string name="firebase_order_001_option_3">Leer documento</string>
+    <string name="firebase_order_001_option_4">Si no existe, hacer set(data)</string>
+    <string name="firebase_order_001_explanation">Primero necesitas uid, referencia, lectura y creación si falta.</string>
+
+    <string name="firebase_order_002_question">Ordena el flujo para sumar monedas con transacción:</string>
+    <string name="firebase_order_002_option_1">Crear userRef</string>
+    <string name="firebase_order_002_option_2">Leer snapshot en transaction</string>
+    <string name="firebase_order_002_option_3">Calcular nuevas monedas</string>
+    <string name="firebase_order_002_option_4">transaction.update(userRef, "coins", newCoins)</string>
+    <string name="firebase_order_002_explanation">Una transacción lee, calcula y escribe de forma segura.</string>
+
+    <string name="firebase_order_003_question">Ordena el flujo para iniciar sesión:</string>
+    <string name="firebase_order_003_option_1">Validar email y contraseña</string>
+    <string name="firebase_order_003_option_2">Llamar signInWithEmailAndPassword</string>
+    <string name="firebase_order_003_option_3">Esperar addOnSuccessListener</string>
+    <string name="firebase_order_003_option_4">Navegar a Home</string>
+    <string name="firebase_order_003_explanation">Primero validas, luego login y navegación.</string>
+
+    <string name="firebase_order_004_question">Ordena el flujo para registrar usuario:</string>
+    <string name="firebase_order_004_option_1">Validar formulario</string>
+    <string name="firebase_order_004_option_2">Crear usuario en Auth</string>
+    <string name="firebase_order_004_option_3">Crear documento en users</string>
+    <string name="firebase_order_004_option_4">Entrar a Home</string>
+    <string name="firebase_order_004_explanation">Auth crea cuenta y Firestore guarda perfil.</string>
+
+    <string name="firebase_order_005_question">Ordena el flujo para comprar item de tienda:</string>
+    <string name="firebase_order_005_option_1">Leer monedas y objetos desbloqueados</string>
+    <string name="firebase_order_005_option_2">Comprobar nivel y monedas</string>
+    <string name="firebase_order_005_option_3">Restar monedas y añadir item</string>
+    <string name="firebase_order_005_option_4">Recargar estado de tienda</string>
+    <string name="firebase_order_005_explanation">La compra valida y actualiza el estado.</string>
+
+    <string name="firebase_order_006_question">Ordena el flujo para equipar un item:</string>
+    <string name="firebase_order_006_option_1">Comprobar usuario autenticado</string>
+    <string name="firebase_order_006_option_2">Obtener campo según categoría</string>
+    <string name="firebase_order_006_option_3">Actualizar equipped...Id</string>
+    <string name="firebase_order_006_option_4">Recargar UI</string>
+    <string name="firebase_order_006_explanation">Equipar guarda el id del item por categoría.</string>
+
+    <string name="firebase_order_007_question">Ordena el flujo para misión diaria:</string>
+    <string name="firebase_order_007_option_1">Leer fecha de misión</string>
+    <string name="firebase_order_007_option_2">Comparar con hoy</string>
+    <string name="firebase_order_007_option_3">Actualizar preguntas respondidas</string>
+    <string name="firebase_order_007_option_4">Marcar recompensa como no reclamada</string>
+    <string name="firebase_order_007_explanation">Se actualiza progreso diario según fecha.</string>
+
+    <string name="firebase_order_008_question">Ordena el flujo para reclamar recompensa diaria:</string>
+    <string name="firebase_order_008_option_1">Comprobar misión de hoy</string>
+    <string name="firebase_order_008_option_2">Comprobar preguntas suficientes</string>
+    <string name="firebase_order_008_option_3">Comprobar no reclamada</string>
+    <string name="firebase_order_008_option_4">Sumar XP/coins y marcar reclamada</string>
+    <string name="firebase_order_008_explanation">La recompensa debe validarse antes de sumarse.</string>
+
+    <string name="firebase_order_009_question">Ordena el flujo para cargar perfil:</string>
+    <string name="firebase_order_009_option_1">Comprobar uid</string>
+    <string name="firebase_order_009_option_2">Leer users/uid</string>
+    <string name="firebase_order_009_option_3">Convertir a UserProfile</string>
+    <string name="firebase_order_009_option_4">Mostrar datos en UI</string>
+    <string name="firebase_order_009_explanation">Perfil depende del usuario autenticado.</string>
+
+    <string name="firebase_order_010_question">Ordena el flujo para guardar avatar base64:</string>
+    <string name="firebase_order_010_option_1">Convertir imagen a Base64</string>
+    <string name="firebase_order_010_option_2">Crear mapa de updates</string>
+    <string name="firebase_order_010_option_3">Actualizar avatarBase64</string>
+    <string name="firebase_order_010_option_4">Refrescar pantalla de perfil</string>
+    <string name="firebase_order_010_explanation">Primero conviertes y luego actualizas Firestore.</string>
+
+    <!-- Firebase technical wordle questions -->
+    <string name="firebase_wordle_001_question">Servicio de autenticación de Firebase.</string>
+    <string name="firebase_wordle_001_option_1">AUTH</string>
+    <string name="firebase_wordle_001_option_2">ROOM</string>
+    <string name="firebase_wordle_001_option_3">SQL</string>
+    <string name="firebase_wordle_001_option_4">XML</string>
+    <string name="firebase_wordle_001_explanation">Auth gestiona usuarios.</string>
+
+    <string name="firebase_wordle_002_question">Base de datos NoSQL documental.</string>
+    <string name="firebase_wordle_002_option_1">FIRESTORE</string>
+    <string name="firebase_wordle_002_option_2">MYSQL</string>
+    <string name="firebase_wordle_002_option_3">ROOM</string>
+    <string name="firebase_wordle_002_option_4">SQLITE</string>
+    <string name="firebase_wordle_002_explanation">Firestore es la base NoSQL cloud.</string>
+
+    <string name="firebase_wordle_003_question">Identificador único de usuario.</string>
+    <string name="firebase_wordle_003_option_1">UID</string>
+    <string name="firebase_wordle_003_option_2">CSS</string>
+    <string name="firebase_wordle_003_option_3">APK</string>
+    <string name="firebase_wordle_003_option_4">XML</string>
+    <string name="firebase_wordle_003_explanation">uid identifica al usuario.</string>
+
+    <string name="firebase_wordle_004_question">Grupo de documentos.</string>
+    <string name="firebase_wordle_004_option_1">COLLECTION</string>
+    <string name="firebase_wordle_004_option_2">ACTIVITY</string>
+    <string name="firebase_wordle_004_option_3">DRAWABLE</string>
+    <string name="firebase_wordle_004_option_4">BUTTON</string>
+    <string name="firebase_wordle_004_explanation">Una colección agrupa documentos.</string>
+
+    <string name="firebase_wordle_005_question">Unidad de datos con campos.</string>
+    <string name="firebase_wordle_005_option_1">DOCUMENT</string>
+    <string name="firebase_wordle_005_option_2">MANIFEST</string>
+    <string name="firebase_wordle_005_option_3">COMPOSABLE</string>
+    <string name="firebase_wordle_005_option_4">THEME</string>
+    <string name="firebase_wordle_005_explanation">Un documento tiene campos.</string>
+
+    <string name="firebase_wordle_006_question">Operación atómica de Firestore.</string>
+    <string name="firebase_wordle_006_option_1">TRANSACTION</string>
+    <string name="firebase_wordle_006_option_2">NAVIGATION</string>
+    <string name="firebase_wordle_006_option_3">RECOMPOSE</string>
+    <string name="firebase_wordle_006_option_4">PREVIEW</string>
+    <string name="firebase_wordle_006_explanation">Una transacción protege lectura/escritura.</string>
+
+    <string name="firebase_wordle_007_question">Servicio de archivos Firebase.</string>
+    <string name="firebase_wordle_007_option_1">STORAGE</string>
+    <string name="firebase_wordle_007_option_2">AUTH</string>
+    <string name="firebase_wordle_007_option_3">REMOTE</string>
+    <string name="firebase_wordle_007_option_4">RULES</string>
+    <string name="firebase_wordle_007_explanation">Storage guarda archivos.</string>
+
+    <string name="firebase_wordle_008_question">Servicio de análisis de crashes.</string>
+    <string name="firebase_wordle_008_option_1">CRASHLYTICS</string>
+    <string name="firebase_wordle_008_option_2">FIRESTORE</string>
+    <string name="firebase_wordle_008_option_3">AUTH</string>
+    <string name="firebase_wordle_008_option_4">HOSTING</string>
+    <string name="firebase_wordle_008_explanation">Crashlytics registra fallos.</string>
+
+    <string name="firebase_wordle_009_question">Configuración remota Firebase.</string>
+    <string name="firebase_wordle_009_option_1">REMOTE CONFIG</string>
+    <string name="firebase_wordle_009_option_2">LOCAL XML</string>
+    <string name="firebase_wordle_009_option_3">ROOM CONFIG</string>
+    <string name="firebase_wordle_009_option_4">APP THEME</string>
+    <string name="firebase_wordle_009_explanation">Remote Config cambia valores remotamente.</string>
+
+    <string name="firebase_wordle_010_question">Campo de monedas en I-Wivo.</string>
+    <string name="firebase_wordle_010_option_1">COINS</string>
+    <string name="firebase_wordle_010_option_2">MONEYXML</string>
+    <string name="firebase_wordle_010_option_3">CASHROOM</string>
+    <string name="firebase_wordle_010_option_4">WALLETSQL</string>
+    <string name="firebase_wordle_010_explanation">coins guarda monedas.</string>
+
+    <!-- Firebase crossword questions -->
+    <string name="firebase_crossword_001_question">Pista: servicio para login y registro.</string>
+    <string name="firebase_crossword_001_option_1">Firebase Auth</string>
+    <string name="firebase_crossword_001_option_2">Firestore</string>
+    <string name="firebase_crossword_001_option_3">Storage</string>
+    <string name="firebase_crossword_001_option_4">Crashlytics</string>
+    <string name="firebase_crossword_001_explanation">Firebase Auth autentica usuarios.</string>
+
+    <string name="firebase_crossword_002_question">Pista: base de datos cloud NoSQL.</string>
+    <string name="firebase_crossword_002_option_1">Firestore</string>
+    <string name="firebase_crossword_002_option_2">SQLite</string>
+    <string name="firebase_crossword_002_option_3">Room</string>
+    <string name="firebase_crossword_002_option_4">MySQL</string>
+    <string name="firebase_crossword_002_explanation">Firestore guarda documentos.</string>
+
+    <string name="firebase_crossword_003_question">Pista: identificador único del usuario.</string>
+    <string name="firebase_crossword_003_option_1">uid</string>
+    <string name="firebase_crossword_003_option_2">email</string>
+    <string name="firebase_crossword_003_option_3">password</string>
+    <string name="firebase_crossword_003_option_4">coins</string>
+    <string name="firebase_crossword_003_explanation">uid identifica al usuario.</string>
+
+    <string name="firebase_crossword_004_question">Pista: grupo de documentos.</string>
+    <string name="firebase_crossword_004_option_1">collection</string>
+    <string name="firebase_crossword_004_option_2">document</string>
+    <string name="firebase_crossword_004_option_3">field</string>
+    <string name="firebase_crossword_004_option_4">listener</string>
+    <string name="firebase_crossword_004_explanation">collection agrupa documentos.</string>
+
+    <string name="firebase_crossword_005_question">Pista: unidad con campos.</string>
+    <string name="firebase_crossword_005_option_1">document</string>
+    <string name="firebase_crossword_005_option_2">collection</string>
+    <string name="firebase_crossword_005_option_3">bucket</string>
+    <string name="firebase_crossword_005_option_4">route</string>
+    <string name="firebase_crossword_005_explanation">document contiene campos.</string>
+
+    <string name="firebase_crossword_006_question">Pista: listener de éxito.</string>
+    <string name="firebase_crossword_006_option_1">addOnSuccessListener</string>
+    <string name="firebase_crossword_006_option_2">addOnFailureListener</string>
+    <string name="firebase_crossword_006_option_3">onCrash</string>
+    <string name="firebase_crossword_006_option_4">onRoute</string>
+    <string name="firebase_crossword_006_explanation">Se ejecuta al terminar bien.</string>
+
+    <string name="firebase_crossword_007_question">Pista: listener de error.</string>
+    <string name="firebase_crossword_007_option_1">addOnFailureListener</string>
+    <string name="firebase_crossword_007_option_2">addOnSuccessListener</string>
+    <string name="firebase_crossword_007_option_3">onPerfect</string>
+    <string name="firebase_crossword_007_option_4">onDone</string>
+    <string name="firebase_crossword_007_explanation">Se ejecuta al fallar.</string>
+
+    <string name="firebase_crossword_008_question">Pista: operación segura para sumar campos con lectura previa.</string>
+    <string name="firebase_crossword_008_option_1">transaction</string>
+    <string name="firebase_crossword_008_option_2">drawable</string>
+    <string name="firebase_crossword_008_option_3">manifest</string>
+    <string name="firebase_crossword_008_option_4">preview</string>
+    <string name="firebase_crossword_008_explanation">Transacción protege cambios.</string>
+
+    <string name="firebase_crossword_009_question">Pista: servicio para guardar imágenes.</string>
+    <string name="firebase_crossword_009_option_1">Storage</string>
+    <string name="firebase_crossword_009_option_2">Auth</string>
+    <string name="firebase_crossword_009_option_3">Firestore Rules</string>
+    <string name="firebase_crossword_009_option_4">Remote Config</string>
+    <string name="firebase_crossword_009_explanation">Storage guarda archivos.</string>
+
+    <string name="firebase_crossword_010_question">Pista: campo de racha en I-Wivo.</string>
+    <string name="firebase_crossword_010_option_1">streak</string>
+    <string name="firebase_crossword_010_option_2">combo</string>
+    <string name="firebase_crossword_010_option_3">days</string>
+    <string name="firebase_crossword_010_option_4">fire</string>
+    <string name="firebase_crossword_010_explanation">streak guarda racha.</string>
+
+</resources>

@@ -1,5 +1,7 @@
 package com.icb.iwivo.ui.navigation
 
+import android.net.Uri
+
 sealed class Screen(val route: String) {
     data object Login : Screen("login")
     data object Home : Screen("home")
@@ -11,23 +13,29 @@ sealed class Screen(val route: String) {
         }
     }
 
-    data object Game : Screen("game/{topic}/{gameType}") {
-        fun createRoute(topic: String, gameType: String): String {
-            return "game/$topic/$gameType"
+    data object Game : Screen("game/{topic}/{gameType}/{difficulty}") {
+        fun createRoute(
+            topic: String,
+            gameType: String,
+            difficulty: String
+        ): String {
+            return "game/$topic/$gameType/$difficulty"
         }
     }
 
-    data object Result : Screen("result/{correct}/{total}/{xp}/{coins}/{unlockedBadgeIds}") {
+    object Result : Screen(
+        "result/{correct}/{total}/{xp}/{coins}/{bestStreak}/{unlockedBadgeIds}"
+    ) {
         fun createRoute(
             correct: Int,
             total: Int,
             xp: Int,
             coins: Int,
+            bestStreak: Int,
             unlockedBadgeIds: String
         ): String {
-            val encodedIds = android.net.Uri.encode(unlockedBadgeIds)
-
-            return "result/$correct/$total/$xp/$coins/$encodedIds"
+            val encodedUnlockedBadgeIds = Uri.encode(unlockedBadgeIds)
+            return "result/$correct/$total/$xp/$coins/$bestStreak/$encodedUnlockedBadgeIds"
         }
     }
 
@@ -36,4 +44,5 @@ sealed class Screen(val route: String) {
     data object Shop : Screen("shop")
     data object Register : Screen("register")
     data object EditProfile : Screen("edit_profile")
+    data object Settings : Screen("settings")
 }

@@ -1,0 +1,1468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="spring_test_001_question">Which annotation marks a class as a REST controller in Spring?</string>
+    <string name="spring_test_001_option_1">\@Controller</string>
+    <string name="spring_test_001_option_2">\@RestController</string>
+    <string name="spring_test_001_option_3">\@Service</string>
+    <string name="spring_test_001_option_4">\@Repository</string>
+    <string name="spring_test_001_explanation">\@RestController combines \@Controller and \@ResponseBody for REST APIs.</string>
+
+    <string name="spring_test_002_question">Which annotation is normally used for business logic?</string>
+    <string name="spring_test_002_option_1">\@Service</string>
+    <string name="spring_test_002_option_2">\@Entity</string>
+    <string name="spring_test_002_option_3">\@Table</string>
+    <string name="spring_test_002_option_4">\@Column</string>
+    <string name="spring_test_002_explanation">\@Service marks business logic classes.</string>
+
+    <string name="spring_test_003_question">Which annotation automatically injects dependencies?</string>
+    <string name="spring_test_003_option_1">\@Autowired</string>
+    <string name="spring_test_003_option_2">\@InjectView</string>
+    <string name="spring_test_003_option_3">\@Route</string>
+    <string name="spring_test_003_option_4">\@BeanOnly</string>
+    <string name="spring_test_003_explanation">\@Autowired allows injecting dependencies managed by Spring.</string>
+
+    <string name="spring_test_004_question">Which annotation is normally used for data access?</string>
+    <string name="spring_test_004_option_1">\@Repository</string>
+    <string name="spring_test_004_option_2">\@RestController</string>
+    <string name="spring_test_004_option_3">\@Service</string>
+    <string name="spring_test_004_option_4">\@ComponentScanOnly</string>
+    <string name="spring_test_004_explanation">\@Repository identifies the persistence layer.</string>
+
+    <string name="spring_test_005_question">Which generic annotation marks a class as a Spring-managed component?</string>
+    <string name="spring_test_005_option_1">\@Component</string>
+    <string name="spring_test_005_option_2">\@EntityOnly</string>
+    <string name="spring_test_005_option_3">\@ManagedXml</string>
+    <string name="spring_test_005_option_4">\@SpringFile</string>
+    <string name="spring_test_005_explanation">\@Component registers a class as a Spring bean.</string>
+
+    <string name="spring_test_006_question">Which annotation usually marks the main class of a Spring Boot app?</string>
+    <string name="spring_test_006_option_1">\@SpringBootApplication</string>
+    <string name="spring_test_006_option_2">\@MainClass</string>
+    <string name="spring_test_006_option_3">\@BootApp</string>
+    <string name="spring_test_006_option_4">\@JavaApplication</string>
+    <string name="spring_test_006_explanation">\@SpringBootApplication configures auto-configuration, scanning and startup.</string>
+
+    <string name="spring_test_007_question">Which HTTP method is normally used to query data?</string>
+    <string name="spring_test_007_option_1">GET</string>
+    <string name="spring_test_007_option_2">POST</string>
+    <string name="spring_test_007_option_3">DELETE</string>
+    <string name="spring_test_007_option_4">PATCH</string>
+    <string name="spring_test_007_explanation">GET is used to retrieve resources.</string>
+
+    <string name="spring_test_008_question">Which HTTP method is normally used to create resources?</string>
+    <string name="spring_test_008_option_1">POST</string>
+    <string name="spring_test_008_option_2">GET</string>
+    <string name="spring_test_008_option_3">DELETE</string>
+    <string name="spring_test_008_option_4">HEAD</string>
+    <string name="spring_test_008_explanation">POST is usually used to create resources.</string>
+
+    <string name="spring_test_009_question">Which HTTP method is normally used for partial updates?</string>
+    <string name="spring_test_009_option_1">PATCH</string>
+    <string name="spring_test_009_option_2">GET</string>
+    <string name="spring_test_009_option_3">TRACE</string>
+    <string name="spring_test_009_option_4">OPTIONS</string>
+    <string name="spring_test_009_explanation">PATCH is used for partial updates.</string>
+
+    <string name="spring_test_010_question">Which HTTP method is normally used to delete resources?</string>
+    <string name="spring_test_010_option_1">DELETE</string>
+    <string name="spring_test_010_option_2">GET</string>
+    <string name="spring_test_010_option_3">POST</string>
+    <string name="spring_test_010_option_4">PUT</string>
+    <string name="spring_test_010_explanation">DELETE removes resources.</string>
+
+    <string name="spring_test_011_question">Which annotation maps GET requests?</string>
+    <string name="spring_test_011_option_1">\@GetMapping</string>
+    <string name="spring_test_011_option_2">\@PostMapping</string>
+    <string name="spring_test_011_option_3">\@ReadMapping</string>
+    <string name="spring_test_011_option_4">\@SelectMapping</string>
+    <string name="spring_test_011_explanation">\@GetMapping responds to GET.</string>
+
+    <string name="spring_test_012_question">Which annotation maps POST requests?</string>
+    <string name="spring_test_012_option_1">\@PostMapping</string>
+    <string name="spring_test_012_option_2">\@GetMapping</string>
+    <string name="spring_test_012_option_3">\@CreateOnly</string>
+    <string name="spring_test_012_option_4">\@InsertMapping</string>
+    <string name="spring_test_012_explanation">\@PostMapping responds to POST.</string>
+
+    <string name="spring_test_013_question">Which annotation maps PUT requests?</string>
+    <string name="spring_test_013_option_1">\@PutMapping</string>
+    <string name="spring_test_013_option_2">\@PatchMapping</string>
+    <string name="spring_test_013_option_3">\@UpdateOnly</string>
+    <string name="spring_test_013_option_4">\@ModifyMapping</string>
+    <string name="spring_test_013_explanation">\@PutMapping responds to PUT.</string>
+
+    <string name="spring_test_014_question">Which annotation maps DELETE requests?</string>
+    <string name="spring_test_014_option_1">\@DeleteMapping</string>
+    <string name="spring_test_014_option_2">\@RemoveMapping</string>
+    <string name="spring_test_014_option_3">\@DropMapping</string>
+    <string name="spring_test_014_option_4">\@EraseMapping</string>
+    <string name="spring_test_014_explanation">\@DeleteMapping responds to DELETE.</string>
+
+    <string name="spring_test_015_question">Which annotation allows receiving a variable from the URL?</string>
+    <string name="spring_test_015_option_1">\@PathVariable</string>
+    <string name="spring_test_015_option_2">\@RequestBody</string>
+    <string name="spring_test_015_option_3">\@RequestParam</string>
+    <string name="spring_test_015_option_4">\@UrlField</string>
+    <string name="spring_test_015_explanation">\@PathVariable extracts values from the route.</string>
+
+    <string name="spring_test_016_question">Which annotation allows receiving query string parameters?</string>
+    <string name="spring_test_016_option_1">\@RequestParam</string>
+    <string name="spring_test_016_option_2">\@PathVariable</string>
+    <string name="spring_test_016_option_3">\@RequestBody</string>
+    <string name="spring_test_016_option_4">\@QueryColumn</string>
+    <string name="spring_test_016_explanation">\@RequestParam reads parameters such as ?page=1.</string>
+
+    <string name="spring_test_017_question">Which annotation allows receiving JSON in the request body?</string>
+    <string name="spring_test_017_option_1">\@RequestBody</string>
+    <string name="spring_test_017_option_2">\@PathVariable</string>
+    <string name="spring_test_017_option_3">\@RequestParam</string>
+    <string name="spring_test_017_option_4">\@JsonColumn</string>
+    <string name="spring_test_017_explanation">\@RequestBody converts the request body into an object.</string>
+
+    <string name="spring_test_018_question">Which annotation allows returning a specific HTTP code?</string>
+    <string name="spring_test_018_option_1">\@ResponseStatus</string>
+    <string name="spring_test_018_option_2">\@StatusOnly</string>
+    <string name="spring_test_018_option_3">\@HttpCode</string>
+    <string name="spring_test_018_option_4">\@ReturnStatus</string>
+    <string name="spring_test_018_explanation">\@ResponseStatus can set the HTTP status.</string>
+
+    <string name="spring_test_019_question">Which class is commonly used to return a response with HTTP status?</string>
+    <string name="spring_test_019_option_1">ResponseEntity</string>
+    <string name="spring_test_019_option_2">HttpResultOnly</string>
+    <string name="spring_test_019_option_3">JsonResponse</string>
+    <string name="spring_test_019_option_4">StatusBody</string>
+    <string name="spring_test_019_explanation">ResponseEntity allows controlling body, headers and status.</string>
+
+    <string name="spring_test_020_question">Which layer should contain business rules?</string>
+    <string name="spring_test_020_option_1">Service</string>
+    <string name="spring_test_020_option_2">Controller</string>
+    <string name="spring_test_020_option_3">Entity</string>
+    <string name="spring_test_020_option_4">DTO</string>
+    <string name="spring_test_020_explanation">Business logic should mainly live in services.</string>
+
+    <string name="spring_test_021_question">Which layer should receive HTTP requests?</string>
+    <string name="spring_test_021_option_1">Controller</string>
+    <string name="spring_test_021_option_2">Repository</string>
+    <string name="spring_test_021_option_3">Entity</string>
+    <string name="spring_test_021_option_4">Mapper</string>
+    <string name="spring_test_021_explanation">The controller exposes endpoints.</string>
+
+    <string name="spring_test_022_question">Which layer should communicate with the database?</string>
+    <string name="spring_test_022_option_1">Repository</string>
+    <string name="spring_test_022_option_2">Controller</string>
+    <string name="spring_test_022_option_3">DTO</string>
+    <string name="spring_test_022_option_4">Config</string>
+    <string name="spring_test_022_explanation">Repository manages persistence.</string>
+
+    <string name="spring_test_023_question">What does a DTO normally represent?</string>
+    <string name="spring_test_023_option_1">Object used to transport data</string>
+    <string name="spring_test_023_option_2">Always a physical table</string>
+    <string name="spring_test_023_option_3">REST controller</string>
+    <string name="spring_test_023_option_4">Maven file</string>
+    <string name="spring_test_023_explanation">A DTO transports data between layers or APIs.</string>
+
+    <string name="spring_test_024_question">Which JPA annotation marks a class as an entity?</string>
+    <string name="spring_test_024_option_1">\@Entity</string>
+    <string name="spring_test_024_option_2">\@Service</string>
+    <string name="spring_test_024_option_3">\@RestController</string>
+    <string name="spring_test_024_option_4">\@Bean</string>
+    <string name="spring_test_024_explanation">\@Entity represents a table or persistent entity.</string>
+
+    <string name="spring_test_025_question">Which JPA annotation marks the primary key?</string>
+    <string name="spring_test_025_option_1">\@Id</string>
+    <string name="spring_test_025_option_2">\@Key</string>
+    <string name="spring_test_025_option_3">\@Primary</string>
+    <string name="spring_test_025_option_4">\@MainColumn</string>
+    <string name="spring_test_025_explanation">\@Id identifies the primary key.</string>
+
+    <string name="spring_test_026_question">Which annotation generates id values automatically?</string>
+    <string name="spring_test_026_option_1">\@GeneratedValue</string>
+    <string name="spring_test_026_option_2">\@AutoId</string>
+    <string name="spring_test_026_option_3">\@GenerateKey</string>
+    <string name="spring_test_026_option_4">\@NextId</string>
+    <string name="spring_test_026_explanation">\@GeneratedValue indicates the id generation strategy.</string>
+
+    <string name="spring_test_027_question">Which Spring Data interface provides basic CRUD?</string>
+    <string name="spring_test_027_option_1">JpaRepository</string>
+    <string name="spring_test_027_option_2">RestController</string>
+    <string name="spring_test_027_option_3">HttpService</string>
+    <string name="spring_test_027_option_4">EntityManagerOnly</string>
+    <string name="spring_test_027_explanation">JpaRepository provides methods such as save, findById and delete.</string>
+
+    <string name="spring_test_028_question">Which JpaRepository method saves an entity?</string>
+    <string name="spring_test_028_option_1">save</string>
+    <string name="spring_test_028_option_2">storeOnly</string>
+    <string name="spring_test_028_option_3">insertEntity</string>
+    <string name="spring_test_028_option_4">persistNow</string>
+    <string name="spring_test_028_explanation">save stores or updates an entity.</string>
+
+    <string name="spring_test_029_question">Which JpaRepository method searches by id?</string>
+    <string name="spring_test_029_option_1">findById</string>
+    <string name="spring_test_029_option_2">getOneAlways</string>
+    <string name="spring_test_029_option_3">selectId</string>
+    <string name="spring_test_029_option_4">readPrimary</string>
+    <string name="spring_test_029_explanation">findById returns an Optional with the entity.</string>
+
+    <string name="spring_test_030_question">Which JpaRepository method deletes an entity?</string>
+    <string name="spring_test_030_option_1">delete</string>
+    <string name="spring_test_030_option_2">drop</string>
+    <string name="spring_test_030_option_3">removeTable</string>
+    <string name="spring_test_030_option_4">eraseDb</string>
+    <string name="spring_test_030_explanation">delete removes an entity.</string>
+
+    <string name="spring_test_031_question">What type does findById usually return?</string>
+    <string name="spring_test_031_option_1">Optional&lt;T&gt;</string>
+    <string name="spring_test_031_option_2">List&lt;T&gt;</string>
+    <string name="spring_test_031_option_3">String</string>
+    <string name="spring_test_031_option_4">Always Boolean</string>
+    <string name="spring_test_031_explanation">findById returns Optional because it may not find anything.</string>
+
+    <string name="spring_test_032_question">Which annotation indicates that a method or class participates in a transaction?</string>
+    <string name="spring_test_032_option_1">\@Transactional</string>
+    <string name="spring_test_032_option_2">\@TransactionOnly</string>
+    <string name="spring_test_032_option_3">\@Commit</string>
+    <string name="spring_test_032_option_4">\@RollbackOnly</string>
+    <string name="spring_test_032_explanation">\@Transactional manages transactions.</string>
+
+    <string name="spring_test_033_question">Which file usually contains configuration in Spring Boot?</string>
+    <string name="spring_test_033_option_1">application.properties</string>
+    <string name="spring_test_033_option_2">AndroidManifest.xml</string>
+    <string name="spring_test_033_option_3">strings.xml</string>
+    <string name="spring_test_033_option_4">layout.xml</string>
+    <string name="spring_test_033_explanation">application.properties or application.yml stores configuration.</string>
+
+    <string name="spring_test_034_question">Which YAML alternative is used for configuration?</string>
+    <string name="spring_test_034_option_1">application.yml</string>
+    <string name="spring_test_034_option_2">spring.xml</string>
+    <string name="spring_test_034_option_3">config.html</string>
+    <string name="spring_test_034_option_4">boot.json</string>
+    <string name="spring_test_034_explanation">application.yml is a common alternative.</string>
+
+    <string name="spring_test_035_question">Which build tool uses pom.xml?</string>
+    <string name="spring_test_035_option_1">Maven</string>
+    <string name="spring_test_035_option_2">Gradle Kotlin DSL</string>
+    <string name="spring_test_035_option_3">npm</string>
+    <string name="spring_test_035_option_4">Composer</string>
+    <string name="spring_test_035_explanation">pom.xml belongs to Maven.</string>
+
+    <string name="spring_test_036_question">Which file does Gradle normally use?</string>
+    <string name="spring_test_036_option_1">build.gradle</string>
+    <string name="spring_test_036_option_2">pom.xml</string>
+    <string name="spring_test_036_option_3">package.json</string>
+    <string name="spring_test_036_option_4">composer.json</string>
+    <string name="spring_test_036_explanation">build.gradle configures Gradle projects.</string>
+
+    <string name="spring_test_037_question">Which annotation defines a bean from a method?</string>
+    <string name="spring_test_037_option_1">\@Bean</string>
+    <string name="spring_test_037_option_2">\@Component</string>
+    <string name="spring_test_037_option_3">\@Entity</string>
+    <string name="spring_test_037_option_4">\@Id</string>
+    <string name="spring_test_037_explanation">\@Bean registers the result of a method as a bean.</string>
+
+    <string name="spring_test_038_question">Which annotation usually contains \@Bean methods?</string>
+    <string name="spring_test_038_option_1">\@Configuration</string>
+    <string name="spring_test_038_option_2">\@RestController</string>
+    <string name="spring_test_038_option_3">\@Entity</string>
+    <string name="spring_test_038_option_4">\@Table</string>
+    <string name="spring_test_038_explanation">\@Configuration declares configuration classes.</string>
+
+    <string name="spring_test_039_question">Which injection technique is usually most recommended?</string>
+    <string name="spring_test_039_option_1">Constructor injection</string>
+    <string name="spring_test_039_option_2">Always field injection</string>
+    <string name="spring_test_039_option_3">Manual new inside controller</string>
+    <string name="spring_test_039_option_4">Global variables</string>
+    <string name="spring_test_039_explanation">Constructor injection makes testing easier and makes dependencies explicit.</string>
+
+    <string name="spring_test_040_question">What does IoC mean in Spring?</string>
+    <string name="spring_test_040_option_1">Inversion of Control</string>
+    <string name="spring_test_040_option_2">Index of compiled objects</string>
+    <string name="spring_test_040_option_3">Common online interface</string>
+    <string name="spring_test_040_option_4">Hidden class initialization</string>
+    <string name="spring_test_040_explanation">IoC means the framework manages creation and injection.</string>
+
+    <string name="spring_test_041_question">What is a bean in Spring?</string>
+    <string name="spring_test_041_option_1">Object managed by the container</string>
+    <string name="spring_test_041_option_2">SQL table</string>
+    <string name="spring_test_041_option_3">HTTP endpoint</string>
+    <string name="spring_test_041_option_4">Configuration file</string>
+    <string name="spring_test_041_explanation">A bean is an instance managed by Spring.</string>
+
+    <string name="spring_test_042_question">What does DI mean?</string>
+    <string name="spring_test_042_option_1">Dependency Injection</string>
+    <string name="spring_test_042_option_2">Internal document</string>
+    <string name="spring_test_042_option_3">Imported data</string>
+    <string name="spring_test_042_option_4">Initial driver</string>
+    <string name="spring_test_042_explanation">DI means providing dependencies from outside.</string>
+
+    <string name="spring_test_043_question">Which annotation allows validating a request body?</string>
+    <string name="spring_test_043_option_1">\@Valid</string>
+    <string name="spring_test_043_option_2">\@CheckBody</string>
+    <string name="spring_test_043_option_3">\@ValidateJsonOnly</string>
+    <string name="spring_test_043_option_4">\@BodyOk</string>
+    <string name="spring_test_043_explanation">\@Valid activates validations on the received object.</string>
+
+    <string name="spring_test_044_question">Which Bean Validation annotation requires a field to not be null?</string>
+    <string name="spring_test_044_option_1">\@NotNull</string>
+    <string name="spring_test_044_option_2">\@RequiredColumn</string>
+    <string name="spring_test_044_option_3">\@NoEmptyAlways</string>
+    <string name="spring_test_044_option_4">\@Exists</string>
+    <string name="spring_test_044_explanation">\@NotNull requires the value to not be null.</string>
+
+    <string name="spring_test_045_question">Which annotation validates that a String is not empty or blank?</string>
+    <string name="spring_test_045_option_1">\@NotBlank</string>
+    <string name="spring_test_045_option_2">\@NotNullOnly</string>
+    <string name="spring_test_045_option_3">\@TextRequired</string>
+    <string name="spring_test_045_option_4">\@StringFull</string>
+    <string name="spring_test_045_explanation">\@NotBlank validates text that is not empty or blank.</string>
+
+    <string name="spring_test_046_question">Which annotation catches exceptions globally in controllers?</string>
+    <string name="spring_test_046_option_1">\@ControllerAdvice</string>
+    <string name="spring_test_046_option_2">\@GlobalError</string>
+    <string name="spring_test_046_option_3">\@ExceptionMapperOnly</string>
+    <string name="spring_test_046_option_4">\@CatchAll</string>
+    <string name="spring_test_046_explanation">\@ControllerAdvice allows centralizing error handling.</string>
+
+    <string name="spring_test_047_question">Which annotation handles a specific exception?</string>
+    <string name="spring_test_047_option_1">\@ExceptionHandler</string>
+    <string name="spring_test_047_option_2">\@ErrorHandlerOnly</string>
+    <string name="spring_test_047_option_3">\@CatchController</string>
+    <string name="spring_test_047_option_4">\@HandleCrash</string>
+    <string name="spring_test_047_explanation">\@ExceptionHandler defines how to respond to exceptions.</string>
+
+    <string name="spring_test_048_question">Which HTTP status corresponds to resource not found?</string>
+    <string name="spring_test_048_option_1">404</string>
+    <string name="spring_test_048_option_2">200</string>
+    <string name="spring_test_048_option_3">201</string>
+    <string name="spring_test_048_option_4">500</string>
+    <string name="spring_test_048_explanation">404 Not Found means the resource was not found.</string>
+
+    <string name="spring_test_049_question">Which HTTP status usually indicates successful creation?</string>
+    <string name="spring_test_049_option_1">201</string>
+    <string name="spring_test_049_option_2">200</string>
+    <string name="spring_test_049_option_3">400</string>
+    <string name="spring_test_049_option_4">404</string>
+    <string name="spring_test_049_explanation">201 Created means the resource was created.</string>
+
+    <string name="spring_test_050_question">Which HTTP status indicates an internal server error?</string>
+    <string name="spring_test_050_option_1">500</string>
+    <string name="spring_test_050_option_2">200</string>
+    <string name="spring_test_050_option_3">204</string>
+    <string name="spring_test_050_option_4">301</string>
+    <string name="spring_test_050_explanation">500 Internal Server Error indicates an internal failure.</string>
+
+    <string name="spring_tf_001_question">\@RestController is used to create REST endpoints.</string>
+    <string name="spring_tf_001_explanation">\@RestController exposes methods as HTTP responses.</string>
+    <string name="spring_tf_002_question">\@Service usually contains business logic.</string>
+    <string name="spring_tf_002_explanation">\@Service represents application services.</string>
+    <string name="spring_tf_003_question">\@Repository is usually used for data access.</string>
+    <string name="spring_tf_003_explanation">\@Repository identifies persistence components.</string>
+    <string name="spring_tf_004_question">\@Controller and \@RestController are always exactly the same.</string>
+    <string name="spring_tf_004_explanation">\@RestController adds REST response behavior.</string>
+    <string name="spring_tf_005_question">\@Component registers a class as a bean.</string>
+    <string name="spring_tf_005_explanation">\@Component allows Spring to manage the class.</string>
+    <string name="spring_tf_006_question">\@SpringBootApplication usually goes on the main class.</string>
+    <string name="spring_tf_006_explanation">It is the typical entry annotation in Spring Boot.</string>
+    <string name="spring_tf_007_question">GET is usually used to retrieve data.</string>
+    <string name="spring_tf_007_explanation">GET queries resources.</string>
+    <string name="spring_tf_008_question">POST is usually used to create resources.</string>
+    <string name="spring_tf_008_explanation">POST is commonly used for creation.</string>
+    <string name="spring_tf_009_question">DELETE is usually used to delete resources.</string>
+    <string name="spring_tf_009_explanation">DELETE removes resources.</string>
+    <string name="spring_tf_010_question">PATCH is usually used for partial updates.</string>
+    <string name="spring_tf_010_explanation">PATCH modifies part of a resource.</string>
+    <string name="spring_tf_011_question">\@GetMapping responds to GET requests.</string>
+    <string name="spring_tf_011_explanation">\@GetMapping maps GET.</string>
+    <string name="spring_tf_012_question">\@PostMapping responds to DELETE requests.</string>
+    <string name="spring_tf_012_explanation">\@PostMapping responds to POST.</string>
+    <string name="spring_tf_013_question">\@PathVariable reads variables from the route.</string>
+    <string name="spring_tf_013_explanation">It reads values such as /users/{id}.</string>
+    <string name="spring_tf_014_question">\@RequestParam reads query parameters.</string>
+    <string name="spring_tf_014_explanation">It reads values such as ?page=1.</string>
+    <string name="spring_tf_015_question">\@RequestBody can convert JSON into an object.</string>
+    <string name="spring_tf_015_explanation">It maps the request body.</string>
+    <string name="spring_tf_016_question">ResponseEntity allows controlling the HTTP status.</string>
+    <string name="spring_tf_016_explanation">It allows returning status, headers and body.</string>
+    <string name="spring_tf_017_question">Business logic should be concentrated in the Controller.</string>
+    <string name="spring_tf_017_explanation">The controller should delegate to services.</string>
+    <string name="spring_tf_018_question">A Service should be able to use a Repository.</string>
+    <string name="spring_tf_018_explanation">The service usually coordinates repositories.</string>
+    <string name="spring_tf_019_question">A Repository should handle data access.</string>
+    <string name="spring_tf_019_explanation">Repository encapsulates persistence.</string>
+    <string name="spring_tf_020_question">A DTO is used to transport data between layers or to the API.</string>
+    <string name="spring_tf_020_explanation">DTO avoids exposing entities directly.</string>
+    <string name="spring_tf_021_question">\@Entity marks a persistent class.</string>
+    <string name="spring_tf_021_explanation">\@Entity belongs to JPA.</string>
+    <string name="spring_tf_022_question">\@Id marks the primary key.</string>
+    <string name="spring_tf_022_explanation">\@Id identifies the id.</string>
+    <string name="spring_tf_023_question">\@GeneratedValue can generate ids automatically.</string>
+    <string name="spring_tf_023_explanation">It defines the generation strategy.</string>
+    <string name="spring_tf_024_question">JpaRepository provides basic CRUD methods.</string>
+    <string name="spring_tf_024_explanation">It includes save, findById, findAll and delete.</string>
+    <string name="spring_tf_025_question">findById always returns the entity directly, never Optional.</string>
+    <string name="spring_tf_025_explanation">It normally returns Optional&lt;T&gt;.</string>
+    <string name="spring_tf_026_question">\@Transactional can manage commit and rollback.</string>
+    <string name="spring_tf_026_explanation">It manages transactions.</string>
+    <string name="spring_tf_027_question">application.properties can store configuration.</string>
+    <string name="spring_tf_027_explanation">It is a typical configuration file.</string>
+    <string name="spring_tf_028_question">application.yml can also be used for configuration.</string>
+    <string name="spring_tf_028_explanation">YAML is a common alternative.</string>
+    <string name="spring_tf_029_question">pom.xml normally belongs to Maven.</string>
+    <string name="spring_tf_029_explanation">Maven uses pom.xml.</string>
+    <string name="spring_tf_030_question">build.gradle normally belongs to Gradle.</string>
+    <string name="spring_tf_030_explanation">Gradle uses build.gradle.</string>
+    <string name="spring_tf_031_question">\@Bean registers the result of a method as a bean.</string>
+    <string name="spring_tf_031_explanation">\@Bean is used in configuration classes.</string>
+    <string name="spring_tf_032_question">\@Configuration can contain \@Bean methods.</string>
+    <string name="spring_tf_032_explanation">It defines bean configuration.</string>
+    <string name="spring_tf_033_question">Constructor injection is usually recommended.</string>
+    <string name="spring_tf_033_explanation">It helps testing and required dependencies.</string>
+    <string name="spring_tf_034_question">Using new inside a controller to create services is ideal in Spring.</string>
+    <string name="spring_tf_034_explanation">The normal approach is to inject dependencies.</string>
+    <string name="spring_tf_035_question">IoC means Inversion of Control.</string>
+    <string name="spring_tf_035_explanation">The container manages objects and dependencies.</string>
+    <string name="spring_tf_036_question">DI means Dependency Injection.</string>
+    <string name="spring_tf_036_explanation">It is a central pattern in Spring.</string>
+    <string name="spring_tf_037_question">A bean is an object managed by Spring.</string>
+    <string name="spring_tf_037_explanation">Spring creates and manages beans.</string>
+    <string name="spring_tf_038_question">\@Valid can activate validation for a received DTO.</string>
+    <string name="spring_tf_038_explanation">\@Valid runs validations.</string>
+    <string name="spring_tf_039_question">\@NotNull requires the value to not be null.</string>
+    <string name="spring_tf_039_explanation">\@NotNull validates not null.</string>
+    <string name="spring_tf_040_question">\@NotBlank allows empty strings.</string>
+    <string name="spring_tf_040_explanation">\@NotBlank requires text with content.</string>
+    <string name="spring_tf_041_question">\@ControllerAdvice allows centralizing error handling.</string>
+    <string name="spring_tf_041_explanation">It is used for global errors.</string>
+    <string name="spring_tf_042_question">\@ExceptionHandler handles specific exceptions.</string>
+    <string name="spring_tf_042_explanation">It defines the response for exceptions.</string>
+    <string name="spring_tf_043_question">404 means resource not found.</string>
+    <string name="spring_tf_043_explanation">404 is Not Found.</string>
+    <string name="spring_tf_044_question">201 usually means resource created.</string>
+    <string name="spring_tf_044_explanation">201 Created.</string>
+    <string name="spring_tf_045_question">500 means internal server error.</string>
+    <string name="spring_tf_045_explanation">500 Internal Server Error.</string>
+    <string name="spring_tf_046_question">204 usually means response with no content.</string>
+    <string name="spring_tf_046_explanation">204 No Content.</string>
+    <string name="spring_tf_047_question">400 usually means bad request.</string>
+    <string name="spring_tf_047_explanation">400 Bad Request.</string>
+    <string name="spring_tf_048_question">401 usually means unauthenticated.</string>
+    <string name="spring_tf_048_explanation">401 Unauthorized.</string>
+    <string name="spring_tf_049_question">403 usually means forbidden or no permissions.</string>
+    <string name="spring_tf_049_explanation">403 Forbidden.</string>
+    <string name="spring_tf_050_question">Spring Boot removes the need to write any Java code.</string>
+    <string name="spring_tf_050_explanation">Spring Boot simplifies configuration, but you still write code.</string>
+
+    <string name="spring_code_001_question">Complete the code: ____ public class UserController { }</string>
+    <string name="spring_code_001_option_1">\@RestController</string>
+    <string name="spring_code_001_option_2">\@Entity</string>
+    <string name="spring_code_001_option_3">\@Table</string>
+    <string name="spring_code_001_option_4">\@Column</string>
+    <string name="spring_code_001_explanation">\@RestController marks a REST controller.</string>
+
+    <string name="spring_code_002_question">Complete the code: ____("/users") public List&lt;User&gt; findAll() { }</string>
+    <string name="spring_code_002_option_1">\@GetMapping</string>
+    <string name="spring_code_002_option_2">\@PostMapping</string>
+    <string name="spring_code_002_option_3">\@Entity</string>
+    <string name="spring_code_002_option_4">\@Service</string>
+    <string name="spring_code_002_explanation">\@GetMapping responds to GET requests.</string>
+
+    <string name="spring_code_003_question">Complete the code: ____ public class UserService { }</string>
+    <string name="spring_code_003_option_1">\@Service</string>
+    <string name="spring_code_003_option_2">\@RestController</string>
+    <string name="spring_code_003_option_3">\@Column</string>
+    <string name="spring_code_003_option_4">\@Id</string>
+    <string name="spring_code_003_explanation">\@Service marks a service.</string>
+
+    <string name="spring_code_004_question">Complete the code: ____ public interface UserRepository extends JpaRepository&lt;User, Long&gt; { }</string>
+    <string name="spring_code_004_option_1">\@Repository</string>
+    <string name="spring_code_004_option_2">\@Controller</string>
+    <string name="spring_code_004_option_3">\@Service</string>
+    <string name="spring_code_004_option_4">\@Entity</string>
+    <string name="spring_code_004_explanation">\@Repository marks data access.</string>
+
+    <string name="spring_code_005_question">Complete the code: ____ public class App { public static void main(String[] args) { } }</string>
+    <string name="spring_code_005_option_1">\@SpringBootApplication</string>
+    <string name="spring_code_005_option_2">\@BootMainOnly</string>
+    <string name="spring_code_005_option_3">\@RestEntity</string>
+    <string name="spring_code_005_option_4">\@MainBean</string>
+    <string name="spring_code_005_explanation">\@SpringBootApplication marks the Spring Boot app.</string>
+
+    <string name="spring_code_006_question">Complete the code: SpringApplication.____(App.class, args);</string>
+    <string name="spring_code_006_option_1">run</string>
+    <string name="spring_code_006_option_2">startOnly</string>
+    <string name="spring_code_006_option_3">execute</string>
+    <string name="spring_code_006_option_4">boot</string>
+    <string name="spring_code_006_explanation">SpringApplication.run starts the application.</string>
+
+    <string name="spring_code_007_question">Complete the code: ____("/users") public User create(\@RequestBody User user) { }</string>
+    <string name="spring_code_007_option_1">\@PostMapping</string>
+    <string name="spring_code_007_option_2">\@GetMapping</string>
+    <string name="spring_code_007_option_3">\@DeleteMapping</string>
+    <string name="spring_code_007_option_4">\@ReadMapping</string>
+    <string name="spring_code_007_explanation">\@PostMapping is used to create.</string>
+
+    <string name="spring_code_008_question">Complete the code: ____("/users/{id}") public void delete(\@PathVariable Long id) { }</string>
+    <string name="spring_code_008_option_1">\@DeleteMapping</string>
+    <string name="spring_code_008_option_2">\@GetMapping</string>
+    <string name="spring_code_008_option_3">\@PostMapping</string>
+    <string name="spring_code_008_option_4">\@Entity</string>
+    <string name="spring_code_008_explanation">\@DeleteMapping responds to DELETE.</string>
+
+    <string name="spring_code_009_question">Complete the code: \@GetMapping("/users/{id}") public User find(\@____ Long id) { }</string>
+    <string name="spring_code_009_option_1">PathVariable</string>
+    <string name="spring_code_009_option_2">RequestBody</string>
+    <string name="spring_code_009_option_3">Service</string>
+    <string name="spring_code_009_option_4">Entity</string>
+    <string name="spring_code_009_explanation">\@PathVariable reads the id from the route.</string>
+
+    <string name="spring_code_010_question">Complete the code: \@GetMapping("/users") public List&lt;User&gt; find(\@____ String name) { }</string>
+    <string name="spring_code_010_option_1">RequestParam</string>
+    <string name="spring_code_010_option_2">PathVariable</string>
+    <string name="spring_code_010_option_3">RequestBody</string>
+    <string name="spring_code_010_option_4">Column</string>
+    <string name="spring_code_010_explanation">\@RequestParam reads query parameters.</string>
+
+    <string name="spring_code_011_question">Complete the code: \@PostMapping("/users") public User create(\@____ UserDto dto) { }</string>
+    <string name="spring_code_011_option_1">RequestBody</string>
+    <string name="spring_code_011_option_2">PathVariable</string>
+    <string name="spring_code_011_option_3">RequestParam</string>
+    <string name="spring_code_011_option_4">Id</string>
+    <string name="spring_code_011_explanation">\@RequestBody reads JSON from the body.</string>
+
+    <string name="spring_code_012_question">Complete the code: public ResponseEntity&lt;User&gt; find() { return ResponseEntity.____(user); }</string>
+    <string name="spring_code_012_option_1">ok</string>
+    <string name="spring_code_012_option_2">createdOnly</string>
+    <string name="spring_code_012_option_3">send</string>
+    <string name="spring_code_012_option_4">json</string>
+    <string name="spring_code_012_explanation">ResponseEntity.ok returns 200 OK.</string>
+
+    <string name="spring_code_013_question">Complete the code: return ResponseEntity.____().build();</string>
+    <string name="spring_code_013_option_1">notFound</string>
+    <string name="spring_code_013_option_2">missingOnly</string>
+    <string name="spring_code_013_option_3">error404</string>
+    <string name="spring_code_013_option_4">emptyBad</string>
+    <string name="spring_code_013_explanation">notFound returns 404.</string>
+
+    <string name="spring_code_014_question">Complete the code: return ResponseEntity.____().build();</string>
+    <string name="spring_code_014_option_1">noContent</string>
+    <string name="spring_code_014_option_2">emptyJson</string>
+    <string name="spring_code_014_option_3">voidOk</string>
+    <string name="spring_code_014_option_4">blank</string>
+    <string name="spring_code_014_explanation">noContent returns 204.</string>
+
+    <string name="spring_code_015_question">Complete the code: ____ public class User { \@Id private Long id; }</string>
+    <string name="spring_code_015_option_1">\@Entity</string>
+    <string name="spring_code_015_option_2">\@Service</string>
+    <string name="spring_code_015_option_3">\@Repository</string>
+    <string name="spring_code_015_option_4">\@RestController</string>
+    <string name="spring_code_015_explanation">\@Entity marks a JPA entity.</string>
+
+    <string name="spring_code_016_question">Complete the code: \@Entity public class User { ____ private Long id; }</string>
+    <string name="spring_code_016_option_1">\@Id</string>
+    <string name="spring_code_016_option_2">\@Service</string>
+    <string name="spring_code_016_option_3">\@Bean</string>
+    <string name="spring_code_016_option_4">\@Autowired</string>
+    <string name="spring_code_016_explanation">\@Id marks the primary key.</string>
+
+    <string name="spring_code_017_question">Complete the code: \@Id ____(strategy = GenerationType.IDENTITY) private Long id;</string>
+    <string name="spring_code_017_option_1">\@GeneratedValue</string>
+    <string name="spring_code_017_option_2">\@AutoLong</string>
+    <string name="spring_code_017_option_3">\@GeneratedIdOnly</string>
+    <string name="spring_code_017_option_4">\@PrimaryGenerated</string>
+    <string name="spring_code_017_explanation">\@GeneratedValue generates the id.</string>
+
+    <string name="spring_code_018_question">Complete the code: public interface UserRepository extends ____(User, Long) { }</string>
+    <string name="spring_code_018_option_1">JpaRepository&lt;User, Long&gt;</string>
+    <string name="spring_code_018_option_2">RestController&lt;User&gt;</string>
+    <string name="spring_code_018_option_3">Entity&lt;User&gt;</string>
+    <string name="spring_code_018_option_4">Service&lt;User&gt;</string>
+    <string name="spring_code_018_explanation">JpaRepository receives the entity and id type.</string>
+
+    <string name="spring_code_019_question">Complete the code: repository.____(user);</string>
+    <string name="spring_code_019_option_1">save</string>
+    <string name="spring_code_019_option_2">storeOnly</string>
+    <string name="spring_code_019_option_3">insertSql</string>
+    <string name="spring_code_019_option_4">persistXml</string>
+    <string name="spring_code_019_explanation">save stores the entity.</string>
+
+    <string name="spring_code_020_question">Complete the code: repository.____(id);</string>
+    <string name="spring_code_020_option_1">findById</string>
+    <string name="spring_code_020_option_2">selectIdOnly</string>
+    <string name="spring_code_020_option_3">getByPath</string>
+    <string name="spring_code_020_option_4">readIdSql</string>
+    <string name="spring_code_020_explanation">findById searches by id.</string>
+
+    <string name="spring_code_021_question">Complete the code: repository.____(user);</string>
+    <string name="spring_code_021_option_1">delete</string>
+    <string name="spring_code_021_option_2">dropTable</string>
+    <string name="spring_code_021_option_3">eraseDatabase</string>
+    <string name="spring_code_021_option_4">removeSqlOnly</string>
+    <string name="spring_code_021_explanation">delete removes an entity.</string>
+
+    <string name="spring_code_022_question">Complete the code: ____ public void transfer() { }</string>
+    <string name="spring_code_022_option_1">\@Transactional</string>
+    <string name="spring_code_022_option_2">\@TransactionNow</string>
+    <string name="spring_code_022_option_3">\@CommitOnly</string>
+    <string name="spring_code_022_option_4">\@Rollback</string>
+    <string name="spring_code_022_explanation">\@Transactional opens a transaction.</string>
+
+    <string name="spring_code_023_question">Complete the code: ____ public class AppConfig { \@Bean MyBean bean() { return new MyBean(); } }</string>
+    <string name="spring_code_023_option_1">\@Configuration</string>
+    <string name="spring_code_023_option_2">\@Entity</string>
+    <string name="spring_code_023_option_3">\@RestController</string>
+    <string name="spring_code_023_option_4">\@Table</string>
+    <string name="spring_code_023_explanation">\@Configuration marks configuration.</string>
+
+    <string name="spring_code_024_question">Complete the code: \@Configuration public class AppConfig { ____ MyBean bean() { return new MyBean(); } }</string>
+    <string name="spring_code_024_option_1">\@Bean</string>
+    <string name="spring_code_024_option_2">\@Id</string>
+    <string name="spring_code_024_option_3">\@Column</string>
+    <string name="spring_code_024_option_4">\@Service</string>
+    <string name="spring_code_024_explanation">\@Bean registers the returned object.</string>
+
+    <string name="spring_code_025_question">Complete the code: private final UserService service; public UserController(____ service) { this.service = service; }</string>
+    <string name="spring_code_025_option_1">UserService</string>
+    <string name="spring_code_025_option_2">\@Autowired</string>
+    <string name="spring_code_025_option_3">\@Entity</string>
+    <string name="spring_code_025_option_4">RepositoryOnly</string>
+    <string name="spring_code_025_explanation">This is constructor injection.</string>
+
+    <string name="spring_code_026_question">Complete the code: \@PostMapping public User create(\@Valid \@RequestBody ____ dto) { }</string>
+    <string name="spring_code_026_option_1">UserDto</string>
+    <string name="spring_code_026_option_2">JpaRepository</string>
+    <string name="spring_code_026_option_3">SpringApplication</string>
+    <string name="spring_code_026_option_4">ResponseStatus</string>
+    <string name="spring_code_026_explanation">A received DTO can be validated.</string>
+
+    <string name="spring_code_027_question">Complete the code: public class UserDto { ____ private String name; }</string>
+    <string name="spring_code_027_option_1">\@NotBlank</string>
+    <string name="spring_code_027_option_2">\@RestController</string>
+    <string name="spring_code_027_option_3">\@Bean</string>
+    <string name="spring_code_027_option_4">\@Autowired</string>
+    <string name="spring_code_027_explanation">\@NotBlank validates text with content.</string>
+
+    <string name="spring_code_028_question">Complete the code: public class UserDto { ____ private Integer age; }</string>
+    <string name="spring_code_028_option_1">\@NotNull</string>
+    <string name="spring_code_028_option_2">\@NullAlways</string>
+    <string name="spring_code_028_option_3">\@ColumnOnly</string>
+    <string name="spring_code_028_option_4">\@Main</string>
+    <string name="spring_code_028_explanation">\@NotNull requires a value.</string>
+
+    <string name="spring_code_029_question">Complete the code: ____ public class GlobalExceptionHandler { }</string>
+    <string name="spring_code_029_option_1">\@ControllerAdvice</string>
+    <string name="spring_code_029_option_2">\@RestControllerOnly</string>
+    <string name="spring_code_029_option_3">\@ErrorGlobal</string>
+    <string name="spring_code_029_option_4">\@CatchApp</string>
+    <string name="spring_code_029_explanation">\@ControllerAdvice centralizes errors.</string>
+
+    <string name="spring_code_030_question">Complete the code: ____(UserNotFoundException.class) public ResponseEntity&lt;?&gt; handle() { }</string>
+    <string name="spring_code_030_option_1">\@ExceptionHandler</string>
+    <string name="spring_code_030_option_2">\@Catch</string>
+    <string name="spring_code_030_option_3">\@HandleErrorOnly</string>
+    <string name="spring_code_030_option_4">\@ThrowsController</string>
+    <string name="spring_code_030_explanation">\@ExceptionHandler handles specific exceptions.</string>
+
+    <string name="spring_code_031_question">Complete the code: \@ResponseStatus(HttpStatus.____)</string>
+    <string name="spring_code_031_option_1">NOT_FOUND</string>
+    <string name="spring_code_031_option_2">OK_CREATED</string>
+    <string name="spring_code_031_option_3">MISSING</string>
+    <string name="spring_code_031_option_4">EMPTY</string>
+    <string name="spring_code_031_explanation">NOT_FOUND represents 404.</string>
+
+    <string name="spring_code_032_question">Complete the code: \@ResponseStatus(HttpStatus.____)</string>
+    <string name="spring_code_032_option_1">CREATED</string>
+    <string name="spring_code_032_option_2">MADE</string>
+    <string name="spring_code_032_option_3">NEW_RESOURCE</string>
+    <string name="spring_code_032_option_4">INSERTED</string>
+    <string name="spring_code_032_explanation">CREATED represents 201.</string>
+
+    <string name="spring_code_033_question">Complete the code: \@GetMapping("/health") public String health() { return ____; }</string>
+    <string name="spring_code_033_option_1">"OK"</string>
+    <string name="spring_code_033_option_2">OK</string>
+    <string name="spring_code_033_option_3">\@OK</string>
+    <string name="spring_code_033_option_4">HttpStatus</string>
+    <string name="spring_code_033_explanation">It must return a String in quotes.</string>
+
+    <string name="spring_code_034_question">Complete the code: \@PutMapping("/users/{id}") public User update(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
+    <string name="spring_code_034_option_1">UserDto</string>
+    <string name="spring_code_034_option_2">GetMapping</string>
+    <string name="spring_code_034_option_3">JpaRepository</string>
+    <string name="spring_code_034_option_4">Application</string>
+    <string name="spring_code_034_explanation">The DTO represents input data.</string>
+
+    <string name="spring_code_035_question">Complete the code: \@PatchMapping("/users/{id}") public User patch(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
+    <string name="spring_code_035_option_1">UserPatchDto</string>
+    <string name="spring_code_035_option_2">UserRepository</string>
+    <string name="spring_code_035_option_3">HttpStatus</string>
+    <string name="spring_code_035_option_4">Bean</string>
+    <string name="spring_code_035_explanation">PATCH usually uses a partial DTO.</string>
+
+    <string name="spring_code_036_question">Complete the code: \@Column(nullable = ____) private String name;</string>
+    <string name="spring_code_036_option_1">false</string>
+    <string name="spring_code_036_option_2">true only</string>
+    <string name="spring_code_036_option_3">"false"</string>
+    <string name="spring_code_036_option_4">null</string>
+    <string name="spring_code_036_explanation">nullable = false means it does not accept null.</string>
+
+    <string name="spring_code_037_question">Complete the code: \@Table(name = ____) public class User { }</string>
+    <string name="spring_code_037_option_1">"users"</string>
+    <string name="spring_code_037_option_2">users</string>
+    <string name="spring_code_037_option_3">\@users</string>
+    <string name="spring_code_037_option_4">table.users</string>
+    <string name="spring_code_037_explanation">The table name goes as a String.</string>
+
+    <string name="spring_code_038_question">Complete the code: ____(name = "users") \@Entity public class User { }</string>
+    <string name="spring_code_038_option_1">\@Table</string>
+    <string name="spring_code_038_option_2">\@Column</string>
+    <string name="spring_code_038_option_3">\@Service</string>
+    <string name="spring_code_038_option_4">\@Bean</string>
+    <string name="spring_code_038_explanation">\@Table configures the table.</string>
+
+    <string name="spring_code_039_question">Complete the code: \@Column(name = ____) private String firstName;</string>
+    <string name="spring_code_039_option_1">"first_name"</string>
+    <string name="spring_code_039_option_2">first_name</string>
+    <string name="spring_code_039_option_3">\@first_name</string>
+    <string name="spring_code_039_option_4">column.first</string>
+    <string name="spring_code_039_explanation">The column name goes as a String.</string>
+
+    <string name="spring_code_040_question">Complete the code: private final UserRepository ____;</string>
+    <string name="spring_code_040_option_1">repository</string>
+    <string name="spring_code_040_option_2">\@Repository</string>
+    <string name="spring_code_040_option_3">new</string>
+    <string name="spring_code_040_option_4">table</string>
+    <string name="spring_code_040_explanation">repository is the field to inject.</string>
+
+    <string name="spring_code_041_question">Complete the code: public List&lt;User&gt; findAll() { return repository.____(); }</string>
+    <string name="spring_code_041_option_1">findAll</string>
+    <string name="spring_code_041_option_2">getEvery</string>
+    <string name="spring_code_041_option_3">selectRows</string>
+    <string name="spring_code_041_option_4">listSql</string>
+    <string name="spring_code_041_explanation">findAll returns all records.</string>
+
+    <string name="spring_code_042_question">Complete the code: public User findById(Long id) { return repository.findById(id).____(); }</string>
+    <string name="spring_code_042_option_1">orElseThrow</string>
+    <string name="spring_code_042_option_2">getAlwaysSafe</string>
+    <string name="spring_code_042_option_3">toUser</string>
+    <string name="spring_code_042_option_4">read</string>
+    <string name="spring_code_042_explanation">orElseThrow throws an exception if it does not exist.</string>
+
+    <string name="spring_code_043_question">Complete the code: public interface UserRepository extends JpaRepository&lt;User, Long&gt; { List&lt;User&gt; findBy____(String name); }</string>
+    <string name="spring_code_043_option_1">Name</string>
+    <string name="spring_code_043_option_2">name</string>
+    <string name="spring_code_043_option_3">ColumnName()</string>
+    <string name="spring_code_043_option_4">Field(name)</string>
+    <string name="spring_code_043_explanation">Spring Data interprets findByName.</string>
+
+    <string name="spring_code_044_question">Complete the code: \@GetMapping("/users/search") public List&lt;User&gt; search(\@RequestParam ____ name) { }</string>
+    <string name="spring_code_044_option_1">String</string>
+    <string name="spring_code_044_option_2">User</string>
+    <string name="spring_code_044_option_3">LongRepository</string>
+    <string name="spring_code_044_option_4">HttpStatus</string>
+    <string name="spring_code_044_explanation">The name parameter can be String.</string>
+
+    <string name="spring_code_045_question">Complete the code: public ResponseEntity&lt;User&gt; create() { return ResponseEntity.status(HttpStatus.____).body(user); }</string>
+    <string name="spring_code_045_option_1">CREATED</string>
+    <string name="spring_code_045_option_2">NOT_FOUND</string>
+    <string name="spring_code_045_option_3">BAD_REQUEST_ONLY</string>
+    <string name="spring_code_045_option_4">MISSING</string>
+    <string name="spring_code_045_explanation">201 CREATED for creation.</string>
+
+    <string name="spring_code_046_question">Complete the code: throw new ____("User not found");</string>
+    <string name="spring_code_046_option_1">UserNotFoundException</string>
+    <string name="spring_code_046_option_2">ResponseEntity</string>
+    <string name="spring_code_046_option_3">JpaRepository</string>
+    <string name="spring_code_046_option_4">Bean</string>
+    <string name="spring_code_046_explanation">A specific exception is thrown.</string>
+
+    <string name="spring_code_047_question">Complete the code: \@RestController \@RequestMapping(____) public class UserController { }</string>
+    <string name="spring_code_047_option_1">"/api/users"</string>
+    <string name="spring_code_047_option_2">/api/users</string>
+    <string name="spring_code_047_option_3">\@api</string>
+    <string name="spring_code_047_option_4">api.users</string>
+    <string name="spring_code_047_explanation">RequestMapping receives the route as a String.</string>
+
+    <string name="spring_code_048_question">Complete the code: server.port=____</string>
+    <string name="spring_code_048_option_1">8080</string>
+    <string name="spring_code_048_option_2">"8080"</string>
+    <string name="spring_code_048_option_3">\@8080</string>
+    <string name="spring_code_048_option_4">port.8080</string>
+    <string name="spring_code_048_explanation">In properties, server.port=8080 is used.</string>
+
+    <string name="spring_code_049_question">Complete the code: spring.datasource.url=____</string>
+    <string name="spring_code_049_option_1">jdbc:postgresql://localhost:5432/app</string>
+    <string name="spring_code_049_option_2">localhost only</string>
+    <string name="spring_code_049_option_3">\@database</string>
+    <string name="spring_code_049_option_4">url.sql</string>
+    <string name="spring_code_049_explanation">The JDBC URL starts with jdbc:.</string>
+
+    <string name="spring_code_050_question">Complete the code: spring.jpa.hibernate.ddl-auto=____</string>
+    <string name="spring_code_050_option_1">update</string>
+    <string name="spring_code_050_option_2">autoUpdate()</string>
+    <string name="spring_code_050_option_3">\@update</string>
+    <string name="spring_code_050_option_4">ddl.update()</string>
+    <string name="spring_code_050_explanation">ddl-auto can use update, validate, create, etc.</string>
+
+    <string name="spring_match_001_question">Match the concept: Controller</string>
+    <string name="spring_match_001_option_1">Layer that receives HTTP requests</string>
+    <string name="spring_match_001_option_2">Database table</string>
+    <string name="spring_match_001_option_3">Style file</string>
+    <string name="spring_match_001_option_4">Android screen</string>
+    <string name="spring_match_001_explanation">The controller handles HTTP input.</string>
+
+    <string name="spring_match_002_question">Match the concept: Service</string>
+    <string name="spring_match_002_option_1">Business logic layer</string>
+    <string name="spring_match_002_option_2">Visual configuration file</string>
+    <string name="spring_match_002_option_3">HTML tag</string>
+    <string name="spring_match_002_option_4">Firestore field</string>
+    <string name="spring_match_002_explanation">Service contains business logic.</string>
+
+    <string name="spring_match_003_question">Match the concept: Repository</string>
+    <string name="spring_match_003_option_1">Data access layer</string>
+    <string name="spring_match_003_option_2">Visual controller</string>
+    <string name="spring_match_003_option_3">Compose theme</string>
+    <string name="spring_match_003_option_4">Navigation button</string>
+    <string name="spring_match_003_explanation">Repository handles persistence and data access.</string>
+
+    <string name="spring_match_004_question">Match the concept: Bean</string>
+    <string name="spring_match_004_option_1">Object managed by Spring</string>
+    <string name="spring_match_004_option_2">SQL row</string>
+    <string name="spring_match_004_option_3">CSS file</string>
+    <string name="spring_match_004_option_4">Android route</string>
+    <string name="spring_match_004_explanation">A bean is managed by the container.</string>
+
+    <string name="spring_match_005_question">Match the concept: IoC</string>
+    <string name="spring_match_005_option_1">The framework controls creation and injection</string>
+    <string name="spring_match_005_option_2">Create HTML</string>
+    <string name="spring_match_005_option_3">Run npm</string>
+    <string name="spring_match_005_option_4">Draw UI</string>
+    <string name="spring_match_005_explanation">Inversion of Control delegates creation to the container.</string>
+
+    <string name="spring_match_006_question">Match the concept: DI</string>
+    <string name="spring_match_006_option_1">Dependency Injection</string>
+    <string name="spring_match_006_option_2">Internal document</string>
+    <string name="spring_match_006_option_3">Indexed data</string>
+    <string name="spring_match_006_option_4">Interface design</string>
+    <string name="spring_match_006_explanation">DI provides dependencies from outside.</string>
+
+    <string name="spring_match_007_question">Match the concept: DTO</string>
+    <string name="spring_match_007_option_1">Object used to transport data</string>
+    <string name="spring_match_007_option_2">Database</string>
+    <string name="spring_match_007_option_3">Web server</string>
+    <string name="spring_match_007_option_4">XML view</string>
+    <string name="spring_match_007_explanation">DTO moves data between layers or APIs.</string>
+
+    <string name="spring_match_008_question">Match the concept: Entity</string>
+    <string name="spring_match_008_option_1">Persistent domain object</string>
+    <string name="spring_match_008_option_2">GET endpoint</string>
+    <string name="spring_match_008_option_3">Gradle file</string>
+    <string name="spring_match_008_option_4">Button</string>
+    <string name="spring_match_008_explanation">An entity is persisted with JPA.</string>
+
+    <string name="spring_match_009_question">Match the concept: JpaRepository</string>
+    <string name="spring_match_009_option_1">Interface with CRUD operations</string>
+    <string name="spring_match_009_option_2">REST controller</string>
+    <string name="spring_match_009_option_3">String validator</string>
+    <string name="spring_match_009_option_4">Embedded server</string>
+    <string name="spring_match_009_explanation">JpaRepository provides CRUD.</string>
+
+    <string name="spring_match_010_question">Match the concept: \@Transactional</string>
+    <string name="spring_match_010_option_1">Transaction management</string>
+    <string name="spring_match_010_option_2">Endpoint mapping</string>
+    <string name="spring_match_010_option_3">Email validation</string>
+    <string name="spring_match_010_option_4">DTO creation</string>
+    <string name="spring_match_010_explanation">\@Transactional manages commit and rollback.</string>
+
+    <string name="spring_match_011_question">Match the concept: \@PathVariable</string>
+    <string name="spring_match_011_option_1">Value included in the route</string>
+    <string name="spring_match_011_option_2">JSON body</string>
+    <string name="spring_match_011_option_3">Properties file</string>
+    <string name="spring_match_011_option_4">JPA entity</string>
+    <string name="spring_match_011_explanation">It extracts values from the URL.</string>
+
+    <string name="spring_match_012_question">Match the concept: \@RequestBody</string>
+    <string name="spring_match_012_option_1">Request body</string>
+    <string name="spring_match_012_option_2">Route variable</string>
+    <string name="spring_match_012_option_3">Table column</string>
+    <string name="spring_match_012_option_4">Manual bean</string>
+    <string name="spring_match_012_explanation">It maps JSON or body to an object.</string>
+
+    <string name="spring_match_013_question">Match the concept: \@RequestParam</string>
+    <string name="spring_match_013_option_1">Query string parameter</string>
+    <string name="spring_match_013_option_2">Primary key</string>
+    <string name="spring_match_013_option_3">Business service</string>
+    <string name="spring_match_013_option_4">Visual mapper</string>
+    <string name="spring_match_013_explanation">It reads URL parameters.</string>
+
+    <string name="spring_match_014_question">Match the concept: ResponseEntity</string>
+    <string name="spring_match_014_option_1">HTTP response with status/body</string>
+    <string name="spring_match_014_option_2">JPA repository</string>
+    <string name="spring_match_014_option_3">Input DTO</string>
+    <string name="spring_match_014_option_4">Bean validation</string>
+    <string name="spring_match_014_explanation">It controls the HTTP response.</string>
+
+    <string name="spring_match_015_question">Match the concept: application.properties</string>
+    <string name="spring_match_015_option_1">Configuration file</string>
+    <string name="spring_match_015_option_2">User entity</string>
+    <string name="spring_match_015_option_3">REST controller</string>
+    <string name="spring_match_015_option_4">DTO class</string>
+    <string name="spring_match_015_explanation">It configures port, datasource, etc.</string>
+
+    <string name="spring_match_016_question">Match the concept: Maven</string>
+    <string name="spring_match_016_option_1">Build tool with pom.xml</string>
+    <string name="spring_match_016_option_2">REST service</string>
+    <string name="spring_match_016_option_3">NoSQL database</string>
+    <string name="spring_match_016_option_4">JPA annotation</string>
+    <string name="spring_match_016_explanation">Maven manages dependencies and build.</string>
+
+    <string name="spring_match_017_question">Match the concept: \@Valid</string>
+    <string name="spring_match_017_option_1">Activates object validation</string>
+    <string name="spring_match_017_option_2">Creates endpoints</string>
+    <string name="spring_match_017_option_3">Saves entities</string>
+    <string name="spring_match_017_option_4">Starts server</string>
+    <string name="spring_match_017_explanation">\@Valid runs validations.</string>
+
+    <string name="spring_match_018_question">Match the concept: \@ControllerAdvice</string>
+    <string name="spring_match_018_option_1">Global error handling</string>
+    <string name="spring_match_018_option_2">SQL repository</string>
+    <string name="spring_match_018_option_3">Entity field</string>
+    <string name="spring_match_018_option_4">UI route</string>
+    <string name="spring_match_018_explanation">It centralizes exceptions.</string>
+
+    <string name="spring_match_019_question">Match the concept: 404</string>
+    <string name="spring_match_019_option_1">Resource not found</string>
+    <string name="spring_match_019_option_2">Created successfully</string>
+    <string name="spring_match_019_option_3">No content</string>
+    <string name="spring_match_019_option_4">Internal error</string>
+    <string name="spring_match_019_explanation">404 means Not Found.</string>
+
+    <string name="spring_match_020_question">Match the concept: 201</string>
+    <string name="spring_match_020_option_1">Resource created</string>
+    <string name="spring_match_020_option_2">Internal error</string>
+    <string name="spring_match_020_option_3">Unauthorized</string>
+    <string name="spring_match_020_option_4">Not found</string>
+    <string name="spring_match_020_explanation">201 Created indicates creation.</string>
+
+    <string name="spring_error_001_question">Find the problem: \@RestController public class UserController { private UserService service; }</string>
+    <string name="spring_error_001_option_1">The dependency is not injected</string>
+    <string name="spring_error_001_option_2">RestController is misspelled</string>
+    <string name="spring_error_001_option_3">UserService cannot exist</string>
+    <string name="spring_error_001_option_4">There is never a problem</string>
+    <string name="spring_error_001_explanation">The dependency should be injected by constructor or annotation.</string>
+
+    <string name="spring_error_002_question">Find the problem: \@GetMapping("/users") public void findAll() { }</string>
+    <string name="spring_error_002_option_1">It does not return data</string>
+    <string name="spring_error_002_option_2">GET does not exist</string>
+    <string name="spring_error_002_option_3">Missing SQL</string>
+    <string name="spring_error_002_option_4">void always returns JSON</string>
+    <string name="spring_error_002_explanation">If the endpoint should list users, it should return a list or response.</string>
+
+    <string name="spring_error_003_question">Find the problem: \@Service public class User { }</string>
+    <string name="spring_error_003_option_1">A domain entity should not be a Service</string>
+    <string name="spring_error_003_option_2">Service is only used in Kotlin</string>
+    <string name="spring_error_003_option_3">Missing main</string>
+    <string name="spring_error_003_option_4">It does not compile because of the name</string>
+    <string name="spring_error_003_explanation">Entities or models should not be marked as services.</string>
+
+    <string name="spring_error_004_question">Find the problem: \@RestController public class UserRepository { }</string>
+    <string name="spring_error_004_option_1">A repository should not be a RestController</string>
+    <string name="spring_error_004_option_2">Repository is always controller</string>
+    <string name="spring_error_004_option_3">Missing CSS</string>
+    <string name="spring_error_004_option_4">No problem</string>
+    <string name="spring_error_004_explanation">Each class should be in its proper layer.</string>
+
+    <string name="spring_error_005_question">Find the problem: \@GetMapping("/users/{id}") public User find(Long id) { }</string>
+    <string name="spring_error_005_option_1">Missing \@PathVariable on id</string>
+    <string name="spring_error_005_option_2">GET cannot have id</string>
+    <string name="spring_error_005_option_3">Long does not exist</string>
+    <string name="spring_error_005_option_4">No problem</string>
+    <string name="spring_error_005_explanation">The route id must be mapped with \@PathVariable.</string>
+
+    <string name="spring_error_006_question">Find the problem: \@PostMapping("/users") public User create(UserDto dto) { }</string>
+    <string name="spring_error_006_option_1">Missing \@RequestBody</string>
+    <string name="spring_error_006_option_2">POST cannot receive DTO</string>
+    <string name="spring_error_006_option_3">UserDto must be an entity</string>
+    <string name="spring_error_006_option_4">No problem</string>
+    <string name="spring_error_006_explanation">\@RequestBody is used to read JSON from the body.</string>
+
+    <string name="spring_error_007_question">Find the problem: public class UserService { private UserRepository repo = new UserRepository(); }</string>
+    <string name="spring_error_007_option_1">You should not manually create the repository</string>
+    <string name="spring_error_007_option_2">new is always required</string>
+    <string name="spring_error_007_option_3">Repository cannot be injected</string>
+    <string name="spring_error_007_option_4">No problem</string>
+    <string name="spring_error_007_explanation">Spring should inject dependencies.</string>
+
+    <string name="spring_error_008_question">Find the problem: \@Entity public class User { private Long id; }</string>
+    <string name="spring_error_008_option_1">Missing \@Id</string>
+    <string name="spring_error_008_option_2">Entity does not allow Long</string>
+    <string name="spring_error_008_option_3">Missing \@Service</string>
+    <string name="spring_error_008_option_4">No problem</string>
+    <string name="spring_error_008_explanation">An entity needs a primary key.</string>
+
+    <string name="spring_error_009_question">Find the problem: public interface UserRepository extends JpaRepository&lt;User&gt; { }</string>
+    <string name="spring_error_009_option_1">The id type is missing</string>
+    <string name="spring_error_009_option_2">JpaRepository does not use generics</string>
+    <string name="spring_error_009_option_3">Missing Controller</string>
+    <string name="spring_error_009_option_4">No problem</string>
+    <string name="spring_error_009_explanation">JpaRepository receives the entity and id type.</string>
+
+    <string name="spring_error_010_question">Find the problem: \@GetMapping("/users") public User create(\@RequestBody User user) { }</string>
+    <string name="spring_error_010_option_1">GET should not create resources with body</string>
+    <string name="spring_error_010_option_2">GetMapping does not exist</string>
+    <string name="spring_error_010_option_3">RequestBody is only used in SQL</string>
+    <string name="spring_error_010_option_4">No problem</string>
+    <string name="spring_error_010_explanation">POST should be used to create.</string>
+
+    <string name="spring_error_011_question">Find the problem: \@PostMapping("/users/{id}") public void delete(\@PathVariable Long id) { }</string>
+    <string name="spring_error_011_option_1">DELETE would be better for deleting</string>
+    <string name="spring_error_011_option_2">POST does not compile</string>
+    <string name="spring_error_011_option_3">PathVariable does not exist</string>
+    <string name="spring_error_011_option_4">No problem</string>
+    <string name="spring_error_011_explanation">Semantically, DELETE fits deletion.</string>
+
+    <string name="spring_error_012_question">Find the problem: repository.findById(id).get();</string>
+    <string name="spring_error_012_option_1">It can throw an exception if it does not exist</string>
+    <string name="spring_error_012_option_2">findById does not exist</string>
+    <string name="spring_error_012_option_3">get is always safe</string>
+    <string name="spring_error_012_option_4">No problem</string>
+    <string name="spring_error_012_explanation">Optional.get fails if it is empty.</string>
+
+    <string name="spring_error_013_question">Find the problem: \@Transactional private void saveData() { }</string>
+    <string name="spring_error_013_option_1">The transactional proxy may not apply on private methods</string>
+    <string name="spring_error_013_option_2">Transactional only exists in Kotlin</string>
+    <string name="spring_error_013_option_3">Private always improves transactions</string>
+    <string name="spring_error_013_option_4">No problem</string>
+    <string name="spring_error_013_explanation">Spring applies transactions through proxies; private methods can be problematic.</string>
+
+    <string name="spring_error_014_question">Find the problem: \@ControllerAdvice public class Handler { public ResponseEntity&lt;?&gt; handle(Exception e) { } }</string>
+    <string name="spring_error_014_option_1">Missing \@ExceptionHandler</string>
+    <string name="spring_error_014_option_2">ControllerAdvice does not exist</string>
+    <string name="spring_error_014_option_3">Exception cannot be used</string>
+    <string name="spring_error_014_option_4">No problem</string>
+    <string name="spring_error_014_explanation">The method must be annotated to handle exceptions.</string>
+
+    <string name="spring_error_015_question">Find the problem: public class UserDto { \@NotBlank private Integer age; }</string>
+    <string name="spring_error_015_option_1">\@NotBlank is for text</string>
+    <string name="spring_error_015_option_2">Integer does not exist</string>
+    <string name="spring_error_015_option_3">Missing \@Service</string>
+    <string name="spring_error_015_option_4">No problem</string>
+    <string name="spring_error_015_explanation">\@NotBlank is used on String; for Integer, \@NotNull can be used.</string>
+
+    <string name="spring_error_016_question">Find the problem: \@RestController public class UserController { // a lot of business logic here }</string>
+    <string name="spring_error_016_option_1">The controller has too much logic</string>
+    <string name="spring_error_016_option_2">RestController does not allow methods</string>
+    <string name="spring_error_016_option_3">Missing entity</string>
+    <string name="spring_error_016_option_4">No problem</string>
+    <string name="spring_error_016_explanation">Logic should be delegated to services.</string>
+
+    <string name="spring_error_017_question">Find the problem: \@Entity public class UserDto { }</string>
+    <string name="spring_error_017_option_1">A DTO should not be an entity</string>
+    <string name="spring_error_017_option_2">DTO always has \@Entity</string>
+    <string name="spring_error_017_option_3">It does not compile because of the name</string>
+    <string name="spring_error_017_option_4">No problem</string>
+    <string name="spring_error_017_explanation">DTO and entity have different responsibilities.</string>
+
+    <string name="spring_error_018_question">Find the problem: return null; // when user does not exist</string>
+    <string name="spring_error_018_option_1">Better return 404 or throw a controlled exception</string>
+    <string name="spring_error_018_option_2">null always generates 201</string>
+    <string name="spring_error_018_option_3">No problem</string>
+    <string name="spring_error_018_option_4">Spring converts it into an entity</string>
+    <string name="spring_error_018_explanation">It is better to respond correctly when it does not exist.</string>
+
+    <string name="spring_error_019_question">Find the problem: \@PostMapping("/users") public ResponseEntity&lt;User&gt; create(...) { return ResponseEntity.ok(user); }</string>
+    <string name="spring_error_019_option_1">For creation, 201 Created may be better</string>
+    <string name="spring_error_019_option_2">ok does not exist</string>
+    <string name="spring_error_019_option_3">POST does not return body</string>
+    <string name="spring_error_019_option_4">No problem</string>
+    <string name="spring_error_019_explanation">201 expresses resource creation.</string>
+
+    <string name="spring_error_020_question">Find the problem: \@DeleteMapping("/users/{id}") public User delete(...) { return deletedUser; }</string>
+    <string name="spring_error_020_option_1">For deleting, 204 with no content may be better</string>
+    <string name="spring_error_020_option_2">DELETE must return HTML</string>
+    <string name="spring_error_020_option_3">Cannot delete by id</string>
+    <string name="spring_error_020_option_4">No problem</string>
+    <string name="spring_error_020_explanation">DELETE usually responds with 204 or a proper status.</string>
+
+    <string name="spring_output_001_question">Which HTTP method is usually used to retrieve data?</string>
+    <string name="spring_output_001_option_1">GET</string>
+    <string name="spring_output_001_option_2">POST</string>
+    <string name="spring_output_001_option_3">DELETE</string>
+    <string name="spring_output_001_option_4">PATCH</string>
+    <string name="spring_output_001_explanation">GET is used to query data.</string>
+
+    <string name="spring_output_002_question">Which HTTP method is usually used to create resources?</string>
+    <string name="spring_output_002_option_1">POST</string>
+    <string name="spring_output_002_option_2">GET</string>
+    <string name="spring_output_002_option_3">TRACE</string>
+    <string name="spring_output_002_option_4">OPTIONS</string>
+    <string name="spring_output_002_explanation">POST is usually used to create resources.</string>
+
+    <string name="spring_output_003_question">Which HTTP method is usually used to delete resources?</string>
+    <string name="spring_output_003_option_1">DELETE</string>
+    <string name="spring_output_003_option_2">GET</string>
+    <string name="spring_output_003_option_3">POST</string>
+    <string name="spring_output_003_option_4">HEAD</string>
+    <string name="spring_output_003_explanation">DELETE is usually used to delete resources.</string>
+
+    <string name="spring_output_004_question">What status does ResponseEntity.ok() normally return?</string>
+    <string name="spring_output_004_option_1">200 OK</string>
+    <string name="spring_output_004_option_2">404 Not Found</string>
+    <string name="spring_output_004_option_3">500 Error</string>
+    <string name="spring_output_004_option_4">201 Created</string>
+    <string name="spring_output_004_explanation">ok() returns 200.</string>
+
+    <string name="spring_output_005_question">What status does HttpStatus.CREATED represent?</string>
+    <string name="spring_output_005_option_1">201</string>
+    <string name="spring_output_005_option_2">200</string>
+    <string name="spring_output_005_option_3">404</string>
+    <string name="spring_output_005_option_4">500</string>
+    <string name="spring_output_005_explanation">CREATED equals 201.</string>
+
+    <string name="spring_output_006_question">What status does HttpStatus.NOT_FOUND represent?</string>
+    <string name="spring_output_006_option_1">404</string>
+    <string name="spring_output_006_option_2">201</string>
+    <string name="spring_output_006_option_3">204</string>
+    <string name="spring_output_006_option_4">400</string>
+    <string name="spring_output_006_explanation">NOT_FOUND equals 404.</string>
+
+    <string name="spring_output_007_question">What status does HttpStatus.NO_CONTENT represent?</string>
+    <string name="spring_output_007_option_1">204</string>
+    <string name="spring_output_007_option_2">200</string>
+    <string name="spring_output_007_option_3">500</string>
+    <string name="spring_output_007_option_4">401</string>
+    <string name="spring_output_007_explanation">NO_CONTENT equals 204.</string>
+
+    <string name="spring_output_008_question">Which annotation responds to GET?</string>
+    <string name="spring_output_008_option_1">\@GetMapping</string>
+    <string name="spring_output_008_option_2">\@PostMapping</string>
+    <string name="spring_output_008_option_3">\@DeleteMapping</string>
+    <string name="spring_output_008_option_4">\@PatchMapping</string>
+    <string name="spring_output_008_explanation">\@GetMapping responds to GET.</string>
+
+    <string name="spring_output_009_question">Which annotation responds to POST?</string>
+    <string name="spring_output_009_option_1">\@PostMapping</string>
+    <string name="spring_output_009_option_2">\@GetMapping</string>
+    <string name="spring_output_009_option_3">\@DeleteMapping</string>
+    <string name="spring_output_009_option_4">\@Table</string>
+    <string name="spring_output_009_explanation">\@PostMapping responds to POST.</string>
+
+    <string name="spring_output_010_question">Which annotation responds to DELETE?</string>
+    <string name="spring_output_010_option_1">\@DeleteMapping</string>
+    <string name="spring_output_010_option_2">\@PostMapping</string>
+    <string name="spring_output_010_option_3">\@Entity</string>
+    <string name="spring_output_010_option_4">\@Service</string>
+    <string name="spring_output_010_explanation">\@DeleteMapping responds to DELETE.</string>
+
+    <string name="spring_output_011_question">Which file would you use in Maven for dependencies?</string>
+    <string name="spring_output_011_option_1">pom.xml</string>
+    <string name="spring_output_011_option_2">build.gradle</string>
+    <string name="spring_output_011_option_3">package.json</string>
+    <string name="spring_output_011_option_4">AndroidManifest.xml</string>
+    <string name="spring_output_011_explanation">Maven uses pom.xml.</string>
+
+    <string name="spring_output_012_question">Which repository method gets all records?</string>
+    <string name="spring_output_012_option_1">findAll()</string>
+    <string name="spring_output_012_option_2">getEverythingNow()</string>
+    <string name="spring_output_012_option_3">selectAllSql()</string>
+    <string name="spring_output_012_option_4">readRowsOnly()</string>
+    <string name="spring_output_012_explanation">findAll() returns all.</string>
+
+    <string name="spring_output_013_question">Which repository method searches by id?</string>
+    <string name="spring_output_013_option_1">findById(id)</string>
+    <string name="spring_output_013_option_2">getIdOnly(id)</string>
+    <string name="spring_output_013_option_3">selectOne(id)</string>
+    <string name="spring_output_013_option_4">readPrimary(id)</string>
+    <string name="spring_output_013_explanation">findById searches by key.</string>
+
+    <string name="spring_output_014_question">Which repository method saves?</string>
+    <string name="spring_output_014_option_1">save(entity)</string>
+    <string name="spring_output_014_option_2">insertOnly(entity)</string>
+    <string name="spring_output_014_option_3">storeSql(entity)</string>
+    <string name="spring_output_014_option_4">persistXml(entity)</string>
+    <string name="spring_output_014_explanation">save stores.</string>
+
+    <string name="spring_output_015_question">Which repository method deletes?</string>
+    <string name="spring_output_015_option_1">delete(entity)</string>
+    <string name="spring_output_015_option_2">drop(entity)</string>
+    <string name="spring_output_015_option_3">eraseTable(entity)</string>
+    <string name="spring_output_015_option_4">removeDb(entity)</string>
+    <string name="spring_output_015_explanation">delete removes.</string>
+
+    <string name="spring_output_016_question">Which annotation marks a JPA entity?</string>
+    <string name="spring_output_016_option_1">\@Entity</string>
+    <string name="spring_output_016_option_2">\@Service</string>
+    <string name="spring_output_016_option_3">\@RestController</string>
+    <string name="spring_output_016_option_4">\@Bean</string>
+    <string name="spring_output_016_explanation">\@Entity marks an entity.</string>
+
+    <string name="spring_output_017_question">Which annotation marks a primary key?</string>
+    <string name="spring_output_017_option_1">\@Id</string>
+    <string name="spring_output_017_option_2">\@Key</string>
+    <string name="spring_output_017_option_3">\@PrimaryOnly</string>
+    <string name="spring_output_017_option_4">\@MainId</string>
+    <string name="spring_output_017_explanation">\@Id marks the id.</string>
+
+    <string name="spring_output_018_question">Which annotation marks a service?</string>
+    <string name="spring_output_018_option_1">\@Service</string>
+    <string name="spring_output_018_option_2">\@Entity</string>
+    <string name="spring_output_018_option_3">\@Column</string>
+    <string name="spring_output_018_option_4">\@Table</string>
+    <string name="spring_output_018_explanation">\@Service marks a service.</string>
+
+    <string name="spring_output_019_question">Which annotation marks a repository?</string>
+    <string name="spring_output_019_option_1">\@Repository</string>
+    <string name="spring_output_019_option_2">\@ControllerAdvice</string>
+    <string name="spring_output_019_option_3">\@Id</string>
+    <string name="spring_output_019_option_4">\@Valid</string>
+    <string name="spring_output_019_explanation">\@Repository marks a repository.</string>
+
+    <string name="spring_output_020_question">Which annotation marks a REST controller?</string>
+    <string name="spring_output_020_option_1">\@RestController</string>
+    <string name="spring_output_020_option_2">\@Entity</string>
+    <string name="spring_output_020_option_3">\@Table</string>
+    <string name="spring_output_020_option_4">\@GeneratedValue</string>
+    <string name="spring_output_020_explanation">\@RestController marks a REST controller.</string>
+
+    <string name="spring_order_001_question">Order the flow of a typical GET request:</string>
+    <string name="spring_order_001_option_1">Client calls the endpoint</string>
+    <string name="spring_order_001_option_2">Controller receives the request</string>
+    <string name="spring_order_001_option_3">Service executes logic</string>
+    <string name="spring_order_001_option_4">Repository queries data</string>
+    <string name="spring_order_001_explanation">The controller receives, delegates to the service and the service uses repository.</string>
+
+    <string name="spring_order_002_question">Order the flow to create a user:</string>
+    <string name="spring_order_002_option_1">Receive DTO with \@RequestBody</string>
+    <string name="spring_order_002_option_2">Validate DTO</string>
+    <string name="spring_order_002_option_3">Convert DTO to entity</string>
+    <string name="spring_order_002_option_4">Save with repository.save</string>
+    <string name="spring_order_002_explanation">First receive and validate, then convert and save.</string>
+
+    <string name="spring_order_003_question">Order the layered design:</string>
+    <string name="spring_order_003_option_1">Controller</string>
+    <string name="spring_order_003_option_2">Service</string>
+    <string name="spring_order_003_option_3">Repository</string>
+    <string name="spring_order_003_option_4">Database</string>
+    <string name="spring_order_003_explanation">The call goes down from controller to database.</string>
+
+    <string name="spring_order_004_question">Order a response when a user does not exist:</string>
+    <string name="spring_order_004_option_1">Search by id</string>
+    <string name="spring_order_004_option_2">Detect empty Optional</string>
+    <string name="spring_order_004_option_3">Throw exception or return 404</string>
+    <string name="spring_order_004_option_4">Respond to the client</string>
+    <string name="spring_order_004_explanation">First search, then decide the response.</string>
+
+    <string name="spring_order_005_question">Order the basic Spring Boot startup:</string>
+    <string name="spring_order_005_option_1">Run main</string>
+    <string name="spring_order_005_option_2">SpringApplication.run</string>
+    <string name="spring_order_005_option_3">Create Spring context</string>
+    <string name="spring_order_005_option_4">Register beans</string>
+    <string name="spring_order_005_explanation">Startup creates the context and beans.</string>
+
+    <string name="spring_order_006_question">Order the creation of a REST endpoint:</string>
+    <string name="spring_order_006_option_1">Create Controller</string>
+    <string name="spring_order_006_option_2">Add \@RestController</string>
+    <string name="spring_order_006_option_3">Add mapping</string>
+    <string name="spring_order_006_option_4">Delegate to Service</string>
+    <string name="spring_order_006_explanation">First controller class, then mapping and delegated logic.</string>
+
+    <string name="spring_order_007_question">Order basic JPA persistence:</string>
+    <string name="spring_order_007_option_1">Create entity with \@Entity</string>
+    <string name="spring_order_007_option_2">Define \@Id</string>
+    <string name="spring_order_007_option_3">Create Repository</string>
+    <string name="spring_order_007_option_4">Use save/findById</string>
+    <string name="spring_order_007_explanation">Entity, id, repository and operations.</string>
+
+    <string name="spring_order_008_question">Order body validation:</string>
+    <string name="spring_order_008_option_1">Create DTO with constraints</string>
+    <string name="spring_order_008_option_2">Use \@Valid</string>
+    <string name="spring_order_008_option_3">Receive \@RequestBody</string>
+    <string name="spring_order_008_option_4">Handle errors if it fails</string>
+    <string name="spring_order_008_explanation">The DTO is validated when received.</string>
+
+    <string name="spring_order_009_question">Order global error handling:</string>
+    <string name="spring_order_009_option_1">Create \@ControllerAdvice class</string>
+    <string name="spring_order_009_option_2">Create handler method</string>
+    <string name="spring_order_009_option_3">Add \@ExceptionHandler</string>
+    <string name="spring_order_009_option_4">Return ResponseEntity</string>
+    <string name="spring_order_009_explanation">ControllerAdvice centralizes handlers.</string>
+
+    <string name="spring_order_010_question">Order the flow to delete a resource:</string>
+    <string name="spring_order_010_option_1">Receive id with \@PathVariable</string>
+    <string name="spring_order_010_option_2">Find entity</string>
+    <string name="spring_order_010_option_3">Delete with repository.delete</string>
+    <string name="spring_order_010_option_4">Respond 204 No Content</string>
+    <string name="spring_order_010_explanation">DELETE searches, deletes and responds.</string>
+
+    <string name="spring_wordle_001_question">Layer that receives HTTP requests.</string>
+    <string name="spring_wordle_001_option_1">CONTROLLER</string>
+    <string name="spring_wordle_001_option_2">ENTITY</string>
+    <string name="spring_wordle_001_option_3">COLUMN</string>
+    <string name="spring_wordle_001_option_4">DTO</string>
+    <string name="spring_wordle_001_explanation">Controller receives requests.</string>
+
+    <string name="spring_wordle_002_question">Business logic layer.</string>
+    <string name="spring_wordle_002_option_1">SERVICE</string>
+    <string name="spring_wordle_002_option_2">TABLE</string>
+    <string name="spring_wordle_002_option_3">VIEW</string>
+    <string name="spring_wordle_002_option_4">CSS</string>
+    <string name="spring_wordle_002_explanation">Service contains logic.</string>
+
+    <string name="spring_wordle_003_question">Data access layer.</string>
+    <string name="spring_wordle_003_option_1">REPOSITORY</string>
+    <string name="spring_wordle_003_option_2">BUTTON</string>
+    <string name="spring_wordle_003_option_3">SCREEN</string>
+    <string name="spring_wordle_003_option_4">ROUTE</string>
+    <string name="spring_wordle_003_explanation">Repository accesses data.</string>
+
+    <string name="spring_wordle_004_question">Object managed by Spring.</string>
+    <string name="spring_wordle_004_option_1">BEAN</string>
+    <string name="spring_wordle_004_option_2">HTML</string>
+    <string name="spring_wordle_004_option_3">JSON</string>
+    <string name="spring_wordle_004_option_4">APK</string>
+    <string name="spring_wordle_004_explanation">Bean is a managed object.</string>
+
+    <string name="spring_wordle_005_question">Dependency injection.</string>
+    <string name="spring_wordle_005_option_1">DI</string>
+    <string name="spring_wordle_005_option_2">SQL</string>
+    <string name="spring_wordle_005_option_3">CSS</string>
+    <string name="spring_wordle_005_option_4">DOM</string>
+    <string name="spring_wordle_005_explanation">DI means dependency injection.</string>
+
+    <string name="spring_wordle_006_question">Inversion of control.</string>
+    <string name="spring_wordle_006_option_1">IOC</string>
+    <string name="spring_wordle_006_option_2">DTO</string>
+    <string name="spring_wordle_006_option_3">JPA</string>
+    <string name="spring_wordle_006_option_4">API</string>
+    <string name="spring_wordle_006_explanation">IoC means inversion of control.</string>
+
+    <string name="spring_wordle_007_question">Object used to transport data.</string>
+    <string name="spring_wordle_007_option_1">DTO</string>
+    <string name="spring_wordle_007_option_2">DAOXML</string>
+    <string name="spring_wordle_007_option_3">ENTITYONLY</string>
+    <string name="spring_wordle_007_option_4">SCREEN</string>
+    <string name="spring_wordle_007_explanation">DTO transports data.</string>
+
+    <string name="spring_wordle_008_question">Persistent entity.</string>
+    <string name="spring_wordle_008_option_1">ENTITY</string>
+    <string name="spring_wordle_008_option_2">SERVICE</string>
+    <string name="spring_wordle_008_option_3">BUTTON</string>
+    <string name="spring_wordle_008_option_4">THEME</string>
+    <string name="spring_wordle_008_explanation">Entity represents persistent data.</string>
+
+    <string name="spring_wordle_009_question">Spring Data CRUD interface.</string>
+    <string name="spring_wordle_009_option_1">JPAREPOSITORY</string>
+    <string name="spring_wordle_009_option_2">RESTCONTROLLER</string>
+    <string name="spring_wordle_009_option_3">APPLICATION</string>
+    <string name="spring_wordle_009_option_4">REQUESTBODY</string>
+    <string name="spring_wordle_009_explanation">JpaRepository provides CRUD.</string>
+
+    <string name="spring_wordle_010_question">Transaction management.</string>
+    <string name="spring_wordle_010_option_1">TRANSACTIONAL</string>
+    <string name="spring_wordle_010_option_2">GETMAPPING</string>
+    <string name="spring_wordle_010_option_3">COLUMN</string>
+    <string name="spring_wordle_010_option_4">VALID</string>
+    <string name="spring_wordle_010_explanation">\@Transactional manages transactions.</string>
+
+    <string name="spring_crossword_001_question">Clue: annotation for REST controller.</string>
+    <string name="spring_crossword_001_option_1">\@RestController</string>
+    <string name="spring_crossword_001_option_2">\@Service</string>
+    <string name="spring_crossword_001_option_3">\@Entity</string>
+    <string name="spring_crossword_001_option_4">\@Id</string>
+    <string name="spring_crossword_001_explanation">\@RestController creates REST endpoints.</string>
+
+    <string name="spring_crossword_002_question">Clue: annotation for business logic.</string>
+    <string name="spring_crossword_002_option_1">\@Service</string>
+    <string name="spring_crossword_002_option_2">\@Repository</string>
+    <string name="spring_crossword_002_option_3">\@Table</string>
+    <string name="spring_crossword_002_option_4">\@Column</string>
+    <string name="spring_crossword_002_explanation">\@Service marks services.</string>
+
+    <string name="spring_crossword_003_question">Clue: annotation for persistence.</string>
+    <string name="spring_crossword_003_option_1">\@Repository</string>
+    <string name="spring_crossword_003_option_2">\@RestController</string>
+    <string name="spring_crossword_003_option_3">\@Bean</string>
+    <string name="spring_crossword_003_option_4">\@Valid</string>
+    <string name="spring_crossword_003_explanation">\@Repository marks persistence.</string>
+
+    <string name="spring_crossword_004_question">Clue: annotation for JPA entity.</string>
+    <string name="spring_crossword_004_option_1">\@Entity</string>
+    <string name="spring_crossword_004_option_2">\@Service</string>
+    <string name="spring_crossword_004_option_3">\@Configuration</string>
+    <string name="spring_crossword_004_option_4">\@GetMapping</string>
+    <string name="spring_crossword_004_explanation">\@Entity marks an entity.</string>
+
+    <string name="spring_crossword_005_question">Clue: annotation for primary key.</string>
+    <string name="spring_crossword_005_option_1">\@Id</string>
+    <string name="spring_crossword_005_option_2">\@Key</string>
+    <string name="spring_crossword_005_option_3">\@Primary</string>
+    <string name="spring_crossword_005_option_4">\@Main</string>
+    <string name="spring_crossword_005_explanation">\@Id marks the id.</string>
+
+    <string name="spring_crossword_006_question">Clue: HTTP method for querying.</string>
+    <string name="spring_crossword_006_option_1">GET</string>
+    <string name="spring_crossword_006_option_2">POST</string>
+    <string name="spring_crossword_006_option_3">DELETE</string>
+    <string name="spring_crossword_006_option_4">PATCH</string>
+    <string name="spring_crossword_006_explanation">GET queries.</string>
+
+    <string name="spring_crossword_007_question">Clue: HTTP method for creating.</string>
+    <string name="spring_crossword_007_option_1">POST</string>
+    <string name="spring_crossword_007_option_2">GET</string>
+    <string name="spring_crossword_007_option_3">DELETE</string>
+    <string name="spring_crossword_007_option_4">HEAD</string>
+    <string name="spring_crossword_007_explanation">POST creates.</string>
+
+    <string name="spring_crossword_008_question">Clue: HTTP method for deleting.</string>
+    <string name="spring_crossword_008_option_1">DELETE</string>
+    <string name="spring_crossword_008_option_2">POST</string>
+    <string name="spring_crossword_008_option_3">GET</string>
+    <string name="spring_crossword_008_option_4">PUT</string>
+    <string name="spring_crossword_008_explanation">DELETE deletes.</string>
+
+    <string name="spring_crossword_009_question">Clue: Maven file.</string>
+    <string name="spring_crossword_009_option_1">pom.xml</string>
+    <string name="spring_crossword_009_option_2">build.gradle</string>
+    <string name="spring_crossword_009_option_3">strings.xml</string>
+    <string name="spring_crossword_009_option_4">package.json</string>
+    <string name="spring_crossword_009_explanation">Maven uses pom.xml.</string>
+
+    <string name="spring_crossword_010_question">Clue: typical Spring Boot configuration file.</string>
+    <string name="spring_crossword_010_option_1">application.properties</string>
+    <string name="spring_crossword_010_option_2">AndroidManifest.xml</string>
+    <string name="spring_crossword_010_option_3">index.html</string>
+    <string name="spring_crossword_010_option_4">styles.css</string>
+    <string name="spring_crossword_010_explanation">application.properties configures the app.</string>
+
+    <string name="spring_crossword_011_question">Clue: resource not found status.</string>
+    <string name="spring_crossword_011_option_1">404</string>
+    <string name="spring_crossword_011_option_2">200</string>
+    <string name="spring_crossword_011_option_3">201</string>
+    <string name="spring_crossword_011_option_4">500</string>
+    <string name="spring_crossword_011_explanation">404 Not Found.</string>
+
+    <string name="spring_crossword_012_question">Clue: resource created status.</string>
+    <string name="spring_crossword_012_option_1">201</string>
+    <string name="spring_crossword_012_option_2">404</string>
+    <string name="spring_crossword_012_option_3">500</string>
+    <string name="spring_crossword_012_option_4">400</string>
+    <string name="spring_crossword_012_explanation">201 Created.</string>
+
+    <string name="spring_crossword_013_question">Clue: no content status.</string>
+    <string name="spring_crossword_013_option_1">204</string>
+    <string name="spring_crossword_013_option_2">200</string>
+    <string name="spring_crossword_013_option_3">201</string>
+    <string name="spring_crossword_013_option_4">409</string>
+    <string name="spring_crossword_013_explanation">204 No Content.</string>
+
+    <string name="spring_crossword_014_question">Clue: internal error status.</string>
+    <string name="spring_crossword_014_option_1">500</string>
+    <string name="spring_crossword_014_option_2">404</string>
+    <string name="spring_crossword_014_option_3">201</string>
+    <string name="spring_crossword_014_option_4">204</string>
+    <string name="spring_crossword_014_explanation">500 Internal Server Error.</string>
+
+    <string name="spring_crossword_015_question">Clue: class for HTTP response with status and body.</string>
+    <string name="spring_crossword_015_option_1">ResponseEntity</string>
+    <string name="spring_crossword_015_option_2">JpaRepository</string>
+    <string name="spring_crossword_015_option_3">UserDto</string>
+    <string name="spring_crossword_015_option_4">SpringBean</string>
+    <string name="spring_crossword_015_explanation">ResponseEntity controls the response.</string>
+</resources>

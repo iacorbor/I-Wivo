@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="android_test_001_question">¿Qué framework declarativo se usa para construir UI moderna en Kotlin?</string>
+    <string name="android_test_001_option_1">XML Views</string>
+    <string name="android_test_001_option_2">Jetpack Compose</string>
+    <string name="android_test_001_option_3">Swing</string>
+    <string name="android_test_001_option_4">JavaFX</string>
+    <string name="android_test_001_explanation">Jetpack Compose permite construir interfaces declarativas.</string>
+
+    <string name="android_test_002_question">¿Qué anotación marca una función composable?</string>
+    <string name="android_test_002_option_1">\@Composable</string>
+    <string name="android_test_002_option_2">\@UI</string>
+    <string name="android_test_002_option_3">\@Screen</string>
+    <string name="android_test_002_option_4">\@AndroidView</string>
+    <string name="android_test_002_explanation">\@Composable marca funciones que dibujan UI en Compose.</string>
+
+    <string name="android_test_003_question">¿Qué función recuerda estado entre recomposiciones?</string>
+    <string name="android_test_003_option_1">remember</string>
+    <string name="android_test_003_option_2">save</string>
+    <string name="android_test_003_option_3">store</string>
+    <string name="android_test_003_option_4">hold</string>
+    <string name="android_test_003_explanation">remember conserva valores durante recomposiciones.</string>
+
+    <string name="android_test_004_question">¿Qué función crea estado observable en Compose?</string>
+    <string name="android_test_004_option_1">mutableStateOf</string>
+    <string name="android_test_004_option_2">stateOfMutable</string>
+    <string name="android_test_004_option_3">observeState</string>
+    <string name="android_test_004_option_4">composeState</string>
+    <string name="android_test_004_explanation">mutableStateOf crea un estado observable por Compose.</string>
+
+    <string name="android_test_005_question">¿Qué layout coloca elementos verticalmente?</string>
+    <string name="android_test_005_option_1">Column</string>
+    <string name="android_test_005_option_2">Row</string>
+    <string name="android_test_005_option_3">Box</string>
+    <string name="android_test_005_option_4">Card</string>
+    <string name="android_test_005_explanation">Column organiza sus hijos en vertical.</string>
+
+    <string name="android_test_006_question">¿Qué layout coloca elementos horizontalmente?</string>
+    <string name="android_test_006_option_1">Row</string>
+    <string name="android_test_006_option_2">Column</string>
+    <string name="android_test_006_option_3">Box</string>
+    <string name="android_test_006_option_4">Surface</string>
+    <string name="android_test_006_explanation">Row organiza sus hijos en horizontal.</string>
+
+    <string name="android_test_007_question">¿Qué layout permite superponer elementos?</string>
+    <string name="android_test_007_option_1">Box</string>
+    <string name="android_test_007_option_2">Row</string>
+    <string name="android_test_007_option_3">Column</string>
+    <string name="android_test_007_option_4">List</string>
+    <string name="android_test_007_explanation">Box permite colocar elementos unos encima de otros.</string>
+
+    <string name="android_test_008_question">¿Qué componente muestra texto en Compose?</string>
+    <string name="android_test_008_option_1">Text</string>
+    <string name="android_test_008_option_2">Label</string>
+    <string name="android_test_008_option_3">Paragraph</string>
+    <string name="android_test_008_option_4">SpanText</string>
+    <string name="android_test_008_explanation">Text muestra texto en Compose.</string>
+
+    <string name="android_test_009_question">¿Qué componente representa un botón en Compose Material?</string>
+    <string name="android_test_009_option_1">Button</string>
+    <string name="android_test_009_option_2">Pressable</string>
+    <string name="android_test_009_option_3">ClickableText</string>
+    <string name="android_test_009_option_4">Action</string>
+    <string name="android_test_009_explanation">Button representa un botón.</string>
+
+    <string name="android_test_010_question">¿Qué objeto se usa para configurar tamaño, padding, click y estilo de un composable?</string>
+    <string name="android_test_010_option_1">Modifier</string>
+    <string name="android_test_010_option_2">Decorator</string>
+    <string name="android_test_010_option_3">Style</string>
+    <string name="android_test_010_option_4">LayoutParams</string>
+    <string name="android_test_010_explanation">Modifier configura comportamiento y apariencia de composables.</string>
+
+    <string name="android_test_011_question">¿Qué modificador hace que un composable ocupe todo el tamaño disponible?</string>
+    <string name="android_test_011_option_1">fillMaxSize()</string>
+    <string name="android_test_011_option_2">fullSize()</string>
+    <string name="android_test_011_option_3">matchParent()</string>
+    <string name="android_test_011_option_4">expandAll()</string>
+    <string name="android_test_011_explanation">fillMaxSize() ocupa todo el espacio disponible.</string>
+
+    <string name="android_test_012_question">¿Qué modificador añade espacio interior?</string>
+    <string name="android_test_012_option_1">padding()</string>
+    <string name="android_test_012_option_2">margin()</string>
+    <string name="android_test_012_option_3">inside()</string>
+    <string name="android_test_012_option_4">spacing()</string>
+    <string name="android_test_012_explanation">padding() añade espacio interior.</string>
+
+    <string name="android_test_013_question">¿Qué modificador hace que un elemento sea clickable?</string>
+    <string name="android_test_013_option_1">clickable</string>
+    <string name="android_test_013_option_2">pressable</string>
+    <string name="android_test_013_option_3">onTap</string>
+    <string name="android_test_013_option_4">touchable</string>
+    <string name="android_test_013_explanation">Modifier.clickable permite responder a clics.</string>
+
+    <string name="android_test_014_question">¿Qué componente muestra contenido dentro de una tarjeta Material?</string>
+    <string name="android_test_014_option_1">Card</string>
+    <string name="android_test_014_option_2">Panel</string>
+    <string name="android_test_014_option_3">BoxCard</string>
+    <string name="android_test_014_option_4">Tile</string>
+    <string name="android_test_014_explanation">Card agrupa contenido con estilo de tarjeta.</string>
+
+    <string name="android_test_015_question">¿Qué componente suele usarse como contenedor base visual Material?</string>
+    <string name="android_test_015_option_1">Surface</string>
+    <string name="android_test_015_option_2">Canvas</string>
+    <string name="android_test_015_option_3">Root</string>
+    <string name="android_test_015_option_4">Frame</string>
+    <string name="android_test_015_explanation">Surface aplica color, forma y elevación Material.</string>
+
+    <string name="android_test_016_question">¿Qué herramienta gestiona navegación entre pantallas en Navigation Compose?</string>
+    <string name="android_test_016_option_1">NavController</string>
+    <string name="android_test_016_option_2">IntentController</string>
+    <string name="android_test_016_option_3">ScreenManager</string>
+    <string name="android_test_016_option_4">RouteStack</string>
+    <string name="android_test_016_explanation">NavController gestiona navegación.</string>
+
+    <string name="android_test_017_question">¿Dónde se declaran las rutas composable de navegación?</string>
+    <string name="android_test_017_option_1">NavHost</string>
+    <string name="android_test_017_option_2">RouteFile</string>
+    <string name="android_test_017_option_3">AndroidManifest</string>
+    <string name="android_test_017_option_4">MainTheme</string>
+    <string name="android_test_017_explanation">NavHost contiene las rutas de navegación.</string>
+
+    <string name="android_test_018_question">¿Qué función crea un NavController en Compose?</string>
+    <string name="android_test_018_option_1">rememberNavController()</string>
+    <string name="android_test_018_option_2">createNav()</string>
+    <string name="android_test_018_option_3">navControllerOf()</string>
+    <string name="android_test_018_option_4">rememberRoute()</string>
+    <string name="android_test_018_explanation">rememberNavController() crea y recuerda el controlador de navegación.</string>
+
+    <string name="android_test_019_question">¿Qué método navega a una ruta?</string>
+    <string name="android_test_019_option_1">navigate()</string>
+    <string name="android_test_019_option_2">goTo()</string>
+    <string name="android_test_019_option_3">openScreen()</string>
+    <string name="android_test_019_option_4">launchRoute()</string>
+    <string name="android_test_019_explanation">navigate() cambia a una ruta.</string>
+
+    <string name="android_test_020_question">¿Qué clase suele gestionar estado y lógica de UI?</string>
+    <string name="android_test_020_option_1">ViewModel</string>
+    <string name="android_test_020_option_2">Activity</string>
+    <string name="android_test_020_option_3">Drawable</string>
+    <string name="android_test_020_option_4">Manifest</string>
+    <string name="android_test_020_explanation">ViewModel mantiene estado y lógica de UI.</string>
+
+    <string name="android_test_021_question">¿Qué función ejecuta efectos suspendidos en Compose?</string>
+    <string name="android_test_021_option_1">LaunchedEffect</string>
+    <string name="android_test_021_option_2">SideEffectOnly</string>
+    <string name="android_test_021_option_3">RunEffect</string>
+    <string name="android_test_021_option_4">CoroutineComposable</string>
+    <string name="android_test_021_explanation">LaunchedEffect lanza una corrutina asociada a Compose.</string>
+
+    <string name="android_test_022_question">¿Qué función recuerda estado y además lo conserva ante recreaciones simples?</string>
+    <string name="android_test_022_option_1">rememberSaveable</string>
+    <string name="android_test_022_option_2">rememberForever</string>
+    <string name="android_test_022_option_3">saveState</string>
+    <string name="android_test_022_option_4">keepRemember</string>
+    <string name="android_test_022_explanation">rememberSaveable conserva estado usando mecanismos salvables.</string>
+
+    <string name="android_test_023_question">¿Qué significa recomposición en Compose?</string>
+    <string name="android_test_023_option_1">Volver a ejecutar composables cuando cambia estado</string>
+    <string name="android_test_023_option_2">Reinstalar la app</string>
+    <string name="android_test_023_option_3">Limpiar Gradle</string>
+    <string name="android_test_023_option_4">Crear un APK</string>
+    <string name="android_test_023_explanation">La recomposición actualiza la UI cuando cambia el estado.</string>
+
+    <string name="android_test_024_question">¿Qué archivo suele declarar permisos y componentes principales de una app?</string>
+    <string name="android_test_024_option_1">AndroidManifest.xml</string>
+    <string name="android_test_024_option_2">build.gradle</string>
+    <string name="android_test_024_option_3">strings.xml</string>
+    <string name="android_test_024_option_4">MainActivity.kt</string>
+    <string name="android_test_024_explanation">AndroidManifest.xml declara permisos, activities y configuración.</string>
+
+    <string name="android_test_025_question">¿Qué clase suele ser el punto de entrada visual de una app Android?</string>
+    <string name="android_test_025_option_1">MainActivity</string>
+    <string name="android_test_025_option_2">MainScreen</string>
+    <string name="android_test_025_option_3">AppRoot</string>
+    <string name="android_test_025_option_4">LauncherFile</string>
+    <string name="android_test_025_explanation">MainActivity suele iniciar el contenido de la app.</string>
+
+    <string name="android_test_026_question">¿Qué método se usa normalmente en Activity para colocar contenido Compose?</string>
+    <string name="android_test_026_option_1">setContent</string>
+    <string name="android_test_026_option_2">setView</string>
+    <string name="android_test_026_option_3">drawUI</string>
+    <string name="android_test_026_option_4">compose</string>
+    <string name="android_test_026_explanation">setContent define el árbol Compose de la Activity.</string>
+
+    <string name="android_test_027_question">¿Qué archivo almacena textos traducibles en Android?</string>
+    <string name="android_test_027_option_1">strings.xml</string>
+    <string name="android_test_027_option_2">texts.kt</string>
+    <string name="android_test_027_option_3">language.json</string>
+    <string name="android_test_027_option_4">values.txt</string>
+    <string name="android_test_027_explanation">strings.xml almacena cadenas de texto.</string>
+
+    <string name="android_test_028_question">¿Qué carpeta suele contener recursos de texto, colores y temas?</string>
+    <string name="android_test_028_option_1">res/values</string>
+    <string name="android_test_028_option_2">src/main/kotlin</string>
+    <string name="android_test_028_option_3">build/generated</string>
+    <string name="android_test_028_option_4">assets/java</string>
+    <string name="android_test_028_explanation">res/values contiene recursos como strings, colors y themes.</string>
+
+    <string name="android_test_029_question">¿Qué sistema se usa habitualmente para compilar proyectos Android?</string>
+    <string name="android_test_029_option_1">Gradle</string>
+    <string name="android_test_029_option_2">Maven only</string>
+    <string name="android_test_029_option_3">Ant only</string>
+    <string name="android_test_029_option_4">npm</string>
+    <string name="android_test_029_explanation">Android usa Gradle como sistema de build.</string>
+
+    <string name="android_test_030_question">¿Qué archivo define dependencias de un módulo Android?</string>
+    <string name="android_test_030_option_1">build.gradle.kts</string>
+    <string name="android_test_030_option_2">AndroidManifest.xml</string>
+    <string name="android_test_030_option_3">strings.xml</string>
+    <string name="android_test_030_option_4">README.md</string>
+    <string name="android_test_030_explanation">build.gradle.kts o build.gradle define dependencias del módulo.</string>
+
+    <string name="android_test_031_question">¿Qué es MaterialTheme en Compose?</string>
+    <string name="android_test_031_option_1">Sistema de tema de colores, tipografía y formas</string>
+    <string name="android_test_031_option_2">Base de datos local</string>
+    <string name="android_test_031_option_3">Gestor de rutas</string>
+    <string name="android_test_031_option_4">Permiso del sistema</string>
+    <string name="android_test_031_explanation">MaterialTheme aplica tema visual Material.</string>
+
+    <string name="android_test_032_question">¿Qué componente muestra una lista eficiente en vertical?</string>
+    <string name="android_test_032_option_1">LazyColumn</string>
+    <string name="android_test_032_option_2">Column</string>
+    <string name="android_test_032_option_3">Row</string>
+    <string name="android_test_032_option_4">Box</string>
+    <string name="android_test_032_explanation">LazyColumn renderiza listas verticales de forma eficiente.</string>
+
+    <string name="android_test_033_question">¿Qué componente muestra una lista eficiente en horizontal?</string>
+    <string name="android_test_033_option_1">LazyRow</string>
+    <string name="android_test_033_option_2">Row</string>
+    <string name="android_test_033_option_3">Column</string>
+    <string name="android_test_033_option_4">HorizontalBox</string>
+    <string name="android_test_033_explanation">LazyRow renderiza listas horizontales eficientemente.</string>
+
+    <string name="android_test_034_question">¿Qué función permite recoger estado de un Flow en Compose?</string>
+    <string name="android_test_034_option_1">collectAsState</string>
+    <string name="android_test_034_option_2">observeAsFlow</string>
+    <string name="android_test_034_option_3">flowToVar</string>
+    <string name="android_test_034_option_4">rememberFlowOnly</string>
+    <string name="android_test_034_explanation">collectAsState convierte un Flow en State observable.</string>
+
+    <string name="android_test_035_question">¿Qué tipo representa una corrutina en ejecución?</string>
+    <string name="android_test_035_option_1">Job</string>
+    <string name="android_test_035_option_2">ThreadView</string>
+    <string name="android_test_035_option_3">TaskLayout</string>
+    <string name="android_test_035_option_4">CoroutineFile</string>
+    <string name="android_test_035_explanation">Job representa una corrutina en ejecución.</string>
+
+    <string name="android_test_036_question">¿Qué librería se usa para corrutinas en Kotlin?</string>
+    <string name="android_test_036_option_1">kotlinx.coroutines</string>
+    <string name="android_test_036_option_2">android.async.only</string>
+    <string name="android_test_036_option_3">compose.coroutines.ui</string>
+    <string name="android_test_036_option_4">javafx.coroutines</string>
+    <string name="android_test_036_explanation">kotlinx.coroutines proporciona corrutinas.</string>
+
+    <string name="android_test_037_question">¿Qué función permite mostrar una imagen desde recursos drawable?</string>
+    <string name="android_test_037_option_1">painterResource</string>
+    <string name="android_test_037_option_2">imageResourceOnly</string>
+    <string name="android_test_037_option_3">drawResource</string>
+    <string name="android_test_037_option_4">bitmapFromRes</string>
+    <string name="android_test_037_explanation">painterResource carga recursos gráficos.</string>
+
+    <string name="android_test_038_question">¿Qué componente permite escribir texto en Compose?</string>
+    <string name="android_test_038_option_1">TextField</string>
+    <string name="android_test_038_option_2">Input</string>
+    <string name="android_test_038_option_3">TextInputOnly</string>
+    <string name="android_test_038_option_4">EditLabel</string>
+    <string name="android_test_038_explanation">TextField permite entrada de texto.</string>
+
+    <string name="android_test_039_question">¿Qué componente muestra progreso lineal?</string>
+    <string name="android_test_039_option_1">LinearProgressIndicator</string>
+    <string name="android_test_039_option_2">ProgressLine</string>
+    <string name="android_test_039_option_3">LoadingBar</string>
+    <string name="android_test_039_option_4">ProgressRow</string>
+    <string name="android_test_039_explanation">LinearProgressIndicator muestra progreso lineal.</string>
+
+    <string name="android_test_040_question">¿Qué componente muestra progreso circular?</string>
+    <string name="android_test_040_option_1">CircularProgressIndicator</string>
+    <string name="android_test_040_option_2">CircleLoading</string>
+    <string name="android_test_040_option_3">RoundProgress</string>
+    <string name="android_test_040_option_4">LoadingCircle</string>
+    <string name="android_test_040_explanation">CircularProgressIndicator muestra carga circular.</string>
+
+    <string name="android_test_041_question">¿Qué se recomienda para separar lógica de UI?</string>
+    <string name="android_test_041_option_1">MVVM</string>
+    <string name="android_test_041_option_2">Poner todo en la pantalla</string>
+    <string name="android_test_041_option_3">Solo XML</string>
+    <string name="android_test_041_option_4">Duplicar código</string>
+    <string name="android_test_041_explanation">MVVM separa UI, estado y lógica.</string>
+
+    <string name="android_test_042_question">¿Qué significa APK?</string>
+    <string name="android_test_042_option_1">Android Package</string>
+    <string name="android_test_042_option_2">Android Public Kernel</string>
+    <string name="android_test_042_option_3">App Private Key</string>
+    <string name="android_test_042_option_4">Android Preview Kit</string>
+    <string name="android_test_042_explanation">APK es el paquete instalable de Android.</string>
+
+    <string name="android_test_043_question">¿Qué formato moderno distribuye apps en Google Play?</string>
+    <string name="android_test_043_option_1">AAB</string>
+    <string name="android_test_043_option_2">ZIP</string>
+    <string name="android_test_043_option_3">JAR</string>
+    <string name="android_test_043_option_4">WAR</string>
+    <string name="android_test_043_explanation">AAB significa Android App Bundle.</string>
+
+    <string name="android_test_044_question">¿Qué archivo suele contener colores personalizados?</string>
+    <string name="android_test_044_option_1">colors.xml</string>
+    <string name="android_test_044_option_2">AndroidManifest.xml</string>
+    <string name="android_test_044_option_3">gradle.properties</string>
+    <string name="android_test_044_option_4">MainActivity.kt</string>
+    <string name="android_test_044_explanation">colors.xml puede declarar colores.</string>
+
+    <string name="android_test_045_question">¿Qué recurso se usa para imágenes vectoriales?</string>
+    <string name="android_test_045_option_1">VectorDrawable</string>
+    <string name="android_test_045_option_2">StringVector</string>
+    <string name="android_test_045_option_3">LayoutVector</string>
+    <string name="android_test_045_option_4">ComposeManifest</string>
+    <string name="android_test_045_explanation">VectorDrawable representa gráficos vectoriales.</string>
+
+    <string name="android_test_046_question">¿Qué permiso permite acceso a Internet?</string>
+    <string name="android_test_046_option_1">android.permission.INTERNET</string>
+    <string name="android_test_046_option_2">android.permission.NET</string>
+    <string name="android_test_046_option_3">android.permission.WIFI_ONLY</string>
+    <string name="android_test_046_option_4">android.permission.HTTP</string>
+    <string name="android_test_046_explanation">INTERNET permite acceso a red.</string>
+
+    <string name="android_test_047_question">¿Qué función se usa para lanzar previews en Android Studio?</string>
+    <string name="android_test_047_option_1">\@Preview</string>
+    <string name="android_test_047_option_2">\@ComposablePreviewOnly</string>
+    <string name="android_test_047_option_3">\@ShowUI</string>
+    <string name="android_test_047_option_4">\@Design</string>
+    <string name="android_test_047_explanation">\@Preview muestra composables en el panel de diseño.</string>
+
+    <string name="android_test_048_question">¿Qué problema evita usar estado observable en Compose?</string>
+    <string name="android_test_048_option_1">Que la UI no se actualice al cambiar datos</string>
+    <string name="android_test_048_option_2">Que Gradle compile</string>
+    <string name="android_test_048_option_3">Que el Manifest exista</string>
+    <string name="android_test_048_option_4">Que el APK pese menos</string>
+    <string name="android_test_048_explanation">El estado observable provoca recomposición.</string>
+
+    <string name="android_test_049_question">¿Qué es un estado hoisted?</string>
+    <string name="android_test_049_option_1">Estado elevado al padre</string>
+    <string name="android_test_049_option_2">Estado borrado</string>
+    <string name="android_test_049_option_3">Estado de Firebase</string>
+    <string name="android_test_049_option_4">Estado de Gradle</string>
+    <string name="android_test_049_explanation">State hoisting mueve el estado a un composable superior.</string>
+
+    <string name="android_test_050_question">¿Qué principio recomienda que una función composable no modifique estado global sin control?</string>
+    <string name="android_test_050_option_1">Unidirectional data flow</string>
+    <string name="android_test_050_option_2">Two-way mandatory flow</string>
+    <string name="android_test_050_option_3">Global mutable UI</string>
+    <string name="android_test_050_option_4">Manifest first</string>
+    <string name="android_test_050_explanation">El flujo unidireccional ayuda a mantener UI predecible.</string>
+
+    <string name="android_tf_001_question">Jetpack Compose usa funciones composables para construir UI.</string>
+    <string name="android_tf_001_explanation">Compose se basa en funciones anotadas con @Composable.</string>
+    <string name="android_tf_002_question">mutableStateOf permite que Compose observe cambios de estado.</string>
+    <string name="android_tf_002_explanation">Cuando cambia un estado observado, Compose puede recomponer.</string>
+    <string name="android_tf_003_question">NavController sirve para navegar entre pantallas.</string>
+    <string name="android_tf_003_explanation">NavController gestiona navegación en Navigation Compose.</string>
+    <string name="android_tf_004_question">Column coloca elementos verticalmente.</string>
+    <string name="android_tf_004_explanation">Column organiza hijos en vertical.</string>
+    <string name="android_tf_005_question">Row coloca elementos verticalmente.</string>
+    <string name="android_tf_005_explanation">Row coloca elementos horizontalmente.</string>
+    <string name="android_tf_006_question">Box permite superponer elementos.</string>
+    <string name="android_tf_006_explanation">Box puede colocar elementos en capas.</string>
+    <string name="android_tf_007_question">Text muestra texto en Compose.</string>
+    <string name="android_tf_007_explanation">Text es el composable básico de texto.</string>
+    <string name="android_tf_008_question">Button no puede tener onClick.</string>
+    <string name="android_tf_008_explanation">Button usa onClick para manejar pulsaciones.</string>
+    <string name="android_tf_009_question">Modifier permite aplicar padding, tamaño o click.</string>
+    <string name="android_tf_009_explanation">Modifier configura composables.</string>
+    <string name="android_tf_010_question">fillMaxSize() intenta ocupar todo el espacio disponible.</string>
+    <string name="android_tf_010_explanation">fillMaxSize ocupa el tamaño máximo.</string>
+    <string name="android_tf_011_question">remember conserva valores durante recomposiciones.</string>
+    <string name="android_tf_011_explanation">remember mantiene estado en memoria.</string>
+    <string name="android_tf_012_question">rememberSaveable puede conservar estado ante recreaciones simples.</string>
+    <string name="android_tf_012_explanation">rememberSaveable usa mecanismos salvables.</string>
+    <string name="android_tf_013_question">La recomposición significa reinstalar la app.</string>
+    <string name="android_tf_013_explanation">Recomposición es volver a ejecutar composables afectados.</string>
+    <string name="android_tf_014_question">LaunchedEffect puede lanzar una corrutina desde Compose.</string>
+    <string name="android_tf_014_explanation">LaunchedEffect ejecuta efectos suspendidos.</string>
+    <string name="android_tf_015_question">NavHost contiene rutas composables.</string>
+    <string name="android_tf_015_explanation">NavHost define las pantallas navegables.</string>
+    <string name="android_tf_016_question">rememberNavController() crea un controlador de navegación.</string>
+    <string name="android_tf_016_explanation">rememberNavController crea NavController.</string>
+    <string name="android_tf_017_question">navigate("profile") funciona aunque no exista ruta profile.</string>
+    <string name="android_tf_017_explanation">La ruta debe estar registrada.</string>
+    <string name="android_tf_018_question">ViewModel ayuda a separar estado y lógica de UI.</string>
+    <string name="android_tf_018_explanation">ViewModel evita meter toda la lógica en la pantalla.</string>
+    <string name="android_tf_019_question">AndroidManifest.xml puede declarar permisos.</string>
+    <string name="android_tf_019_explanation">Los permisos se declaran en el manifest.</string>
+    <string name="android_tf_020_question">MainActivity suele ser el punto de entrada visual de la app.</string>
+    <string name="android_tf_020_explanation">MainActivity suele arrancar la UI.</string>
+    <string name="android_tf_021_question">setContent se usa para definir contenido Compose en una Activity.</string>
+    <string name="android_tf_021_explanation">setContent coloca el árbol Compose.</string>
+    <string name="android_tf_022_question">strings.xml sirve para textos traducibles.</string>
+    <string name="android_tf_022_explanation">strings.xml permite internacionalización.</string>
+    <string name="android_tf_023_question">Gradle suele compilar proyectos Android.</string>
+    <string name="android_tf_023_explanation">Android usa Gradle.</string>
+    <string name="android_tf_024_question">build.gradle.kts puede declarar dependencias.</string>
+    <string name="android_tf_024_explanation">El Gradle del módulo declara dependencias.</string>
+    <string name="android_tf_025_question">MaterialTheme define colores, tipografías y formas.</string>
+    <string name="android_tf_025_explanation">MaterialTheme aplica diseño Material.</string>
+    <string name="android_tf_026_question">LazyColumn es mejor que Column para listas largas.</string>
+    <string name="android_tf_026_explanation">LazyColumn compone elementos según necesidad.</string>
+    <string name="android_tf_027_question">LazyRow muestra listas verticales.</string>
+    <string name="android_tf_027_explanation">LazyRow muestra listas horizontales.</string>
+    <string name="android_tf_028_question">collectAsState permite observar un Flow en Compose.</string>
+    <string name="android_tf_028_explanation">collectAsState convierte emisiones en estado Compose.</string>
+    <string name="android_tf_029_question">TextField permite entrada de texto.</string>
+    <string name="android_tf_029_explanation">TextField es un campo de entrada.</string>
+    <string name="android_tf_030_question">CircularProgressIndicator muestra progreso circular.</string>
+    <string name="android_tf_030_explanation">Es un indicador circular.</string>
+    <string name="android_tf_031_question">LinearProgressIndicator muestra progreso lineal.</string>
+    <string name="android_tf_031_explanation">Es un indicador lineal.</string>
+    <string name="android_tf_032_question">\@Preview sirve para ver composables en Android Studio.</string>
+    <string name="android_tf_032_explanation">\@Preview genera vista previa.</string>
+    <string name="android_tf_033_question">painterResource puede cargar imágenes de recursos.</string>
+    <string name="android_tf_033_explanation">painterResource carga recursos gráficos.</string>
+    <string name="android_tf_034_question">MVVM ayuda a separar responsabilidades.</string>
+    <string name="android_tf_034_explanation">MVVM separa modelo, vista y lógica/estado.</string>
+    <string name="android_tf_035_question">APK es un paquete instalable Android.</string>
+    <string name="android_tf_035_explanation">APK contiene la app instalable.</string>
+    <string name="android_tf_036_question">AAB es un formato moderno para distribución en Google Play.</string>
+    <string name="android_tf_036_explanation">Android App Bundle se usa para distribución.</string>
+    <string name="android_tf_037_question">INTERNET se declara como permiso para usar red.</string>
+    <string name="android_tf_037_explanation">android.permission.INTERNET permite red.</string>
+    <string name="android_tf_038_question">Un estado normal var count = 0 siempre recompone automáticamente.</string>
+    <string name="android_tf_038_explanation">Debe ser estado observable para recomponer.</string>
+    <string name="android_tf_039_question">State hoisting significa elevar el estado al padre.</string>
+    <string name="android_tf_039_explanation">State hoisting mueve el estado hacia arriba.</string>
+    <string name="android_tf_040_question">El flujo unidireccional de datos ayuda a hacer la UI predecible.</string>
+    <string name="android_tf_040_explanation">UDF evita estados caóticos.</string>
+    <string name="android_tf_041_question">Una función composable debería ser lo más predecible posible.</string>
+    <string name="android_tf_041_explanation">La predictibilidad facilita recomposición y mantenimiento.</string>
+    <string name="android_tf_042_question">Una recomposición debería usarse para hacer operaciones pesadas directamente.</string>
+    <string name="android_tf_042_explanation">Las operaciones pesadas deben evitarse en recomposición.</string>
+    <string name="android_tf_043_question">La UI declarativa describe qué mostrar según el estado.</string>
+    <string name="android_tf_043_explanation">Compose describe UI en función del estado.</string>
+    <string name="android_tf_044_question">Cambiar un State observado puede provocar recomposición.</string>
+    <string name="android_tf_044_explanation">Compose reacciona a cambios de estado.</string>
+    <string name="android_tf_045_question">Una Activity puede contener Compose.</string>
+    <string name="android_tf_045_explanation">setContent permite usar Compose en Activity.</string>
+    <string name="android_tf_046_question">Los recursos drawable pueden contener imágenes.</string>
+    <string name="android_tf_046_explanation">drawable almacena recursos gráficos.</string>
+    <string name="android_tf_047_question">res/values puede contener strings.xml y colors.xml.</string>
+    <string name="android_tf_047_explanation">values contiene recursos de valores.</string>
+    <string name="android_tf_048_question">Una ruta con argumentos puede definirse en Navigation Compose.</string>
+    <string name="android_tf_048_explanation">Navigation Compose permite argumentos.</string>
+    <string name="android_tf_049_question">popUpTo puede limpiar parte del back stack.</string>
+    <string name="android_tf_049_explanation">popUpTo controla la pila de navegación.</string>
+    <string name="android_tf_050_question">Composable y ViewModel deberían ser exactamente lo mismo.</string>
+    <string name="android_tf_050_explanation">Composable dibuja UI; ViewModel gestiona estado/lógica.</string>
+
+    <!-- Android complete code questions -->
+    <string name="android_code_001_question">Completa el código:\n\n____\nfun HomeScreen() { }</string>
+    <string name="android_code_001_option_1">\@Composable</string>
+    <string name="android_code_001_option_2">\@Screen</string>
+    <string name="android_code_001_option_3">\@PreviewOnly</string>
+    <string name="android_code_001_option_4">\@Android</string>
+    <string name="android_code_001_explanation">\@Composable marca una función de UI Compose.</string>
+
+    <string name="android_code_002_question">Completa el código:\n\nvar name by remember { ____(\"\") }</string>
+    <string name="android_code_002_option_1">mutableStateOf</string>
+    <string name="android_code_002_option_2">state</string>
+    <string name="android_code_002_option_3">rememberState</string>
+    <string name="android_code_002_option_4">liveData</string>
+    <string name="android_code_002_explanation">mutableStateOf crea un estado observable.</string>
+
+    <string name="android_code_003_question">Completa el código:\n\nColumn(modifier = Modifier.____()) { }</string>
+    <string name="android_code_003_option_1">fillMaxSize</string>
+    <string name="android_code_003_option_2">full</string>
+    <string name="android_code_003_option_3">match</string>
+    <string name="android_code_003_option_4">expandAll</string>
+    <string name="android_code_003_explanation">fillMaxSize() ocupa todo el espacio disponible.</string>
+
+    <string name="android_code_004_question">Completa el código:\n\n____(\"Hola\")</string>
+    <string name="android_code_004_option_1">Text</string>
+    <string name="android_code_004_option_2">Label</string>
+    <string name="android_code_004_option_3">Paragraph</string>
+    <string name="android_code_004_option_4">SpanText</string>
+    <string name="android_code_004_explanation">Text muestra texto.</string>
+
+    <string name="android_code_005_question">Completa el código:\n\n____(onClick = { }) { Text(\"OK\") }</string>
+    <string name="android_code_005_option_1">Button</string>
+    <string name="android_code_005_option_2">Pressable</string>
+    <string name="android_code_005_option_3">Click</string>
+    <string name="android_code_005_option_4">ActionButtonOnly</string>
+    <string name="android_code_005_explanation">Button crea un botón.</string>
+
+    <string name="android_code_006_question">Completa el código:\n\n____ { Text(\"A\") Text(\"B\") }</string>
+    <string name="android_code_006_option_1">Column</string>
+    <string name="android_code_006_option_2">Text</string>
+    <string name="android_code_006_option_3">Button</string>
+    <string name="android_code_006_option_4">Modifier</string>
+    <string name="android_code_006_explanation">Column puede agrupar elementos en vertical.</string>
+
+    <string name="android_code_007_question">Completa el código:\n\n____ { Text(\"A\") Text(\"B\") }</string>
+    <string name="android_code_007_option_1">Row</string>
+    <string name="android_code_007_option_2">TextField</string>
+    <string name="android_code_007_option_3">Button</string>
+    <string name="android_code_007_option_4">Theme</string>
+    <string name="android_code_007_explanation">Row puede agrupar elementos en horizontal.</string>
+
+    <string name="android_code_008_question">Completa el código:\n\n____ { Text(\"Capa\") }</string>
+    <string name="android_code_008_option_1">Box</string>
+    <string name="android_code_008_option_2">Route</string>
+    <string name="android_code_008_option_3">Manifest</string>
+    <string name="android_code_008_option_4">Gradle</string>
+    <string name="android_code_008_explanation">Box permite superposición.</string>
+
+    <string name="android_code_009_question">Completa el código:\n\nModifier.____(16.dp)</string>
+    <string name="android_code_009_option_1">padding</string>
+    <string name="android_code_009_option_2">margin</string>
+    <string name="android_code_009_option_3">inside</string>
+    <string name="android_code_009_option_4">space</string>
+    <string name="android_code_009_explanation">padding añade espacio interior.</string>
+
+    <string name="android_code_010_question">Completa el código:\n\nModifier.____ { onClick() }</string>
+    <string name="android_code_010_option_1">clickable</string>
+    <string name="android_code_010_option_2">tap</string>
+    <string name="android_code_010_option_3">press</string>
+    <string name="android_code_010_option_4">action</string>
+    <string name="android_code_010_explanation">clickable hace un composable pulsable.</string>
+
+    <string name="android_code_011_question">Completa el código:\n\nval navController = ____()</string>
+    <string name="android_code_011_option_1">rememberNavController</string>
+    <string name="android_code_011_option_2">createNavController</string>
+    <string name="android_code_011_option_3">navRemember</string>
+    <string name="android_code_011_option_4">newNav</string>
+    <string name="android_code_011_explanation">rememberNavController crea NavController.</string>
+
+    <string name="android_code_012_question">Completa el código:\n\n____(navController, startDestination = \"home\") { }</string>
+    <string name="android_code_012_option_1">NavHost</string>
+    <string name="android_code_012_option_2">NavGraphOnly</string>
+    <string name="android_code_012_option_3">RouteHost</string>
+    <string name="android_code_012_option_4">ScreenHost</string>
+    <string name="android_code_012_explanation">NavHost define rutas.</string>
+
+    <string name="android_code_013_question">Completa el código:\n\n____(\"home\") { HomeScreen() }</string>
+    <string name="android_code_013_option_1">composable</string>
+    <string name="android_code_013_option_2">screen</string>
+    <string name="android_code_013_option_3">route</string>
+    <string name="android_code_013_option_4">destinationOnly</string>
+    <string name="android_code_013_explanation">composable declara una ruta Compose.</string>
+
+    <string name="android_code_014_question">Completa el código:\n\nnavController.____(\"profile\")</string>
+    <string name="android_code_014_option_1">navigate</string>
+    <string name="android_code_014_option_2">go</string>
+    <string name="android_code_014_option_3">open</string>
+    <string name="android_code_014_option_4">start</string>
+    <string name="android_code_014_explanation">navigate navega a una ruta.</string>
+
+    <string name="android_code_015_question">Completa el código:\n\n____ { delay(1000) }</string>
+    <string name="android_code_015_option_1">LaunchedEffect(Unit)</string>
+    <string name="android_code_015_option_2">remember(Unit)</string>
+    <string name="android_code_015_option_3">Column(Unit)</string>
+    <string name="android_code_015_option_4">SideText(Unit)</string>
+    <string name="android_code_015_explanation">LaunchedEffect ejecuta una corrutina.</string>
+
+    <string name="android_code_016_question">Completa el código:\n\nvar count by ____ { mutableStateOf(0) }</string>
+    <string name="android_code_016_option_1">remember</string>
+    <string name="android_code_016_option_2">save</string>
+    <string name="android_code_016_option_3">store</string>
+    <string name="android_code_016_option_4">hold</string>
+    <string name="android_code_016_explanation">remember conserva estado entre recomposiciones.</string>
+
+    <string name="android_code_017_question">Completa el código:\n\nvar text by ____ { mutableStateOf(\"\") }</string>
+    <string name="android_code_017_option_1">rememberSaveable</string>
+    <string name="android_code_017_option_2">saveAlways</string>
+    <string name="android_code_017_option_3">rememberHard</string>
+    <string name="android_code_017_option_4">stateForever</string>
+    <string name="android_code_017_explanation">rememberSaveable conserva estado salvable.</string>
+
+    <string name="android_code_018_question">Completa el código:\n\n____(value = name, onValueChange = { name = it })</string>
+    <string name="android_code_018_option_1">TextField</string>
+    <string name="android_code_018_option_2">Text</string>
+    <string name="android_code_018_option_3">InputOnly</string>
+    <string name="android_code_018_option_4">Label</string>
+    <string name="android_code_018_explanation">TextField permite entrada de texto.</string>
+
+    <string name="android_code_019_question">Completa el código:\n\n____()</string>
+    <string name="android_code_019_option_1">CircularProgressIndicator</string>
+    <string name="android_code_019_option_2">CircleLoadingOnly</string>
+    <string name="android_code_019_option_3">ProgressCircleView</string>
+    <string name="android_code_019_option_4">LoadingRound</string>
+    <string name="android_code_019_explanation">CircularProgressIndicator muestra carga circular.</string>
+
+    <string name="android_code_020_question">Completa el código:\n\n____(progress = { 0.5f })</string>
+    <string name="android_code_020_option_1">LinearProgressIndicator</string>
+    <string name="android_code_020_option_2">LineLoading</string>
+    <string name="android_code_020_option_3">ProgressBarOnly</string>
+    <string name="android_code_020_option_4">HorizontalLoading</string>
+    <string name="android_code_020_explanation">LinearProgressIndicator muestra progreso lineal.</string>
+
+    <string name="android_code_021_question">Completa el código:\n\n____ { Text(\"Card\") }</string>
+    <string name="android_code_021_option_1">Card</string>
+    <string name="android_code_021_option_2">Panel</string>
+    <string name="android_code_021_option_3">Tile</string>
+    <string name="android_code_021_option_4">Frame</string>
+    <string name="android_code_021_explanation">Card crea una tarjeta Material.</string>
+
+    <string name="android_code_022_question">Completa el código:\n\n____ { Text(\"Surface\") }</string>
+    <string name="android_code_022_option_1">Surface</string>
+    <string name="android_code_022_option_2">Layer</string>
+    <string name="android_code_022_option_3">BackgroundOnly</string>
+    <string name="android_code_022_option_4">MaterialBox</string>
+    <string name="android_code_022_explanation">Surface es un contenedor Material.</string>
+
+    <string name="android_code_023_question">Completa el código:\n\n____ { items(lista) { item -&gt; Text(item) } }</string>
+    <string name="android_code_023_option_1">LazyColumn</string>
+    <string name="android_code_023_option_2">Column</string>
+    <string name="android_code_023_option_3">Row</string>
+    <string name="android_code_023_option_4">Box</string>
+    <string name="android_code_023_explanation">LazyColumn muestra listas verticales.</string>
+
+    <string name="android_code_024_question">Completa el código:\n\n____ { items(lista) { item -&gt; Text(item) } }</string>
+    <string name="android_code_024_option_1">LazyRow</string>
+    <string name="android_code_024_option_2">Row</string>
+    <string name="android_code_024_option_3">Column</string>
+    <string name="android_code_024_option_4">Box</string>
+    <string name="android_code_024_explanation">LazyRow muestra listas horizontales.</string>
+
+    <string name="android_code_025_question">Completa el código:\n\nval state by flow.____()</string>
+    <string name="android_code_025_option_1">collectAsState</string>
+    <string name="android_code_025_option_2">toState</string>
+    <string name="android_code_025_option_3">observe</string>
+    <string name="android_code_025_option_4">asMutableState</string>
+    <string name="android_code_025_explanation">collectAsState observa un Flow.</string>
+
+    <string name="android_code_026_question">Completa el código:\n\nImage(painter = ____(R.drawable.logo), contentDescription = null)</string>
+    <string name="android_code_026_option_1">painterResource</string>
+    <string name="android_code_026_option_2">imageResource</string>
+    <string name="android_code_026_option_3">drawablePainter</string>
+    <string name="android_code_026_option_4">rememberImage</string>
+    <string name="android_code_026_explanation">painterResource carga recursos drawable.</string>
+
+    <string name="android_code_027_question">Completa el código:\n\n____\nfun PreviewHome() { HomeScreen() }</string>
+    <string name="android_code_027_option_1">\@Preview</string>
+    <string name="android_code_027_option_2">\@Design</string>
+    <string name="android_code_027_option_3">\@Show</string>
+    <string name="android_code_027_option_4">\@PreviewComposableOnly</string>
+    <string name="android_code_027_explanation">\@Preview genera vista previa.</string>
+
+    <string name="android_code_028_question">Completa el código:\n\nclass HomeViewModel : ____()</string>
+    <string name="android_code_028_option_1">ViewModel</string>
+    <string name="android_code_028_option_2">Activity</string>
+    <string name="android_code_028_option_3">Composable</string>
+    <string name="android_code_028_option_4">Modifier</string>
+    <string name="android_code_028_explanation">ViewModel gestiona estado/lógica.</string>
+
+    <string name="android_code_029_question">Completa el código:\n\nclass MainActivity : ____()</string>
+    <string name="android_code_029_option_1">ComponentActivity</string>
+    <string name="android_code_029_option_2">Composable</string>
+    <string name="android_code_029_option_3">ViewModel</string>
+    <string name="android_code_029_option_4">Modifier</string>
+    <string name="android_code_029_explanation">ComponentActivity puede usar setContent.</string>
+
+    <string name="android_code_030_question">Completa el código:\n\nsetContent { ____() }</string>
+    <string name="android_code_030_option_1">App</string>
+    <string name="android_code_030_option_2">AndroidManifest</string>
+    <string name="android_code_030_option_3">Gradle</string>
+    <string name="android_code_030_option_4">Strings</string>
+    <string name="android_code_030_explanation">setContent recibe contenido composable.</string>
+
+    <string name="android_code_031_question">Completa el XML:\n\n&lt;uses-permission android:name=\"____\" /&gt;</string>
+    <string name="android_code_031_option_1">android.permission.INTERNET</string>
+    <string name="android_code_031_option_2">android.permission.NET_ONLY</string>
+    <string name="android_code_031_option_3">INTERNET_ONLY</string>
+    <string name="android_code_031_option_4">android.net.permission</string>
+    <string name="android_code_031_explanation">INTERNET permite acceso a red.</string>
+
+    <string name="android_code_032_question">Completa el recurso:\n\n&lt;string name=\"app_name\"&gt;____&lt;/string&gt;</string>
+    <string name="android_code_032_option_1">I-Wivo</string>
+    <string name="android_code_032_option_2">\@Composable</string>
+    <string name="android_code_032_option_3">MainActivity</string>
+    <string name="android_code_032_option_4">android</string>
+    <string name="android_code_032_explanation">strings.xml almacena textos.</string>
+
+    <string name="android_code_033_question">Completa el Gradle:\n\nplugins { id(\"____\") }</string>
+    <string name="android_code_033_option_1">com.android.application</string>
+    <string name="android_code_033_option_2">android.compose.only</string>
+    <string name="android_code_033_option_3">kotlin.ui</string>
+    <string name="android_code_033_option_4">firebase.android.always</string>
+    <string name="android_code_033_explanation">com.android.application aplica plugin Android app.</string>
+
+    <string name="android_code_034_question">Completa el código:\n\nMaterialTheme { ____ }</string>
+    <string name="android_code_034_option_1">content()</string>
+    <string name="android_code_034_option_2">manifest()</string>
+    <string name="android_code_034_option_3">gradle()</string>
+    <string name="android_code_034_option_4">permission()</string>
+    <string name="android_code_034_explanation">MaterialTheme envuelve contenido visual.</string>
+
+    <string name="android_code_035_question">Completa el código:\n\nModifier.____(24.dp)</string>
+    <string name="android_code_035_option_1">size</string>
+    <string name="android_code_035_option_2">text</string>
+    <string name="android_code_035_option_3">route</string>
+    <string name="android_code_035_option_4">manifest</string>
+    <string name="android_code_035_explanation">size define tamaño.</string>
+
+    <string name="android_code_036_question">Completa el código:\n\nModifier.____()</string>
+    <string name="android_code_036_option_1">fillMaxWidth</string>
+    <string name="android_code_036_option_2">fullWidthNow</string>
+    <string name="android_code_036_option_3">matchWidthOnly</string>
+    <string name="android_code_036_option_4">widthAll</string>
+    <string name="android_code_036_explanation">fillMaxWidth ocupa el ancho máximo.</string>
+
+    <string name="android_code_037_question">Completa el código:\n\nSpacer(modifier = Modifier.____(16.dp))</string>
+    <string name="android_code_037_option_1">height</string>
+    <string name="android_code_037_option_2">text</string>
+    <string name="android_code_037_option_3">route</string>
+    <string name="android_code_037_option_4">screen</string>
+    <string name="android_code_037_explanation">height define altura.</string>
+
+    <string name="android_code_038_question">Completa el código:\n\nText(text = stringResource(R.string.____))</string>
+    <string name="android_code_038_option_1">app_name</string>
+    <string name="android_code_038_option_2">\@Composable</string>
+    <string name="android_code_038_option_3">MainActivity</string>
+    <string name="android_code_038_option_4">drawable</string>
+    <string name="android_code_038_explanation">stringResource lee strings.</string>
+
+    <string name="android_code_039_question">Completa el código:\n\nval context = ____</string>
+    <string name="android_code_039_option_1">LocalContext.current</string>
+    <string name="android_code_039_option_2">Context.now</string>
+    <string name="android_code_039_option_3">Android.context</string>
+    <string name="android_code_039_option_4">Manifest.context</string>
+    <string name="android_code_039_explanation">LocalContext.current obtiene Context en Compose.</string>
+
+    <string name="android_code_040_question">Completa el código:\n\nval color = MaterialTheme.colorScheme.____</string>
+    <string name="android_code_040_option_1">primary</string>
+    <string name="android_code_040_option_2">mainColorOnly</string>
+    <string name="android_code_040_option_3">route</string>
+    <string name="android_code_040_option_4">manifest</string>
+    <string name="android_code_040_explanation">colorScheme.primary accede al color primario.</string>
+
+    <string name="android_code_041_question">Completa el código:\n\nText(style = MaterialTheme.typography.____)</string>
+    <string name="android_code_041_option_1">bodyMedium</string>
+    <string name="android_code_041_option_2">fontMain</string>
+    <string name="android_code_041_option_3">textNormalOnly</string>
+    <string name="android_code_041_option_4">route</string>
+    <string name="android_code_041_explanation">typography.bodyMedium es un estilo tipográfico.</string>
+
+    <string name="android_code_042_question">Completa el código:\n\nRow(horizontalArrangement = Arrangement.____) { }</string>
+    <string name="android_code_042_option_1">SpaceBetween</string>
+    <string name="android_code_042_option_2">BetweenOnly</string>
+    <string name="android_code_042_option_3">Middle</string>
+    <string name="android_code_042_option_4">Route</string>
+    <string name="android_code_042_explanation">SpaceBetween separa elementos.</string>
+
+    <string name="android_code_043_question">Completa el código:\n\nColumn(horizontalAlignment = Alignment.____) { }</string>
+    <string name="android_code_043_option_1">CenterHorizontally</string>
+    <string name="android_code_043_option_2">CenterVertical</string>
+    <string name="android_code_043_option_3">Middle</string>
+    <string name="android_code_043_option_4">CenterRoute</string>
+    <string name="android_code_043_explanation">CenterHorizontally centra horizontalmente.</string>
+
+    <string name="android_code_044_question">Completa el código:\n\nBox(contentAlignment = Alignment.____) { }</string>
+    <string name="android_code_044_option_1">Center</string>
+    <string name="android_code_044_option_2">MiddleOnly</string>
+    <string name="android_code_044_option_3">CenterText</string>
+    <string name="android_code_044_option_4">CenterRoute</string>
+    <string name="android_code_044_explanation">Alignment.Center centra contenido.</string>
+
+    <string name="android_code_045_question">Completa el código:\n\nModifier.verticalScroll(____())</string>
+    <string name="android_code_045_option_1">rememberScrollState</string>
+    <string name="android_code_045_option_2">scrollState</string>
+    <string name="android_code_045_option_3">verticalState</string>
+    <string name="android_code_045_option_4">rememberList</string>
+    <string name="android_code_045_explanation">rememberScrollState crea estado de scroll.</string>
+
+    <string name="android_code_046_question">Completa el código:\n\nAnimatedContent(targetState = value, label = \"____\") { }</string>
+    <string name="android_code_046_option_1">transition</string>
+    <string name="android_code_046_option_2">manifest</string>
+    <string name="android_code_046_option_3">gradle</string>
+    <string name="android_code_046_option_4">permission</string>
+    <string name="android_code_046_explanation">label describe la animación.</string>
+
+    <string name="android_code_047_question">Completa el código:\n\nval scale by animateFloatAsState(targetValue = 1f, label = \"____\")</string>
+    <string name="android_code_047_option_1">scale</string>
+    <string name="android_code_047_option_2">manifest</string>
+    <string name="android_code_047_option_3">stateFile</string>
+    <string name="android_code_047_option_4">activity</string>
+    <string name="android_code_047_explanation">animateFloatAsState anima valores Float.</string>
+
+    <string name="android_code_048_question">Completa el código:\n\nval color by animateColorAsState(targetValue = Color.Red, label = \"____\")</string>
+    <string name="android_code_048_option_1">color</string>
+    <string name="android_code_048_option_2">route</string>
+    <string name="android_code_048_option_3">xml</string>
+    <string name="android_code_048_option_4">gradle</string>
+    <string name="android_code_048_explanation">animateColorAsState anima colores.</string>
+
+    <string name="android_code_049_question">Completa el código:\n\nnavArgument(\"id\") { type = NavType.____ }</string>
+    <string name="android_code_049_option_1">StringType</string>
+    <string name="android_code_049_option_2">String</string>
+    <string name="android_code_049_option_3">Text</string>
+    <string name="android_code_049_option_4">RouteString</string>
+    <string name="android_code_049_explanation">NavType.StringType define argumento String.</string>
+
+    <string name="android_code_050_question">Completa el código:\n\npopUpTo(Screen.Home.route) { inclusive = ____ }</string>
+    <string name="android_code_050_option_1">true</string>
+    <string name="android_code_050_option_2">"true"</string>
+    <string name="android_code_050_option_3">yes</string>
+    <string name="android_code_050_option_4">1 only</string>
+    <string name="android_code_050_explanation">inclusive acepta Boolean.</string>
+
+    <!-- Android match concept questions -->
+    <string name="android_match_001_question">Relaciona el concepto: recomposición</string>
+    <string name="android_match_001_option_1">Proceso de redibujar UI cuando cambia el estado</string>
+    <string name="android_match_001_option_2">Instalar APK</string>
+    <string name="android_match_001_option_3">Borrar caché</string>
+    <string name="android_match_001_option_4">Crear base de datos</string>
+    <string name="android_match_001_explanation">Compose recompone partes de la UI al cambiar el estado.</string>
+
+    <string name="android_match_002_question">Relaciona el concepto: Modifier</string>
+    <string name="android_match_002_option_1">Objeto para configurar tamaño, padding, click, etc.</string>
+    <string name="android_match_002_option_2">Base de datos</string>
+    <string name="android_match_002_option_3">Ruta de navegación</string>
+    <string name="android_match_002_option_4">Archivo Gradle</string>
+    <string name="android_match_002_explanation">Modifier permite decorar y configurar composables.</string>
+
+    <string name="android_match_003_question">Relaciona el concepto: ViewModel</string>
+    <string name="android_match_003_option_1">Clase para gestionar estado/lógica de UI</string>
+    <string name="android_match_003_option_2">Botón visual</string>
+    <string name="android_match_003_option_3">Archivo XML</string>
+    <string name="android_match_003_option_4">Tema de colores</string>
+    <string name="android_match_003_explanation">ViewModel separa lógica y estado de la pantalla.</string>
+
+    <string name="android_match_004_question">Relaciona el concepto: NavHost</string>
+    <string name="android_match_004_option_1">Contenedor de rutas de navegación</string>
+    <string name="android_match_004_option_2">Campo de texto</string>
+    <string name="android_match_004_option_3">Imagen vectorial</string>
+    <string name="android_match_004_option_4">Permiso de cámara</string>
+    <string name="android_match_004_explanation">NavHost define destinos navegables.</string>
+
+    <string name="android_match_005_question">Relaciona el concepto: State hoisting</string>
+    <string name="android_match_005_option_1">Elevar estado al composable padre</string>
+    <string name="android_match_005_option_2">Borrar estado</string>
+    <string name="android_match_005_option_3">Crear un APK</string>
+    <string name="android_match_005_option_4">Cambiar colores</string>
+    <string name="android_match_005_explanation">State hoisting facilita reutilización y control.</string>
+
+    <string name="android_match_006_question">Relaciona el concepto: LazyColumn</string>
+    <string name="android_match_006_option_1">Lista vertical eficiente</string>
+    <string name="android_match_006_option_2">Botón de Material</string>
+    <string name="android_match_006_option_3">Tema de colores</string>
+    <string name="android_match_006_option_4">Archivo XML</string>
+    <string name="android_match_006_explanation">LazyColumn compone elementos de forma perezosa.</string>
+
+    <string name="android_match_007_question">Relaciona el concepto: AndroidManifest</string>
+    <string name="android_match_007_option_1">Archivo de configuración de app, permisos y componentes</string>
+    <string name="android_match_007_option_2">Lista de preguntas</string>
+    <string name="android_match_007_option_3">Pantalla principal</string>
+    <string name="android_match_007_option_4">Función composable</string>
+    <string name="android_match_007_explanation">El manifest declara información clave de la app.</string>
+
+    <string name="android_match_008_question">Relaciona el concepto: MaterialTheme</string>
+    <string name="android_match_008_option_1">Tema visual de colores, tipografías y formas</string>
+    <string name="android_match_008_option_2">Base de datos</string>
+    <string name="android_match_008_option_3">Controlador de navegación</string>
+    <string name="android_match_008_option_4">Compilador Kotlin</string>
+    <string name="android_match_008_explanation">MaterialTheme define estilo visual.</string>
+
+    <string name="android_match_009_question">Relaciona el concepto: rememberSaveable</string>
+    <string name="android_match_009_option_1">Estado que intenta sobrevivir a recreaciones</string>
+    <string name="android_match_009_option_2">Ruta de navegación</string>
+    <string name="android_match_009_option_3">Lista horizontal</string>
+    <string name="android_match_009_option_4">Indicador de carga</string>
+    <string name="android_match_009_explanation">rememberSaveable conserva estado salvable.</string>
+
+    <string name="android_match_010_question">Relaciona el concepto: UDF</string>
+    <string name="android_match_010_option_1">Flujo unidireccional de datos</string>
+    <string name="android_match_010_option_2">Archivo de recursos</string>
+    <string name="android_match_010_option_3">Permiso de Internet</string>
+    <string name="android_match_010_option_4">Gradle plugin</string>
+    <string name="android_match_010_explanation">UDF hace más predecible la UI.</string>
+
+    <string name="android_error_001_question">Detecta el error:\n\nfun MyScreen() {\n  Text(\"Hola\")\n}</string>
+    <string name="android_error_001_option_1">Falta @Composable</string>
+    <string name="android_error_001_option_2">Text no existe</string>
+    <string name="android_error_001_option_3">Falta AndroidManifest</string>
+    <string name="android_error_001_option_4">No hay error</string>
+    <string name="android_error_001_explanation">Para usar Text en Compose, la función debe ser composable.</string>
+
+    <string name="android_error_002_question">Detecta el problema:\n\nvar count = 0\nButton(onClick = { count++ }) { Text(\"$count\") }</string>
+    <string name="android_error_002_option_1">count no es estado observable</string>
+    <string name="android_error_002_option_2">Button no puede tener onClick</string>
+    <string name="android_error_002_option_3">Text no permite variables</string>
+    <string name="android_error_002_option_4">count debe ser String</string>
+    <string name="android_error_002_explanation">Debe usarse remember/mutableStateOf para que Compose recomponga.</string>
+
+    <string name="android_error_003_question">Detecta el problema:\n\nnavController.navigate(\"profile\")\n\npero no existe composable(\"profile\")</string>
+    <string name="android_error_003_option_1">La ruta no está registrada</string>
+    <string name="android_error_003_option_2">Falta Firebase</string>
+    <string name="android_error_003_option_3">navigate solo funciona en XML</string>
+    <string name="android_error_003_option_4">No pasa nada</string>
+    <string name="android_error_003_explanation">La ruta debe estar definida en el NavHost.</string>
+
+    <string name="android_error_004_question">Detecta el error:\n\n@Composable\nfun MyScreen() {\n  val count = remember { 0 }\n}</string>
+    <string name="android_error_004_option_1">remember no crea estado mutable observable por sí solo</string>
+    <string name="android_error_004_option_2">Falta XML</string>
+    <string name="android_error_004_option_3">count debe ser String</string>
+    <string name="android_error_004_option_4">No hay error</string>
+    <string name="android_error_004_explanation">Para cambiar y observar valor usarías mutableStateOf.</string>
+
+    <string name="android_error_005_question">Detecta el problema:\n\nButton(onClick = { })\nText(\"OK\")</string>
+    <string name="android_error_005_option_1">Text no está dentro del contenido del Button</string>
+    <string name="android_error_005_option_2">Button no existe</string>
+    <string name="android_error_005_option_3">Falta Manifest</string>
+    <string name="android_error_005_option_4">onClick sobra siempre</string>
+    <string name="android_error_005_explanation">El contenido del Button debe ir dentro de las llaves.</string>
+
+    <string name="android_error_006_question">Detecta el problema:\n\nLaunchedEffect(Unit) {\n  while(true) { }\n}</string>
+    <string name="android_error_006_option_1">Bucle infinito bloqueante sin delay ni suspensión útil</string>
+    <string name="android_error_006_option_2">LaunchedEffect no existe</string>
+    <string name="android_error_006_option_3">Unit no se permite</string>
+    <string name="android_error_006_option_4">No hay problema</string>
+    <string name="android_error_006_explanation">Un bucle infinito sin suspensión puede bloquear.</string>
+
+    <string name="android_error_007_question">Detecta el problema:\n\nText(text = R.string.app_name)</string>
+    <string name="android_error_007_option_1">Falta usar stringResource</string>
+    <string name="android_error_007_option_2">Text no acepta texto</string>
+    <string name="android_error_007_option_3">R.string no existe nunca</string>
+    <string name="android_error_007_option_4">Debe ir en Manifest</string>
+    <string name="android_error_007_explanation">Text necesita String; usa stringResource(R.string.app_name).</string>
+
+    <string name="android_error_008_question">Detecta el problema:\n\nModifier.padding(\"16dp\")</string>
+    <string name="android_error_008_option_1">padding espera Dp, no String</string>
+    <string name="android_error_008_option_2">padding no existe</string>
+    <string name="android_error_008_option_3">Modifier no existe</string>
+    <string name="android_error_008_option_4">Debe ser XML</string>
+    <string name="android_error_008_explanation">Se usa 16.dp, no texto.</string>
+
+    <string name="android_error_009_question">Detecta el problema:\n\ncomposable(\"game/{id}\") { val id = it.arguments?.getInt(\"id\") }</string>
+    <string name="android_error_009_option_1">Si no declaras navArgument puede fallar el tipo esperado</string>
+    <string name="android_error_009_option_2">No se puede usar argumentos</string>
+    <string name="android_error_009_option_3">composable no recibe lambda</string>
+    <string name="android_error_009_option_4">id siempre es Boolean</string>
+    <string name="android_error_009_explanation">Conviene declarar navArgument con su tipo.</string>
+
+    <string name="android_error_010_question">Detecta el problema:\n\nHago una petición de red en cada recomposición directamente en el cuerpo del composable.</string>
+    <string name="android_error_010_option_1">Puede ejecutarse muchas veces; mejor usar efecto/ViewModel</string>
+    <string name="android_error_010_option_2">Es obligatorio hacerlo así</string>
+    <string name="android_error_010_option_3">No compila nunca</string>
+    <string name="android_error_010_option_4">Solo funciona en XML</string>
+    <string name="android_error_010_explanation">Los efectos y ViewModel controlan ejecuciones.</string>
+
+
+    <string name="android_output_001_question">¿Qué componente muestra texto en Compose?</string>
+    <string name="android_output_001_option_1">Text</string>
+    <string name="android_output_001_option_2">Label</string>
+    <string name="android_output_001_option_3">Paragraph</string>
+    <string name="android_output_001_option_4">SpanText</string>
+    <string name="android_output_001_explanation">Text muestra texto en Compose.</string>
+
+    <string name="android_output_002_question">¿Qué layout coloca elementos verticalmente?</string>
+    <string name="android_output_002_option_1">Column</string>
+    <string name="android_output_002_option_2">Row</string>
+    <string name="android_output_002_option_3">Box</string>
+    <string name="android_output_002_option_4">Card</string>
+    <string name="android_output_002_explanation">Column organiza hijos en vertical.</string>
+
+    <string name="android_output_003_question">¿Qué layout coloca elementos horizontalmente?</string>
+    <string name="android_output_003_option_1">Row</string>
+    <string name="android_output_003_option_2">Column</string>
+    <string name="android_output_003_option_3">Box</string>
+    <string name="android_output_003_option_4">Surface</string>
+    <string name="android_output_003_explanation">Row organiza hijos en horizontal.</string>
+
+    <string name="android_output_004_question">¿Qué ocurre al cambiar un mutableStateOf observado?</string>
+    <string name="android_output_004_option_1">Puede recomponer la UI</string>
+    <string name="android_output_004_option_2">Se borra la app</string>
+    <string name="android_output_004_option_3">Se cierra Android Studio</string>
+    <string name="android_output_004_option_4">No puede cambiar</string>
+    <string name="android_output_004_explanation">Compose puede recomponer composables que leen ese estado.</string>
+
+    <string name="android_output_005_question">¿Qué función leerías para cargar un string de recursos?</string>
+    <string name="android_output_005_option_1">stringResource</string>
+    <string name="android_output_005_option_2">textResourceOnly</string>
+    <string name="android_output_005_option_3">getStringComposable</string>
+    <string name="android_output_005_option_4">R.string()</string>
+    <string name="android_output_005_explanation">stringResource obtiene strings en Compose.</string>
+
+    <string name="android_output_006_question">¿Qué función usarías para navegar a profile?</string>
+    <string name="android_output_006_option_1">navController.navigate(\"profile\")</string>
+    <string name="android_output_006_option_2">navController.open(Profile)</string>
+    <string name="android_output_006_option_3">goToProfile()</string>
+    <string name="android_output_006_option_4">startComposable(\"profile\")</string>
+    <string name="android_output_006_explanation">navigate cambia de ruta.</string>
+
+    <string name="android_output_007_question">¿Qué componente usarías para una lista larga vertical?</string>
+    <string name="android_output_007_option_1">LazyColumn</string>
+    <string name="android_output_007_option_2">Column</string>
+    <string name="android_output_007_option_3">Box</string>
+    <string name="android_output_007_option_4">Surface</string>
+    <string name="android_output_007_explanation">LazyColumn es eficiente para listas largas.</string>
+
+    <string name="android_output_008_question">¿Qué componente usarías para entrada de texto?</string>
+    <string name="android_output_008_option_1">TextField</string>
+    <string name="android_output_008_option_2">Text</string>
+    <string name="android_output_008_option_3">Button</string>
+    <string name="android_output_008_option_4">Card</string>
+    <string name="android_output_008_explanation">TextField permite escribir texto.</string>
+
+    <string name="android_output_009_question">¿Qué indicador usarías para carga circular?</string>
+    <string name="android_output_009_option_1">CircularProgressIndicator</string>
+    <string name="android_output_009_option_2">LinearProgressIndicator</string>
+    <string name="android_output_009_option_3">Card</string>
+    <string name="android_output_009_option_4">Row</string>
+    <string name="android_output_009_explanation">CircularProgressIndicator muestra carga circular.</string>
+
+    <string name="android_output_010_question">¿Qué archivo tocarías para añadir permiso de Internet?</string>
+    <string name="android_output_010_option_1">AndroidManifest.xml</string>
+    <string name="android_output_010_option_2">strings.xml</string>
+    <string name="android_output_010_option_3">colors.xml</string>
+    <string name="android_output_010_option_4">MainScreen.kt</string>
+    <string name="android_output_010_explanation">Los permisos se declaran en el Manifest.</string>
+
+    <string name="android_order_001_question">Ordena la estructura básica de una pantalla Compose:</string>
+    <string name="android_order_001_option_1">\@Composable</string>
+    <string name="android_order_001_option_2">fun HomeScreen() {</string>
+    <string name="android_order_001_option_3">Column {</string>
+    <string name="android_order_001_option_4">Text(\"Hola\")</string>
+    <string name="android_order_001_explanation">Primero marcas composable, declaras función y dentro colocas UI.</string>
+
+    <string name="android_order_002_question">Ordena el flujo básico para un botón con contador:</string>
+    <string name="android_order_002_option_1">var count by remember { mutableStateOf(0) }</string>
+    <string name="android_order_002_option_2">Button(onClick = { count++ }) {</string>
+    <string name="android_order_002_option_3">Text(\"$count\")</string>
+    <string name="android_order_002_option_4">}</string>
+    <string name="android_order_002_explanation">Primero creas estado, luego botón y texto.</string>
+
+    <string name="android_order_003_question">Ordena la navegación básica:</string>
+    <string name="android_order_003_option_1">val navController = rememberNavController()</string>
+    <string name="android_order_003_option_2">NavHost(navController, startDestination = \"home\") {</string>
+    <string name="android_order_003_option_3">composable(\"home\") { HomeScreen() }</string>
+    <string name="android_order_003_option_4">navController.navigate(\"home\")</string>
+    <string name="android_order_003_explanation">Primero controlador, luego host, rutas y navegación.</string>
+
+    <string name="android_order_004_question">Ordena el flujo de una lista eficiente:</string>
+    <string name="android_order_004_option_1">LazyColumn {</string>
+    <string name="android_order_004_option_2">items(itemsList) { item -&gt;</string>
+    <string name="android_order_004_option_3">Text(item.name)</string>
+    <string name="android_order_004_option_4">}</string>
+    <string name="android_order_004_explanation">LazyColumn contiene items y cada item pinta contenido.</string>
+
+    <string name="android_order_005_question">Ordena el uso básico de ViewModel:</string>
+    <string name="android_order_005_option_1">Crear clase ViewModel</string>
+    <string name="android_order_005_option_2">Exponer estado de UI</string>
+    <string name="android_order_005_option_3">Leer estado desde la pantalla</string>
+    <string name="android_order_005_option_4">Enviar eventos desde la pantalla</string>
+    <string name="android_order_005_explanation">ViewModel expone estado y recibe eventos.</string>
+
+    <string name="android_order_006_question">Ordena el flujo para añadir un texto traducible:</string>
+    <string name="android_order_006_option_1">Añadir string en strings.xml</string>
+    <string name="android_order_006_option_2">Usar stringResource(R.string.nombre)</string>
+    <string name="android_order_006_option_3">Mostrarlo en Text</string>
+    <string name="android_order_006_option_4">Probar la pantalla</string>
+    <string name="android_order_006_explanation">Primero recurso, luego lectura y visualización.</string>
+
+    <string name="android_order_007_question">Ordena el flujo para usar una imagen drawable:</string>
+    <string name="android_order_007_option_1">Añadir imagen a res/drawable</string>
+    <string name="android_order_007_option_2">Cargar con painterResource</string>
+    <string name="android_order_007_option_3">Pasarla a Image</string>
+    <string name="android_order_007_option_4">Añadir contentDescription si procede</string>
+    <string name="android_order_007_explanation">Primero recurso, luego carga y uso.</string>
+
+    <string name="android_order_008_question">Ordena el flujo para una petición segura desde UI:</string>
+    <string name="android_order_008_option_1">Disparar evento desde UI</string>
+    <string name="android_order_008_option_2">Ejecutar lógica en ViewModel</string>
+    <string name="android_order_008_option_3">Actualizar estado</string>
+    <string name="android_order_008_option_4">La UI recompone con el nuevo estado</string>
+    <string name="android_order_008_explanation">La UI no debería hacer la lógica pesada directamente.</string>
+
+    <string name="android_order_009_question">Ordena el flujo para definir una ruta con argumento:</string>
+    <string name="android_order_009_option_1">Definir route con {id}</string>
+    <string name="android_order_009_option_2">Declarar navArgument(\"id\")</string>
+    <string name="android_order_009_option_3">Leer argumento en backStackEntry</string>
+    <string name="android_order_009_option_4">Pasarlo a la pantalla</string>
+    <string name="android_order_009_explanation">Los argumentos se definen, declaran, leen y pasan.</string>
+
+    <string name="android_order_010_question">Ordena el flujo para crear una pantalla nueva:</string>
+    <string name="android_order_010_option_1">Crear Composable de pantalla</string>
+    <string name="android_order_010_option_2">Añadir ruta en Screen</string>
+    <string name="android_order_010_option_3">Registrar composable en NavHost</string>
+    <string name="android_order_010_option_4">Navegar desde un botón</string>
+    <string name="android_order_010_explanation">Pantalla, ruta, registro y navegación.</string>
+
+    <!-- Android technical wordle questions -->
+    <string name="android_wordle_001_question">Componente que muestra texto.</string>
+    <string name="android_wordle_001_option_1">TEXT</string>
+    <string name="android_wordle_001_option_2">CARD</string>
+    <string name="android_wordle_001_option_3">ROW</string>
+    <string name="android_wordle_001_option_4">BOX</string>
+    <string name="android_wordle_001_explanation">Text muestra texto.</string>
+
+    <string name="android_wordle_002_question">Layout vertical.</string>
+    <string name="android_wordle_002_option_1">COLUMN</string>
+    <string name="android_wordle_002_option_2">ROW</string>
+    <string name="android_wordle_002_option_3">BOX</string>
+    <string name="android_wordle_002_option_4">CARD</string>
+    <string name="android_wordle_002_explanation">Column organiza en vertical.</string>
+
+    <string name="android_wordle_003_question">Layout horizontal.</string>
+    <string name="android_wordle_003_option_1">ROW</string>
+    <string name="android_wordle_003_option_2">BOX</string>
+    <string name="android_wordle_003_option_3">TEXT</string>
+    <string name="android_wordle_003_option_4">CARD</string>
+    <string name="android_wordle_003_explanation">Row organiza en horizontal.</string>
+
+    <string name="android_wordle_004_question">Contenedor que permite superposición.</string>
+    <string name="android_wordle_004_option_1">BOX</string>
+    <string name="android_wordle_004_option_2">ROW</string>
+    <string name="android_wordle_004_option_3">TEXT</string>
+    <string name="android_wordle_004_option_4">FIELD</string>
+    <string name="android_wordle_004_explanation">Box permite superponer.</string>
+
+    <string name="android_wordle_005_question">Objeto para modificar tamaño, padding y click.</string>
+    <string name="android_wordle_005_option_1">MODIFIER</string>
+    <string name="android_wordle_005_option_2">MANIFEST</string>
+    <string name="android_wordle_005_option_3">GRADLE</string>
+    <string name="android_wordle_005_option_4">DRAWABLE</string>
+    <string name="android_wordle_005_explanation">Modifier configura composables.</string>
+
+    <string name="android_wordle_006_question">Función para recordar estado.</string>
+    <string name="android_wordle_006_option_1">REMEMBER</string>
+    <string name="android_wordle_006_option_2">RECALL</string>
+    <string name="android_wordle_006_option_3">STORE</string>
+    <string name="android_wordle_006_option_4">SAVE</string>
+    <string name="android_wordle_006_explanation">remember conserva valores.</string>
+
+    <string name="android_wordle_007_question">Clase para estado/lógica de UI.</string>
+    <string name="android_wordle_007_option_1">VIEWMODEL</string>
+    <string name="android_wordle_007_option_2">ACTIVITY</string>
+    <string name="android_wordle_007_option_3">DRAWABLE</string>
+    <string name="android_wordle_007_option_4">THEME</string>
+    <string name="android_wordle_007_explanation">ViewModel gestiona estado.</string>
+
+    <string name="android_wordle_008_question">Archivo de permisos y componentes.</string>
+    <string name="android_wordle_008_option_1">MANIFEST</string>
+    <string name="android_wordle_008_option_2">STRINGS</string>
+    <string name="android_wordle_008_option_3">COLORS</string>
+    <string name="android_wordle_008_option_4">GRADLE</string>
+    <string name="android_wordle_008_explanation">AndroidManifest declara permisos.</string>
+
+    <string name="android_wordle_009_question">Contenedor de rutas Compose.</string>
+    <string name="android_wordle_009_option_1">NAVHOST</string>
+    <string name="android_wordle_009_option_2">ROUTEBOX</string>
+    <string name="android_wordle_009_option_3">SCREENMAP</string>
+    <string name="android_wordle_009_option_4">GRAPHUI</string>
+    <string name="android_wordle_009_explanation">NavHost contiene rutas.</string>
+
+    <string name="android_wordle_010_question">Proceso de actualizar UI por cambio de estado.</string>
+    <string name="android_wordle_010_option_1">RECOMPOSITION</string>
+    <string name="android_wordle_010_option_2">REINSTALL</string>
+    <string name="android_wordle_010_option_3">REBUILDAPK</string>
+    <string name="android_wordle_010_option_4">RESTARTIDE</string>
+    <string name="android_wordle_010_explanation">Recomposición actualiza UI.</string>
+
+    <!-- Android crossword questions -->
+    <string name="android_crossword_001_question">Pista: anotación de función UI Compose.</string>
+    <string name="android_crossword_001_option_1">\@Composable</string>
+    <string name="android_crossword_001_option_2">\@Screen</string>
+    <string name="android_crossword_001_option_3">\@UI</string>
+    <string name="android_crossword_001_option_4">\@Android</string>
+    <string name="android_crossword_001_explanation">\@Composable marca composables.</string>
+
+    <string name="android_crossword_002_question">Pista: layout vertical.</string>
+    <string name="android_crossword_002_option_1">Column</string>
+    <string name="android_crossword_002_option_2">Row</string>
+    <string name="android_crossword_002_option_3">Box</string>
+    <string name="android_crossword_002_option_4">Card</string>
+    <string name="android_crossword_002_explanation">Column coloca en vertical.</string>
+
+    <string name="android_crossword_003_question">Pista: layout horizontal.</string>
+    <string name="android_crossword_003_option_1">Row</string>
+    <string name="android_crossword_003_option_2">Column</string>
+    <string name="android_crossword_003_option_3">Box</string>
+    <string name="android_crossword_003_option_4">Text</string>
+    <string name="android_crossword_003_explanation">Row coloca en horizontal.</string>
+
+    <string name="android_crossword_004_question">Pista: texto en Compose.</string>
+    <string name="android_crossword_004_option_1">Text</string>
+    <string name="android_crossword_004_option_2">Label</string>
+    <string name="android_crossword_004_option_3">Span</string>
+    <string name="android_crossword_004_option_4">Paragraph</string>
+    <string name="android_crossword_004_explanation">Text muestra texto.</string>
+
+    <string name="android_crossword_005_question">Pista: estado recordado.</string>
+    <string name="android_crossword_005_option_1">remember</string>
+    <string name="android_crossword_005_option_2">store</string>
+    <string name="android_crossword_005_option_3">hold</string>
+    <string name="android_crossword_005_option_4">save</string>
+    <string name="android_crossword_005_explanation">remember conserva estado.</string>
+
+    <string name="android_crossword_006_question">Pista: navegación entre pantallas.</string>
+    <string name="android_crossword_006_option_1">NavController</string>
+    <string name="android_crossword_006_option_2">RouteButton</string>
+    <string name="android_crossword_006_option_3">ScreenText</string>
+    <string name="android_crossword_006_option_4">IntentOnly</string>
+    <string name="android_crossword_006_explanation">NavController navega.</string>
+
+    <string name="android_crossword_007_question">Pista: archivo de permisos.</string>
+    <string name="android_crossword_007_option_1">AndroidManifest.xml</string>
+    <string name="android_crossword_007_option_2">strings.xml</string>
+    <string name="android_crossword_007_option_3">colors.xml</string>
+    <string name="android_crossword_007_option_4">gradle.properties</string>
+    <string name="android_crossword_007_explanation">Manifest declara permisos.</string>
+
+    <string name="android_crossword_008_question">Pista: campo de texto.</string>
+    <string name="android_crossword_008_option_1">TextField</string>
+    <string name="android_crossword_008_option_2">Text</string>
+    <string name="android_crossword_008_option_3">InputLabel</string>
+    <string name="android_crossword_008_option_4">EditTextCompose</string>
+    <string name="android_crossword_008_explanation">TextField permite escribir.</string>
+
+    <string name="android_crossword_009_question">Pista: lista vertical eficiente.</string>
+    <string name="android_crossword_009_option_1">LazyColumn</string>
+    <string name="android_crossword_009_option_2">Column</string>
+    <string name="android_crossword_009_option_3">Row</string>
+    <string name="android_crossword_009_option_4">Box</string>
+    <string name="android_crossword_009_explanation">LazyColumn es lista vertical eficiente.</string>
+
+    <string name="android_crossword_010_question">Pista: tema Material.</string>
+    <string name="android_crossword_010_option_1">MaterialTheme</string>
+    <string name="android_crossword_010_option_2">AndroidThemeOnly</string>
+    <string name="android_crossword_010_option_3">ThemeManifest</string>
+    <string name="android_crossword_010_option_4">GradleTheme</string>
+    <string name="android_crossword_010_explanation">MaterialTheme aplica tema visual.</string>
+
+</resources>

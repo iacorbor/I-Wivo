@@ -1,0 +1,1288 @@
+<resources>
+
+
+    <!-- HTML/CSS - Test -->
+    <string name="html_css_test_001_question">¿Qué etiqueta representa el contenido principal de una página?</string>
+    <string name="html_css_test_001_option_1">main</string>
+    <string name="html_css_test_001_option_2">section</string>
+    <string name="html_css_test_001_option_3">div</string>
+    <string name="html_css_test_001_option_4">body</string>
+    <string name="html_css_test_001_explanation">main representa el contenido principal único de la página.</string>
+
+    <string name="html_css_test_002_question">¿Qué etiqueta contiene todo el contenido visible de una página HTML?</string>
+    <string name="html_css_test_002_option_1">head</string>
+    <string name="html_css_test_002_option_2">body</string>
+    <string name="html_css_test_002_option_3">main</string>
+    <string name="html_css_test_002_option_4">html</string>
+    <string name="html_css_test_002_explanation">body contiene el contenido visible de la página.</string>
+
+    <string name="html_css_test_003_question">¿Qué etiqueta define el título principal de una página?</string>
+    <string name="html_css_test_003_option_1">h1</string>
+    <string name="html_css_test_003_option_2">title</string>
+    <string name="html_css_test_003_option_3">header</string>
+    <string name="html_css_test_003_option_4">p</string>
+    <string name="html_css_test_003_explanation">h1 representa el encabezado principal del contenido.</string>
+
+    <string name="html_css_test_004_question">¿Qué etiqueta se usa para crear un párrafo?</string>
+    <string name="html_css_test_004_option_1">p</string>
+    <string name="html_css_test_004_option_2">span</string>
+    <string name="html_css_test_004_option_3">div</string>
+    <string name="html_css_test_004_option_4">text</string>
+    <string name="html_css_test_004_explanation">p representa un párrafo.</string>
+
+    <string name="html_css_test_005_question">¿Qué etiqueta se usa para crear un enlace?</string>
+    <string name="html_css_test_005_option_1">link</string>
+    <string name="html_css_test_005_option_2">a</string>
+    <string name="html_css_test_005_option_3">href</string>
+    <string name="html_css_test_005_option_4">url</string>
+    <string name="html_css_test_005_explanation">a crea enlaces y normalmente usa el atributo href.</string>
+
+    <string name="html_css_test_006_question">¿Qué atributo indica la URL de destino de un enlace?</string>
+    <string name="html_css_test_006_option_1">src</string>
+    <string name="html_css_test_006_option_2">href</string>
+    <string name="html_css_test_006_option_3">alt</string>
+    <string name="html_css_test_006_option_4">target</string>
+    <string name="html_css_test_006_explanation">href indica la dirección a la que apunta el enlace.</string>
+
+    <string name="html_css_test_007_question">¿Qué etiqueta se usa para mostrar una imagen?</string>
+    <string name="html_css_test_007_option_1">img</string>
+    <string name="html_css_test_007_option_2">image</string>
+    <string name="html_css_test_007_option_3">picture-only</string>
+    <string name="html_css_test_007_option_4">src</string>
+    <string name="html_css_test_007_explanation">img inserta una imagen.</string>
+
+    <string name="html_css_test_008_question">¿Qué atributo indica la ruta de una imagen?</string>
+    <string name="html_css_test_008_option_1">href</string>
+    <string name="html_css_test_008_option_2">src</string>
+    <string name="html_css_test_008_option_3">alt</string>
+    <string name="html_css_test_008_option_4">link</string>
+    <string name="html_css_test_008_explanation">src indica la ruta del recurso de imagen.</string>
+
+    <string name="html_css_test_009_question">¿Qué atributo mejora la accesibilidad de una imagen?</string>
+    <string name="html_css_test_009_option_1">alt</string>
+    <string name="html_css_test_009_option_2">src</string>
+    <string name="html_css_test_009_option_3">href</string>
+    <string name="html_css_test_009_option_4">class</string>
+    <string name="html_css_test_009_explanation">alt describe la imagen para lectores de pantalla y casos donde no carga.</string>
+
+    <string name="html_css_test_010_question">¿Qué etiqueta agrupa navegación principal?</string>
+    <string name="html_css_test_010_option_1">nav</string>
+    <string name="html_css_test_010_option_2">menu</string>
+    <string name="html_css_test_010_option_3">section</string>
+    <string name="html_css_test_010_option_4">aside</string>
+    <string name="html_css_test_010_explanation">nav representa una zona de navegación.</string>
+
+    <string name="html_css_test_011_question">¿Qué etiqueta representa contenido independiente como una tarjeta o noticia?</string>
+    <string name="html_css_test_011_option_1">article</string>
+    <string name="html_css_test_011_option_2">div</string>
+    <string name="html_css_test_011_option_3">span</string>
+    <string name="html_css_test_011_option_4">b</string>
+    <string name="html_css_test_011_explanation">article representa contenido independiente.</string>
+
+    <string name="html_css_test_012_question">¿Qué etiqueta representa una sección temática?</string>
+    <string name="html_css_test_012_option_1">section</string>
+    <string name="html_css_test_012_option_2">main</string>
+    <string name="html_css_test_012_option_3">small</string>
+    <string name="html_css_test_012_option_4">strong</string>
+    <string name="html_css_test_012_explanation">section agrupa contenido relacionado por tema.</string>
+
+    <string name="html_css_test_013_question">¿Qué etiqueta representa contenido lateral o complementario?</string>
+    <string name="html_css_test_013_option_1">aside</string>
+    <string name="html_css_test_013_option_2">nav</string>
+    <string name="html_css_test_013_option_3">main</string>
+    <string name="html_css_test_013_option_4">footer</string>
+    <string name="html_css_test_013_explanation">aside se usa para contenido complementario.</string>
+
+    <string name="html_css_test_014_question">¿Qué etiqueta representa la cabecera de una página o bloque?</string>
+    <string name="html_css_test_014_option_1">header</string>
+    <string name="html_css_test_014_option_2">head</string>
+    <string name="html_css_test_014_option_3">top</string>
+    <string name="html_css_test_014_option_4">title</string>
+    <string name="html_css_test_014_explanation">header representa la cabecera visual o introductoria.</string>
+
+    <string name="html_css_test_015_question">¿Qué etiqueta representa el pie de página?</string>
+    <string name="html_css_test_015_option_1">bottom</string>
+    <string name="html_css_test_015_option_2">footer</string>
+    <string name="html_css_test_015_option_3">aside</string>
+    <string name="html_css_test_015_option_4">end</string>
+    <string name="html_css_test_015_explanation">footer representa el pie de página o de sección.</string>
+
+    <string name="html_css_test_016_question">¿Qué etiqueta define una lista desordenada?</string>
+    <string name="html_css_test_016_option_1">ol</string>
+    <string name="html_css_test_016_option_2">ul</string>
+    <string name="html_css_test_016_option_3">li</string>
+    <string name="html_css_test_016_option_4">list</string>
+    <string name="html_css_test_016_explanation">ul crea listas sin orden numérico.</string>
+
+    <string name="html_css_test_017_question">¿Qué etiqueta define una lista ordenada?</string>
+    <string name="html_css_test_017_option_1">ol</string>
+    <string name="html_css_test_017_option_2">ul</string>
+    <string name="html_css_test_017_option_3">li</string>
+    <string name="html_css_test_017_option_4">dl</string>
+    <string name="html_css_test_017_explanation">ol crea listas ordenadas.</string>
+
+    <string name="html_css_test_018_question">¿Qué etiqueta representa un elemento de lista?</string>
+    <string name="html_css_test_018_option_1">li</string>
+    <string name="html_css_test_018_option_2">ul</string>
+    <string name="html_css_test_018_option_3">ol</string>
+    <string name="html_css_test_018_option_4">item</string>
+    <string name="html_css_test_018_explanation">li representa cada elemento de una lista.</string>
+
+    <string name="html_css_test_019_question">¿Qué etiqueta se usa para un campo de entrada?</string>
+    <string name="html_css_test_019_option_1">input</string>
+    <string name="html_css_test_019_option_2">form</string>
+    <string name="html_css_test_019_option_3">label</string>
+    <string name="html_css_test_019_option_4">textarea</string>
+    <string name="html_css_test_019_explanation">input crea campos de entrada.</string>
+
+    <string name="html_css_test_020_question">¿Qué etiqueta asocia texto descriptivo a un input?</string>
+    <string name="html_css_test_020_option_1">label</string>
+    <string name="html_css_test_020_option_2">span</string>
+    <string name="html_css_test_020_option_3">p</string>
+    <string name="html_css_test_020_option_4">legend</string>
+    <string name="html_css_test_020_explanation">label describe un campo de formulario.</string>
+
+    <string name="html_css_test_021_question">¿Qué etiqueta agrupa controles de un formulario?</string>
+    <string name="html_css_test_021_option_1">form</string>
+    <string name="html_css_test_021_option_2">input</string>
+    <string name="html_css_test_021_option_3">button</string>
+    <string name="html_css_test_021_option_4">fieldset</string>
+    <string name="html_css_test_021_explanation">form agrupa campos que pueden enviarse.</string>
+
+    <string name="html_css_test_022_question">¿Qué atributo identifica un elemento de forma única?</string>
+    <string name="html_css_test_022_option_1">class</string>
+    <string name="html_css_test_022_option_2">id</string>
+    <string name="html_css_test_022_option_3">name</string>
+    <string name="html_css_test_022_option_4">data</string>
+    <string name="html_css_test_022_explanation">id debe ser único en la página.</string>
+
+    <string name="html_css_test_023_question">¿Qué atributo permite reutilizar estilos en varios elementos?</string>
+    <string name="html_css_test_023_option_1">class</string>
+    <string name="html_css_test_023_option_2">id</string>
+    <string name="html_css_test_023_option_3">src</string>
+    <string name="html_css_test_023_option_4">href</string>
+    <string name="html_css_test_023_explanation">class permite agrupar elementos para aplicar estilos.</string>
+
+    <string name="html_css_test_024_question">¿Qué selector CSS apunta a una clase llamada card?</string>
+    <string name="html_css_test_024_option_1">#card</string>
+    <string name="html_css_test_024_option_2">.card</string>
+    <string name="html_css_test_024_option_3">card</string>
+    <string name="html_css_test_024_option_4">*card</string>
+    <string name="html_css_test_024_explanation">.card selecciona elementos con esa clase.</string>
+
+    <string name="html_css_test_025_question">¿Qué selector CSS apunta a un id llamado menu?</string>
+    <string name="html_css_test_025_option_1">.menu</string>
+    <string name="html_css_test_025_option_2">#menu</string>
+    <string name="html_css_test_025_option_3">menu</string>
+    <string name="html_css_test_025_option_4">\@menu</string>
+    <string name="html_css_test_025_explanation">#menu selecciona el elemento con ese id.</string>
+
+    <string name="html_css_test_026_question">¿Qué propiedad CSS cambia el color del texto?</string>
+    <string name="html_css_test_026_option_1">background</string>
+    <string name="html_css_test_026_option_2">font-size</string>
+    <string name="html_css_test_026_option_3">color</string>
+    <string name="html_css_test_026_option_4">text-style</string>
+    <string name="html_css_test_026_explanation">color cambia el color del texto.</string>
+
+    <string name="html_css_test_027_question">¿Qué propiedad CSS cambia el color de fondo?</string>
+    <string name="html_css_test_027_option_1">color</string>
+    <string name="html_css_test_027_option_2">background-color</string>
+    <string name="html_css_test_027_option_3">font-color</string>
+    <string name="html_css_test_027_option_4">text-background</string>
+    <string name="html_css_test_027_explanation">background-color cambia el fondo.</string>
+
+    <string name="html_css_test_028_question">¿Qué propiedad cambia el tamaño del texto?</string>
+    <string name="html_css_test_028_option_1">font-size</string>
+    <string name="html_css_test_028_option_2">text-weight</string>
+    <string name="html_css_test_028_option_3">size</string>
+    <string name="html_css_test_028_option_4">font-style</string>
+    <string name="html_css_test_028_explanation">font-size define el tamaño de la fuente.</string>
+
+    <string name="html_css_test_029_question">¿Qué propiedad cambia el grosor del texto?</string>
+    <string name="html_css_test_029_option_1">font-weight</string>
+    <string name="html_css_test_029_option_2">font-size</string>
+    <string name="html_css_test_029_option_3">text-align</string>
+    <string name="html_css_test_029_option_4">line-height</string>
+    <string name="html_css_test_029_explanation">font-weight controla el grosor.</string>
+
+    <string name="html_css_test_030_question">¿Qué propiedad centra texto horizontalmente?</string>
+    <string name="html_css_test_030_option_1">align-items</string>
+    <string name="html_css_test_030_option_2">justify-content</string>
+    <string name="html_css_test_030_option_3">text-align</string>
+    <string name="html_css_test_030_option_4">place-items</string>
+    <string name="html_css_test_030_explanation">text-align: center centra texto en línea.</string>
+
+    <string name="html_css_test_031_question">¿Qué propiedad controla el espacio interior de una caja?</string>
+    <string name="html_css_test_031_option_1">margin</string>
+    <string name="html_css_test_031_option_2">padding</string>
+    <string name="html_css_test_031_option_3">border</string>
+    <string name="html_css_test_031_option_4">gap</string>
+    <string name="html_css_test_031_explanation">padding es el espacio interior.</string>
+
+    <string name="html_css_test_032_question">¿Qué propiedad controla el espacio exterior de una caja?</string>
+    <string name="html_css_test_032_option_1">margin</string>
+    <string name="html_css_test_032_option_2">padding</string>
+    <string name="html_css_test_032_option_3">border</string>
+    <string name="html_css_test_032_option_4">outline</string>
+    <string name="html_css_test_032_explanation">margin es el espacio exterior.</string>
+
+    <string name="html_css_test_033_question">¿Qué propiedad define el borde de una caja?</string>
+    <string name="html_css_test_033_option_1">border</string>
+    <string name="html_css_test_033_option_2">margin</string>
+    <string name="html_css_test_033_option_3">padding</string>
+    <string name="html_css_test_033_option_4">radius</string>
+    <string name="html_css_test_033_explanation">border define el borde.</string>
+
+    <string name="html_css_test_034_question">¿Qué propiedad redondea esquinas?</string>
+    <string name="html_css_test_034_option_1">corner</string>
+    <string name="html_css_test_034_option_2">border-radius</string>
+    <string name="html_css_test_034_option_3">radius-border</string>
+    <string name="html_css_test_034_option_4">round</string>
+    <string name="html_css_test_034_explanation">border-radius redondea las esquinas.</string>
+
+    <string name="html_css_test_035_question">¿Qué modelo CSS se usa para diseños flexibles en una dimensión?</string>
+    <string name="html_css_test_035_option_1">Grid</string>
+    <string name="html_css_test_035_option_2">Flexbox</string>
+    <string name="html_css_test_035_option_3">Table</string>
+    <string name="html_css_test_035_option_4">Float</string>
+    <string name="html_css_test_035_explanation">Flexbox organiza elementos en fila o columna.</string>
+
+    <string name="html_css_test_036_question">¿Qué modelo CSS se usa para layouts bidimensionales?</string>
+    <string name="html_css_test_036_option_1">Flexbox</string>
+    <string name="html_css_test_036_option_2">Grid</string>
+    <string name="html_css_test_036_option_3">Float</string>
+    <string name="html_css_test_036_option_4">Inline</string>
+    <string name="html_css_test_036_explanation">CSS Grid trabaja bien con filas y columnas.</string>
+
+    <string name="html_css_test_037_question">¿Qué propiedad activa Flexbox?</string>
+    <string name="html_css_test_037_option_1">display: flex</string>
+    <string name="html_css_test_037_option_2">position: flex</string>
+    <string name="html_css_test_037_option_3">layout: flex</string>
+    <string name="html_css_test_037_option_4">flex: true</string>
+    <string name="html_css_test_037_explanation">display: flex activa Flexbox.</string>
+
+    <string name="html_css_test_038_question">¿Qué propiedad activa CSS Grid?</string>
+    <string name="html_css_test_038_option_1">display: grid</string>
+    <string name="html_css_test_038_option_2">position: grid</string>
+    <string name="html_css_test_038_option_3">layout: grid</string>
+    <string name="html_css_test_038_option_4">grid: true</string>
+    <string name="html_css_test_038_explanation">display: grid activa Grid.</string>
+
+    <string name="html_css_test_039_question">¿Qué propiedad de Flexbox alinea en el eje principal?</string>
+    <string name="html_css_test_039_option_1">justify-content</string>
+    <string name="html_css_test_039_option_2">align-items</string>
+    <string name="html_css_test_039_option_3">text-align</string>
+    <string name="html_css_test_039_option_4">flex-wrap</string>
+    <string name="html_css_test_039_explanation">justify-content alinea en el eje principal.</string>
+
+    <string name="html_css_test_040_question">¿Qué propiedad de Flexbox alinea en el eje cruzado?</string>
+    <string name="html_css_test_040_option_1">justify-content</string>
+    <string name="html_css_test_040_option_2">align-items</string>
+    <string name="html_css_test_040_option_3">text-align</string>
+    <string name="html_css_test_040_option_4">gap</string>
+    <string name="html_css_test_040_explanation">align-items alinea en el eje cruzado.</string>
+
+    <string name="html_css_test_041_question">¿Qué propiedad añade separación entre elementos flex/grid?</string>
+    <string name="html_css_test_041_option_1">gap</string>
+    <string name="html_css_test_041_option_2">space</string>
+    <string name="html_css_test_041_option_3">margin-all</string>
+    <string name="html_css_test_041_option_4">padding-all</string>
+    <string name="html_css_test_041_explanation">gap añade espacio entre elementos.</string>
+
+    <string name="html_css_test_042_question">¿Qué propiedad permite que los elementos flex salten de línea?</string>
+    <string name="html_css_test_042_option_1">flex-wrap</string>
+    <string name="html_css_test_042_option_2">flex-break</string>
+    <string name="html_css_test_042_option_3">wrap-items</string>
+    <string name="html_css_test_042_option_4">line-wrap</string>
+    <string name="html_css_test_042_explanation">flex-wrap permite envolver elementos.</string>
+
+    <string name="html_css_test_043_question">¿Qué unidad es relativa al tamaño de fuente del elemento?</string>
+    <string name="html_css_test_043_option_1">px</string>
+    <string name="html_css_test_043_option_2">em</string>
+    <string name="html_css_test_043_option_3">vh</string>
+    <string name="html_css_test_043_option_4">%</string>
+    <string name="html_css_test_043_explanation">em depende del tamaño de fuente del elemento.</string>
+
+    <string name="html_css_test_044_question">¿Qué unidad es relativa al tamaño de fuente raíz?</string>
+    <string name="html_css_test_044_option_1">px</string>
+    <string name="html_css_test_044_option_2">rem</string>
+    <string name="html_css_test_044_option_3">vh</string>
+    <string name="html_css_test_044_option_4">vw</string>
+    <string name="html_css_test_044_explanation">rem depende del tamaño de fuente raíz.</string>
+
+    <string name="html_css_test_045_question">¿Qué unidad representa el 1% del ancho del viewport?</string>
+    <string name="html_css_test_045_option_1">vh</string>
+    <string name="html_css_test_045_option_2">vw</string>
+    <string name="html_css_test_045_option_3">em</string>
+    <string name="html_css_test_045_option_4">rem</string>
+    <string name="html_css_test_045_explanation">vw se basa en el ancho del viewport.</string>
+
+    <string name="html_css_test_046_question">¿Qué unidad representa el 1% de la altura del viewport?</string>
+    <string name="html_css_test_046_option_1">vh</string>
+    <string name="html_css_test_046_option_2">vw</string>
+    <string name="html_css_test_046_option_3">px</string>
+    <string name="html_css_test_046_option_4">%</string>
+    <string name="html_css_test_046_explanation">vh se basa en la altura del viewport.</string>
+
+    <string name="html_css_test_047_question">¿Qué regla CSS permite adaptar estilos según el tamaño de pantalla?</string>
+    <string name="html_css_test_047_option_1">\@media</string>
+    <string name="html_css_test_047_option_2">\@screen</string>
+    <string name="html_css_test_047_option_3">\@responsive</string>
+    <string name="html_css_test_047_option_4">\@device</string>
+    <string name="html_css_test_047_explanation">\@media define media queries.</string>
+
+    <string name="html_css_test_048_question">¿Qué propiedad controla la posición de un elemento?</string>
+    <string name="html_css_test_048_option_1">position</string>
+    <string name="html_css_test_048_option_2">display</string>
+    <string name="html_css_test_048_option_3">layout</string>
+    <string name="html_css_test_048_option_4">place</string>
+    <string name="html_css_test_048_explanation">position controla el posicionamiento.</string>
+
+    <string name="html_css_test_049_question">¿Qué valor de position posiciona relativo al viewport?</string>
+    <string name="html_css_test_049_option_1">absolute</string>
+    <string name="html_css_test_049_option_2">relative</string>
+    <string name="html_css_test_049_option_3">fixed</string>
+    <string name="html_css_test_049_option_4">static</string>
+    <string name="html_css_test_049_explanation">fixed posiciona respecto al viewport.</string>
+
+    <string name="html_css_test_050_question">¿Qué valor de box-sizing incluye padding y border dentro del ancho?</string>
+    <string name="html_css_test_050_option_1">content-box</string>
+    <string name="html_css_test_050_option_2">border-box</string>
+    <string name="html_css_test_050_option_3">padding-box</string>
+    <string name="html_css_test_050_option_4">full-box</string>
+    <string name="html_css_test_050_explanation">border-box hace que width incluya padding y border.</string>
+
+    <!-- HTML/CSS - True / False -->
+    <string name="html_css_tf_001_question">HTML define estructura y CSS define presentación visual.</string>
+    <string name="html_css_tf_001_explanation">HTML estructura el contenido y CSS controla el diseño visual.</string>
+
+    <string name="html_css_tf_002_question">id puede repetirse muchas veces en la misma página.</string>
+    <string name="html_css_tf_002_explanation">Un id debe ser único dentro de una página.</string>
+
+    <string name="html_css_tf_003_question">Una clase puede reutilizarse en varios elementos.</string>
+    <string name="html_css_tf_003_explanation">class puede repetirse en muchos elementos.</string>
+
+    <string name="html_css_tf_004_question">main representa el contenido principal de una página.</string>
+    <string name="html_css_tf_004_explanation">main representa el contenido principal.</string>
+
+    <string name="html_css_tf_005_question">header y head son exactamente lo mismo.</string>
+    <string name="html_css_tf_005_explanation">head contiene metadatos; header es una cabecera visible.</string>
+
+    <string name="html_css_tf_006_question">nav representa una zona de navegación.</string>
+    <string name="html_css_tf_006_explanation">nav se usa para navegación.</string>
+
+    <string name="html_css_tf_007_question">article representa contenido independiente.</string>
+    <string name="html_css_tf_007_explanation">article es contenido autocontenido.</string>
+
+    <string name="html_css_tf_008_question">section debería usarse para cualquier cosa sin significado.</string>
+    <string name="html_css_tf_008_explanation">Para contenedores genéricos suele usarse div.</string>
+
+    <string name="html_css_tf_009_question">div es un contenedor genérico sin significado semántico propio.</string>
+    <string name="html_css_tf_009_explanation">div no aporta semántica concreta.</string>
+
+    <string name="html_css_tf_010_question">span es normalmente un contenedor en línea.</string>
+    <string name="html_css_tf_010_explanation">span se usa para contenido en línea.</string>
+
+    <string name="html_css_tf_011_question">a crea enlaces.</string>
+    <string name="html_css_tf_011_explanation">a define enlaces.</string>
+
+    <string name="html_css_tf_012_question">href se usa normalmente para indicar el destino de un enlace.</string>
+    <string name="html_css_tf_012_explanation">href contiene la URL de destino.</string>
+
+    <string name="html_css_tf_013_question">src se usa normalmente para indicar la ruta de una imagen.</string>
+    <string name="html_css_tf_013_explanation">src indica el recurso.</string>
+
+    <string name="html_css_tf_014_question">alt ayuda a la accesibilidad de las imágenes.</string>
+    <string name="html_css_tf_014_explanation">alt describe la imagen.</string>
+
+    <string name="html_css_tf_015_question">ul crea una lista ordenada numéricamente.</string>
+    <string name="html_css_tf_015_explanation">ul crea listas desordenadas.</string>
+
+    <string name="html_css_tf_016_question">ol crea una lista ordenada.</string>
+    <string name="html_css_tf_016_explanation">ol crea listas ordenadas.</string>
+
+    <string name="html_css_tf_017_question">li representa un elemento de lista.</string>
+    <string name="html_css_tf_017_explanation">li es list item.</string>
+
+    <string name="html_css_tf_018_question">form agrupa campos de formulario.</string>
+    <string name="html_css_tf_018_explanation">form agrupa controles.</string>
+
+    <string name="html_css_tf_019_question">label puede asociarse a un input.</string>
+    <string name="html_css_tf_019_explanation">label mejora accesibilidad y usabilidad.</string>
+
+    <string name="html_css_tf_020_question">button solo puede usarse fuera de formularios.</string>
+    <string name="html_css_tf_020_explanation">button puede usarse dentro o fuera de formularios.</string>
+
+    <string name="html_css_tf_021_question">.card selecciona una clase llamada card.</string>
+    <string name="html_css_tf_021_explanation">. selecciona clases.</string>
+
+    <string name="html_css_tf_022_question">#card selecciona una clase llamada card.</string>
+    <string name="html_css_tf_022_explanation"># selecciona id.</string>
+
+    <string name="html_css_tf_023_question">color cambia el color del texto.</string>
+    <string name="html_css_tf_023_explanation">color afecta al texto.</string>
+
+    <string name="html_css_tf_024_question">background-color cambia el fondo.</string>
+    <string name="html_css_tf_024_explanation">background-color define el fondo.</string>
+
+    <string name="html_css_tf_025_question">font-size cambia el tamaño del texto.</string>
+    <string name="html_css_tf_025_explanation">font-size controla el tamaño.</string>
+
+    <string name="html_css_tf_026_question">font-weight cambia el grosor del texto.</string>
+    <string name="html_css_tf_026_explanation">font-weight controla el peso.</string>
+
+    <string name="html_css_tf_027_question">text-align: center centra texto.</string>
+    <string name="html_css_tf_027_explanation">text-align centra texto en línea.</string>
+
+    <string name="html_css_tf_028_question">padding es espacio exterior.</string>
+    <string name="html_css_tf_028_explanation">padding es espacio interior.</string>
+
+    <string name="html_css_tf_029_question">margin es espacio exterior.</string>
+    <string name="html_css_tf_029_explanation">margin separa por fuera.</string>
+
+    <string name="html_css_tf_030_question">border-radius redondea esquinas.</string>
+    <string name="html_css_tf_030_explanation">border-radius redondea.</string>
+
+    <string name="html_css_tf_031_question">Flexbox trabaja bien en una dimensión.</string>
+    <string name="html_css_tf_031_explanation">Flexbox organiza fila o columna.</string>
+
+    <string name="html_css_tf_032_question">Grid es útil para layouts en filas y columnas.</string>
+    <string name="html_css_tf_032_explanation">CSS Grid es bidimensional.</string>
+
+    <string name="html_css_tf_033_question">display: flex activa Flexbox.</string>
+    <string name="html_css_tf_033_explanation">display flex activa Flexbox.</string>
+
+    <string name="html_css_tf_034_question">display: grid activa CSS Grid.</string>
+    <string name="html_css_tf_034_explanation">display grid activa Grid.</string>
+
+    <string name="html_css_tf_035_question">justify-content alinea en el eje principal de Flexbox.</string>
+    <string name="html_css_tf_035_explanation">justify-content controla el eje principal.</string>
+
+    <string name="html_css_tf_036_question">align-items alinea en el eje cruzado de Flexbox.</string>
+    <string name="html_css_tf_036_explanation">align-items controla el eje cruzado.</string>
+
+    <string name="html_css_tf_037_question">gap añade separación entre elementos flex o grid.</string>
+    <string name="html_css_tf_037_explanation">gap define separación.</string>
+
+    <string name="html_css_tf_038_question">flex-wrap permite que los elementos salten de línea.</string>
+    <string name="html_css_tf_038_explanation">flex-wrap permite envolver.</string>
+
+    <string name="html_css_tf_039_question">px es una unidad relativa al viewport.</string>
+    <string name="html_css_tf_039_explanation">px es una unidad absoluta de píxeles CSS.</string>
+
+    <string name="html_css_tf_040_question">rem depende del tamaño de fuente raíz.</string>
+    <string name="html_css_tf_040_explanation">rem se basa en el root.</string>
+
+    <string name="html_css_tf_041_question">em depende del tamaño de fuente del contexto.</string>
+    <string name="html_css_tf_041_explanation">em es relativo al tamaño de fuente.</string>
+
+    <string name="html_css_tf_042_question">vw se basa en el ancho del viewport.</string>
+    <string name="html_css_tf_042_explanation">vw representa viewport width.</string>
+
+    <string name="html_css_tf_043_question">vh se basa en la altura del viewport.</string>
+    <string name="html_css_tf_043_explanation">vh representa viewport height.</string>
+
+    <string name="html_css_tf_044_question">\@media permite aplicar estilos según condiciones del dispositivo.</string>
+    <string name="html_css_tf_044_explanation">\@media se usa para responsive.</string>
+
+    <string name="html_css_tf_045_question">position: fixed posiciona respecto al viewport.</string>
+    <string name="html_css_tf_045_explanation">fixed queda relativo al viewport.</string>
+
+    <string name="html_css_tf_046_question">position: relative elimina el elemento del flujo normal.</string>
+    <string name="html_css_tf_046_explanation">relative conserva su espacio en el flujo.</string>
+
+    <string name="html_css_tf_047_question">box-sizing: border-box incluye padding y border dentro del ancho.</string>
+    <string name="html_css_tf_047_explanation">border-box simplifica el cálculo de tamaños.</string>
+
+    <string name="html_css_tf_048_question">z-index controla el orden de apilamiento.</string>
+    <string name="html_css_tf_048_explanation">z-index afecta a capas posicionadas.</string>
+
+    <string name="html_css_tf_049_question">Responsive design busca adaptarse a distintos tamaños de pantalla.</string>
+    <string name="html_css_tf_049_explanation">Responsive adapta el diseño.</string>
+
+    <string name="html_css_tf_050_question">La semántica HTML consiste en usar etiquetas con significado.</string>
+    <string name="html_css_tf_050_explanation">La semántica mejora accesibilidad y estructura.</string>
+
+    <!-- HTML/CSS - Complete Code -->
+    <string name="html_css_code_001_question">Completa el HTML:\n\n&lt;____&gt;Título principal&lt;/____&gt;</string>
+    <string name="html_css_code_001_option_1">h1</string>
+    <string name="html_css_code_001_option_2">p</string>
+    <string name="html_css_code_001_option_3">span</string>
+    <string name="html_css_code_001_option_4">a</string>
+    <string name="html_css_code_001_explanation">h1 representa el encabezado principal.</string>
+
+    <string name="html_css_code_002_question">Completa el HTML:\n\n&lt;____&gt;Texto de párrafo&lt;/____&gt;</string>
+    <string name="html_css_code_002_option_1">p</string>
+    <string name="html_css_code_002_option_2">h1</string>
+    <string name="html_css_code_002_option_3">img</string>
+    <string name="html_css_code_002_option_4">ul</string>
+    <string name="html_css_code_002_explanation">p crea un párrafo.</string>
+
+    <string name="html_css_code_003_question">Completa el HTML:\n\n&lt;____ href=&quot;/home&quot;&gt;Inicio&lt;/____&gt;</string>
+    <string name="html_css_code_003_option_1">a</string>
+    <string name="html_css_code_003_option_2">link</string>
+    <string name="html_css_code_003_option_3">url</string>
+    <string name="html_css_code_003_option_4">button</string>
+    <string name="html_css_code_003_explanation">a crea enlaces.</string>
+
+    <string name="html_css_code_004_question">Completa el HTML:\n\n&lt;img ____=&quot;logo.png&quot; alt=&quot;Logo&quot;&gt;</string>
+    <string name="html_css_code_004_option_1">src</string>
+    <string name="html_css_code_004_option_2">href</string>
+    <string name="html_css_code_004_option_3">link</string>
+    <string name="html_css_code_004_option_4">path</string>
+    <string name="html_css_code_004_explanation">src indica la ruta de la imagen.</string>
+
+    <string name="html_css_code_005_question">Completa el HTML:\n\n&lt;img src=&quot;logo.png&quot; ____=&quot;Logo de la app&quot;&gt;</string>
+    <string name="html_css_code_005_option_1">alt</string>
+    <string name="html_css_code_005_option_2">title</string>
+    <string name="html_css_code_005_option_3">name</string>
+    <string name="html_css_code_005_option_4">text</string>
+    <string name="html_css_code_005_explanation">alt describe la imagen.</string>
+
+    <string name="html_css_code_006_question">Completa el HTML:\n\n&lt;____&gt;\n  &lt;li&gt;Uno&lt;/li&gt;\n&lt;/____&gt;</string>
+    <string name="html_css_code_006_option_1">ul</string>
+    <string name="html_css_code_006_option_2">li</string>
+    <string name="html_css_code_006_option_3">p</string>
+    <string name="html_css_code_006_option_4">table</string>
+    <string name="html_css_code_006_explanation">ul crea una lista desordenada.</string>
+
+    <string name="html_css_code_007_question">Completa el HTML:\n\n&lt;ol&gt;\n  &lt;____&gt;Paso 1&lt;/____&gt;\n&lt;/ol&gt;</string>
+    <string name="html_css_code_007_option_1">li</string>
+    <string name="html_css_code_007_option_2">ul</string>
+    <string name="html_css_code_007_option_3">p</string>
+    <string name="html_css_code_007_option_4">item</string>
+    <string name="html_css_code_007_explanation">li es un elemento de lista.</string>
+
+    <string name="html_css_code_008_question">Completa el HTML:\n\n&lt;____ id=&quot;menu&quot;&gt;&lt;/____&gt;</string>
+    <string name="html_css_code_008_option_1">nav</string>
+    <string name="html_css_code_008_option_2">img</string>
+    <string name="html_css_code_008_option_3">input</string>
+    <string name="html_css_code_008_option_4">meta</string>
+    <string name="html_css_code_008_explanation">nav representa navegación.</string>
+
+    <string name="html_css_code_009_question">Completa el HTML:\n\n&lt;____&gt;\n  &lt;input id=&quot;email&quot;&gt;\n&lt;/____&gt;</string>
+    <string name="html_css_code_009_option_1">form</string>
+    <string name="html_css_code_009_option_2">main</string>
+    <string name="html_css_code_009_option_3">span</string>
+    <string name="html_css_code_009_option_4">footer</string>
+    <string name="html_css_code_009_explanation">form agrupa campos de formulario.</string>
+
+    <string name="html_css_code_010_question">Completa el HTML:\n\n&lt;____ for=&quot;email&quot;&gt;Email&lt;/____&gt;</string>
+    <string name="html_css_code_010_option_1">label</string>
+    <string name="html_css_code_010_option_2">span</string>
+    <string name="html_css_code_010_option_3">p</string>
+    <string name="html_css_code_010_option_4">legend</string>
+    <string name="html_css_code_010_explanation">label puede asociarse a un input.</string>
+
+    <string name="html_css_code_011_question">Completa el CSS:\n\n.card {\n  color: ____;\n}</string>
+    <string name="html_css_code_011_option_1">red</string>
+    <string name="html_css_code_011_option_2">center</string>
+    <string name="html_css_code_011_option_3">bold</string>
+    <string name="html_css_code_011_option_4">flex</string>
+    <string name="html_css_code_011_explanation">color acepta valores de color.</string>
+
+    <string name="html_css_code_012_question">Completa el CSS:\n\n.card {\n  background-color: ____;\n}</string>
+    <string name="html_css_code_012_option_1">#111111</string>
+    <string name="html_css_code_012_option_2">center</string>
+    <string name="html_css_code_012_option_3">bold</string>
+    <string name="html_css_code_012_option_4">12px solid</string>
+    <string name="html_css_code_012_explanation">background-color acepta colores.</string>
+
+    <string name="html_css_code_013_question">Completa el CSS:\n\n.title {\n  font-size: ____;\n}</string>
+    <string name="html_css_code_013_option_1">24px</string>
+    <string name="html_css_code_013_option_2">bold</string>
+    <string name="html_css_code_013_option_3">center</string>
+    <string name="html_css_code_013_option_4">flex</string>
+    <string name="html_css_code_013_explanation">font-size acepta unidades como px.</string>
+
+    <string name="html_css_code_014_question">Completa el CSS:\n\n.title {\n  font-weight: ____;\n}</string>
+    <string name="html_css_code_014_option_1">bold</string>
+    <string name="html_css_code_014_option_2">24px</string>
+    <string name="html_css_code_014_option_3">center</string>
+    <string name="html_css_code_014_option_4">grid</string>
+    <string name="html_css_code_014_explanation">font-weight puede ser bold.</string>
+
+    <string name="html_css_code_015_question">Completa el CSS:\n\n.text {\n  text-align: ____;\n}</string>
+    <string name="html_css_code_015_option_1">center</string>
+    <string name="html_css_code_015_option_2">bold</string>
+    <string name="html_css_code_015_option_3">flex</string>
+    <string name="html_css_code_015_option_4">24px</string>
+    <string name="html_css_code_015_explanation">text-align: center centra texto.</string>
+
+    <string name="html_css_code_016_question">Completa el CSS:\n\n.card {\n  padding: ____;\n}</string>
+    <string name="html_css_code_016_option_1">16px</string>
+    <string name="html_css_code_016_option_2">red</string>
+    <string name="html_css_code_016_option_3">bold</string>
+    <string name="html_css_code_016_option_4">flex</string>
+    <string name="html_css_code_016_explanation">padding acepta medidas.</string>
+
+    <string name="html_css_code_017_question">Completa el CSS:\n\n.card {\n  margin: ____;\n}</string>
+    <string name="html_css_code_017_option_1">20px</string>
+    <string name="html_css_code_017_option_2">center</string>
+    <string name="html_css_code_017_option_3">solid</string>
+    <string name="html_css_code_017_option_4">grid</string>
+    <string name="html_css_code_017_explanation">margin acepta medidas.</string>
+
+    <string name="html_css_code_018_question">Completa el CSS:\n\n.card {\n  border: ____;\n}</string>
+    <string name="html_css_code_018_option_1">1px solid #fff</string>
+    <string name="html_css_code_018_option_2">center</string>
+    <string name="html_css_code_018_option_3">flex</string>
+    <string name="html_css_code_018_option_4">bold</string>
+    <string name="html_css_code_018_explanation">border puede definir grosor, estilo y color.</string>
+
+    <string name="html_css_code_019_question">Completa el CSS:\n\n.card {\n  border-radius: ____;\n}</string>
+    <string name="html_css_code_019_option_1">16px</string>
+    <string name="html_css_code_019_option_2">solid</string>
+    <string name="html_css_code_019_option_3">center</string>
+    <string name="html_css_code_019_option_4">red</string>
+    <string name="html_css_code_019_explanation">border-radius acepta medidas.</string>
+
+    <string name="html_css_code_020_question">Completa el CSS:\n\n.card {\n  display: ____;\n}</string>
+    <string name="html_css_code_020_option_1">flex</string>
+    <string name="html_css_code_020_option_2">bold</string>
+    <string name="html_css_code_020_option_3">center</string>
+    <string name="html_css_code_020_option_4">block-flex</string>
+    <string name="html_css_code_020_explanation">display: flex activa Flexbox.</string>
+
+    <string name="html_css_code_021_question">Completa el CSS:\n\n.grid {\n  display: ____;\n}</string>
+    <string name="html_css_code_021_option_1">grid</string>
+    <string name="html_css_code_021_option_2">flexbox</string>
+    <string name="html_css_code_021_option_3">table-grid</string>
+    <string name="html_css_code_021_option_4">columns</string>
+    <string name="html_css_code_021_explanation">display: grid activa CSS Grid.</string>
+
+    <string name="html_css_code_022_question">Completa el CSS:\n\n.container {\n  justify-content: ____;\n}</string>
+    <string name="html_css_code_022_option_1">center</string>
+    <string name="html_css_code_022_option_2">bold</string>
+    <string name="html_css_code_022_option_3">24px</string>
+    <string name="html_css_code_022_option_4">grid</string>
+    <string name="html_css_code_022_explanation">justify-content puede centrar en el eje principal.</string>
+
+    <string name="html_css_code_023_question">Completa el CSS:\n\n.container {\n  align-items: ____;\n}</string>
+    <string name="html_css_code_023_option_1">center</string>
+    <string name="html_css_code_023_option_2">bold</string>
+    <string name="html_css_code_023_option_3">flex</string>
+    <string name="html_css_code_023_option_4">12px</string>
+    <string name="html_css_code_023_explanation">align-items puede centrar en el eje cruzado.</string>
+
+    <string name="html_css_code_024_question">Completa el CSS:\n\n.container {\n  gap: ____;\n}</string>
+    <string name="html_css_code_024_option_1">12px</string>
+    <string name="html_css_code_024_option_2">center</string>
+    <string name="html_css_code_024_option_3">bold</string>
+    <string name="html_css_code_024_option_4">red</string>
+    <string name="html_css_code_024_explanation">gap acepta medidas.</string>
+
+    <string name="html_css_code_025_question">Completa el CSS:\n\n.container {\n  flex-direction: ____;\n}</string>
+    <string name="html_css_code_025_option_1">column</string>
+    <string name="html_css_code_025_option_2">center</string>
+    <string name="html_css_code_025_option_3">bold</string>
+    <string name="html_css_code_025_option_4">grid</string>
+    <string name="html_css_code_025_explanation">flex-direction puede ser column o row.</string>
+
+    <string name="html_css_code_026_question">Completa el CSS:\n\n.container {\n  flex-wrap: ____;\n}</string>
+    <string name="html_css_code_026_option_1">wrap</string>
+    <string name="html_css_code_026_option_2">center</string>
+    <string name="html_css_code_026_option_3">bold</string>
+    <string name="html_css_code_026_option_4">grid</string>
+    <string name="html_css_code_026_explanation">wrap permite salto de línea.</string>
+
+    <string name="html_css_code_027_question">Completa el CSS:\n\n.grid {\n  grid-template-columns: ____;\n}</string>
+    <string name="html_css_code_027_option_1">1fr 1fr</string>
+    <string name="html_css_code_027_option_2">center</string>
+    <string name="html_css_code_027_option_3">bold</string>
+    <string name="html_css_code_027_option_4">row</string>
+    <string name="html_css_code_027_explanation">grid-template-columns define columnas.</string>
+
+    <string name="html_css_code_028_question">Completa el CSS:\n\n.grid {\n  grid-template-columns: repeat(3, ____);\n}</string>
+    <string name="html_css_code_028_option_1">1fr</string>
+    <string name="html_css_code_028_option_2">center</string>
+    <string name="html_css_code_028_option_3">bold</string>
+    <string name="html_css_code_028_option_4">grid</string>
+    <string name="html_css_code_028_explanation">1fr representa una fracción del espacio.</string>
+
+    <string name="html_css_code_029_question">Completa el CSS:\n\n.box {\n  width: ____;\n}</string>
+    <string name="html_css_code_029_option_1">100%</string>
+    <string name="html_css_code_029_option_2">bold</string>
+    <string name="html_css_code_029_option_3">center</string>
+    <string name="html_css_code_029_option_4">solid</string>
+    <string name="html_css_code_029_explanation">width acepta porcentajes.</string>
+
+    <string name="html_css_code_030_question">Completa el CSS:\n\n.hero {\n  min-height: ____;\n}</string>
+    <string name="html_css_code_030_option_1">100vh</string>
+    <string name="html_css_code_030_option_2">bold</string>
+    <string name="html_css_code_030_option_3">center</string>
+    <string name="html_css_code_030_option_4">red</string>
+    <string name="html_css_code_030_explanation">vh se basa en la altura del viewport.</string>
+
+    <string name="html_css_code_031_question">Completa el CSS:\n\n@media (max-width: 768px) ____</string>
+    <string name="html_css_code_031_option_1">{ }</string>
+    <string name="html_css_code_031_option_2">then</string>
+    <string name="html_css_code_031_option_3">do</string>
+    <string name="html_css_code_031_option_4">end</string>
+    <string name="html_css_code_031_explanation">\@media usa un bloque de reglas.</string>
+
+    <string name="html_css_code_032_question">Completa el CSS:\n\n.box {\n  position: ____;\n}</string>
+    <string name="html_css_code_032_option_1">relative</string>
+    <string name="html_css_code_032_option_2">center</string>
+    <string name="html_css_code_032_option_3">bold</string>
+    <string name="html_css_code_032_option_4">flex</string>
+    <string name="html_css_code_032_explanation">position puede ser relative.</string>
+
+    <string name="html_css_code_033_question">Completa el CSS:\n\n.modal {\n  position: ____;\n}</string>
+    <string name="html_css_code_033_option_1">fixed</string>
+    <string name="html_css_code_033_option_2">center</string>
+    <string name="html_css_code_033_option_3">bold</string>
+    <string name="html_css_code_033_option_4">grid</string>
+    <string name="html_css_code_033_explanation">fixed posiciona respecto al viewport.</string>
+
+    <string name="html_css_code_034_question">Completa el CSS:\n\n.overlay {\n  z-index: ____;\n}</string>
+    <string name="html_css_code_034_option_1">10</string>
+    <string name="html_css_code_034_option_2">center</string>
+    <string name="html_css_code_034_option_3">bold</string>
+    <string name="html_css_code_034_option_4">red</string>
+    <string name="html_css_code_034_explanation">z-index usa valores numéricos.</string>
+
+    <string name="html_css_code_035_question">Completa el CSS:\n\n* {\n  box-sizing: ____;\n}</string>
+    <string name="html_css_code_035_option_1">border-box</string>
+    <string name="html_css_code_035_option_2">content</string>
+    <string name="html_css_code_035_option_3">full</string>
+    <string name="html_css_code_035_option_4">padding</string>
+    <string name="html_css_code_035_explanation">border-box incluye padding y border en el ancho.</string>
+
+    <string name="html_css_code_036_question">Completa el CSS:\n\n.button:hover {\n  opacity: ____;\n}</string>
+    <string name="html_css_code_036_option_1">0.8</string>
+    <string name="html_css_code_036_option_2">center</string>
+    <string name="html_css_code_036_option_3">bold</string>
+    <string name="html_css_code_036_option_4">flex</string>
+    <string name="html_css_code_036_explanation">opacity acepta valores entre 0 y 1.</string>
+
+    <string name="html_css_code_037_question">Completa el CSS:\n\n.card {\n  box-shadow: ____;\n}</string>
+    <string name="html_css_code_037_option_1">0 8px 20px rgba(0,0,0,.2)</string>
+    <string name="html_css_code_037_option_2">center</string>
+    <string name="html_css_code_037_option_3">bold</string>
+    <string name="html_css_code_037_option_4">flex</string>
+    <string name="html_css_code_037_explanation">box-shadow define sombras.</string>
+
+    <string name="html_css_code_038_question">Completa el CSS:\n\n.image {\n  object-fit: ____;\n}</string>
+    <string name="html_css_code_038_option_1">cover</string>
+    <string name="html_css_code_038_option_2">center</string>
+    <string name="html_css_code_038_option_3">bold</string>
+    <string name="html_css_code_038_option_4">grid</string>
+    <string name="html_css_code_038_explanation">object-fit: cover recorta manteniendo proporción.</string>
+
+    <string name="html_css_code_039_question">Completa el CSS:\n\n.card {\n  overflow: ____;\n}</string>
+    <string name="html_css_code_039_option_1">hidden</string>
+    <string name="html_css_code_039_option_2">center</string>
+    <string name="html_css_code_039_option_3">bold</string>
+    <string name="html_css_code_039_option_4">flex</string>
+    <string name="html_css_code_039_explanation">overflow hidden oculta desbordes.</string>
+
+    <string name="html_css_code_040_question">Completa el CSS:\n\n:root {\n  --primary: ____;\n}</string>
+    <string name="html_css_code_040_option_1">#7c3aed</string>
+    <string name="html_css_code_040_option_2">center</string>
+    <string name="html_css_code_040_option_3">bold</string>
+    <string name="html_css_code_040_option_4">flex</string>
+    <string name="html_css_code_040_explanation">Las variables CSS pueden guardar colores.</string>
+
+    <string name="html_css_code_041_question">Completa el CSS:\n\n.button {\n  color: var(____);\n}</string>
+    <string name="html_css_code_041_option_1">--primary</string>
+    <string name="html_css_code_041_option_2">primary</string>
+    <string name="html_css_code_041_option_3">$primary</string>
+    <string name="html_css_code_041_option_4">primary()</string>
+    <string name="html_css_code_041_explanation">Las variables CSS se usan con var(--nombre).</string>
+
+    <string name="html_css_code_042_question">Completa el HTML:\n\n&lt;link rel=&quot;stylesheet&quot; ____=&quot;styles.css&quot;&gt;</string>
+    <string name="html_css_code_042_option_1">href</string>
+    <string name="html_css_code_042_option_2">src</string>
+    <string name="html_css_code_042_option_3">alt</string>
+    <string name="html_css_code_042_option_4">class</string>
+    <string name="html_css_code_042_explanation">href indica la ruta del CSS.</string>
+
+    <string name="html_css_code_043_question">Completa el HTML:\n\n&lt;script ____=&quot;app.js&quot;&gt;&lt;/script&gt;</string>
+    <string name="html_css_code_043_option_1">src</string>
+    <string name="html_css_code_043_option_2">href</string>
+    <string name="html_css_code_043_option_3">alt</string>
+    <string name="html_css_code_043_option_4">rel</string>
+    <string name="html_css_code_043_explanation">script usa src para cargar JavaScript.</string>
+
+    <string name="html_css_code_044_question">Completa el HTML:\n\n&lt;meta name=&quot;viewport&quot; content=&quot;____&quot;&gt;</string>
+    <string name="html_css_code_044_option_1">width=device-width, initial-scale=1.0</string>
+    <string name="html_css_code_044_option_2">responsive=true</string>
+    <string name="html_css_code_044_option_3">mobile=yes</string>
+    <string name="html_css_code_044_option_4">screen=all</string>
+    <string name="html_css_code_044_explanation">viewport permite adaptar la página a móviles.</string>
+
+    <string name="html_css_code_045_question">Completa el HTML:\n\n&lt;input type=&quot;____&quot;&gt;</string>
+    <string name="html_css_code_045_option_1">email</string>
+    <string name="html_css_code_045_option_2">mailbox</string>
+    <string name="html_css_code_045_option_3">text-email</string>
+    <string name="html_css_code_045_option_4">correo</string>
+    <string name="html_css_code_045_explanation">type=email valida formato de email.</string>
+
+    <string name="html_css_code_046_question">Completa el HTML:\n\n&lt;button type=&quot;____&quot;&gt;Enviar&lt;/button&gt;</string>
+    <string name="html_css_code_046_option_1">submit</string>
+    <string name="html_css_code_046_option_2">send</string>
+    <string name="html_css_code_046_option_3">form</string>
+    <string name="html_css_code_046_option_4">post</string>
+    <string name="html_css_code_046_explanation">type submit envía el formulario.</string>
+
+    <string name="html_css_code_047_question">Completa el HTML:\n\n&lt;input ____=&quot;Nombre&quot;&gt;</string>
+    <string name="html_css_code_047_option_1">placeholder</string>
+    <string name="html_css_code_047_option_2">alt</string>
+    <string name="html_css_code_047_option_3">href</string>
+    <string name="html_css_code_047_option_4">src</string>
+    <string name="html_css_code_047_explanation">placeholder muestra una pista.</string>
+
+    <string name="html_css_code_048_question">Completa el CSS:\n\n.card {\n  transition: ____;\n}</string>
+    <string name="html_css_code_048_option_1">all 0.2s ease</string>
+    <string name="html_css_code_048_option_2">center</string>
+    <string name="html_css_code_048_option_3">bold</string>
+    <string name="html_css_code_048_option_4">grid</string>
+    <string name="html_css_code_048_explanation">transition define animaciones suaves.</string>
+
+    <string name="html_css_code_049_question">Completa el CSS:\n\n.card:hover {\n  transform: ____;\n}</string>
+    <string name="html_css_code_049_option_1">scale(1.02)</string>
+    <string name="html_css_code_049_option_2">center</string>
+    <string name="html_css_code_049_option_3">bold</string>
+    <string name="html_css_code_049_option_4">flex</string>
+    <string name="html_css_code_049_explanation">transform permite escalar, mover o rotar.</string>
+
+    <string name="html_css_code_050_question">Completa el CSS:\n\n.title {\n  line-height: ____;\n}</string>
+    <string name="html_css_code_050_option_1">1.4</string>
+    <string name="html_css_code_050_option_2">center</string>
+    <string name="html_css_code_050_option_3">bold</string>
+    <string name="html_css_code_050_option_4">grid</string>
+    <string name="html_css_code_050_explanation">line-height controla la altura de línea.</string>
+
+    <!-- HTML/CSS - Match Concept -->
+    <string name="html_css_match_001_question">Relaciona el concepto: semántica HTML</string>
+    <string name="html_css_match_001_option_1">Usar etiquetas con significado</string>
+    <string name="html_css_match_001_option_2">Poner muchos div</string>
+    <string name="html_css_match_001_option_3">Usar solo CSS</string>
+    <string name="html_css_match_001_option_4">Eliminar atributos</string>
+    <string name="html_css_match_001_explanation">La semántica consiste en usar etiquetas que describen el contenido.</string>
+
+    <string name="html_css_match_002_question">Relaciona el concepto: responsive design</string>
+    <string name="html_css_match_002_option_1">Diseño adaptable a distintos tamaños de pantalla</string>
+    <string name="html_css_match_002_option_2">Diseño solo para escritorio</string>
+    <string name="html_css_match_002_option_3">Animación CSS</string>
+    <string name="html_css_match_002_option_4">Validación HTML</string>
+    <string name="html_css_match_002_explanation">Responsive design adapta la interfaz a diferentes dispositivos.</string>
+
+    <string name="html_css_match_003_question">Relaciona el concepto: box model</string>
+    <string name="html_css_match_003_option_1">Content, padding, border y margin</string>
+    <string name="html_css_match_003_option_2">Solo colores</string>
+    <string name="html_css_match_003_option_3">Sistema de rutas</string>
+    <string name="html_css_match_003_option_4">Motor JavaScript</string>
+    <string name="html_css_match_003_explanation">El box model describe cómo se calcula el espacio de los elementos.</string>
+
+    <string name="html_css_match_004_question">Relaciona el concepto: Flexbox</string>
+    <string name="html_css_match_004_option_1">Layout en una dimensión</string>
+    <string name="html_css_match_004_option_2">Base de datos</string>
+    <string name="html_css_match_004_option_3">Etiqueta de imagen</string>
+    <string name="html_css_match_004_option_4">Animación JavaScript</string>
+    <string name="html_css_match_004_explanation">Flexbox organiza elementos en fila o columna.</string>
+
+    <string name="html_css_match_005_question">Relaciona el concepto: CSS Grid</string>
+    <string name="html_css_match_005_option_1">Layout en filas y columnas</string>
+    <string name="html_css_match_005_option_2">Formulario HTML</string>
+    <string name="html_css_match_005_option_3">Selector de id</string>
+    <string name="html_css_match_005_option_4">Tipo de imagen</string>
+    <string name="html_css_match_005_explanation">Grid es ideal para layouts bidimensionales.</string>
+
+    <string name="html_css_match_006_question">Relaciona el concepto: selector de clase</string>
+    <string name="html_css_match_006_option_1">Selecciona elementos por class usando .</string>
+    <string name="html_css_match_006_option_2">Selecciona por id usando #</string>
+    <string name="html_css_match_006_option_3">Selecciona imágenes</string>
+    <string name="html_css_match_006_option_4">Selecciona scripts</string>
+    <string name="html_css_match_006_explanation">.clase selecciona clases.</string>
+
+    <string name="html_css_match_007_question">Relaciona el concepto: selector de id</string>
+    <string name="html_css_match_007_option_1">Selecciona un elemento por id usando #</string>
+    <string name="html_css_match_007_option_2">Selecciona clases usando .</string>
+    <string name="html_css_match_007_option_3">Selecciona todos los enlaces</string>
+    <string name="html_css_match_007_option_4">Selecciona formularios</string>
+    <string name="html_css_match_007_explanation">#id selecciona por id.</string>
+
+    <string name="html_css_match_008_question">Relaciona el concepto: media query</string>
+    <string name="html_css_match_008_option_1">Regla para adaptar estilos a condiciones de pantalla</string>
+    <string name="html_css_match_008_option_2">Etiqueta para vídeos</string>
+    <string name="html_css_match_008_option_3">Atributo de imagen</string>
+    <string name="html_css_match_008_option_4">Propiedad de texto</string>
+    <string name="html_css_match_008_explanation">\@media permite adaptar CSS.</string>
+
+    <string name="html_css_match_009_question">Relaciona el concepto: accesibilidad</string>
+    <string name="html_css_match_009_option_1">Hacer la web usable para más personas</string>
+    <string name="html_css_match_009_option_2">Solo cambiar colores</string>
+    <string name="html_css_match_009_option_3">Quitar textos alternativos</string>
+    <string name="html_css_match_009_option_4">Usar solo divs</string>
+    <string name="html_css_match_009_explanation">La accesibilidad mejora el uso para personas con distintas necesidades.</string>
+
+    <string name="html_css_match_010_question">Relaciona el concepto: especificidad CSS</string>
+    <string name="html_css_match_010_option_1">Reglas que deciden qué estilo tiene prioridad</string>
+    <string name="html_css_match_010_option_2">Orden de etiquetas HTML</string>
+    <string name="html_css_match_010_option_3">Tamaño del viewport</string>
+    <string name="html_css_match_010_option_4">Carga de imágenes</string>
+    <string name="html_css_match_010_explanation">La especificidad decide qué regla gana.</string>
+
+    <!-- HTML/CSS - Detect Error -->
+    <string name="html_css_error_001_question">Detecta el error:\n\n&lt;img src=&quot;logo.png&quot;&gt;</string>
+    <string name="html_css_error_001_option_1">Falta el atributo alt</string>
+    <string name="html_css_error_001_option_2">img no existe</string>
+    <string name="html_css_error_001_option_3">src debe llamarse href</string>
+    <string name="html_css_error_001_option_4">No hay error crítico</string>
+    <string name="html_css_error_001_explanation">Por accesibilidad, las imágenes deberían incluir alt.</string>
+
+    <string name="html_css_error_002_question">Detecta el error:\n\n&lt;div&gt;\n  &lt;p&gt;Hola&lt;/div&gt;\n&lt;/p&gt;</string>
+    <string name="html_css_error_002_option_1">Etiquetas mal anidadas</string>
+    <string name="html_css_error_002_option_2">div no puede contener p</string>
+    <string name="html_css_error_002_option_3">p no existe</string>
+    <string name="html_css_error_002_option_4">Falta CSS</string>
+    <string name="html_css_error_002_explanation">Las etiquetas deben cerrarse en el orden correcto.</string>
+
+    <string name="html_css_error_003_question">Detecta el error:\n\n&lt;a src=&quot;/home&quot;&gt;Inicio&lt;/a&gt;</string>
+    <string name="html_css_error_003_option_1">En enlaces se usa href, no src</string>
+    <string name="html_css_error_003_option_2">a no existe</string>
+    <string name="html_css_error_003_option_3">Inicio debe ir en alt</string>
+    <string name="html_css_error_003_option_4">No hay error</string>
+    <string name="html_css_error_003_explanation">Los enlaces usan href.</string>
+
+    <string name="html_css_error_004_question">Detecta el error:\n\n&lt;img href=&quot;logo.png&quot; alt=&quot;Logo&quot;&gt;</string>
+    <string name="html_css_error_004_option_1">En imágenes se usa src, no href</string>
+    <string name="html_css_error_004_option_2">img necesita cierre obligatorio</string>
+    <string name="html_css_error_004_option_3">alt no existe</string>
+    <string name="html_css_error_004_option_4">No hay error</string>
+    <string name="html_css_error_004_explanation">img usa src para la ruta.</string>
+
+    <string name="html_css_error_005_question">Detecta el error:\n\n#menu { color: red; }\n#menu { background: blue; }</string>
+    <string name="html_css_error_005_option_1">No hay error de sintaxis</string>
+    <string name="html_css_error_005_option_2">Un id no puede tener CSS</string>
+    <string name="html_css_error_005_option_3">background no existe</string>
+    <string name="html_css_error_005_option_4">color no acepta red</string>
+    <string name="html_css_error_005_explanation">No hay error de sintaxis; las reglas se combinan.</string>
+
+    <string name="html_css_error_006_question">Detecta el error:\n\n.card {\n  colour: red;\n}</string>
+    <string name="html_css_error_006_option_1">La propiedad correcta es color</string>
+    <string name="html_css_error_006_option_2">red no existe</string>
+    <string name="html_css_error_006_option_3">card no puede ser clase</string>
+    <string name="html_css_error_006_option_4">Falta HTML</string>
+    <string name="html_css_error_006_explanation">En CSS es color, no colour.</string>
+
+    <string name="html_css_error_007_question">Detecta el error:\n\n.card {\n  font-size: bold;\n}</string>
+    <string name="html_css_error_007_option_1">bold corresponde a font-weight</string>
+    <string name="html_css_error_007_option_2">font-size no existe</string>
+    <string name="html_css_error_007_option_3">Falta punto y coma</string>
+    <string name="html_css_error_007_option_4">No hay error</string>
+    <string name="html_css_error_007_explanation">font-size espera tamaño; bold es grosor.</string>
+
+    <string name="html_css_error_008_question">Detecta el error:\n\n.container {\n  display: flexbox;\n}</string>
+    <string name="html_css_error_008_option_1">El valor correcto es flex</string>
+    <string name="html_css_error_008_option_2">display no existe</string>
+    <string name="html_css_error_008_option_3">flexbox solo va en HTML</string>
+    <string name="html_css_error_008_option_4">No hay error</string>
+    <string name="html_css_error_008_explanation">Se usa display: flex.</string>
+
+    <string name="html_css_error_009_question">Detecta el error:\n\n.grid {\n  display: grid;\n  grid-template-column: 1fr 1fr;\n}</string>
+    <string name="html_css_error_009_option_1">La propiedad correcta es grid-template-columns</string>
+    <string name="html_css_error_009_option_2">display grid está mal</string>
+    <string name="html_css_error_009_option_3">1fr no existe</string>
+    <string name="html_css_error_009_option_4">No hay error</string>
+    <string name="html_css_error_009_explanation">La propiedad va en plural: columns.</string>
+
+    <string name="html_css_error_010_question">Detecta el error:\n\n&lt;label&gt;Email&lt;/label&gt;\n&lt;input id=&quot;email&quot;&gt;</string>
+    <string name="html_css_error_010_option_1">El label no está asociado con for=&quot;email&quot;</string>
+    <string name="html_css_error_010_option_2">input no puede tener id</string>
+    <string name="html_css_error_010_option_3">label no existe</string>
+    <string name="html_css_error_010_option_4">No hay error</string>
+    <string name="html_css_error_010_explanation">Para asociarlo conviene usar for con el id del input.</string>
+
+    <!-- HTML/CSS - Console Output -->
+    <string name="html_css_output_001_question">¿Qué selector apunta a un id llamado menu?\n\nHTML: &lt;nav id=&quot;menu&quot;&gt;&lt;/nav&gt;</string>
+    <string name="html_css_output_001_option_1">.menu</string>
+    <string name="html_css_output_001_option_2">#menu</string>
+    <string name="html_css_output_001_option_3">menu</string>
+    <string name="html_css_output_001_option_4">*menu</string>
+    <string name="html_css_output_001_explanation">#menu selecciona un elemento por id.</string>
+
+    <string name="html_css_output_002_question">¿Qué selector apunta a una clase llamada card?\n\nHTML: &lt;div class=&quot;card&quot;&gt;&lt;/div&gt;</string>
+    <string name="html_css_output_002_option_1">#card</string>
+    <string name="html_css_output_002_option_2">.card</string>
+    <string name="html_css_output_002_option_3">card</string>
+    <string name="html_css_output_002_option_4">\@card</string>
+    <string name="html_css_output_002_explanation">.card selecciona elementos con esa clase.</string>
+
+    <string name="html_css_output_003_question">¿Qué propiedad centra elementos en el eje principal usando Flexbox?</string>
+    <string name="html_css_output_003_option_1">align-items</string>
+    <string name="html_css_output_003_option_2">justify-content</string>
+    <string name="html_css_output_003_option_3">text-align</string>
+    <string name="html_css_output_003_option_4">place-font</string>
+    <string name="html_css_output_003_explanation">justify-content alinea en el eje principal.</string>
+
+    <string name="html_css_output_004_question">¿Qué propiedad centra elementos en el eje cruzado usando Flexbox?</string>
+    <string name="html_css_output_004_option_1">align-items</string>
+    <string name="html_css_output_004_option_2">justify-content</string>
+    <string name="html_css_output_004_option_3">text-align</string>
+    <string name="html_css_output_004_option_4">font-align</string>
+    <string name="html_css_output_004_explanation">align-items alinea en el eje cruzado.</string>
+
+    <string name="html_css_output_005_question">Con este CSS, ¿de qué color será el texto?\n\np { color: red; }</string>
+    <string name="html_css_output_005_option_1">Rojo</string>
+    <string name="html_css_output_005_option_2">Azul</string>
+    <string name="html_css_output_005_option_3">Negro</string>
+    <string name="html_css_output_005_option_4">Transparente</string>
+    <string name="html_css_output_005_explanation">color: red hace el texto rojo.</string>
+
+    <string name="html_css_output_006_question">Con este CSS, ¿qué selector tiene más prioridad normalmente?</string>
+    <string name="html_css_output_006_option_1">#titulo</string>
+    <string name="html_css_output_006_option_2">.titulo</string>
+    <string name="html_css_output_006_option_3">h1</string>
+    <string name="html_css_output_006_option_4">*</string>
+    <string name="html_css_output_006_explanation">El selector de id tiene más especificidad.</string>
+
+    <string name="html_css_output_007_question">¿Qué hace display: none?</string>
+    <string name="html_css_output_007_option_1">Oculta el elemento y no ocupa espacio</string>
+    <string name="html_css_output_007_option_2">Solo baja la opacidad</string>
+    <string name="html_css_output_007_option_3">Lo centra</string>
+    <string name="html_css_output_007_option_4">Lo convierte en flex</string>
+    <string name="html_css_output_007_explanation">display none elimina el elemento del flujo visual.</string>
+
+    <string name="html_css_output_008_question">¿Qué hace visibility: hidden?</string>
+    <string name="html_css_output_008_option_1">Oculta pero conserva espacio</string>
+    <string name="html_css_output_008_option_2">Elimina del DOM</string>
+    <string name="html_css_output_008_option_3">Centra el texto</string>
+    <string name="html_css_output_008_option_4">Activa Grid</string>
+    <string name="html_css_output_008_explanation">visibility hidden oculta visualmente pero mantiene espacio.</string>
+
+    <string name="html_css_output_009_question">¿Qué hace object-fit: cover en una imagen?</string>
+    <string name="html_css_output_009_option_1">Cubre el contenedor manteniendo proporción</string>
+    <string name="html_css_output_009_option_2">Deforma siempre la imagen</string>
+    <string name="html_css_output_009_option_3">La convierte en SVG</string>
+    <string name="html_css_output_009_option_4">La oculta</string>
+    <string name="html_css_output_009_explanation">cover cubre recortando si es necesario.</string>
+
+    <string name="html_css_output_010_question">¿Qué hace box-sizing: border-box?</string>
+    <string name="html_css_output_010_option_1">Incluye padding y border en el ancho</string>
+    <string name="html_css_output_010_option_2">Elimina márgenes</string>
+    <string name="html_css_output_010_option_3">Centra cajas</string>
+    <string name="html_css_output_010_option_4">Activa sombras</string>
+    <string name="html_css_output_010_explanation">border-box facilita calcular tamaños.</string>
+
+    <!-- HTML/CSS - Order Code -->
+    <string name="html_css_order_001_question">Ordena la estructura básica HTML:</string>
+    <string name="html_css_order_001_option_1">&lt;!DOCTYPE html&gt;</string>
+    <string name="html_css_order_001_option_2">&lt;html&gt;</string>
+    <string name="html_css_order_001_option_3">&lt;head&gt;&lt;/head&gt;</string>
+    <string name="html_css_order_001_option_4">&lt;body&gt;&lt;/body&gt;</string>
+    <string name="html_css_order_001_option_5">&lt;/html&gt;</string>
+    <string name="html_css_order_001_explanation">Una página HTML sigue una estructura base.</string>
+
+    <string name="html_css_order_002_question">Ordena una tarjeta HTML sencilla:</string>
+    <string name="html_css_order_002_option_1">&lt;article class=&quot;card&quot;&gt;</string>
+    <string name="html_css_order_002_option_2">&lt;h2&gt;Título&lt;/h2&gt;</string>
+    <string name="html_css_order_002_option_3">&lt;p&gt;Descripción&lt;/p&gt;</string>
+    <string name="html_css_order_002_option_4">&lt;/article&gt;</string>
+    <string name="html_css_order_002_explanation">Primero contenedor, luego contenido, luego cierre.</string>
+
+    <string name="html_css_order_003_question">Ordena una lista desordenada:</string>
+    <string name="html_css_order_003_option_1">&lt;ul&gt;</string>
+    <string name="html_css_order_003_option_2">&lt;li&gt;Uno&lt;/li&gt;</string>
+    <string name="html_css_order_003_option_3">&lt;li&gt;Dos&lt;/li&gt;</string>
+    <string name="html_css_order_003_option_4">&lt;/ul&gt;</string>
+    <string name="html_css_order_003_explanation">Los li van dentro de ul.</string>
+
+    <string name="html_css_order_004_question">Ordena un formulario básico:</string>
+    <string name="html_css_order_004_option_1">&lt;form&gt;</string>
+    <string name="html_css_order_004_option_2">&lt;label for=&quot;email&quot;&gt;Email&lt;/label&gt;</string>
+    <string name="html_css_order_004_option_3">&lt;input id=&quot;email&quot; type=&quot;email&quot;&gt;</string>
+    <string name="html_css_order_004_option_4">&lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;</string>
+    <string name="html_css_order_004_option_5">&lt;/form&gt;</string>
+    <string name="html_css_order_004_explanation">El formulario agrupa label, input y button.</string>
+
+    <string name="html_css_order_005_question">Ordena CSS para una card:</string>
+    <string name="html_css_order_005_option_1">.card {</string>
+    <string name="html_css_order_005_option_2">padding: 16px;</string>
+    <string name="html_css_order_005_option_3">border-radius: 16px;</string>
+    <string name="html_css_order_005_option_4">background-color: #111;</string>
+    <string name="html_css_order_005_option_5">}</string>
+    <string name="html_css_order_005_explanation">Las reglas CSS van dentro del bloque.</string>
+
+    <string name="html_css_order_006_question">Ordena CSS para centrar con Flexbox:</string>
+    <string name="html_css_order_006_option_1">.container {</string>
+    <string name="html_css_order_006_option_2">display: flex;</string>
+    <string name="html_css_order_006_option_3">justify-content: center;</string>
+    <string name="html_css_order_006_option_4">align-items: center;</string>
+    <string name="html_css_order_006_option_5">}</string>
+    <string name="html_css_order_006_explanation">Primero se activa flex y luego se alinean ejes.</string>
+
+    <string name="html_css_order_007_question">Ordena CSS Grid básico:</string>
+    <string name="html_css_order_007_option_1">.grid {</string>
+    <string name="html_css_order_007_option_2">display: grid;</string>
+    <string name="html_css_order_007_option_3">grid-template-columns: 1fr 1fr;</string>
+    <string name="html_css_order_007_option_4">gap: 16px;</string>
+    <string name="html_css_order_007_option_5">}</string>
+    <string name="html_css_order_007_explanation">Primero display grid, luego columnas y separación.</string>
+
+    <string name="html_css_order_008_question">Ordena una media query:</string>
+    <string name="html_css_order_008_option_1">\@media (max-width: 768px) {</string>
+    <string name="html_css_order_008_option_2">.grid {</string>
+    <string name="html_css_order_008_option_3">grid-template-columns: 1fr;</string>
+    <string name="html_css_order_008_option_4">}</string>
+    <string name="html_css_order_008_option_5">}</string>
+    <string name="html_css_order_008_explanation">La media query envuelve las reglas responsive.</string>
+
+    <string name="html_css_order_009_question">Ordena un enlace accesible:</string>
+    <string name="html_css_order_009_option_1">&lt;a href=&quot;/contacto&quot;&gt;</string>
+    <string name="html_css_order_009_option_2">Contacto</string>
+    <string name="html_css_order_009_option_3">&lt;/a&gt;</string>
+    <string name="html_css_order_009_explanation">El texto va dentro del enlace.</string>
+
+    <string name="html_css_order_010_question">Ordena una imagen accesible:</string>
+    <string name="html_css_order_010_option_1">&lt;img</string>
+    <string name="html_css_order_010_option_2">src=&quot;logo.png&quot;</string>
+    <string name="html_css_order_010_option_3">alt=&quot;Logo de la app&quot;</string>
+    <string name="html_css_order_010_option_4">&gt;</string>
+    <string name="html_css_order_010_explanation">La imagen necesita src y alt.</string>
+
+    <!-- HTML/CSS - Technical Wordle -->
+    <string name="html_css_wordle_001_question">Etiqueta de 4 letras para el contenido principal.</string>
+    <string name="html_css_wordle_001_option_1">MAIN</string>
+    <string name="html_css_wordle_001_option_2">BODY</string>
+    <string name="html_css_wordle_001_option_3">HEAD</string>
+    <string name="html_css_wordle_001_option_4">FORM</string>
+    <string name="html_css_wordle_001_explanation">main representa contenido principal.</string>
+
+    <string name="html_css_wordle_002_question">Etiqueta de 3 letras para navegación.</string>
+    <string name="html_css_wordle_002_option_1">NAV</string>
+    <string name="html_css_wordle_002_option_2">DIV</string>
+    <string name="html_css_wordle_002_option_3">IMG</string>
+    <string name="html_css_wordle_002_option_4">URL</string>
+    <string name="html_css_wordle_002_explanation">nav representa navegación.</string>
+
+    <string name="html_css_wordle_003_question">Etiqueta de 3 letras para imagen.</string>
+    <string name="html_css_wordle_003_option_1">IMG</string>
+    <string name="html_css_wordle_003_option_2">PIC</string>
+    <string name="html_css_wordle_003_option_3">SVG</string>
+    <string name="html_css_wordle_003_option_4">SRC</string>
+    <string name="html_css_wordle_003_explanation">img inserta imágenes.</string>
+
+    <string name="html_css_wordle_004_question">Propiedad CSS de 5 letras para color de texto.</string>
+    <string name="html_css_wordle_004_option_1">COLOR</string>
+    <string name="html_css_wordle_004_option_2">STYLE</string>
+    <string name="html_css_wordle_004_option_3">PAINT</string>
+    <string name="html_css_wordle_004_option_4">SHADE</string>
+    <string name="html_css_wordle_004_explanation">color cambia el texto.</string>
+
+    <string name="html_css_wordle_005_question">Modelo CSS de layout flexible.</string>
+    <string name="html_css_wordle_005_option_1">FLEX</string>
+    <string name="html_css_wordle_005_option_2">GRID</string>
+    <string name="html_css_wordle_005_option_3">FLOW</string>
+    <string name="html_css_wordle_005_option_4">WRAP</string>
+    <string name="html_css_wordle_005_explanation">Flexbox se activa con flex.</string>
+
+    <string name="html_css_wordle_006_question">Modelo CSS bidimensional.</string>
+    <string name="html_css_wordle_006_option_1">GRID</string>
+    <string name="html_css_wordle_006_option_2">FLEX</string>
+    <string name="html_css_wordle_006_option_3">BOX</string>
+    <string name="html_css_wordle_006_option_4">PAGE</string>
+    <string name="html_css_wordle_006_explanation">Grid trabaja con filas y columnas.</string>
+
+    <string name="html_css_wordle_007_question">Propiedad para espacio interior.</string>
+    <string name="html_css_wordle_007_option_1">PADDING</string>
+    <string name="html_css_wordle_007_option_2">MARGIN</string>
+    <string name="html_css_wordle_007_option_3">BORDER</string>
+    <string name="html_css_wordle_007_option_4">GAP</string>
+    <string name="html_css_wordle_007_explanation">padding es espacio interno.</string>
+
+    <string name="html_css_wordle_008_question">Propiedad para espacio exterior.</string>
+    <string name="html_css_wordle_008_option_1">MARGIN</string>
+    <string name="html_css_wordle_008_option_2">PADDING</string>
+    <string name="html_css_wordle_008_option_3">BORDER</string>
+    <string name="html_css_wordle_008_option_4">WIDTH</string>
+    <string name="html_css_wordle_008_explanation">margin es espacio externo.</string>
+
+    <string name="html_css_wordle_009_question">Regla responsive CSS.</string>
+    <string name="html_css_wordle_009_option_1">MEDIA</string>
+    <string name="html_css_wordle_009_option_2">QUERY</string>
+    <string name="html_css_wordle_009_option_3">PHONE</string>
+    <string name="html_css_wordle_009_option_4">SCREEN</string>
+    <string name="html_css_wordle_009_explanation">\@media permite responsive.</string>
+
+    <string name="html_css_wordle_010_question">Selector universal CSS.</string>
+    <string name="html_css_wordle_010_option_1">*</string>
+    <string name="html_css_wordle_010_option_2">#</string>
+    <string name="html_css_wordle_010_option_3">.</string>
+    <string name="html_css_wordle_010_option_4">&gt;</string>
+    <string name="html_css_wordle_010_explanation">* selecciona todos los elementos.</string>
+
+    <!-- HTML/CSS - Crossword -->
+    <string name="html_css_crossword_001_question">Pista: etiqueta del contenido principal.</string>
+    <string name="html_css_crossword_001_option_1">main</string>
+    <string name="html_css_crossword_001_option_2">div</string>
+    <string name="html_css_crossword_001_option_3">span</string>
+    <string name="html_css_crossword_001_option_4">footer</string>
+    <string name="html_css_crossword_001_explanation">main representa el contenido principal.</string>
+
+    <string name="html_css_crossword_002_question">Pista: atributo de texto alternativo en imágenes.</string>
+    <string name="html_css_crossword_002_option_1">alt</string>
+    <string name="html_css_crossword_002_option_2">src</string>
+    <string name="html_css_crossword_002_option_3">href</string>
+    <string name="html_css_crossword_002_option_4">title</string>
+    <string name="html_css_crossword_002_explanation">alt describe imágenes.</string>
+
+    <string name="html_css_crossword_003_question">Pista: selector para clases.</string>
+    <string name="html_css_crossword_003_option_1">.</string>
+    <string name="html_css_crossword_003_option_2">#</string>
+    <string name="html_css_crossword_003_option_3">*</string>
+    <string name="html_css_crossword_003_option_4">\@</string>
+    <string name="html_css_crossword_003_explanation">El punto selecciona clases.</string>
+
+    <string name="html_css_crossword_004_question">Pista: selector para id.</string>
+    <string name="html_css_crossword_004_option_1">#</string>
+    <string name="html_css_crossword_004_option_2">.</string>
+    <string name="html_css_crossword_004_option_3">*</string>
+    <string name="html_css_crossword_004_option_4">:</string>
+    <string name="html_css_crossword_004_explanation"># selecciona ids.</string>
+
+    <string name="html_css_crossword_005_question">Pista: propiedad del color de texto.</string>
+    <string name="html_css_crossword_005_option_1">color</string>
+    <string name="html_css_crossword_005_option_2">background</string>
+    <string name="html_css_crossword_005_option_3">font</string>
+    <string name="html_css_crossword_005_option_4">paint</string>
+    <string name="html_css_crossword_005_explanation">color cambia el texto.</string>
+
+    <string name="html_css_crossword_006_question">Pista: espacio interior de una caja.</string>
+    <string name="html_css_crossword_006_option_1">padding</string>
+    <string name="html_css_crossword_006_option_2">margin</string>
+    <string name="html_css_crossword_006_option_3">border</string>
+    <string name="html_css_crossword_006_option_4">outline</string>
+    <string name="html_css_crossword_006_explanation">padding es espacio interior.</string>
+
+    <string name="html_css_crossword_007_question">Pista: espacio exterior de una caja.</string>
+    <string name="html_css_crossword_007_option_1">margin</string>
+    <string name="html_css_crossword_007_option_2">padding</string>
+    <string name="html_css_crossword_007_option_3">border</string>
+    <string name="html_css_crossword_007_option_4">gap</string>
+    <string name="html_css_crossword_007_explanation">margin es espacio exterior.</string>
+
+    <string name="html_css_crossword_008_question">Pista: layout en filas y columnas.</string>
+    <string name="html_css_crossword_008_option_1">grid</string>
+    <string name="html_css_crossword_008_option_2">flex</string>
+    <string name="html_css_crossword_008_option_3">float</string>
+    <string name="html_css_crossword_008_option_4">inline</string>
+    <string name="html_css_crossword_008_explanation">Grid es bidimensional.</string>
+
+    <string name="html_css_crossword_009_question">Pista: layout flexible en una dimensión.</string>
+    <string name="html_css_crossword_009_option_1">flex</string>
+    <string name="html_css_crossword_009_option_2">grid</string>
+    <string name="html_css_crossword_009_option_3">table</string>
+    <string name="html_css_crossword_009_option_4">block</string>
+    <string name="html_css_crossword_009_explanation">Flexbox organiza en un eje.</string>
+
+    <string name="html_css_crossword_010_question">Pista: regla para estilos responsive.</string>
+    <string name="html_css_crossword_010_option_1">\@media</string>
+    <string name="html_css_crossword_010_option_2">\@mobile</string>
+    <string name="html_css_crossword_010_option_3">\@screen</string>
+    <string name="html_css_crossword_010_option_4">\@query</string>
+    <string name="html_css_crossword_010_explanation">\@media aplica condiciones.</string>
+
+</resources>

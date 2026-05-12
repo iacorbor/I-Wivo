@@ -1,0 +1,441 @@
+<resources>
+    <string name="app_name">I-Wivo</string>
+    <string name="greeting">Hi, Isra! 👋</string>
+    <string name="subtitle">Ready to keep learning?</string>
+    <string name="progress_title">Your progress</string>
+    <string name="level">Level %1$d</string>
+    <string name="xp">%1$d / %2$d XP</string>
+    <string name="next_mission">Next mission</string>
+    <string name="daily_mission_title">JavaScript Basics</string>
+    <string name="daily_mission_subtitle">Variables and data types</string>
+    <string name="learning_paths">Learning paths</string>
+
+    <string name="topic_java">Java</string>
+    <string name="topic_kotlin">Kotlin</string>
+    <string name="topic_sql">SQL</string>
+    <string name="topic_javascript">JavaScript</string>
+    <string name="topic_html_css">HTML/CSS</string>
+    <string name="topic_git">Git</string>
+    <string name="topic_android">Android</string>
+    <string name="topic_firebase">Firebase</string>
+    <string name="topic_spring">Spring</string>
+
+
+    <string name="arrow">→</string>
+    <string name="start_training">Start training</string>
+    <string name="choose_topic">Choose a path</string>
+    <string name="choose_topic_subtitle">Select what you want to practise today</string>
+    <string name="choose_game_type">Choose challenge type</string>
+    <string name="selected_topic">Selected path: %1$s</string>
+
+    <string name="game_type_test">Quiz</string>
+    <string name="game_type_test_subtitle">4 answers, only one is correct</string>
+    <string name="game_type_true_false">True / False</string>
+    <string name="game_type_true_false_subtitle">Decide if the statement is correct</string>
+    <string name="game_type_complete_code">Complete code</string>
+    <string name="game_type_complete_code_subtitle">Choose the missing piece</string>
+    <string name="game_type_detect_error">Find the error</string>
+    <string name="game_type_detect_error_subtitle">Find which part of the code is wrong</string>
+    <string name="game_type_console_output">Console output</string>
+    <string name="game_type_console_output_subtitle">Predict what the program will print</string>
+    <string name="game_type_concept_match">Concept → definition</string>
+    <string name="game_type_concept_match_subtitle">Match an idea with its correct meaning</string>
+    <string name="game_type_match_concept">Match concepts</string>
+    <string name="game_type_match_concept_subtitle">Match the concept with its correct definition</string>
+    <string name="game_type_order_code">Order code</string>
+    <string name="game_type_order_code_subtitle">Put the lines in the correct order</string>
+    <string name="game_type_technical_wordle">Hangman</string>
+    <string name="game_type_technical_wordle_subtitle">Guess the technical term with limited attempts</string>
+    <string name="game_type_crossword">Technical crossword</string>
+    <string name="game_type_crossword_subtitle">Solve programming clues</string>
+
+    <string name="game_header">Path %1$s</string>
+    <string name="question_counter">Question %1$d of %2$d</string>
+    <string name="check_answer">Check answer</string>
+    <string name="next_question">Next</string>
+    <string name="see_result">See result</string>
+    <string name="correct_answer">Correct!</string>
+    <string name="wrong_answer">Wrong</string>
+    <string name="no_questions">There are no questions for %1$s / %2$s yet.</string>
+
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="game_difficulty_label">Difficulty: %1$s</string>
+
+    <string name="game_current_streak">🔥 Streak: %1$d</string>
+    <string name="game_best_streak">Best streak: %1$d</string>
+    <string name="time_left">⏱️ %1$d s</string>
+    <string name="time_out_title">⏱️ Time is up</string>
+    <string name="time_out_message">You ran out of time for this question.</string>
+
+    <string name="feedback_correct">CORRECT</string>
+    <string name="feedback_wrong">WRONG</string>
+    <string name="feedback_correct_hint">Keep going</string>
+    <string name="feedback_wrong_hint">Review this</string>
+    <string name="feedback_correct_title">✅ Correct</string>
+    <string name="feedback_wrong_title">❌ Wrong</string>
+    <string name="feedback_correct_answer">Correct answer: %1$s</string>
+
+    <string name="true_option">True</string>
+    <string name="false_option">False</string>
+    <string name="complete_code_label">Wivo Console</string>
+    <string name="complete_code_hint">Choose the fragment that completes the code.</string>
+    <string name="game_match_label">Match concept</string>
+    <string name="game_match_hint">Choose the definition or concept that matches.</string>
+    <string name="game_detect_error_hint">Read the code and select where the error is.</string>
+    <string name="game_console_output_hint">Choose what output the code would produce.</string>
+    <string name="game_order_code_hint">Tap the lines in the correct order.</string>
+    <string name="game_wordle_label">Hangman</string>
+    <string name="game_wordle_hint">Type letters to reveal the hidden technical word.</string>
+    <string name="game_crossword_label">Technical crossword</string>
+    <string name="game_crossword_hint">Solve the clue by choosing the correct concept.</string>
+
+    <string name="result_title">Challenge result</string>
+    <string name="result_score">%1$d out of %2$d correct</string>
+    <string name="result_xp">+%1$d XP earned</string>
+    <string name="result_coins">+%1$d Wivo Coins</string>
+    <string name="result_best_streak">🔥 Best streak: %1$d</string>
+    <string name="result_default_badge_name">New achievement</string>
+    <string name="result_default_badge_description">New achievement unlocked.</string>
+    <string name="result_perfect">Perfect. You nailed the challenge</string>
+    <string name="result_excellent">Excellent result</string>
+    <string name="result_good">Good job, keep going</string>
+    <string name="result_medium">Good try. There is room to level up</string>
+    <string name="result_keep_practicing">Keep practising, you are improving</string>
+    <string name="result_badge_unlocked_title">🏆 Achievement unlocked</string>
+    <string name="rewards_title">Rewards</string>
+    <string name="back_home">Back home</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="profile_subtitle">Your I-Wivo progress</string>
+    <string name="total_xp">Total XP</string>
+    <string name="badges">Badges</string>
+    <string name="streak">Streak</string>
+    <string name="view_profile">View profile</string>
+    <string name="streak_days">%1$d days</string>
+    <string name="badges_section">Badges</string>
+    <string name="no_email">No email</string>
+    <string name="logout">Log out</string>
+    <string name="username">Username</string>
+    <string name="create_profile">Create your profile</string>
+    <string name="profile_no_username">No username</string>
+    <string name="profile_no_email">No email</string>
+    <string name="profile_not_authenticated">User not authenticated</string>
+    <string name="profile_unknown_error">Unknown error</string>
+    <string name="profile_edit_button">Edit profile</string>
+    <string name="profile_logout_button">Log out</string>
+
+    <string name="profile_achievements_title">Achievements</string>
+    <string name="profile_achievements_description">Check your unlocked achievements and upcoming challenges.</string>
+    <string name="profile_achievement_streak">Streak</string>
+    <string name="profile_achievement_xp">XP</string>
+    <string name="profile_achievement_quiz">Quiz</string>
+    <string name="profile_achievement_locked">Locked</string>
+    <string name="profile_achievements_real_description">You have unlocked %1$d achievements. You have %2$d left.</string>
+
+    <string name="profile_progress_title">Current progress</string>
+    <string name="profile_progress_level">Level</string>
+    <string name="profile_progress_xp">XP</string>
+    <string name="profile_progress_coins">Coins</string>
+    <string name="profile_progress_streak">Streak</string>
+    <string name="profile_progress_next_level">%1$d / %2$d XP for the next level</string>
+
+    <string name="badges_title">Achievements</string>
+    <string name="badges_subtitle">Unlock badges by earning XP, leveling up and keeping your streak.</string>
+    <string name="badges_summary_title">Your progress</string>
+    <string name="badges_stat_xp">XP</string>
+    <string name="badges_stat_coins">Coins</string>
+    <string name="badges_stat_streak">Streak</string>
+    <string name="badges_stat_unlocked">Unlocked</string>
+    <string name="badges_stat_locked">Locked</string>
+    <string name="badges_status_unlocked">UNLOCKED</string>
+    <string name="badges_status_locked">LOCKED</string>
+    <string name="badges_section_unlocked">Unlocked</string>
+    <string name="badges_section_locked">Locked</string>
+    <string name="badges_progress_completed">Completed</string>
+    <string name="badges_progress_pending">Pending</string>
+    <string name="badges_progress_xp">%1$d / %2$d XP</string>
+    <string name="badges_progress_level">Level %1$d / %2$d</string>
+    <string name="badges_progress_days">%1$d / %2$d days</string>
+    <string name="badges_progress_coins">%1$d / %2$d coins</string>
+    <string name="badges_progress_level_streak">Level %1$d / %2$d · Streak %3$d / %4$d</string>
+    <string name="badges_progress_legend">%1$d / %2$d XP or %3$d / %4$d days</string>
+
+    <string name="shop_title">Wivo Shop</string>
+    <string name="shop_subtitle">Unlock rewards with your coins</string>
+    <string name="wivo_coins">Wivo Coins</string>
+    <string name="coins_amount">%1$d coins</string>
+    <string name="buy_for_coins">Buy for %1$d coins</string>
+    <string name="unlocked">Unlocked</string>
+    <string name="open_shop">Open shop</string>
+    <string name="shop_user_level">Current level: %1$d</string>
+    <string name="shop_category_all">All</string>
+    <string name="shop_category_avatar_border">Avatar</string>
+    <string name="shop_category_background">Backgrounds</string>
+    <string name="shop_category_button_style">Buttons</string>
+    <string name="shop_category_theme">Themes</string>
+    <string name="shop_category_effect">Effects</string>
+    <string name="shop_status_equipped">Equipped</string>
+    <string name="shop_status_unlocked">Purchased</string>
+    <string name="shop_price">%1$d 💰</string>
+    <string name="shop_equip">Equip</string>
+    <string name="shop_unequip">Unequip</string>
+    <string name="shop_required_level">Requires level %1$d</string>
+    <string name="shop_required_level_short">Lv. %1$d</string>
+    <string name="shop_preview_label">Preview</string>
+    <string name="shop_message_unlocked">Item unlocked: %1$s</string>
+    <string name="shop_message_equipped">Item equipped: %1$s</string>
+    <string name="shop_message_unequipped">Item unequipped</string>
+
+    <string name="shop_preview_purple_border">Purple border applied to the avatar.</string>
+    <string name="shop_preview_blue_border">Blue border applied to the avatar.</string>
+    <string name="shop_preview_green_glow">Green glow around the avatar.</string>
+    <string name="shop_preview_cyber_pink_border">Neon pink border with cyber style.</string>
+    <string name="shop_preview_gold_rank_border">Golden border for standout profiles.</string>
+    <string name="shop_preview_ice_blue_border">Clean and elegant ice blue border.</string>
+    <string name="shop_preview_fire_orange_border">Strong orange border to stand out.</string>
+    <string name="shop_preview_rainbow_dev_border">Multicolor border for advanced profiles.</string>
+    <string name="shop_preview_background_deep_space">Dark space background for the app.</string>
+    <string name="shop_preview_background_neon_grid">Cyber background with subtle neon lines.</string>
+    <string name="shop_preview_background_midnight_code">Background inspired by code editors.</string>
+    <string name="shop_preview_background_matrix_flow">Dark green background with terminal feeling.</string>
+    <string name="shop_preview_background_blue_horizon">Deep blue background with tech energy.</string>
+    <string name="shop_preview_background_purple_void">Dark purple premium-looking background.</string>
+    <string name="shop_preview_background_green_terminal">Technical background inspired by classic terminals.</string>
+    <string name="shop_preview_background_pro_black">Professional minimalist black background.</string>
+    <string name="shop_preview_button_green_pulse">Buttons with Wivo green accent.</string>
+    <string name="shop_preview_button_purple_core">Buttons with intense purple style.</string>
+    <string name="shop_preview_button_blue_flash">Buttons with modern blue glow.</string>
+    <string name="shop_preview_button_neon_outline">Minimalist neon outline buttons.</string>
+    <string name="shop_preview_button_terminal_green">Buttons with technical console style.</string>
+    <string name="shop_preview_button_gold_focus">Golden buttons for an exclusive interface.</string>
+    <string name="shop_preview_theme_blue_terminal">Theme inspired by a modern IDE console.</string>
+    <string name="shop_preview_theme_matrix_wivo">Dark green terminal-style theme.</string>
+    <string name="shop_preview_theme_purple_neon">Premium futuristic purple theme.</string>
+    <string name="shop_preview_theme_cyber_academy">Gamified tech academy theme.</string>
+    <string name="shop_preview_theme_dark_minimal">Clean, sober and content-focused theme.</string>
+    <string name="shop_preview_theme_full_stack">Advanced theme for high-progress profiles.</string>
+    <string name="shop_preview_effect_soft_glow">Soft glow on important areas.</string>
+    <string name="shop_preview_effect_xp_spark">Visual effect to reinforce progress.</string>
+    <string name="shop_preview_effect_coin_flash">Effect designed for coin rewards.</string>
+    <string name="shop_preview_effect_streak_fire">Visual effect to reinforce streaks.</string>
+    <string name="shop_preview_effect_code_scan">Effect inspired by code scanning.</string>
+    <string name="shop_preview_default">Visual decoration for the app.</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="login">Log in</string>
+    <string name="create_account">Create account</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+    <string name="error_fill_all_fields">Fill in all fields</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+    <string name="error_login_failed">Could not log in</string>
+    <string name="error_register_failed">Could not create the account</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+
+    <string name="home_coins_streak">%1$d coins · %2$d-day streak</string>
+    <string name="home_next_step_label">Next step</string>
+    <string name="home_next_step_title">Continue your training</string>
+    <string name="home_next_step_description">Level %1$d · Current streak of %2$d days. Play a quick round to keep moving.</string>
+    <string name="home_motivation_label">Wivo tip</string>
+    <string name="home_motivation_default">A short game is enough to earn XP, coins and keep the habit.</string>
+    <string name="home_motivation_streak">Good streak. Try not to break it: a quick round keeps the rhythm.</string>
+    <string name="home_motivation_leveling">You already have solid progress. Keep pushing to unlock more achievements.</string>
+    <string name="home_motivation_shop">You have enough coins to check the shop and unlock rewards.</string>
+    <string name="home_motivation_footer">Train a little, but consistently.</string>
+    <string name="home_last_played_label">Quick access</string>
+    <string name="home_last_played_title">Continue where you left off</string>
+    <string name="home_last_played_description">%1$s · %2$s</string>
+    <string name="home_last_played_button">Continue training</string>
+
+    <string name="daily_mission_real_label">Daily mission</string>
+    <string name="daily_mission_answer_questions_title">Answer 10 questions today</string>
+    <string name="daily_mission_answer_questions_subtitle">Complete one game to progress your daily mission.</string>
+    <string name="daily_mission_progress">%1$d / %2$d questions</string>
+    <string name="daily_mission_reward">Reward: +50 XP · +20 Coins</string>
+    <string name="daily_mission_claim">Claim reward</string>
+    <string name="daily_mission_claimed">Reward claimed</string>
+    <string name="daily_mission_incomplete">Complete the mission to claim</string>
+
+    <string name="edit_profile_title">Edit profile</string>
+    <string name="edit_profile_choose_avatar">Choose your avatar</string>
+    <string name="edit_profile_username_label">Username</string>
+    <string name="edit_profile_save_button">Save changes</string>
+    <string name="edit_profile_saving">Saving...</string>
+    <string name="edit_profile_cancel_button">Cancel</string>
+    <string name="edit_profile_change_photo">Change profile photo</string>
+    <string name="edit_profile_username_empty_error">Username cannot be empty</string>
+    <string name="edit_profile_username_short_error">Username must be at least 3 characters</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Configure how you want I-Wivo to behave.</string>
+    <string name="settings_sound_title">Sound</string>
+    <string name="settings_sound_description">Enable or disable sound effects during games.</string>
+    <string name="settings_haptics_title">Vibration</string>
+    <string name="settings_haptics_description">Enable or disable haptic feedback when you answer right or wrong.</string>
+    <string name="settings_back">Back</string>
+
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_description">Choose the language used across the app.</string>
+    <string name="settings_language_spanish">Spanish</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_spanish_selected">Spanish selected</string>
+    <string name="settings_language_english_selected">English selected</string>
+
+    <string name="settings_about_title">About I-Wivo</string>
+    <string name="settings_about_description">Application and project information.</string>
+    <string name="settings_about_app_name_label">App</string>
+    <string name="settings_about_app_name_value">I-Wivo</string>
+    <string name="settings_about_version_label">Version</string>
+    <string name="settings_about_version_value">1.0.0</string>
+    <string name="settings_about_creator_label">Creator</string>
+    <string name="settings_about_creator_value">Israel Corrales</string>
+    <string name="settings_about_project_label">Project</string>
+    <string name="settings_about_project_value">DAM Intermodular Project</string>
+    <string name="settings_about_status_label">Status</string>
+    <string name="settings_about_status_value">In development</string>
+
+        <string name="shop_item_purple_border_name">Purple Neon Border</string>
+        <string name="shop_item_purple_border_description">Adds a premium purple border to your avatar.</string>
+
+        <string name="shop_item_blue_border_name">Electric Blue Border</string>
+        <string name="shop_item_blue_border_description">A bright blue border to make your profile stand out.</string>
+
+        <string name="shop_item_green_glow_name">Wivo Green Glow</string>
+        <string name="shop_item_green_glow_description">A green glow that gives energy to your avatar.</string>
+
+        <string name="shop_item_cyber_pink_border_name">Cyber Pink Border</string>
+        <string name="shop_item_cyber_pink_border_description">A neon pink border with a cyber style.</string>
+
+        <string name="shop_item_gold_rank_border_name">Gold Rank Border</string>
+        <string name="shop_item_gold_rank_border_description">A golden border for standout profiles.</string>
+
+        <string name="shop_item_ice_blue_border_name">Ice Blue Border</string>
+        <string name="shop_item_ice_blue_border_description">A clean and elegant ice blue border.</string>
+
+        <string name="shop_item_fire_orange_border_name">Fire Orange Border</string>
+        <string name="shop_item_fire_orange_border_description">An intense orange border to make a strong impression.</string>
+
+        <string name="shop_item_rainbow_dev_border_name">Rainbow Dev Border</string>
+        <string name="shop_item_rainbow_dev_border_description">A multicolor border for high-level profiles.</string>
+
+        <string name="shop_item_background_deep_space_name">Deep Space Background</string>
+        <string name="shop_item_background_deep_space_description">Darkens the app with a premium space background.</string>
+
+        <string name="shop_item_background_neon_grid_name">Neon Grid Background</string>
+        <string name="shop_item_background_neon_grid_description">Adds a cyber style with subtle neon lines.</string>
+
+        <string name="shop_item_background_midnight_code_name">Midnight Code Background</string>
+        <string name="shop_item_background_midnight_code_description">A dark background inspired by code editors.</string>
+
+        <string name="shop_item_background_matrix_flow_name">Matrix Flow Background</string>
+        <string name="shop_item_background_matrix_flow_description">A dark green background with a terminal feel.</string>
+
+        <string name="shop_item_background_blue_horizon_name">Blue Horizon Background</string>
+        <string name="shop_item_background_blue_horizon_description">A deep blue background with technological energy.</string>
+
+        <string name="shop_item_background_purple_void_name">Purple Void Background</string>
+        <string name="shop_item_background_purple_void_description">A dark purple background with a premium finish.</string>
+
+        <string name="shop_item_background_green_terminal_name">Green Terminal Background</string>
+        <string name="shop_item_background_green_terminal_description">A technical background inspired by classic terminals.</string>
+
+        <string name="shop_item_background_pro_black_name">Pro Black Background</string>
+        <string name="shop_item_background_pro_black_description">A minimalist black background with a professional look.</string>
+
+        <string name="shop_item_button_green_pulse_name">Green Pulse Button</string>
+        <string name="shop_item_button_green_pulse_description">Buttons with a Wivo green accent.</string>
+
+        <string name="shop_item_button_purple_core_name">Purple Core Button</string>
+        <string name="shop_item_button_purple_core_description">Buttons with an intense purple style.</string>
+
+        <string name="shop_item_button_blue_flash_name">Blue Flash Button</string>
+        <string name="shop_item_button_blue_flash_description">Buttons with a modern blue glow.</string>
+
+        <string name="shop_item_button_neon_outline_name">Neon Outline Button</string>
+        <string name="shop_item_button_neon_outline_description">Buttons with a minimalist neon outline.</string>
+
+        <string name="shop_item_button_terminal_green_name">Terminal Green Button</string>
+        <string name="shop_item_button_terminal_green_description">Buttons with a technical console style.</string>
+
+        <string name="shop_item_button_gold_focus_name">Gold Focus Button</string>
+        <string name="shop_item_button_gold_focus_description">Golden buttons for a more exclusive interface.</string>
+
+        <string name="shop_item_theme_blue_terminal_name">Blue Terminal Theme</string>
+        <string name="shop_item_theme_blue_terminal_description">A theme inspired by consoles and modern IDEs.</string>
+
+        <string name="shop_item_theme_matrix_wivo_name">Matrix Wivo Theme</string>
+        <string name="shop_item_theme_matrix_wivo_description">A dark green theme for technical training.</string>
+
+        <string name="shop_item_theme_purple_neon_name">Purple Neon Theme</string>
+        <string name="shop_item_theme_purple_neon_description">A purple theme with a premium futuristic style.</string>
+
+        <string name="shop_item_theme_cyber_academy_name">Cyber Academy Theme</string>
+        <string name="shop_item_theme_cyber_academy_description">A gamified theme for training like in a tech academy.</string>
+
+        <string name="shop_item_theme_dark_minimal_name">Dark Minimal Theme</string>
+        <string name="shop_item_theme_dark_minimal_description">A clean, sober theme focused on content.</string>
+
+        <string name="shop_item_theme_full_stack_name">Full Stack Theme</string>
+        <string name="shop_item_theme_full_stack_description">An advanced theme for profiles with lots of progress.</string>
+
+        <string name="shop_item_effect_soft_glow_name">Soft Glow Effect</string>
+        <string name="shop_item_effect_soft_glow_description">Adds a soft glow to important areas.</string>
+
+        <string name="shop_item_effect_xp_spark_name">XP Spark Effect</string>
+        <string name="shop_item_effect_xp_spark_description">A visual effect that reinforces the sense of progress.</string>
+
+        <string name="shop_item_effect_coin_flash_name">Coin Flash Effect</string>
+        <string name="shop_item_effect_coin_flash_description">A visual effect designed for coin rewards.</string>
+
+        <string name="shop_item_effect_streak_fire_name">Streak Fire Effect</string>
+        <string name="shop_item_effect_streak_fire_description">Highlights streaks with a stronger effect.</string>
+
+        <string name="shop_item_effect_code_scan_name">Code Scan Effect</string>
+        <string name="shop_item_effect_code_scan_description">A visual effect inspired by code scanning.</string>
+
+    <string name="topic_java_title">Java</string>
+    <string name="topic_java_subtitle">OOP · Classes · Objects</string>
+    <string name="topic_java_footer">Think about classes, responsibilities, and objects.</string>
+
+    <string name="topic_kotlin_title">Kotlin</string>
+    <string name="topic_kotlin_subtitle">Android · Modern · Safe</string>
+    <string name="topic_kotlin_footer">Look for clean code, null safety, and modern syntax.</string>
+
+    <string name="topic_sql_title">SQL</string>
+    <string name="topic_sql_subtitle">Data · Queries · Relationships</string>
+    <string name="topic_sql_footer">Think about tables, filters, joins, and results.</string>
+
+    <string name="topic_javascript_title">JavaScript</string>
+    <string name="topic_javascript_subtitle">Web · Dynamic · Events</string>
+    <string name="topic_javascript_footer">Watch out for types, functions, and dynamic behavior.</string>
+
+    <string name="topic_html_css_title">HTML/CSS</string>
+    <string name="topic_html_css_subtitle">Structure · Style · Layout</string>
+    <string name="topic_html_css_footer">First structure, then style and layout.</string>
+
+    <string name="topic_git_title">Git</string>
+    <string name="topic_git_subtitle">Branches · Commits · Versioning</string>
+    <string name="topic_git_footer">Think about history, changes, and version control.</string>
+
+    <string name="topic_android_title">Android</string>
+    <string name="topic_android_subtitle">Mobile · Compose · Lifecycle</string>
+    <string name="topic_android_footer">Think about state, screens, and user experience.</string>
+
+    <string name="topic_firebase_title">Firebase</string>
+    <string name="topic_firebase_subtitle">Auth · Firestore · Cloud backend</string>
+    <string name="topic_firebase_footer">Watch out for users, documents, and synchronization.</string>
+
+    <string name="topic_spring_title">Spring</string>
+    <string name="topic_spring_subtitle">Backend · Services · Enterprise</string>
+    <string name="topic_spring_footer">Think about layers, beans, endpoints, and dependencies.</string>
+
+    <string name="topic_default_subtitle">Technical training</string>
+    <string name="topic_default_footer">Read carefully, discard traps, and reason through the answer.</string>
+
+    <string name="daily_mission_claiming">Claiming...</string>
+
+</resources>

@@ -6,7 +6,14 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
@@ -14,21 +21,32 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.google.firebase.auth.FirebaseAuth
 import com.icb.iwivo.R
+import com.icb.iwivo.data.model.ShopItemCategory
 import com.icb.iwivo.data.repository.FirestoreRepository
 import com.icb.iwivo.ui.components.WivoButton
 import com.icb.iwivo.ui.components.WivoScreen
+import com.icb.iwivo.ui.theme.GreenAccent
+import com.icb.iwivo.ui.theme.PurplePrimary
 import com.icb.iwivo.utils.base64ToBitmap
 import com.icb.iwivo.utils.uriToBase64
 
@@ -48,6 +66,11 @@ fun EditProfileScreen(
 
     var username by remember { mutableStateOf("") }
     var avatarBase64 by remember { mutableStateOf("") }
+
+    var equippedAvatarBorderId by remember { mutableStateOf<String?>(null) }
+    var equippedBackgroundId by remember { mutableStateOf<String?>(null) }
+    var equippedButtonStyleId by remember { mutableStateOf<String?>(null) }
+    var equippedThemeId by remember { mutableStateOf<String?>(null) }
 
     var isLoading by remember { mutableStateOf(true) }
     var isSaving by remember { mutableStateOf(false) }
@@ -72,6 +95,18 @@ fun EditProfileScreen(
     }
 
     LaunchedEffect(currentUser?.uid) {
+        firestoreRepository.getShopStateByCategory(
+            onResult = { _, _, equippedItemsByCategory ->
+                equippedAvatarBorderId = equippedItemsByCategory[ShopItemCategory.AVATAR_BORDER]
+                equippedBackgroundId = equippedItemsByCategory[ShopItemCategory.BACKGROUND]
+                equippedButtonStyleId = equippedItemsByCategory[ShopItemCategory.BUTTON_STYLE]
+                equippedThemeId = equippedItemsByCategory[ShopItemCategory.THEME]
+            },
+            onError = {
+                // No bloqueo edición de perfil si falla la tienda.
+            }
+        )
+
         val uid = currentUser?.uid
 
         if (uid == null) {
@@ -94,11 +129,12 @@ fun EditProfileScreen(
         )
     }
 
-    WivoScreen {
+    WivoScreen(
+        backgroundItemId = equippedBackgroundId,
+        themeItemId = equippedThemeId
+    ) {
         Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(horizontal = 24.dp, vertical = 24.dp)
+            modifier = Modifier.fillMaxSize()
         ) {
             when {
                 isLoading -> {
@@ -126,6 +162,7 @@ fun EditProfileScreen(
                         AvatarEditor(
                             username = username,
                             avatarBase64 = avatarBase64,
+                            equippedAvatarBorderId = equippedAvatarBorderId,
                             onAvatarClick = {
                                 imagePickerLauncher.launch("image/*")
                             }
@@ -213,7 +250,9 @@ fun EditProfileScreen(
                                         )
                                     }
                                 }
-                            }
+                            },
+                            buttonStyleItemId = equippedButtonStyleId,
+                            themeItemId = equippedThemeId
                         )
 
                         Spacer(modifier = Modifier.height(12.dp))
@@ -238,33 +277,151 @@ fun EditProfileScreen(
 private fun AvatarEditor(
     username: String,
     avatarBase64: String,
+    equippedAvatarBorderId: String?,
     onAvatarClick: () -> Unit
 ) {
     val avatarBitmap = base64ToBitmap(avatarBase64)
     val fallbackInitial = username.ifBlank { "U" }.first().uppercase()
 
+    val hasDecoration = equippedAvatarBorderId != null
+    val outerSize = if (hasDecoration) 134.dp else 126.dp
+    val innerSize = 126.dp
+
     Box(
         modifier = Modifier
-            .size(126.dp)
+            .size(outerSize)
             .clip(CircleShape)
-            .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.22f))
+            .background(
+                brush = if (hasDecoration) {
+                    getAvatarEditorDecorationBrush(equippedAvatarBorderId)
+                } else {
+                    Brush.linearGradient(
+                        colors = listOf(
+                            MaterialTheme.colorScheme.primary.copy(alpha = 0.22f),
+                            MaterialTheme.colorScheme.primary.copy(alpha = 0.22f)
+                        )
+                    )
+                }
+            )
+            .padding(
+                if (hasDecoration) {
+                    getAvatarEditorBorderPadding(equippedAvatarBorderId)
+                } else {
+                    0.dp
+                }
+            )
             .clickable { onAvatarClick() },
         contentAlignment = Alignment.Center
     ) {
-        if (avatarBitmap != null) {
-            Image(
-                bitmap = avatarBitmap.asImageBitmap(),
-                contentDescription = null,
-                modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop
-            )
-        } else {
-            Text(
-                text = fallbackInitial,
-                style = MaterialTheme.typography.headlineLarge,
-                fontWeight = FontWeight.Black,
-                color = MaterialTheme.colorScheme.primary
-            )
+        Box(
+            modifier = Modifier
+                .size(innerSize)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.background),
+            contentAlignment = Alignment.Center
+        ) {
+            if (avatarBitmap != null) {
+                Image(
+                    bitmap = avatarBitmap.asImageBitmap(),
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            } else {
+                Text(
+                    text = fallbackInitial,
+                    style = MaterialTheme.typography.headlineLarge,
+                    fontWeight = FontWeight.Black,
+                    color = MaterialTheme.colorScheme.primary
+                )
+            }
         }
+    }
+}
+
+@Composable
+private fun getAvatarEditorDecorationBrush(
+    equippedAvatarBorderId: String?
+): Brush {
+    return when (equippedAvatarBorderId) {
+        "purple_border" -> Brush.linearGradient(
+            colors = listOf(
+                PurplePrimary,
+                MaterialTheme.colorScheme.primary
+            )
+        )
+
+        "blue_border" -> Brush.linearGradient(
+            colors = listOf(
+                MaterialTheme.colorScheme.secondary,
+                MaterialTheme.colorScheme.primary
+            )
+        )
+
+        "green_glow" -> Brush.linearGradient(
+            colors = listOf(
+                GreenAccent,
+                MaterialTheme.colorScheme.primary
+            )
+        )
+
+        "cyber_pink_border" -> Brush.linearGradient(
+            colors = listOf(
+                PurplePrimary,
+                GreenAccent
+            )
+        )
+
+        "gold_rank_border" -> Brush.linearGradient(
+            colors = listOf(
+                Color(0xFFFFD54F),
+                Color(0xFFFFA000)
+            )
+        )
+
+        "ice_blue_border" -> Brush.linearGradient(
+            colors = listOf(
+                Color(0xFF80D8FF),
+                MaterialTheme.colorScheme.secondary
+            )
+        )
+
+        "fire_orange_border" -> Brush.linearGradient(
+            colors = listOf(
+                Color(0xFFFF7043),
+                Color(0xFFFF1744)
+            )
+        )
+
+        "rainbow_dev_border" -> Brush.linearGradient(
+            colors = listOf(
+                PurplePrimary,
+                MaterialTheme.colorScheme.secondary,
+                GreenAccent
+            )
+        )
+
+        else -> Brush.verticalGradient(
+            colors = listOf(
+                MaterialTheme.colorScheme.primary,
+                MaterialTheme.colorScheme.secondary
+            )
+        )
+    }
+}
+
+private fun getAvatarEditorBorderPadding(
+    equippedAvatarBorderId: String?
+): Dp {
+    return when (equippedAvatarBorderId) {
+        "green_glow" -> 6.dp
+        "purple_border" -> 5.dp
+        "blue_border" -> 5.dp
+        "cyber_pink_border" -> 5.dp
+        "gold_rank_border" -> 5.dp
+        "ice_blue_border" -> 5.dp
+        "fire_orange_border" -> 5.dp
+        "rainbow_dev_border" -> 6.dp
+        else -> 0.dp
     }
 }
