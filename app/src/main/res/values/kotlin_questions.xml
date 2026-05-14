@@ -454,7 +454,7 @@
     <string name="kotlin_tf_050_question">var siempre significa que el objeto interno es mutable.</string>
     <string name="kotlin_tf_050_explanation">var permite reasignar la referencia, no garantiza mutabilidad interna.</string>
     <!-- Kotlin complete code questions -->
-    <string name="kotlin_code_001_question">Completa el código:\n\n____ nombre = "Isra"</string>
+    <string name="kotlin_code_001_question">Completa el código:\n\n____ nombre = \"Isra\"</string>
     <string name="kotlin_code_001_option_1">var</string>
     <string name="kotlin_code_001_option_2">val</string>
     <string name="kotlin_code_001_option_3">let</string>
@@ -468,7 +468,7 @@
     <string name="kotlin_code_002_option_4">const</string>
     <string name="kotlin_code_002_explanation">var permite cambiar el valor de la variable.</string>
 
-    <string name="kotlin_code_003_question">Completa el código:\n\n____ saludar() {\n    println("Hola")\n}</string>
+    <string name="kotlin_code_003_question">Completa el código:\n\n____ saludar() {\n    println(\"Hola\")\n}</string>
     <string name="kotlin_code_003_option_1">fun</string>
     <string name="kotlin_code_003_option_2">function</string>
     <string name="kotlin_code_003_option_3">def</string>
@@ -476,7 +476,7 @@
     <string name="kotlin_code_003_explanation">Las funciones se declaran con fun.</string>
 
     <string name="kotlin_code_004_question">Completa el código:\n\nprintln(____)</string>
-    <string name="kotlin_code_004_option_1">"Hola"</string>
+    <string name="kotlin_code_004_option_1">\"Hola\"</string>
     <string name="kotlin_code_004_option_2">Hola sin comillas</string>
     <string name="kotlin_code_004_option_3">Hola</string>
     <string name="kotlin_code_004_option_4">String Hola</string>
@@ -484,7 +484,7 @@
 
     <string name="kotlin_code_005_question">Completa el código:\n\nval activo: Boolean = ____</string>
     <string name="kotlin_code_005_option_1">true</string>
-    <string name="kotlin_code_005_option_2">"true"</string>
+    <string name="kotlin_code_005_option_2">\"true\"</string>
     <string name="kotlin_code_005_option_3">yes</string>
     <string name="kotlin_code_005_option_4">1</string>
     <string name="kotlin_code_005_explanation">Boolean usa true o false.</string>
@@ -504,7 +504,7 @@
     <string name="kotlin_code_007_explanation">Double representa números decimales.</string>
 
     <string name="kotlin_code_008_question">Completa el código:\n\nval letra: Char = ____</string>
-    <string name="kotlin_code_008_option_1">"A"</string>
+    <string name="kotlin_code_008_option_1">\"A\"</string>
     <string name="kotlin_code_008_option_2">A sin comillas</string>
     <string name="kotlin_code_008_option_3">A</string>
     <string name="kotlin_code_008_option_4">Char(A)</string>
@@ -524,7 +524,7 @@
     <string name="kotlin_code_010_option_4">::</string>
     <string name="kotlin_code_010_explanation">\?. accede solo si nombre no es null.</string>
 
-    <string name="kotlin_code_011_question">Completa el código:\n\nval nombreFinal = nombre ____ "Sin nombre"</string>
+    <string name="kotlin_code_011_question">Completa el código:\n\nval nombreFinal = nombre ____ \"Sin nombre\"</string>
     <string name="kotlin_code_011_option_1">\?:</string>
     <string name="kotlin_code_011_option_2">\?.</string>
     <string name="kotlin_code_011_option_3">!!</string>
@@ -533,7 +533,7 @@
 
     <string name="kotlin_code_012_question">Completa el código:\n\nclass ____</string>
     <string name="kotlin_code_012_option_1">Persona</string>
-    <string name="kotlin_code_012_option_2">"Persona"</string>
+    <string name="kotlin_code_012_option_2">\"Persona\"</string>
     <string name="kotlin_code_012_option_3">fun Persona</string>
     <string name="kotlin_code_012_option_4">object Persona</string>
     <string name="kotlin_code_012_explanation">class Persona declara una clase llamada Persona.</string>
@@ -580,7 +580,7 @@
     <string name="kotlin_code_018_option_4">class</string>
     <string name="kotlin_code_018_explanation">this hace referencia al objeto actual.</string>
 
-    <string name="kotlin_code_019_question">Completa el código:\n\n____ (opcion) {\n    1 -&gt; println("Uno")\n}</string>
+    <string name="kotlin_code_019_question">Completa el código:\n\n____ (opcion) {\n    1 -&gt; println(\"Uno\")\n}</string>
     <string name="kotlin_code_019_option_1">when</string>
     <string name="kotlin_code_019_option_2">switch</string>
     <string name="kotlin_code_019_option_3">case</string>
@@ -636,7 +636,7 @@
     <string name="kotlin_code_026_option_4">setOf</string>
     <string name="kotlin_code_026_explanation">mutableListOf crea una lista mutable.</string>
 
-    <string name="kotlin_code_027_question">Completa el código:\n\nnombres.____("Ana")</string>
+    <string name="kotlin_code_027_question">Completa el código:\n\nnombres.____(\"Ana\")</string>
     <string name="kotlin_code_027_option_1">add</string>
     <string name="kotlin_code_027_option_2">put</string>
     <string name="kotlin_code_027_option_3">insertKey</string>
@@ -678,7 +678,7 @@
     <string name="kotlin_code_032_option_4">class</string>
     <string name="kotlin_code_032_explanation">let ejecuta una lambda y devuelve su resultado.</string>
 
-    <string name="kotlin_code_033_question">Completa el código:\n\nval persona = Persona().____ { nombre = "Ana" }</string>
+    <string name="kotlin_code_033_question">Completa el código:\n\nval persona = Persona().____ { nombre = \"Ana\" }</string>
     <string name="kotlin_code_033_option_1">apply</string>
     <string name="kotlin_code_033_option_2">let</string>
     <string name="kotlin_code_033_option_3">map</string>
@@ -713,7 +713,7 @@
     <string name="kotlin_code_037_option_4">object</string>
     <string name="kotlin_code_037_explanation">abstract declara una clase no instanciable directamente.</string>
 
-    <string name="kotlin_code_038_question">Completa el código:\n\nfun saludar(): ____ { println("Hola") }</string>
+    <string name="kotlin_code_038_question">Completa el código:\n\nfun saludar(): ____ { println(\"Hola\") }</string>
     <string name="kotlin_code_038_option_1">Unit</string>
     <string name="kotlin_code_038_option_2">Nothing</string>
     <string name="kotlin_code_038_option_3">String</string>
@@ -762,7 +762,7 @@
     <string name="kotlin_code_044_option_4">intOrZero</string>
     <string name="kotlin_code_044_explanation">toIntOrNull devuelve null si falla la conversión.</string>
 
-    <string name="kotlin_code_045_question">Completa el código:\n\nval texto = nombres.____(", ")</string>
+    <string name="kotlin_code_045_question">Completa el código:\n\nval texto = nombres.____(\", \")</string>
     <string name="kotlin_code_045_option_1">joinToString</string>
     <string name="kotlin_code_045_option_2">concat</string>
     <string name="kotlin_code_045_option_3">merge</string>
@@ -848,19 +848,19 @@
     <string name="kotlin_match_006_explanation">internal limita la visibilidad al módulo actual.</string>
 
     <!-- Kotlin detect error questions -->
-    <string name="kotlin_error_001_question">Detecta el error:\n\nval nombre = "Isra"\nnombre = "Israel"</string>
+    <string name="kotlin_error_001_question">Detecta el error:\n\nval nombre = \"Isra\"\nnombre = \"Israel\"</string>
     <string name="kotlin_error_001_option_1">Se intenta reasignar una variable declarada con val</string>
     <string name="kotlin_error_001_option_2">Falta el tipo String obligatorio</string>
     <string name="kotlin_error_001_option_3">El texto debe ir con comillas simples</string>
     <string name="kotlin_error_001_option_4">Kotlin no permite variables locales</string>
     <string name="kotlin_error_001_explanation">val no permite reasignar la referencia. Para cambiar el valor debe usarse var.</string>
 
-    <string name="kotlin_error_002_question">Detecta el error:\n\nval edad: Int = "25"</string>
+    <string name="kotlin_error_002_question">Detecta el error:\n\nval edad: Int = \"25\"</string>
     <string name="kotlin_error_002_option_1">Se está asignando un String a una variable Int</string>
     <string name="kotlin_error_002_option_2">Int debe escribirse en minúsculas</string>
     <string name="kotlin_error_002_option_3">Falta punto y coma</string>
     <string name="kotlin_error_002_option_4">val solo admite Boolean</string>
-    <string name="kotlin_error_002_explanation">"25" es texto. Para Int debe usarse 25 sin comillas.</string>
+    <string name="kotlin_error_002_explanation">\"25\" es texto. Para Int debe usarse 25 sin comillas.</string>
 
     <string name="kotlin_error_003_question">Detecta el error:\n\nval nombre: String = null</string>
     <string name="kotlin_error_003_option_1">String no acepta null si no lleva ?</string>
@@ -869,7 +869,7 @@
     <string name="kotlin_error_003_option_4">El tipo String no existe en Kotlin</string>
     <string name="kotlin_error_003_explanation">Para aceptar null, el tipo debería ser String?.</string>
 
-    <string name="kotlin_error_004_question">Detecta el error:\n\nval lista = listOf("A", "B")\nlista.add("C")</string>
+    <string name="kotlin_error_004_question">Detecta el error:\n\nval lista = listOf(\"A\", \"B\")\nlista.add(\"C\")</string>
     <string name="kotlin_error_004_option_1">listOf crea una lista de solo lectura</string>
     <string name="kotlin_error_004_option_2">add solo funciona con números</string>
     <string name="kotlin_error_004_option_3">Las listas no existen en Kotlin</string>
@@ -898,7 +898,7 @@
     <string name="kotlin_output_001_option_4">Error</string>
     <string name="kotlin_output_001_explanation">x vale 5, así que x + 2 da 7.</string>
 
-    <string name="kotlin_output_002_question">¿Qué imprime este código?\n\nval nombre = "Isra"\nprintln("Hola $nombre")</string>
+    <string name="kotlin_output_002_question">¿Qué imprime este código?\n\nval nombre = \"Isra\"\nprintln(\"Hola $nombre\")</string>
     <string name="kotlin_output_002_option_1">Hola Isra</string>
     <string name="kotlin_output_002_option_2">Hola nombre</string>
     <string name="kotlin_output_002_option_3">Hola $nombre</string>
@@ -912,7 +912,7 @@
     <string name="kotlin_output_003_option_4">Error</string>
     <string name="kotlin_output_003_explanation">map transforma cada elemento multiplicándolo por 2.</string>
 
-    <string name="kotlin_output_004_question">¿Qué imprime este código?\n\nval nombre: String? = null\nprintln(nombre ?: "Sin nombre")</string>
+    <string name="kotlin_output_004_question">¿Qué imprime este código?\n\nval nombre: String? = null\nprintln(nombre ?: \"Sin nombre\")</string>
     <string name="kotlin_output_004_option_1">Sin nombre</string>
     <string name="kotlin_output_004_option_2">null</string>
     <string name="kotlin_output_004_option_3">nombre</string>
@@ -926,22 +926,22 @@
     <string name="kotlin_output_005_option_4">Error</string>
     <string name="kotlin_output_005_explanation">1 until 4 incluye 1, 2 y 3, pero excluye 4.</string>
 
-    <string name="kotlin_output_006_question">¿Qué imprime este código?\n\nval texto = "25"\nprintln(texto.toIntOrNull())</string>
+    <string name="kotlin_output_006_question">¿Qué imprime este código?\n\nval texto = \"25\"\nprintln(texto.toIntOrNull())</string>
     <string name="kotlin_output_006_option_1">25</string>
     <string name="kotlin_output_006_option_2">null</string>
-    <string name="kotlin_output_006_option_3">"25"</string>
+    <string name="kotlin_output_006_option_3">\"25\"</string>
     <string name="kotlin_output_006_option_4">Error</string>
-    <string name="kotlin_output_006_explanation">toIntOrNull() convierte correctamente "25" a entero.</string>
+    <string name="kotlin_output_006_explanation">toIntOrNull() convierte correctamente \"25\" a entero.</string>
 
     <!-- Kotlin order code questions -->
     <string name="kotlin_order_001_question">Ordena las líneas para declarar una función que saluda:</string>
     <string name="kotlin_order_001_option_1">fun saludar() {</string>
-    <string name="kotlin_order_001_option_2">println("Hola")</string>
+    <string name="kotlin_order_001_option_2">println(\"Hola\")</string>
     <string name="kotlin_order_001_option_3">}</string>
     <string name="kotlin_order_001_explanation">Primero se declara la función, luego el cuerpo y finalmente se cierra la llave.</string>
 
     <string name="kotlin_order_002_question">Ordena las líneas para crear una lista y recorrerla:</string>
-    <string name="kotlin_order_002_option_1">val nombres = listOf("Ana", "Luis")</string>
+    <string name="kotlin_order_002_option_1">val nombres = listOf(\"Ana\", \"Luis\")</string>
     <string name="kotlin_order_002_option_2">nombres.forEach { nombre -&gt;</string>
     <string name="kotlin_order_002_option_3">println(nombre)</string>
     <string name="kotlin_order_002_option_4">}</string>
@@ -949,9 +949,9 @@
 
     <string name="kotlin_order_003_question">Ordena las líneas para usar una condición:</string>
     <string name="kotlin_order_003_option_1">if (edad &gt;= 18) {</string>
-    <string name="kotlin_order_003_option_2">println("Mayor de edad")</string>
+    <string name="kotlin_order_003_option_2">println(\"Mayor de edad\")</string>
     <string name="kotlin_order_003_option_3">} else {</string>
-    <string name="kotlin_order_003_option_4">println("Menor de edad")</string>
+    <string name="kotlin_order_003_option_4">println(\"Menor de edad\")</string>
     <string name="kotlin_order_003_option_5">}</string>
     <string name="kotlin_order_003_explanation">El if abre su bloque, luego va el else y finalmente se cierra el bloque.</string>
 
@@ -1025,5 +1025,5 @@
     <string name="kotlin_crossword_005_option_2">Unit</string>
     <string name="kotlin_crossword_005_option_3">Void</string>
     <string name="kotlin_crossword_005_option_4">Never</string>
-    <string name="kotlin_crossword_005_explanation">Nothing representa funciones que no devuelven normalmente, por ejemplo porque lanzan excepción.</string>
+    <string name="kotlin_crossword_005_explanation">Nothing representa funciones que no devuelven normalmente, por ejemplo porque lanzan excepción.</string>s
 </resources>

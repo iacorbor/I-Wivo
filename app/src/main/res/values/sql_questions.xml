@@ -111,7 +111,7 @@
     <string name="sql_test_019_question">¿Qué comodín representa cualquier secuencia de caracteres con LIKE?</string>
     <string name="sql_test_019_option_1">*</string>
     <string name="sql_test_019_option_2">%</string>
-    <string name="sql_test_019_option_3">?</string>
+    <string name="sql_test_019_option_3">\?</string>
     <string name="sql_test_019_option_4">#</string>
     <string name="sql_test_019_explanation">% representa cero o más caracteres en una búsqueda con LIKE.</string>
     <string name="sql_test_020_question">¿Qué operador comprueba si un valor está entre dos límites?</string>
@@ -418,25 +418,25 @@
     <string name="sql_code_003_option_3">GROUP BY</string>
     <string name="sql_code_003_option_4">HAVING</string>
     <string name="sql_code_003_explanation">WHERE filtra registros.</string>
-    <string name="sql_code_004_question">Completa la consulta: INSERT ____ usuarios (nombre) VALUES (Ana);</string>
+    <string name="sql_code_004_question">Completa la consulta: INSERT ____ usuarios (nombre) VALUES (\'Ana\');</string>
     <string name="sql_code_004_option_1">IN</string>
     <string name="sql_code_004_option_2">INTO</string>
     <string name="sql_code_004_option_3">ON</string>
     <string name="sql_code_004_option_4">TO</string>
     <string name="sql_code_004_explanation">INSERT INTO inserta registros en una tabla.</string>
-    <string name="sql_code_005_question">Completa la consulta: INSERT INTO usuarios (nombre) ____ (Ana);</string>
+    <string name="sql_code_005_question">Completa la consulta: INSERT INTO usuarios (nombre) ____ (\'Ana\');</string>
     <string name="sql_code_005_option_1">VALUES</string>
     <string name="sql_code_005_option_2">SET</string>
     <string name="sql_code_005_option_3">DATA</string>
     <string name="sql_code_005_option_4">ADD</string>
     <string name="sql_code_005_explanation">VALUES indica los valores a insertar.</string>
-    <string name="sql_code_006_question">Completa la consulta: ____ usuarios SET nombre = Ana WHERE id = 1;</string>
+    <string name="sql_code_006_question">Completa la consulta: ____ usuarios SET nombre = \'Ana\' WHERE id = 1;</string>
     <string name="sql_code_006_option_1">UPDATE</string>
     <string name="sql_code_006_option_2">CHANGE</string>
     <string name="sql_code_006_option_3">ALTER</string>
     <string name="sql_code_006_option_4">MODIFY</string>
     <string name="sql_code_006_explanation">UPDATE modifica registros existentes.</string>
-    <string name="sql_code_007_question">Completa la consulta: UPDATE usuarios ____ nombre = Ana WHERE id = 1;</string>
+    <string name="sql_code_007_question">Completa la consulta: UPDATE usuarios ____ nombre = \'Ana\' WHERE id = 1;</string>
     <string name="sql_code_007_option_1">SET</string>
     <string name="sql_code_007_option_2">VALUES</string>
     <string name="sql_code_007_option_3">WITH</string>
@@ -514,7 +514,7 @@
     <string name="sql_code_019_option_3">TEXT</string>
     <string name="sql_code_019_option_4">JOIN</string>
     <string name="sql_code_019_explanation">MIN devuelve el valor mínimo.</string>
-    <string name="sql_code_020_question">Completa la consulta: SELECT * FROM usuarios WHERE nombre ____ A%;</string>
+    <string name="sql_code_020_question">Completa la consulta: SELECT * FROM usuarios WHERE nombre ____ \'A%\';</string>
     <string name="sql_code_020_option_1">LIKE</string>
     <string name="sql_code_020_option_2">IN</string>
     <string name="sql_code_020_option_3">BETWEEN</string>
@@ -526,7 +526,7 @@
     <string name="sql_code_021_option_3">LIKE</string>
     <string name="sql_code_021_option_4">RANGE</string>
     <string name="sql_code_021_explanation">BETWEEN comprueba rangos.</string>
-    <string name="sql_code_022_question">Completa la consulta: SELECT * FROM usuarios WHERE ciudad ____ (Madrid, Sevilla);</string>
+    <string name="sql_code_022_question">Completa la consulta: SELECT * FROM usuarios WHERE ciudad ____ (\'Madrid\', \'Sevilla\');</string>
     <string name="sql_code_022_option_1">IN</string>
     <string name="sql_code_022_option_2">BETWEEN</string>
     <string name="sql_code_022_option_3">LIKE</string>
@@ -550,7 +550,7 @@
     <string name="sql_code_025_option_3">NOT</string>
     <string name="sql_code_025_option_4">WITH</string>
     <string name="sql_code_025_explanation">AND exige que ambas condiciones se cumplan.</string>
-    <string name="sql_code_026_question">Completa la consulta: SELECT * FROM usuarios WHERE ciudad = Madrid ____ ciudad = Sevilla;</string>
+    <string name="sql_code_026_question">Completa la consulta: SELECT * FROM usuarios WHERE ciudad = \'Madrid\' ____ ciudad = \'Sevilla\';</string>
     <string name="sql_code_026_option_1">OR</string>
     <string name="sql_code_026_option_2">AND</string>
     <string name="sql_code_026_option_3">NOT</string>
@@ -772,12 +772,12 @@
     <string name="sql_error_002_option_3">nombre debe ir entre comillas</string>
     <string name="sql_error_002_option_4">FROM debe ir al final</string>
     <string name="sql_error_002_explanation">En SQL, NULL se comprueba con IS NULL, no con = NULL.</string>
-    <string name="sql_error_003_question">Detecta el error: UPDATE usuarios nombre = Ana WHERE id = 1;</string>
+    <string name="sql_error_003_question">Detecta el error: UPDATE usuarios nombre = \'Ana\' WHERE id = 1;</string>
     <string name="sql_error_003_option_1">Falta SET</string>
     <string name="sql_error_003_option_2">UPDATE no permite WHERE</string>
     <string name="sql_error_003_option_3">id no puede compararse</string>
     <string name="sql_error_003_option_4">Falta SELECT</string>
-    <string name="sql_error_003_explanation">La sintaxis correcta es UPDATE usuarios SET nombre = Ana WHERE id = 1;</string>
+    <string name="sql_error_003_explanation">La sintaxis correcta es UPDATE usuarios SET nombre = \'Ana\' WHERE id = 1;</string>
     <string name="sql_error_004_question">Detecta el error: DELETE usuarios WHERE id = 1;</string>
     <string name="sql_error_004_option_1">Falta FROM</string>
     <string name="sql_error_004_option_2">DELETE no puede tener WHERE</string>
@@ -796,7 +796,7 @@
     <string name="sql_error_006_option_3">nombre debe ir entre paréntesis</string>
     <string name="sql_error_006_option_4">SELECT no permite ordenar</string>
     <string name="sql_error_006_explanation">La cláusula correcta es ORDER BY.</string>
-    <string name="sql_error_007_question">Detecta el error: INSERT usuarios (nombre) VALUES (Ana);</string>
+    <string name="sql_error_007_question">Detecta el error: INSERT usuarios (nombre) VALUES (\'Ana\');</string>
     <string name="sql_error_007_option_1">Falta INTO</string>
     <string name="sql_error_007_option_2">VALUES no se usa en INSERT</string>
     <string name="sql_error_007_option_3">nombre no puede insertarse</string>
@@ -850,7 +850,7 @@
     <string name="sql_output_005_option_3">Todos los usuarios ordenados por ciudad</string>
     <string name="sql_output_005_option_4">Ciudades con más de un usuario solamente</string>
     <string name="sql_output_005_explanation">GROUP BY ciudad agrupa usuarios por ciudad y COUNT(*) cuenta cada grupo.</string>
-    <string name="sql_output_006_question">¿Qué devuelve esta consulta? SELECT * FROM usuarios WHERE nombre LIKE A%;</string>
+    <string name="sql_output_006_question">¿Qué devuelve esta consulta? SELECT * FROM usuarios WHERE nombre LIKE \'A%\';</string>
     <string name="sql_output_006_option_1">Usuarios cuyo nombre empieza por A</string>
     <string name="sql_output_006_option_2">Usuarios cuyo nombre termina por A</string>
     <string name="sql_output_006_option_3">Usuarios cuyo nombre contiene solo A</string>
@@ -868,7 +868,7 @@
     <string name="sql_output_008_option_3">Consulta usuarios inactivos</string>
     <string name="sql_output_008_option_4">Crea una columna activo</string>
     <string name="sql_output_008_explanation">DELETE FROM elimina filas que cumplan la condición.</string>
-    <string name="sql_output_009_question">¿Qué devuelve esta consulta? SELECT * FROM usuarios WHERE ciudad IN (Madrid, Sevilla);</string>
+    <string name="sql_output_009_question">¿Qué devuelve esta consulta? SELECT * FROM usuarios WHERE ciudad IN (\'Madrid\', \'Sevilla\');</string>
     <string name="sql_output_009_option_1">Usuarios cuya ciudad sea Madrid o Sevilla</string>
     <string name="sql_output_009_option_2">Usuarios que vivan en Madrid y Sevilla a la vez</string>
     <string name="sql_output_009_option_3">Todas las ciudades excepto Madrid y Sevilla</string>
@@ -887,11 +887,11 @@
     <string name="sql_order_001_explanation">El orden básico es SELECT, FROM y después WHERE.</string>
     <string name="sql_order_002_question">Ordena la consulta para insertar un usuario:</string>
     <string name="sql_order_002_option_1">INSERT INTO usuarios (nombre)</string>
-    <string name="sql_order_002_option_2">VALUES (Ana);</string>
+    <string name="sql_order_002_option_2">VALUES (\'Ana\');</string>
     <string name="sql_order_002_explanation">INSERT INTO indica tabla y columnas; VALUES indica los valores.</string>
     <string name="sql_order_003_question">Ordena la consulta para actualizar un registro:</string>
     <string name="sql_order_003_option_1">UPDATE usuarios</string>
-    <string name="sql_order_003_option_2">SET nombre = Ana</string>
+    <string name="sql_order_003_option_2">SET nombre = \'Ana\'</string>
     <string name="sql_order_003_option_3">WHERE id = 1;</string>
     <string name="sql_order_003_explanation">UPDATE va seguido de SET y después WHERE para filtrar.</string>
     <string name="sql_order_004_question">Ordena la consulta para agrupar usuarios por ciudad:</string>

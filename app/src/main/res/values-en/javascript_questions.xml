@@ -36,7 +36,7 @@
     <string name="javascript_test_006_option_3">!==</string>
     <string name="javascript_test_006_option_4">=</string>
     <string name="javascript_test_006_explanation">== can convert types before comparing.</string>
-    <string name="javascript_test_007_question">What type does typeof "Hello" return?</string>
+    <string name="javascript_test_007_question">What type does typeof \"Hello\" return?</string>
     <string name="javascript_test_007_option_1">String</string>
     <string name="javascript_test_007_option_2">string</string>
     <string name="javascript_test_007_option_3">text</string>
@@ -310,7 +310,7 @@
     <string name="javascript_tf_004_explanation">=== es igualdad estricta.</string>
     <string name="javascript_tf_005_question">== can convert types before comparing.</string>
     <string name="javascript_tf_005_explanation">== hace coerción de tipos.</string>
-    <string name="javascript_tf_006_question">typeof "Hello" returns string.</string>
+    <string name="javascript_tf_006_question">typeof \"Hello\" returns string.</string>
     <string name="javascript_tf_006_explanation">It returns lowercase string.</string>
     <string name="javascript_tf_007_question">typeof 10 returns int.</string>
     <string name="javascript_tf_007_explanation">It returns number.</string>
@@ -394,13 +394,13 @@
     <string name="javascript_tf_046_explanation">NaN represents an invalid numeric result.</string>
     <string name="javascript_tf_047_question">0 is truthy in JavaScript.</string>
     <string name="javascript_tf_047_explanation">0 is falsy.</string>
-    <string name="javascript_tf_048_question">"" is falsy in JavaScript.</string>
+    <string name="javascript_tf_048_question">\"\" is falsy in JavaScript.</string>
     <string name="javascript_tf_048_explanation">The empty string is falsy.</string>
     <string name="javascript_tf_049_question">\?? returns the right-hand value if the left-hand value is null or undefined.</string>
     <string name="javascript_tf_049_explanation">\?? es nullish coalescing.</string>
     <string name="javascript_tf_050_question">\?. allows safely accessing possibly null properties.</string>
     <string name="javascript_tf_050_explanation">\?. avoids errors if the object is null or undefined.</string>
-    <string name="javascript_code_001_question">Complete the code:\n\n____ nombre = "Isra";</string>
+    <string name="javascript_code_001_question">Complete the code:\n\n____ nombre = \"Isra\";</string>
     <string name="javascript_code_001_option_1">let</string>
     <string name="javascript_code_001_option_2">final</string>
     <string name="javascript_code_001_option_3">String</string>
@@ -418,7 +418,7 @@
     <string name="javascript_code_003_option_3">static</string>
     <string name="javascript_code_003_option_4">fixed</string>
     <string name="javascript_code_003_explanation">const declares a non-reassignable reference.</string>
-    <string name="javascript_code_004_question">Complete the code:\n\nconsole.____("Hello");</string>
+    <string name="javascript_code_004_question">Complete the code:\n\nconsole.____(\"Hello\");</string>
     <string name="javascript_code_004_option_1">print</string>
     <string name="javascript_code_004_option_2">log</string>
     <string name="javascript_code_004_option_3">write</string>
@@ -520,13 +520,13 @@
     <string name="javascript_code_020_option_3">find</string>
     <string name="javascript_code_020_option_4">join</string>
     <string name="javascript_code_020_explanation">every checks whether all items meet the condition.</string>
-    <string name="javascript_code_021_question">Complete the code:\n\nconst texto = nombres.____(", ");</string>
+    <string name="javascript_code_021_question">Complete the code:\n\nconst texto = nombres.____(\", \");</string>
     <string name="javascript_code_021_option_1">join</string>
     <string name="javascript_code_021_option_2">concatAll</string>
     <string name="javascript_code_021_option_3">merge</string>
     <string name="javascript_code_021_option_4">string</string>
     <string name="javascript_code_021_explanation">join joins elements into text.</string>
-    <string name="javascript_code_022_question">Complete the code:\n\nconst existe = nombres.____("Ana");</string>
+    <string name="javascript_code_022_question">Complete the code:\n\nconst existe = nombres.____(\"Ana\");</string>
     <string name="javascript_code_022_option_1">includes</string>
     <string name="javascript_code_022_option_2">contains</string>
     <string name="javascript_code_022_option_3">has</string>
@@ -544,25 +544,25 @@
     <string name="javascript_code_024_option_3">encodeObject</string>
     <string name="javascript_code_024_option_4">toJson</string>
     <string name="javascript_code_024_explanation">JSON.stringify converts an object into JSON text.</string>
-    <string name="javascript_code_025_question">Complete the code:\n\nconst titulo = document.____("h1");</string>
+    <string name="javascript_code_025_question">Complete the code:\n\nconst titulo = document.____(\"h1\");</string>
     <string name="javascript_code_025_option_1">querySelector</string>
     <string name="javascript_code_025_option_2">select</string>
     <string name="javascript_code_025_option_3">get</string>
     <string name="javascript_code_025_option_4">find</string>
     <string name="javascript_code_025_explanation">querySelector selects the first matching element.</string>
-    <string name="javascript_code_026_question">Complete the code:\n\nconst botones = document.____("button");</string>
+    <string name="javascript_code_026_question">Complete the code:\n\nconst botones = document.____(\"button\");</string>
     <string name="javascript_code_026_option_1">querySelectorAll</string>
     <string name="javascript_code_026_option_2">querySelector</string>
     <string name="javascript_code_026_option_3">getOne</string>
     <string name="javascript_code_026_option_4">selectFirst</string>
     <string name="javascript_code_026_explanation">querySelectorAll selects several elements.</string>
-    <string name="javascript_code_027_question">Complete the code:\n\nboton.____("click", manejarClick);</string>
+    <string name="javascript_code_027_question">Complete the code:\n\nboton.____(\"click\", manejarClick);</string>
     <string name="javascript_code_027_option_1">addEventListener</string>
     <string name="javascript_code_027_option_2">listen</string>
     <string name="javascript_code_027_option_3">on</string>
     <string name="javascript_code_027_option_4">event</string>
     <string name="javascript_code_027_explanation">addEventListener registers an event.</string>
-    <string name="javascript_code_028_question">Complete the code:\n\nform.____("submit", manejarEnvio);</string>
+    <string name="javascript_code_028_question">Complete the code:\n\nform.____(\"submit\", manejarEnvio);</string>
     <string name="javascript_code_028_option_1">addEventListener</string>
     <string name="javascript_code_028_option_2">onSubmitOnly</string>
     <string name="javascript_code_028_option_3">submitListen</string>
@@ -574,7 +574,7 @@
     <string name="javascript_code_029_option_3">except</string>
     <string name="javascript_code_029_option_4">handle</string>
     <string name="javascript_code_029_explanation">catch catches errors.</string>
-    <string name="javascript_code_030_question">Complete the code:\n\n____ new Error("Fallo");</string>
+    <string name="javascript_code_030_question">Complete the code:\n\n____ new Error(\"Fallo\");</string>
     <string name="javascript_code_030_option_1">throw</string>
     <string name="javascript_code_030_option_2">throws</string>
     <string name="javascript_code_030_option_3">raise</string>
@@ -634,7 +634,7 @@
     <string name="javascript_code_039_option_3">::</string>
     <string name="javascript_code_039_option_4">\?:</string>
     <string name="javascript_code_039_explanation">\?. accesses safely.</string>
-    <string name="javascript_code_040_question">Complete the code:\n\nconst nombre = usuario.nombre ____ "Invitado";</string>
+    <string name="javascript_code_040_question">Complete the code:\n\nconst nombre = usuario.nombre ____ \"Invitado\";</string>
     <string name="javascript_code_040_option_1">\??</string>
     <string name="javascript_code_040_option_2">&amp;&amp;</string>
     <string name="javascript_code_040_option_3">==</string>
@@ -694,7 +694,7 @@
     <string name="javascript_code_049_option_3">from</string>
     <string name="javascript_code_049_option_4">inside</string>
     <string name="javascript_code_049_explanation">for...in iterates over keys.</string>
-    <string name="javascript_code_050_question">Complete the code:\n\nconst numero = Number.____("25");</string>
+    <string name="javascript_code_050_question">Complete the code:\n\nconst numero = Number.____(\"25\");</string>
     <string name="javascript_code_050_option_1">parseInt</string>
     <string name="javascript_code_050_option_2">toInt</string>
     <string name="javascript_code_050_option_3">int</string>
@@ -766,7 +766,7 @@
     <string name="javascript_error_001_option_3">edad debería ser String</string>
     <string name="javascript_error_001_option_4">console.log is wrong</string>
     <string name="javascript_error_001_explanation">const cannot be reassigned.</string>
-    <string name="javascript_error_002_question">Find the error:\n\nif (activo = true) {\n console.log("OK");\n}</string>
+    <string name="javascript_error_002_question">Find the error:\n\nif (activo = true) {\n console.log(\"OK\");\n}</string>
     <string name="javascript_error_002_option_1">Assignment is used instead of comparison</string>
     <string name="javascript_error_002_option_2">Missing const</string>
     <string name="javascript_error_002_option_3">console.log does not exist</string>
@@ -778,7 +778,7 @@
     <string name="javascript_error_003_option_3">const prevents modifying arrays</string>
     <string name="javascript_error_003_option_4">Arrays use add</string>
     <string name="javascript_error_003_explanation">const prevents reassignment, but not modifying the array.</string>
-    <string name="javascript_error_004_question">Find the error:\n\nlet nombre = "Isra";\nconsole.log(nombre.toUppercase());</string>
+    <string name="javascript_error_004_question">Find the error:\n\nlet nombre = \"Isra\";\nconsole.log(nombre.toUppercase());</string>
     <string name="javascript_error_004_option_1">The correct method is toUpperCase()</string>
     <string name="javascript_error_004_option_2">let does not allow methods</string>
     <string name="javascript_error_004_option_3">console.log does not accept strings</string>
@@ -790,19 +790,19 @@
     <string name="javascript_error_005_option_3">null must be in quotes</string>
     <string name="javascript_error_005_option_4">name is reserved</string>
     <string name="javascript_error_005_explanation">Accessing a property of null causes an error.</string>
-    <string name="javascript_error_006_question">Find the error:\n\nfunction saludar() {\n return "Hello";\n console.log("Fin");\n}</string>
+    <string name="javascript_error_006_question">Find the error:\n\nfunction saludar() {\n return \"Hello\";\n console.log(\"Fin\");\n}</string>
     <string name="javascript_error_006_option_1">The console.log becomes unreachable</string>
     <string name="javascript_error_006_option_2">return does not return text</string>
     <string name="javascript_error_006_option_3">function is misspelled</string>
     <string name="javascript_error_006_option_4">Missing let</string>
     <string name="javascript_error_006_explanation">After return, the code is not executed.</string>
-    <string name="javascript_error_007_question">Find the error:\n\nconst datos = JSON.parse("{nombre: 'Ana'}");</string>
+    <string name="javascript_error_007_question">Find the error:\n\nconst datos = JSON.parse(\"{nombre: \'Ana\'}\");</string>
     <string name="javascript_error_007_option_1">The JSON is not valid</string>
     <string name="javascript_error_007_option_2">parse does not exist</string>
     <string name="javascript_error_007_option_3">const does not accept objects</string>
     <string name="javascript_error_007_option_4">nombre should be a number</string>
     <string name="javascript_error_007_explanation">JSON keys must use double quotes.</string>
-    <string name="javascript_error_008_question">Find the error:\n\nconst boton = document.querySelector("#btn");\nboton.addEventListener("clic", accion);</string>
+    <string name="javascript_error_008_question">Find the error:\n\nconst boton = document.querySelector(\"#btn\");\nboton.addEventListener(\"clic\", accion);</string>
     <string name="javascript_error_008_option_1">The correct event is click</string>
     <string name="javascript_error_008_option_2">querySelector does not exist</string>
     <string name="javascript_error_008_option_3">accion must be a string</string>
@@ -826,7 +826,7 @@
     <string name="javascript_output_001_option_3">2 + 3</string>
     <string name="javascript_output_001_option_4">Error</string>
     <string name="javascript_output_001_explanation">2 + 3 adds numbers.</string>
-    <string name="javascript_output_002_question">What is printed?\n\nconsole.log("2" + 3);</string>
+    <string name="javascript_output_002_question">What is printed?\n\nconsole.log(\"2\" + 3);</string>
     <string name="javascript_output_002_option_1">5</string>
     <string name="javascript_output_002_option_2">23</string>
     <string name="javascript_output_002_option_3">Error</string>
@@ -838,7 +838,7 @@
     <string name="javascript_output_003_option_3">0</string>
     <string name="javascript_output_003_option_4">undefined</string>
     <string name="javascript_output_003_explanation">x++ increments by 1.</string>
-    <string name="javascript_output_004_question">What is printed?\n\nconsole.log(typeof "Hello");</string>
+    <string name="javascript_output_004_question">What is printed?\n\nconsole.log(typeof \"Hello\");</string>
     <string name="javascript_output_004_option_1">String</string>
     <string name="javascript_output_004_option_2">string</string>
     <string name="javascript_output_004_option_3">text</string>
@@ -850,25 +850,25 @@
     <string name="javascript_output_005_option_3">0</string>
     <string name="javascript_output_005_option_4">undefined</string>
     <string name="javascript_output_005_explanation">0 is falsy.</string>
-    <string name="javascript_output_006_question">What is printed?\n\nconsole.log(Boolean(""));</string>
+    <string name="javascript_output_006_question">What is printed?\n\nconsole.log(Boolean(\"\"));</string>
     <string name="javascript_output_006_option_1">true</string>
     <string name="javascript_output_006_option_2">false</string>
-    <string name="javascript_output_006_option_3">""</string>
+    <string name="javascript_output_006_option_3">\"\"</string>
     <string name="javascript_output_006_option_4">null</string>
     <string name="javascript_output_006_explanation">The empty string is falsy.</string>
-    <string name="javascript_output_007_question">What is printed?\n\nconsole.log(Boolean("Hello"));</string>
+    <string name="javascript_output_007_question">What is printed?\n\nconsole.log(Boolean(\"Hello\"));</string>
     <string name="javascript_output_007_option_1">true</string>
     <string name="javascript_output_007_option_2">false</string>
     <string name="javascript_output_007_option_3">Hola</string>
     <string name="javascript_output_007_option_4">undefined</string>
     <string name="javascript_output_007_explanation">A non-empty string is truthy.</string>
-    <string name="javascript_output_008_question">What is printed?\n\nconsole.log(10 === "10");</string>
+    <string name="javascript_output_008_question">What is printed?\n\nconsole.log(10 === \"10\");</string>
     <string name="javascript_output_008_option_1">true</string>
     <string name="javascript_output_008_option_2">false</string>
     <string name="javascript_output_008_option_3">10</string>
     <string name="javascript_output_008_option_4">Error</string>
     <string name="javascript_output_008_explanation">=== compares type and value.</string>
-    <string name="javascript_output_009_question">What is printed?\n\nconsole.log(10 == "10");</string>
+    <string name="javascript_output_009_question">What is printed?\n\nconsole.log(10 == \"10\");</string>
     <string name="javascript_output_009_option_1">true</string>
     <string name="javascript_output_009_option_2">false</string>
     <string name="javascript_output_009_option_3">10</string>
@@ -881,7 +881,7 @@
     <string name="javascript_output_010_option_4">undefined</string>
     <string name="javascript_output_010_explanation">push adds an element and length becomes 3.</string>
     <string name="javascript_order_001_question">Order the code to declare a variable and display it:</string>
-    <string name="javascript_order_001_option_1">let nombre = "Isra";</string>
+    <string name="javascript_order_001_option_1">let nombre = \"Isra\";</string>
     <string name="javascript_order_001_option_2">console.log(nombre);</string>
     <string name="javascript_order_001_explanation">First it is declared, then it is used.</string>
     <string name="javascript_order_002_question">Order the code to add two numbers:</string>
@@ -909,9 +909,9 @@
     <string name="javascript_order_005_option_5">}</string>
     <string name="javascript_order_005_explanation">async allows using await.</string>
     <string name="javascript_order_006_question">Order the code to escuchar un click:</string>
-    <string name="javascript_order_006_option_1">const boton = document.querySelector("button");</string>
-    <string name="javascript_order_006_option_2">boton.addEventListener("click", () => {</string>
-    <string name="javascript_order_006_option_3">console.log("Click");</string>
+    <string name="javascript_order_006_option_1">const boton = document.querySelector(\"button\");</string>
+    <string name="javascript_order_006_option_2">boton.addEventListener(\"click\", () => {</string>
+    <string name="javascript_order_006_option_3">console.log(\"Click\");</string>
     <string name="javascript_order_006_option_4">});</string>
     <string name="javascript_order_006_explanation">First you select, then you add the listener.</string>
     <string name="javascript_order_007_question">Order the code to filtrar mayores de edad:</string>
@@ -926,7 +926,7 @@
     <string name="javascript_order_008_explanation">First JSON text, then parsing.</string>
     <string name="javascript_order_009_question">Order the code to capturar un error:</string>
     <string name="javascript_order_009_option_1">try {</string>
-    <string name="javascript_order_009_option_2">JSON.parse("mal json");</string>
+    <string name="javascript_order_009_option_2">JSON.parse(\"mal json\");</string>
     <string name="javascript_order_009_option_3">} catch (error) {</string>
     <string name="javascript_order_009_option_4">console.log(error);</string>
     <string name="javascript_order_009_option_5">}</string>

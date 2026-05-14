@@ -294,11 +294,11 @@
     <string name="java_test_039_explanation">Una clase final no puede ser extendida.</string>
 
     <string name="java_test_040_question">¿Qué anotación se usa al sobrescribir un método?</string>
-    <string name="java_test_040_option_1">@Override</string>
-    <string name="java_test_040_option_2">@Overload</string>
-    <string name="java_test_040_option_3">@Extends</string>
-    <string name="java_test_040_option_4">@Implement</string>
-    <string name="java_test_040_explanation">@Override indica que un método sobrescribe otro de una clase padre o interfaz.</string>
+    <string name="java_test_040_option_1">\@Override</string>
+    <string name="java_test_040_option_2">\@Overload</string>
+    <string name="java_test_040_option_3">\@Extends</string>
+    <string name="java_test_040_option_4">\@Implement</string>
+    <string name="java_test_040_explanation">\@Override indica que un método sobrescribe otro de una clase padre o interfaz.</string>
 
     <string name="java_test_041_question">¿Qué significa encapsulación?</string>
     <string name="java_test_041_option_1">Ocultar datos internos y controlar el acceso</string>
@@ -425,8 +425,8 @@
     <string name="java_tf_026_explanation">Las clases abstractas pueden tener métodos abstractos.</string>
     <string name="java_tf_027_question">Una clase final puede heredarse.</string>
     <string name="java_tf_027_explanation">Una clase final no puede ser extendida.</string>
-    <string name="java_tf_028_question">@Override se usa al sobrescribir métodos.</string>
-    <string name="java_tf_028_explanation">@Override indica sobrescritura de método.</string>
+    <string name="java_tf_028_question">\@Override se usa al sobrescribir métodos.</string>
+    <string name="java_tf_028_explanation">\@Override indica sobrescritura de método.</string>
     <string name="java_tf_029_question">Un constructor tiene el mismo nombre que la clase.</string>
     <string name="java_tf_029_explanation">El constructor se llama igual que la clase.</string>
     <string name="java_tf_030_question">Un constructor siempre tiene tipo de retorno void.</string>
@@ -480,7 +480,7 @@
     <string name="java_code_001_option_4">interface</string>
     <string name="java_code_001_explanation">En Java se usa class para declarar una clase.</string>
 
-    <string name="java_code_002_question">Completa el código:\n\nSystem.out.____("Hola");</string>
+    <string name="java_code_002_question">Completa el código:\n\nSystem.out.____(\"Hola\");</string>
     <string name="java_code_002_option_1">printLine</string>
     <string name="java_code_002_option_2">println</string>
     <string name="java_code_002_option_3">echo</string>
@@ -488,7 +488,7 @@
     <string name="java_code_002_explanation">System.out.println() imprime texto y añade salto de línea.</string>
 
     <string name="java_code_003_question">Completa el código:\n\nint edad = ____;</string>
-    <string name="java_code_003_option_1">"25"</string>
+    <string name="java_code_003_option_1">\"25\"</string>
     <string name="java_code_003_option_2">25</string>
     <string name="java_code_003_option_3">true</string>
     <string name="java_code_003_option_4">veinticinco</string>
@@ -498,18 +498,18 @@
     <string name="java_code_004_option_1">yes</string>
     <string name="java_code_004_option_2">1</string>
     <string name="java_code_004_option_3">true</string>
-    <string name="java_code_004_option_4">"true"</string>
+    <string name="java_code_004_option_4">\"true\"</string>
     <string name="java_code_004_explanation">Un boolean usa true o false.</string>
 
     <string name="java_code_005_question">Completa el código:\n\nString nombre = ____;</string>
-    <string name="java_code_005_option_1">"Isra"</string>
+    <string name="java_code_005_option_1">\"Isra\"</string>
     <string name="java_code_005_option_2">Isra</string>
     <string name="java_code_005_option_3">Israa</string>
     <string name="java_code_005_option_4">new int()</string>
     <string name="java_code_005_explanation">Los String se escriben entre comillas dobles.</string>
 
     <string name="java_code_006_question">Completa el código:\n\nchar letra = ____;</string>
-    <string name="java_code_006_option_1">"A"</string>
+    <string name="java_code_006_option_1">\"A\"</string>
     <string name="java_code_006_option_2">A letra</string>
     <string name="java_code_006_option_3">A</string>
     <string name="java_code_006_option_4">char A</string>
@@ -552,7 +552,7 @@
 
     <string name="java_code_012_question">Completa el código:\n\nprivate String ____;</string>
     <string name="java_code_012_option_1">nombre</string>
-    <string name="java_code_012_option_2">"nombre"</string>
+    <string name="java_code_012_option_2">\"nombre\"</string>
     <string name="java_code_012_option_3">String</string>
     <string name="java_code_012_option_4">new</string>
     <string name="java_code_012_explanation">Un atributo necesita un identificador, como nombre.</string>
@@ -634,7 +634,7 @@
     <string name="java_code_023_option_4">throw</string>
     <string name="java_code_023_explanation">catch captura excepciones lanzadas dentro de try.</string>
 
-    <string name="java_code_024_question">Completa el código:\n\nthrow new ____("Error");</string>
+    <string name="java_code_024_question">Completa el código:\n\nthrow new ____(\"Error\");</string>
     <string name="java_code_024_option_1">Exception</string>
     <string name="java_code_024_option_2">String</string>
     <string name="java_code_024_option_3">int</string>
@@ -655,7 +655,7 @@
     <string name="java_code_026_option_4">String</string>
     <string name="java_code_026_explanation">ArrayList crea una lista dinámica.</string>
 
-    <string name="java_code_027_question">Completa el código:\n\nnombres.____("Ana");</string>
+    <string name="java_code_027_question">Completa el código:\n\nnombres.____(\"Ana\");</string>
     <string name="java_code_027_option_1">put</string>
     <string name="java_code_027_option_2">add</string>
     <string name="java_code_027_option_3">insert</string>
@@ -690,7 +690,7 @@
     <string name="java_code_031_option_4">String</string>
     <string name="java_code_031_explanation">HashMap almacena pares clave-valor.</string>
 
-    <string name="java_code_032_question">Completa el código:\n\nedades.____("Ana", 20);</string>
+    <string name="java_code_032_question">Completa el código:\n\nedades.____(\"Ana\", 20);</string>
     <string name="java_code_032_option_1">add</string>
     <string name="java_code_032_option_2">put</string>
     <string name="java_code_032_option_3">insert</string>
@@ -711,7 +711,7 @@
     <string name="java_code_034_option_4">equals</string>
     <string name="java_code_034_explanation">== compara valores primitivos.</string>
 
-    <string name="java_code_035_question">Completa el código:\n\nif (nombre.____("Ana")) { }</string>
+    <string name="java_code_035_question">Completa el código:\n\nif (nombre.____(\"Ana\")) { }</string>
     <string name="java_code_035_option_1">equals</string>
     <string name="java_code_035_option_2">==</string>
     <string name="java_code_035_option_3">same</string>
@@ -767,12 +767,12 @@
     <string name="java_code_042_option_4">catch</string>
     <string name="java_code_042_explanation">final impide que la clase sea heredada.</string>
 
-    <string name="java_code_043_question">Completa el código:\n\n____\npublic String toString() { return "x"; }</string>
-    <string name="java_code_043_option_1">@Override</string>
-    <string name="java_code_043_option_2">@Overload</string>
-    <string name="java_code_043_option_3">@Extends</string>
-    <string name="java_code_043_option_4">@Class</string>
-    <string name="java_code_043_explanation">@Override marca la sobrescritura de un método.</string>
+    <string name="java_code_043_question">Completa el código:\n\n____\npublic String toString() { return \"x\"; }</string>
+    <string name="java_code_043_option_1">\@Override</string>
+    <string name="java_code_043_option_2">\@Overload</string>
+    <string name="java_code_043_option_3">\@Extends</string>
+    <string name="java_code_043_option_4">\@Class</string>
+    <string name="java_code_043_explanation">\@Override marca la sobrescritura de un método.</string>
 
     <string name="java_code_044_question">Completa el código:\n\npublic ____ Persona(String nombre) { }</string>
     <string name="java_code_044_option_1">class</string>
@@ -816,7 +816,7 @@
     <string name="java_code_049_option_4">args[]</string>
     <string name="java_code_049_explanation">main recibe normalmente String[] args.</string>
 
-    <string name="java_code_050_question">Completa el código:\n\nSystem.out.print____("Hola");</string>
+    <string name="java_code_050_question">Completa el código:\n\nSystem.out.print____(\"Hola\");</string>
     <string name="java_code_050_option_1">ln</string>
     <string name="java_code_050_option_2">line</string>
     <string name="java_code_050_option_3">text</string>
@@ -867,14 +867,14 @@
     <string name="java_error_001_option_4">nombre debería ser int</string>
     <string name="java_error_001_explanation">En Java, los String usan comillas dobles.</string>
 
-    <string name="java_error_002_question">Detecta el error:\n\nint edad = "25";</string>
+    <string name="java_error_002_question">Detecta el error:\n\nint edad = \"25\";</string>
     <string name="java_error_002_option_1">Se intenta asignar texto a una variable int</string>
     <string name="java_error_002_option_2">Falta el operador ==</string>
     <string name="java_error_002_option_3">int debe escribirse con mayúscula</string>
     <string name="java_error_002_option_4">La variable no puede llamarse edad</string>
     <string name="java_error_002_explanation">Un int almacena números enteros, no cadenas de texto.</string>
 
-    <string name="java_error_003_question">Detecta el error:\n\nif (activo = true) {\n    System.out.println("OK");\n}</string>
+    <string name="java_error_003_question">Detecta el error:\n\nif (activo = true) {\n    System.out.println(\"OK\");\n}</string>
     <string name="java_error_003_option_1">Se usa asignación en vez de comparación</string>
     <string name="java_error_003_option_2">if no puede usar boolean</string>
     <string name="java_error_003_option_3">println está mal escrito</string>
@@ -896,9 +896,9 @@
     <string name="java_error_005_explanation">List es una interfaz. Se suele instanciar con ArrayList, por ejemplo new ArrayList&lt;&gt;().</string>
 
     <!-- Java console output questions -->
-    <string name="java_output_001_question">¿Qué imprime este código?\n\nSystem.out.println("Hola");</string>
+    <string name="java_output_001_question">¿Qué imprime este código?\n\nSystem.out.println(\"Hola\");</string>
     <string name="java_output_001_option_1">Hola</string>
-    <string name="java_output_001_option_2">"Hola"</string>
+    <string name="java_output_001_option_2">\"Hola\"</string>
     <string name="java_output_001_option_3">System.out.println</string>
     <string name="java_output_001_option_4">No imprime nada</string>
     <string name="java_output_001_explanation">println imprime el texto contenido entre comillas, sin mostrar las comillas.</string>
@@ -910,7 +910,7 @@
     <string name="java_output_002_option_4">Error</string>
     <string name="java_output_002_explanation">Como x es int, se realiza una suma numérica: 5 + 2 = 7.</string>
 
-    <string name="java_output_003_question">¿Qué imprime este código?\n\nSystem.out.println("5" + 2);</string>
+    <string name="java_output_003_question">¿Qué imprime este código?\n\nSystem.out.println(\"5\" + 2);</string>
     <string name="java_output_003_option_1">52</string>
     <string name="java_output_003_option_2">7</string>
     <string name="java_output_003_option_3">Error</string>
@@ -940,13 +940,13 @@
 
     <string name="java_order_002_question">Ordena las líneas para imprimir un mensaje desde main:</string>
     <string name="java_order_002_option_1">public static void main(String[] args) {</string>
-    <string name="java_order_002_option_2">    System.out.println("Hola");</string>
+    <string name="java_order_002_option_2">    System.out.println(\"Hola\");</string>
     <string name="java_order_002_option_3">}</string>
     <string name="java_order_002_explanation">Primero se declara main, después se ejecuta println y finalmente se cierra el bloque.</string>
 
     <string name="java_order_003_question">Ordena las líneas de un if básico:</string>
     <string name="java_order_003_option_1">if (edad &gt;= 18) {</string>
-    <string name="java_order_003_option_2">    System.out.println("Mayor de edad");</string>
+    <string name="java_order_003_option_2">    System.out.println(\"Mayor de edad\");</string>
     <string name="java_order_003_option_3">}</string>
     <string name="java_order_003_explanation">La condición abre el bloque, dentro va la instrucción y al final se cierra.</string>
 
@@ -954,7 +954,7 @@
     <string name="java_order_004_option_1">try {</string>
     <string name="java_order_004_option_2">    leerArchivo();</string>
     <string name="java_order_004_option_3">} catch (Exception e) {</string>
-    <string name="java_order_004_option_4">    System.out.println("Error");</string>
+    <string name="java_order_004_option_4">    System.out.println(\"Error\");</string>
     <string name="java_order_004_option_5">}</string>
     <string name="java_order_004_explanation">Primero va try, dentro el código peligroso, después catch y dentro el manejo del error.</string>
 
@@ -1030,10 +1030,11 @@
     <string name="java_crossword_004_explanation">interface declara una interfaz.</string>
 
     <string name="java_crossword_005_question">Pista: anotación usada al sobrescribir métodos.</string>
-    <string name="java_crossword_005_option_1">@Override</string>
-    <string name="java_crossword_005_option_2">@Overload</string>
-    <string name="java_crossword_005_option_3">@Static</string>
-    <string name="java_crossword_005_option_4">@Final</string>
-    <string name="java_crossword_005_explanation">@Override indica que un método sobrescribe otro.</string>
+    <string name="java_crossword_005_option_1">\@Override</string>
+    <string name="java_crossword_005_option_2">\@Overload</string>
+    <string name="java_crossword_005_option_3">\@Static</string>
+    <string name="java_crossword_005_option_4">\@Final</string>
+    <string name="java_crossword_005_explanation">\@Override indica que un método sobrescribe otro.</string>
+
 
 </resources>

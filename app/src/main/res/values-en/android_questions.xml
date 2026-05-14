@@ -385,7 +385,7 @@
     <string name="android_tf_015_explanation">NavHost defines navigable screens.</string>
     <string name="android_tf_016_question">rememberNavController() creates a navigation controller.</string>
     <string name="android_tf_016_explanation">rememberNavController creates a NavController.</string>
-    <string name="android_tf_017_question">navigate("profile") works even if the profile route does not exist.</string>
+    <string name="android_tf_017_question">navigate(\"profile\") works even if the profile route does not exist.</string>
     <string name="android_tf_017_explanation">The route must be registered.</string>
     <string name="android_tf_018_question">ViewModel helps separate UI state and logic.</string>
     <string name="android_tf_018_explanation">ViewModel avoids putting all logic in the screen.</string>
@@ -800,7 +800,7 @@
 
     <string name="android_code_050_question">Complete the code:\n\npopUpTo(Screen.Home.route) { inclusive = ____ }</string>
     <string name="android_code_050_option_1">true</string>
-    <string name="android_code_050_option_2">"true"</string>
+    <string name="android_code_050_option_2">\"true\"</string>
     <string name="android_code_050_option_3">yes</string>
     <string name="android_code_050_option_4">1 only</string>
     <string name="android_code_050_explanation">inclusive accepts Boolean.</string>

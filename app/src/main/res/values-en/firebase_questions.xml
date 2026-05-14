@@ -469,7 +469,7 @@
     <string name="firebase_code_002_option_4">connect</string>
     <string name="firebase_code_002_explanation">getInstance() gets the Firestore instance.</string>
 
-    <string name="firebase_code_003_question">Complete the code:\n\ndb.collection("users").document(uid).____("coins", 100)</string>
+    <string name="firebase_code_003_question">Complete the code:\n\ndb.collection(\"users\").document(uid).____(\"coins\", 100)</string>
     <string name="firebase_code_003_option_1">update</string>
     <string name="firebase_code_003_option_2">setOnly</string>
     <string name="firebase_code_003_option_3">putField</string>
@@ -483,14 +483,14 @@
     <string name="firebase_code_004_option_4">collection</string>
     <string name="firebase_code_004_explanation">uid identifies the user.</string>
 
-    <string name="firebase_code_005_question">Complete the code:\n\ndb.____("users")</string>
+    <string name="firebase_code_005_question">Complete the code:\n\ndb.____(\"users\")</string>
     <string name="firebase_code_005_option_1">collection</string>
     <string name="firebase_code_005_option_2">table</string>
     <string name="firebase_code_005_option_3">folder</string>
     <string name="firebase_code_005_option_4">bucket</string>
     <string name="firebase_code_005_explanation">collection accesses a collection.</string>
 
-    <string name="firebase_code_006_question">Complete the code:\n\ndb.collection("users").____(uid)</string>
+    <string name="firebase_code_006_question">Complete the code:\n\ndb.collection(\"users\").____(uid)</string>
     <string name="firebase_code_006_option_1">document</string>
     <string name="firebase_code_006_option_2">row</string>
     <string name="firebase_code_006_option_3">file</string>
@@ -539,28 +539,28 @@
     <string name="firebase_code_012_option_4">fetchRow</string>
     <string name="firebase_code_012_explanation">transaction.get reads inside a transaction.</string>
 
-    <string name="firebase_code_013_question">Complete the code:\n\ntransaction.____(userRef, "xp", newXp)</string>
+    <string name="firebase_code_013_question">Complete the code:\n\ntransaction.____(userRef, \"xp\", newXp)</string>
     <string name="firebase_code_013_option_1">update</string>
     <string name="firebase_code_013_option_2">replaceSql</string>
     <string name="firebase_code_013_option_3">changeOnly</string>
     <string name="firebase_code_013_option_4">putRow</string>
     <string name="firebase_code_013_explanation">transaction.update modifies data inside a transaction.</string>
 
-    <string name="firebase_code_014_question">Complete the code:\n\nval xp = snapshot.getLong("xp")?.____() ?: 0</string>
+    <string name="firebase_code_014_question">Complete the code:\n\nval xp = snapshot.getLong(\"xp\")?.____() ?: 0</string>
     <string name="firebase_code_014_option_1">toInt</string>
     <string name="firebase_code_014_option_2">asString</string>
     <string name="firebase_code_014_option_3">toBoolean</string>
     <string name="firebase_code_014_option_4">toList</string>
     <string name="firebase_code_014_explanation">toInt converts Long to Int.</string>
 
-    <string name="firebase_code_015_question">Complete the code:\n\nval username = doc.____("username")</string>
+    <string name="firebase_code_015_question">Complete the code:\n\nval username = doc.____(\"username\")</string>
     <string name="firebase_code_015_option_1">getString</string>
     <string name="firebase_code_015_option_2">getTextOnly</string>
     <string name="firebase_code_015_option_3">string</string>
     <string name="firebase_code_015_option_4">readStringField</string>
     <string name="firebase_code_015_explanation">getString reads a String.</string>
 
-    <string name="firebase_code_016_question">Complete the code:\n\nval claimed = doc.____("dailyMissionClaimed") ?: false</string>
+    <string name="firebase_code_016_question">Complete the code:\n\nval claimed = doc.____(\"dailyMissionClaimed\") ?: false</string>
     <string name="firebase_code_016_option_1">getBoolean</string>
     <string name="firebase_code_016_option_2">getBoolOnly</string>
     <string name="firebase_code_016_option_3">boolean</string>
@@ -616,14 +616,14 @@
     <string name="firebase_code_023_option_4">update</string>
     <string name="firebase_code_023_explanation">If there is no uid, it is better to stop with an error.</string>
 
-    <string name="firebase_code_024_question">Complete the code:\n\nval data = ____("xp" to 0, "coins" to 0)</string>
+    <string name="firebase_code_024_question">Complete the code:\n\nval data = ____(\"xp\" to 0, \"coins\" to 0)</string>
     <string name="firebase_code_024_option_1">mapOf</string>
     <string name="firebase_code_024_option_2">listOf</string>
     <string name="firebase_code_024_option_3">arrayOf</string>
     <string name="firebase_code_024_option_4">setOf</string>
     <string name="firebase_code_024_explanation">mapOf creates a key-value map.</string>
 
-    <string name="firebase_code_025_question">Complete the code:\n\ntransaction.update(userRef, ____("coins" to newCoins))</string>
+    <string name="firebase_code_025_question">Complete the code:\n\ntransaction.update(userRef, ____(\"coins\" to newCoins))</string>
     <string name="firebase_code_025_option_1">mapOf</string>
     <string name="firebase_code_025_option_2">listOf</string>
     <string name="firebase_code_025_option_3">arrayOf</string>
@@ -651,28 +651,28 @@
     <string name="firebase_code_028_option_4">password</string>
     <string name="firebase_code_028_explanation">email gets the user\'s email address.</string>
 
-    <string name="firebase_code_029_question">Complete the code:\n\nval userRef = db.collection("users").document(____)</string>
+    <string name="firebase_code_029_question">Complete the code:\n\nval userRef = db.collection(\"users\").document(____)</string>
     <string name="firebase_code_029_option_1">uid</string>
     <string name="firebase_code_029_option_2">email</string>
     <string name="firebase_code_029_option_3">password</string>
     <string name="firebase_code_029_option_4">coins</string>
     <string name="firebase_code_029_explanation">Using uid as the user document id is common.</string>
 
-    <string name="firebase_code_030_question">Complete the code:\n\nuserRef.update("equippedThemeId", ____)</string>
+    <string name="firebase_code_030_question">Complete the code:\n\nuserRef.update(\"equippedThemeId\", ____)</string>
     <string name="firebase_code_030_option_1">themeId</string>
     <string name="firebase_code_030_option_2">true</string>
     <string name="firebase_code_030_option_3">R.string.app_name</string>
     <string name="firebase_code_030_option_4">password</string>
     <string name="firebase_code_030_explanation">The theme id is stored.</string>
 
-    <string name="firebase_code_031_question">Complete the code:\n\nuserRef.update("equippedThemeId", ____)</string>
+    <string name="firebase_code_031_question">Complete the code:\n\nuserRef.update(\"equippedThemeId\", ____)</string>
     <string name="firebase_code_031_option_1">null</string>
     <string name="firebase_code_031_option_2">\"null\" only</string>
     <string name="firebase_code_031_option_3">0 always</string>
     <string name="firebase_code_031_option_4">false always</string>
     <string name="firebase_code_031_explanation">Passing null can clear the field.</string>
 
-    <string name="firebase_code_032_question">Complete the code:\n\nval unlocked = doc.get("unlockedShopItems") as? ____</string>
+    <string name="firebase_code_032_question">Complete the code:\n\nval unlocked = doc.get(\"unlockedShopItems\") as? ____</string>
     <string name="firebase_code_032_option_1">List&lt;*&gt;</string>
     <string name="firebase_code_032_option_2">String</string>
     <string name="firebase_code_032_option_3">Int</string>
@@ -686,21 +686,21 @@
     <string name="firebase_code_033_option_4">castAll</string>
     <string name="firebase_code_033_explanation">filterIsInstance filters Strings.</string>
 
-    <string name="firebase_code_034_question">Complete the code:\n\nval currentCoins = snapshot.getLong("coins") ?: ____</string>
+    <string name="firebase_code_034_question">Complete the code:\n\nval currentCoins = snapshot.getLong(\"coins\") ?: ____</string>
     <string name="firebase_code_034_option_1">0</string>
-    <string name="firebase_code_034_option_2">"0"</string>
+    <string name="firebase_code_034_option_2">\"0\"</string>
     <string name="firebase_code_034_option_3">false</string>
     <string name="firebase_code_034_option_4">null.toString()</string>
     <string name="firebase_code_034_explanation">If there is no value, 0 is used.</string>
 
-    <string name="firebase_code_035_question">Complete the code:\n\nif (currentCoins &lt; item.price) ____ Exception("You do not have enough coins")</string>
+    <string name="firebase_code_035_question">Complete the code:\n\nif (currentCoins &lt; item.price) ____ Exception(\"You do not have enough coins\")</string>
     <string name="firebase_code_035_option_1">throw</string>
     <string name="firebase_code_035_option_2">return</string>
     <string name="firebase_code_035_option_3">catch</string>
     <string name="firebase_code_035_option_4">new</string>
     <string name="firebase_code_035_explanation">throw throws an exception.</string>
 
-    <string name="firebase_code_036_question">Complete the code:\n\n.addOnFailureListener { exception -&gt; onError(exception.____ ?: "Error") }</string>
+    <string name="firebase_code_036_question">Complete the code:\n\n.addOnFailureListener { exception -&gt; onError(exception.____ ?: \"Error\") }</string>
     <string name="firebase_code_036_option_1">message</string>
     <string name="firebase_code_036_option_2">text</string>
     <string name="firebase_code_036_option_3">reasonOnly</string>
@@ -714,63 +714,63 @@
     <string name="firebase_code_037_option_4">stringDate</string>
     <string name="firebase_code_037_explanation">toString can store an ISO date.</string>
 
-    <string name="firebase_code_038_question">Complete the code:\n\nval lastActivityDate = doc.____("lastActivityDate")</string>
+    <string name="firebase_code_038_question">Complete the code:\n\nval lastActivityDate = doc.____(\"lastActivityDate\")</string>
     <string name="firebase_code_038_option_1">getString</string>
     <string name="firebase_code_038_option_2">getDateTextOnly</string>
     <string name="firebase_code_038_option_3">string</string>
     <string name="firebase_code_038_option_4">getLong</string>
     <string name="firebase_code_038_explanation">lastActivityDate is stored as a String.</string>
 
-    <string name="firebase_code_039_question">Complete the code:\n\nval dailyMissionDate = snapshot.____("dailyMissionDate")</string>
+    <string name="firebase_code_039_question">Complete the code:\n\nval dailyMissionDate = snapshot.____(\"dailyMissionDate\")</string>
     <string name="firebase_code_039_option_1">getString</string>
     <string name="firebase_code_039_option_2">getLong</string>
     <string name="firebase_code_039_option_3">getBoolean</string>
     <string name="firebase_code_039_option_4">getArray</string>
     <string name="firebase_code_039_explanation">dailyMissionDate is a String.</string>
 
-    <string name="firebase_code_040_question">Complete the code:\n\nval answered = snapshot.getLong("dailyQuestionsAnswered")?.toInt() ?: ____</string>
+    <string name="firebase_code_040_question">Complete the code:\n\nval answered = snapshot.getLong(\"dailyQuestionsAnswered\")?.toInt() ?: ____</string>
     <string name="firebase_code_040_option_1">0</string>
     <string name="firebase_code_040_option_2">false</string>
-    <string name="firebase_code_040_option_3">""</string>
+    <string name="firebase_code_040_option_3">\"\"</string>
     <string name="firebase_code_040_option_4">null!!</string>
     <string name="firebase_code_040_explanation">If it does not exist, it starts at 0.</string>
 
-    <string name="firebase_code_041_question">Complete the code:\n\nval claimed = snapshot.getBoolean("dailyMissionClaimed") ?: ____</string>
+    <string name="firebase_code_041_question">Complete the code:\n\nval claimed = snapshot.getBoolean(\"dailyMissionClaimed\") ?: ____</string>
     <string name="firebase_code_041_option_1">false</string>
     <string name="firebase_code_041_option_2">0</string>
-    <string name="firebase_code_041_option_3">"false"</string>
+    <string name="firebase_code_041_option_3">\"false\"</string>
     <string name="firebase_code_041_option_4">null!!</string>
     <string name="firebase_code_041_explanation">If it does not exist, it has not been claimed.</string>
 
-    <string name="firebase_code_042_question">Complete the code:\n\nuserRef.update("lastPlayedTopic", ____)</string>
+    <string name="firebase_code_042_question">Complete the code:\n\nuserRef.update(\"lastPlayedTopic\", ____)</string>
     <string name="firebase_code_042_option_1">topic</string>
     <string name="firebase_code_042_option_2">gameType</string>
     <string name="firebase_code_042_option_3">uid.password</string>
     <string name="firebase_code_042_option_4">R.drawable.logo</string>
     <string name="firebase_code_042_explanation">lastPlayedTopic stores the topic.</string>
 
-    <string name="firebase_code_043_question">Complete the code:\n\nuserRef.update("lastPlayedGameType", ____)</string>
+    <string name="firebase_code_043_question">Complete the code:\n\nuserRef.update(\"lastPlayedGameType\", ____)</string>
     <string name="firebase_code_043_option_1">gameType</string>
     <string name="firebase_code_043_option_2">topic</string>
     <string name="firebase_code_043_option_3">coins</string>
     <string name="firebase_code_043_option_4">email.password</string>
     <string name="firebase_code_043_explanation">lastPlayedGameType stores the mode.</string>
 
-    <string name="firebase_code_044_question">Complete the code:\n\nval query = db.collection("users").____("username", "Isra")</string>
+    <string name="firebase_code_044_question">Complete the code:\n\nval query = db.collection(\"users\").____(\"username\", \"Isra\")</string>
     <string name="firebase_code_044_option_1">whereEqualTo</string>
     <string name="firebase_code_044_option_2">filter</string>
     <string name="firebase_code_044_option_3">whereSql</string>
     <string name="firebase_code_044_option_4">selectBy</string>
     <string name="firebase_code_044_explanation">whereEqualTo filters by equality.</string>
 
-    <string name="firebase_code_045_question">Complete the code:\n\nquery.____("xp")</string>
+    <string name="firebase_code_045_question">Complete the code:\n\nquery.____(\"xp\")</string>
     <string name="firebase_code_045_option_1">orderBy</string>
     <string name="firebase_code_045_option_2">sort</string>
     <string name="firebase_code_045_option_3">orderSql</string>
     <string name="firebase_code_045_option_4">arrange</string>
     <string name="firebase_code_045_explanation">orderBy sorts by field.</string>
 
-    <string name="firebase_code_046_question">Complete the code:\n\nuserRef.____("coins", FieldValue.increment(10))</string>
+    <string name="firebase_code_046_question">Complete the code:\n\nuserRef.____(\"coins\", FieldValue.increment(10))</string>
     <string name="firebase_code_046_option_1">update</string>
     <string name="firebase_code_046_option_2">setOnly</string>
     <string name="firebase_code_046_option_3">insert</string>
@@ -784,7 +784,7 @@
     <string name="firebase_code_047_option_4">addNumber</string>
     <string name="firebase_code_047_explanation">increment adds atomically.</string>
 
-    <string name="firebase_code_048_question">Complete the code:\n\nFirebaseFirestore.getInstance().collection("users").____()</string>
+    <string name="firebase_code_048_question">Complete the code:\n\nFirebaseFirestore.getInstance().collection(\"users\").____()</string>
     <string name="firebase_code_048_option_1">get</string>
     <string name="firebase_code_048_option_2">selectSql</string>
     <string name="firebase_code_048_option_3">readXml</string>
@@ -799,7 +799,7 @@
     <string name="firebase_code_049_explanation">FirebaseStorage.getInstance gets Storage.</string>
 
     <string name="firebase_code_050_question">Complete the code:\n\nval ref = storage.reference.child(____)</string>
-    <string name="firebase_code_050_option_1">"avatars/$uid.jpg"</string>
+    <string name="firebase_code_050_option_1">\"avatars/$uid.jpg\"</string>
     <string name="firebase_code_050_option_2">uid.password</string>
     <string name="firebase_code_050_option_3">R.string.app_name</string>
     <string name="firebase_code_050_option_4">false</string>
@@ -898,7 +898,7 @@
     <string name="firebase_error_003_option_4">It does not matter</string>
     <string name="firebase_error_003_explanation">Before saving private data, you should check that there is a user.</string>
 
-    <string name="firebase_error_004_question">Detect the problem:\n\ndb.collection("users").document(uid).update("xp", 100)\n\nwithout an error listener.</string>
+    <string name="firebase_error_004_question">Detect the problem:\n\ndb.collection(\"users\").document(uid).update(\"xp\", 100)\n\nwithout an error listener.</string>
     <string name="firebase_error_004_option_1">The operation failure is not handled</string>
     <string name="firebase_error_004_option_2">update does not exist</string>
     <string name="firebase_error_004_option_3">xp must be Boolean</string>
@@ -1030,7 +1030,7 @@
     <string name="firebase_order_002_option_1">Create userRef</string>
     <string name="firebase_order_002_option_2">Read snapshot inside transaction</string>
     <string name="firebase_order_002_option_3">Calculate new coins</string>
-    <string name="firebase_order_002_option_4">transaction.update(userRef, "coins", newCoins)</string>
+    <string name="firebase_order_002_option_4">transaction.update(userRef, \"coins\", newCoins)</string>
     <string name="firebase_order_002_explanation">A transaction reads, calculates, and writes safely.</string>
 
     <string name="firebase_order_003_question">Order the flow to sign in:</string>
@@ -1230,5 +1230,4 @@
     <string name="firebase_crossword_010_option_3">days</string>
     <string name="firebase_crossword_010_option_4">fire</string>
     <string name="firebase_crossword_010_explanation">streak stores the streak.</string>
-
 </resources>

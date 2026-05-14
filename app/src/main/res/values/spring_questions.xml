@@ -458,7 +458,7 @@
     <string name="spring_code_001_option_4">\@Column</string>
     <string name="spring_code_001_explanation">\@RestController marca un controlador REST.</string>
 
-    <string name="spring_code_002_question">Completa el código: ____("/users") public List&lt;User&gt; findAll() { }</string>
+    <string name="spring_code_002_question">Completa el código: ____(\"/users\") public List&lt;User&gt; findAll() { }</string>
     <string name="spring_code_002_option_1">\@GetMapping</string>
     <string name="spring_code_002_option_2">\@PostMapping</string>
     <string name="spring_code_002_option_3">\@Entity</string>
@@ -493,35 +493,35 @@
     <string name="spring_code_006_option_4">boot</string>
     <string name="spring_code_006_explanation">SpringApplication.run arranca la aplicación.</string>
 
-    <string name="spring_code_007_question">Completa el código: ____("/users") public User create(\@RequestBody User user) { }</string>
+    <string name="spring_code_007_question">Completa el código: ____(\"/users\") public User create(\@RequestBody User user) { }</string>
     <string name="spring_code_007_option_1">\@PostMapping</string>
     <string name="spring_code_007_option_2">\@GetMapping</string>
     <string name="spring_code_007_option_3">\@DeleteMapping</string>
     <string name="spring_code_007_option_4">\@ReadMapping</string>
     <string name="spring_code_007_explanation">\@PostMapping se usa para crear.</string>
 
-    <string name="spring_code_008_question">Completa el código: ____("/users/{id}") public void delete(\@PathVariable Long id) { }</string>
+    <string name="spring_code_008_question">Completa el código: ____(\"/users/{id}\") public void delete(\@PathVariable Long id) { }</string>
     <string name="spring_code_008_option_1">\@DeleteMapping</string>
     <string name="spring_code_008_option_2">\@GetMapping</string>
     <string name="spring_code_008_option_3">\@PostMapping</string>
     <string name="spring_code_008_option_4">\@Entity</string>
     <string name="spring_code_008_explanation">\@DeleteMapping responde a DELETE.</string>
 
-    <string name="spring_code_009_question">Completa el código: \@GetMapping("/users/{id}") public User find(\@____ Long id) { }</string>
+    <string name="spring_code_009_question">Completa el código: \@GetMapping(\"/users/{id}\") public User find(\@____ Long id) { }</string>
     <string name="spring_code_009_option_1">PathVariable</string>
     <string name="spring_code_009_option_2">RequestBody</string>
     <string name="spring_code_009_option_3">Service</string>
     <string name="spring_code_009_option_4">Entity</string>
     <string name="spring_code_009_explanation">\@PathVariable lee el id de la ruta.</string>
 
-    <string name="spring_code_010_question">Completa el código: \@GetMapping("/users") public List&lt;User&gt; find(\@____ String name) { }</string>
+    <string name="spring_code_010_question">Completa el código: \@GetMapping(\"/users\") public List&lt;User&gt; find(\@____ String name) { }</string>
     <string name="spring_code_010_option_1">RequestParam</string>
     <string name="spring_code_010_option_2">PathVariable</string>
     <string name="spring_code_010_option_3">RequestBody</string>
     <string name="spring_code_010_option_4">Column</string>
     <string name="spring_code_010_explanation">\@RequestParam lee parámetros de query.</string>
 
-    <string name="spring_code_011_question">Completa el código: \@PostMapping("/users") public User create(\@____ UserDto dto) { }</string>
+    <string name="spring_code_011_question">Completa el código: \@PostMapping(\"/users\") public User create(\@____ UserDto dto) { }</string>
     <string name="spring_code_011_option_1">RequestBody</string>
     <string name="spring_code_011_option_2">PathVariable</string>
     <string name="spring_code_011_option_3">RequestParam</string>
@@ -675,21 +675,21 @@
     <string name="spring_code_032_option_4">INSERTED</string>
     <string name="spring_code_032_explanation">CREATED representa 201.</string>
 
-    <string name="spring_code_033_question">Completa el código: \@GetMapping("/health") public String health() { return ____; }</string>
-    <string name="spring_code_033_option_1">"OK"</string>
+    <string name="spring_code_033_question">Completa el código: \@GetMapping(\"/health\") public String health() { return ____; }</string>
+    <string name="spring_code_033_option_1">\"OK\"</string>
     <string name="spring_code_033_option_2">OK</string>
     <string name="spring_code_033_option_3">\@OK</string>
     <string name="spring_code_033_option_4">HttpStatus</string>
     <string name="spring_code_033_explanation">Debe devolver un String entre comillas.</string>
 
-    <string name="spring_code_034_question">Completa el código: \@PutMapping("/users/{id}") public User update(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
+    <string name="spring_code_034_question">Completa el código: \@PutMapping(\"/users/{id}\") public User update(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
     <string name="spring_code_034_option_1">UserDto</string>
     <string name="spring_code_034_option_2">GetMapping</string>
     <string name="spring_code_034_option_3">JpaRepository</string>
     <string name="spring_code_034_option_4">Application</string>
     <string name="spring_code_034_explanation">El DTO representa datos de entrada.</string>
 
-    <string name="spring_code_035_question">Completa el código: \@PatchMapping("/users/{id}") public User patch(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
+    <string name="spring_code_035_question">Completa el código: \@PatchMapping(\"/users/{id}\") public User patch(\@PathVariable Long id, \@RequestBody ____ dto) { }</string>
     <string name="spring_code_035_option_1">UserPatchDto</string>
     <string name="spring_code_035_option_2">UserRepository</string>
     <string name="spring_code_035_option_3">HttpStatus</string>
@@ -699,18 +699,18 @@
     <string name="spring_code_036_question">Completa el código: \@Column(nullable = ____) private String name;</string>
     <string name="spring_code_036_option_1">false</string>
     <string name="spring_code_036_option_2">true only</string>
-    <string name="spring_code_036_option_3">"false"</string>
+    <string name="spring_code_036_option_3">\"false\"</string>
     <string name="spring_code_036_option_4">null</string>
     <string name="spring_code_036_explanation">nullable = false indica que no admite null.</string>
 
     <string name="spring_code_037_question">Completa el código: \@Table(name = ____) public class User { }</string>
-    <string name="spring_code_037_option_1">"users"</string>
+    <string name="spring_code_037_option_1">\"users\"</string>
     <string name="spring_code_037_option_2">users</string>
     <string name="spring_code_037_option_3">\@users</string>
     <string name="spring_code_037_option_4">table.users</string>
     <string name="spring_code_037_explanation">El nombre de tabla va como String.</string>
 
-    <string name="spring_code_038_question">Completa el código: ____(name = "users") \@Entity public class User { }</string>
+    <string name="spring_code_038_question">Completa el código: ____(name = \"users\") \@Entity public class User { }</string>
     <string name="spring_code_038_option_1">\@Table</string>
     <string name="spring_code_038_option_2">\@Column</string>
     <string name="spring_code_038_option_3">\@Service</string>
@@ -718,7 +718,7 @@
     <string name="spring_code_038_explanation">\@Table configura la tabla.</string>
 
     <string name="spring_code_039_question">Completa el código: \@Column(name = ____) private String firstName;</string>
-    <string name="spring_code_039_option_1">"first_name"</string>
+    <string name="spring_code_039_option_1">\"first_name\"</string>
     <string name="spring_code_039_option_2">first_name</string>
     <string name="spring_code_039_option_3">\@first_name</string>
     <string name="spring_code_039_option_4">column.first</string>
@@ -752,7 +752,7 @@
     <string name="spring_code_043_option_4">Field(name)</string>
     <string name="spring_code_043_explanation">Spring Data interpreta findByName.</string>
 
-    <string name="spring_code_044_question">Completa el código: \@GetMapping("/users/search") public List&lt;User&gt; search(\@RequestParam ____ name) { }</string>
+    <string name="spring_code_044_question">Completa el código: \@GetMapping(\"/users/search\") public List&lt;User&gt; search(\@RequestParam ____ name) { }</string>
     <string name="spring_code_044_option_1">String</string>
     <string name="spring_code_044_option_2">User</string>
     <string name="spring_code_044_option_3">LongRepository</string>
@@ -766,7 +766,7 @@
     <string name="spring_code_045_option_4">MISSING</string>
     <string name="spring_code_045_explanation">201 CREATED para creación.</string>
 
-    <string name="spring_code_046_question">Completa el código: throw new ____("Usuario no encontrado");</string>
+    <string name="spring_code_046_question">Completa el código: throw new ____(\"Usuario no encontrado\");</string>
     <string name="spring_code_046_option_1">UserNotFoundException</string>
     <string name="spring_code_046_option_2">ResponseEntity</string>
     <string name="spring_code_046_option_3">JpaRepository</string>
@@ -774,7 +774,7 @@
     <string name="spring_code_046_explanation">Se lanza una excepción específica.</string>
 
     <string name="spring_code_047_question">Completa el código: \@RestController \@RequestMapping(____) public class UserController { }</string>
-    <string name="spring_code_047_option_1">"/api/users"</string>
+    <string name="spring_code_047_option_1">\"/api/users\"</string>
     <string name="spring_code_047_option_2">/api/users</string>
     <string name="spring_code_047_option_3">\@api</string>
     <string name="spring_code_047_option_4">api.users</string>
@@ -782,7 +782,7 @@
 
     <string name="spring_code_048_question">Completa el código: server.port=____</string>
     <string name="spring_code_048_option_1">8080</string>
-    <string name="spring_code_048_option_2">"8080"</string>
+    <string name="spring_code_048_option_2">\"8080\"</string>
     <string name="spring_code_048_option_3">\@8080</string>
     <string name="spring_code_048_option_4">port.8080</string>
     <string name="spring_code_048_explanation">En properties se usa server.port=8080.</string>
@@ -948,7 +948,7 @@
     <string name="spring_error_001_option_4">No hay problema nunca</string>
     <string name="spring_error_001_explanation">La dependencia debería inyectarse por constructor o con anotación.</string>
 
-    <string name="spring_error_002_question">Detecta el problema: \@GetMapping("/users") public void findAll() { }</string>
+    <string name="spring_error_002_question">Detecta el problema: \@GetMapping(\"/users\") public void findAll() { }</string>
     <string name="spring_error_002_option_1">No devuelve datos</string>
     <string name="spring_error_002_option_2">GET no existe</string>
     <string name="spring_error_002_option_3">Falta SQL</string>
@@ -969,14 +969,14 @@
     <string name="spring_error_004_option_4">No hay problema</string>
     <string name="spring_error_004_explanation">Cada clase debe estar en su capa.</string>
 
-    <string name="spring_error_005_question">Detecta el problema: \@GetMapping("/users/{id}") public User find(Long id) { }</string>
+    <string name="spring_error_005_question">Detecta el problema: \@GetMapping(\"/users/{id}\") public User find(Long id) { }</string>
     <string name="spring_error_005_option_1">Falta \@PathVariable en id</string>
     <string name="spring_error_005_option_2">GET no puede tener id</string>
     <string name="spring_error_005_option_3">Long no existe</string>
     <string name="spring_error_005_option_4">No hay problema</string>
     <string name="spring_error_005_explanation">El id de la ruta debe mapearse con \@PathVariable.</string>
 
-    <string name="spring_error_006_question">Detecta el problema: \@PostMapping("/users") public User create(UserDto dto) { }</string>
+    <string name="spring_error_006_question">Detecta el problema: \@PostMapping(\"/users\") public User create(UserDto dto) { }</string>
     <string name="spring_error_006_option_1">Falta \@RequestBody</string>
     <string name="spring_error_006_option_2">POST no puede recibir DTO</string>
     <string name="spring_error_006_option_3">UserDto debe ser entidad</string>
@@ -1004,14 +1004,14 @@
     <string name="spring_error_009_option_4">No hay problema</string>
     <string name="spring_error_009_explanation">JpaRepository recibe entidad y tipo de id.</string>
 
-    <string name="spring_error_010_question">Detecta el problema: \@GetMapping("/users") public User create(\@RequestBody User user) { }</string>
+    <string name="spring_error_010_question">Detecta el problema: \@GetMapping(\"/users\") public User create(\@RequestBody User user) { }</string>
     <string name="spring_error_010_option_1">GET no debería crear recursos con body</string>
     <string name="spring_error_010_option_2">GetMapping no existe</string>
     <string name="spring_error_010_option_3">RequestBody solo se usa en SQL</string>
     <string name="spring_error_010_option_4">No hay problema</string>
     <string name="spring_error_010_explanation">Para crear debería usarse POST.</string>
 
-    <string name="spring_error_011_question">Detecta el problema: \@PostMapping("/users/{id}") public void delete(\@PathVariable Long id) { }</string>
+    <string name="spring_error_011_question">Detecta el problema: \@PostMapping(\"/users/{id}\") public void delete(\@PathVariable Long id) { }</string>
     <string name="spring_error_011_option_1">Para borrar sería mejor DELETE</string>
     <string name="spring_error_011_option_2">POST no compila</string>
     <string name="spring_error_011_option_3">PathVariable no existe</string>
@@ -1067,14 +1067,14 @@
     <string name="spring_error_018_option_4">Spring lo convierte en entidad</string>
     <string name="spring_error_018_explanation">Conviene responder correctamente cuando no existe.</string>
 
-    <string name="spring_error_019_question">Detecta el problema: \@PostMapping("/users") public ResponseEntity&lt;User&gt; create(...) { return ResponseEntity.ok(user); }</string>
+    <string name="spring_error_019_question">Detecta el problema: \@PostMapping(\"/users\") public ResponseEntity&lt;User&gt; create(...) { return ResponseEntity.ok(user); }</string>
     <string name="spring_error_019_option_1">Para creación puede ser mejor 201 Created</string>
     <string name="spring_error_019_option_2">ok no existe</string>
     <string name="spring_error_019_option_3">POST no devuelve body</string>
     <string name="spring_error_019_option_4">No hay problema</string>
     <string name="spring_error_019_explanation">201 expresa creación de recurso.</string>
 
-    <string name="spring_error_020_question">Detecta el problema: \@DeleteMapping("/users/{id}") public User delete(...) { return deletedUser; }</string>
+    <string name="spring_error_020_question">Detecta el problema: \@DeleteMapping(\"/users/{id}\") public User delete(...) { return deletedUser; }</string>
     <string name="spring_error_020_option_1">Para borrar puede ser mejor 204 sin contenido</string>
     <string name="spring_error_020_option_2">DELETE debe devolver HTML</string>
     <string name="spring_error_020_option_3">No se puede borrar por id</string>

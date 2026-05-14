@@ -111,7 +111,7 @@
     <string name="sql_test_019_question">Which wildcard represents any sequence of characters with LIKE?</string>
     <string name="sql_test_019_option_1">*</string>
     <string name="sql_test_019_option_2">%</string>
-    <string name="sql_test_019_option_3">?</string>
+    <string name="sql_test_019_option_3">\?</string>
     <string name="sql_test_019_option_4">#</string>
     <string name="sql_test_019_explanation">% represents zero or more characters in a LIKE search.</string>
     <string name="sql_test_020_question">Which operator checks whether a value is between two limits?</string>
