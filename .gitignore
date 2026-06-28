@@ -1,67 +1,142 @@
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
-# Gradle
+*.ipr
+*.iws
+
 .gradle/
 build/
 */build/
-# Local Gradle / Android / Kotlin caches
+**/build/
 .gradle-user-home/
-.android-user-home/
-.kotlin/
+gradle-app.setting
 
-# Local configuration
-local.properties
-
-# Android Studio
 .idea/
-*.iml
 
-# OS files
-.DS_Store
-Thumbs.db
+local.properties
+*.local.properties
+local.defaults.properties
 
-# Logs
-*.log
+secrets.properties
+secret.properties
+keys.properties
+apikey.properties
+api-keys.properties
+credentials.properties
+config.properties
 
-# Keystore files (IMPORTANTE)
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+
+*api_key*
+*apikey*
+*api-key*
+*secret*
+*token*
+*credential*
+*credentials*
+*client_secret*
+
+google-services.json
+serviceAccount*.json
+service-account*.json
+*-service-account.json
+google-cloud-key.json
+gcloud-key.json
+firebase-adminsdk*.json
+client_secret*.json
+
 *.jks
 *.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.cer
 
-# Kotlin
-*.class
-*.kotlin_module
+keystore.properties
+signing.properties
+release.properties
+upload-keystore.properties
 
-# Generated files
+*.apk
+*.aab
+*.ap_
+*.aar
+
+app/release/
+app/debug/
+release/
+debug/
+outputs/
+**/outputs/
+
 captures/
 .externalNativeBuild/
 .cxx/
-
-# Navigation (safe to ignore cache)
 .navigation/
+.generated/
+generated/
+**/generated/
 
-# Firebase (IMPORTANTE)
-google-services.json
+kapt/
+ksp/
+**/kapt/
+**/ksp/
 
-# APK / AAB
-*.apk
-*.aab
+.kotlin/
+*.class
+*.kotlin_module
 
-# Temporary files
+*.log
 *.tmp
 *.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
 
-# Lint
 lint/
+lint-results*.html
+lint-results*.xml
+lint-results*.txt
+
+test-results/
+reports/
+jacoco/
+coverage/
+*.exec
+*.ec
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+.vscode/
+*.swp
+*.swo
+*~
+.idea_modules/
+
+*.hprof
+*.trace
+*.prof
+*.profm
+*.heapdump
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
